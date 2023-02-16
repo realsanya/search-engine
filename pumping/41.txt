@@ -1,0 +1,2601 @@
+<!DOCTYPE html>
+
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Image SEO: driving more organic traffic through image optimization</title>
+<link href="https://iframe.videodelivery.net" rel="preconnect dns-prefetch"/>
+<script>(function(c,u,v,n,p,e,z,A,w){function k(a){if(!x){x=!0;var l=u.getElementsByTagName(v)[0],d=u.createElement(v);d.src=A;d.crossorigin="anonymous";d.addEventListener("load",function(){try{c[n]=r;c[p]=t;var b=c[e],d=b.init;b.init=function(a){for(var b in a)Object.prototype.hasOwnProperty.call(a,b)&&(w[b]=a[b]);d(w)};B(a,b)}catch(g){console.error(g)}});l.parentNode.insertBefore(d,l)}}function B(a,l){try{for(var d=m.data,b=0;b<a.length;b++)if("function"===typeof a[b])a[b]();var e=!1,g=c.__SENTRY__;"undefined"!==
+typeof g&&g.hub&&g.hub.getClient()&&(e=!0);g=!1;for(b=0;b<d.length;b++)if(d[b].f){g=!0;var f=d[b];!1===e&&"init"!==f.f&&l.init();e=!0;l[f.f].apply(l,f.a)}!1===e&&!1===g&&l.init();var h=c[n],k=c[p];for(b=0;b<d.length;b++)d[b].e&&h?h.apply(c,d[b].e):d[b].p&&k&&k.apply(c,[d[b].p])}catch(C){console.error(C)}}for(var f=!0,y=!1,q=0;q<document.scripts.length;q++)if(-1<document.scripts[q].src.indexOf(z)){f="no"!==document.scripts[q].getAttribute("data-lazy");break}var x=!1,h=[],m=function(a){(a.e||a.p||a.f&&
+-1<a.f.indexOf("capture")||a.f&&-1<a.f.indexOf("showReportDialog"))&&f&&k(h);m.data.push(a)};m.data=[];c[e]=c[e]||{};c[e].onLoad=function(a){h.push(a);f&&!y||k(h)};c[e].forceLoad=function(){y=!0;f&&setTimeout(function(){k(h)})};"init addBreadcrumb captureMessage captureException captureEvent configureScope withScope showReportDialog".split(" ").forEach(function(a){c[e][a]=function(){m({f:a,a:arguments})}});var r=c[n];c[n]=function(a,e,d,b,f){m({e:[].slice.call(arguments)});r&&r.apply(c,arguments)};
+var t=c[p];c[p]=function(a){m({p:a.reason});t&&t.apply(c,arguments)};f||setTimeout(function(){k(h)})})(window,document,"script","onerror","onunhandledrejection","Sentry","a5184105d8fc40669d0a2d883d87688d","https://browser.sentry-cdn.com/6.13.3/bundle.min.js",{"dsn":"https://a5184105d8fc40669d0a2d883d87688d@o29016.ingest.sentry.io/65692","release":"c82be011c","environment":"production"});</script>
+<script>
+// Define dataLayer and the gtag function.
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
+var storage = window.localStorage.getItem('contentking');
+var defaultConsents = {'ad_storage': 'denied', 'analytics_storage': 'denied', 'functionality_storage': 'denied', 'personalization_storage': 'denied', 'security_storage': 'denied' };
+if (storage) { storage = JSON.parse(storage); if (storage['cookie-consent'] && storage['cookie-consent']['consents']) { defaultConsents = storage['cookie-consent']['consents']; } }
+gtag('consent', 'default', defaultConsents);
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TX8N5H');</script>
+<!-- End Google Tag Manager -->
+<link as="font" crossorigin="" href="https://www.contentkingapp.com/assets/fonts/proxima-nova-normal-700.subset.woff2" rel="preload" type="font/woff2">
+<link as="font" crossorigin="" href="https://www.contentkingapp.com/assets/fonts/proxima-nova-normal-400.subset.woff2" rel="preload" type="font/woff2"/>
+<link href="/assets/css/app.css?cb=3d7688a9dcdb78775593b482c519b511" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.contentkingapp.com/assets/images/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="https://www.contentkingapp.com/assets/images/favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="https://www.contentkingapp.com/assets/images/favicons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="https://www.contentkingapp.com/assets/images/favicons/site.webmanifest" rel="manifest"/>
+<link href="https://www.contentkingapp.com/assets/images/favicons/favicon.ico" rel="shortcut icon">
+<meta content="ContentKing" name="apple-mobile-web-app-title"/>
+<meta content="ContentKing" name="application-name"/>
+<meta content="#ffffff" name="msapplication-TileColor"/>
+<meta content="https://www.contentkingapp.com/assets/images/favicons/browserconfig.xml" name="msapplication-config"/>
+<meta content="https://www.contentkingapp.com/assets/images/favicons/mstile-144x144.png" name="msapplication-TileImage"/>
+<meta content="#ffffff" name="theme-color"/>
+<link href="https://www.contentkingapp.com/academy/image-seo/" hreflang="en" rel="alternate"/>
+<link href="https://www.contentkingapp.com/academy/image-seo/" hreflang="x-default" rel="alternate"/>
+<meta content="Learn how to drive more organic traffic through image optimization with our Image SEO guide." name="description"/>
+<link href="https://www.contentkingapp.com/academy/image-seo/" rel="canonical"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="article" property="og:type"/>
+<meta content="Image SEO: more organic traffic through image optimization" property="og:title"/>
+<meta content="Learn how to drive more organic traffic with these tips." property="og:description"/>
+<meta content="https://www.contentkingapp.com/academy/image-seo/" property="og:url"/>
+<meta content="ContentKing" property="og:site_name"/>
+<meta content="https://www.contentkingapp.com/media/social-cards/academy/contentking-academy-image-seo-og@2x.png" property="og:image"/>
+<meta content="https://www.contentkingapp.com/media/social-cards/academy/contentking-academy-image-seo-og@2x.png" property="og:image:secure_url"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Image SEO: more organic traffic through images" name="twitter:title"/>
+<meta content="Learn how to drive more organic traffic through image optimization with our Image SEO guide." name="twitter:description"/>
+<meta content="@contentking" name="twitter:site"/>
+<meta content="https://www.contentkingapp.com/media/social-cards/academy/contentking-academy-image-seo-tc@2x.png" name="twitter:image"/>
+<meta content="@contentking" name="twitter:creator"/>
+<meta content="on" name="twitter:dnt"/>
+<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Corporation",
+		"name": "ContentKing",
+		"url": "https://www.contentkingapp.com/",
+		"telephone": "+1 919-647-9205",
+		"address":
+		{
+			"@type": "PostalAddress",
+			"streetAddress": "Warmoesstraat 149-151",
+			"addressLocality": "Amsterdam",
+			"postalCode": "1012 JC",
+			"addressCountry": "NL"
+		},
+		"logo": "https://www.contentkingapp.com/assets/images/logo-schema.svg",
+		"sameAs": [
+			"https://www.facebook.com/contentkingapp/",
+			"https://twitter.com/contentking",
+			"https://www.instagram.com/contentkingapp/",
+			"https://www.linkedin.com/company/10169361/"
+		]
+	}
+</script>
+<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Article",
+		"mainEntityOfPage": {
+			"@type": "WebPage",
+			"@id": "https://www.contentkingapp.com/academy/image-seo/"
+		},
+		"headline": "Image SEO: the Ultimate Guide",
+		"image": "https://www.contentkingapp.com/media/social-cards/academy/contentking-academy-image-seo-og@2x.png",
+		"author": {
+			"@type": "Person",
+			"name": "Steven van&nbsp;Vessum",
+			"description": "Steven is ContentKing's VP of Community. This means he's involved in everything community and content marketing related. Right where he wants to be. He gets a huge kick out of letting websites rank and loves to talk SEO, content marketing and growth.",
+			"worksFor": {
+			   "@type": "Organization",
+			   "name": "ContentKing"
+			},
+			"jobTitle": "VP of Community","image": "https://www.contentkingapp.com/media/people/steven-van-vessum@2x.jpg",
+			"sameAs": [
+				"https://www.linkedin.com/in/stevenvanvessum",
+				"https://twitter.com/stevenvvessum",
+				"https://www.instagram.com/svanvessum/",
+				"https://www.facebook.com/stevenvanvessum"
+			]
+		},
+		"contributor": {
+			"@type": "Person",
+			"name": "Jessica Rangel",
+			"description": "Jessica is a content marketer for ContentKing. Her days are spent writing marketing content, cycling around canals in Amsterdam and attempting to master the Dutch language.",
+			"worksFor": {
+			   "@type": "Organization",
+			   "name": "ContentKing"
+			},
+			"jobTitle": "Content Marketer","image": "https://www.contentkingapp.com/media/people/jessica-rangel@2x.jpg",
+			"sameAs": [
+				"https://www.linkedin.com/in/jessicamrangel/"
+			]
+		},
+		"publisher": {
+			"@type": "Organization",
+			"name": "ContentKing",
+			"logo": {
+				"@type": "ImageObject",
+				"url": "https://www.contentkingapp.com/assets/images/logo-schema.svg"
+			}
+		},
+		"datePublished": "2019-05-22",
+		"dateModified": "2021-08-06"
+	}
+</script>
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [
+		{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "Home",
+			"item": "https://www.contentkingapp.com/"
+		}, {
+			"@type": "ListItem",
+			"position": 2,
+			"name": "Academy",
+			"item": "https://www.contentkingapp.com/academy/"
+		}, {
+			"@type": "ListItem",
+			"position": 3,
+			"name": "SEO Fundamentals",
+			"item": "https://www.contentkingapp.com/academy/seo-fundamentals-hub/"
+		}, {
+			"@type": "ListItem",
+			"position": 4,
+			"name": "Image SEO"
+		}
+	]
+}
+</script>
+</link></link></head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-TX8N5H" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<a class="skip-link" href="/academy/image-seo/#main-content">
+	Jump to Main Content
+</a>
+<div class="js-content page"><!-- Main Sticky Menu -->
+<div aria-hidden="true" class="header__sticky-wrapper">
+<div class="header__wrapper header__wrapper--is-anchored" id="js-sticky-header">
+<div class="header header--slim">
+<div class="header__content">
+<div class="header__logo"><div class="site-logo site-logo--slim">
+<a class="site-logo__container" href="/" rel="home" tabindex="-1">
+<img alt="ContentKing logo" class="site-logo__image" height="56" src="/assets/images/contentking-conductor-logo.svg" width="200"/>
+</a>
+</div>
+</div>
+<div class="header__nav">
+<nav aria-label="Main navigation" role="navigation">
+<ul class="main-nav js-main-nav">
+<li class="main-nav__item main-nav__item--has-dropdown js-collapsible-nav"><a class="main-nav__link main-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/features/" tabindex="-1"><span>Features</span></a><span class="main-nav__subnav js-collapsible-nav-content">
+<ul aria-label="Submenu for Features" class="nav-group">
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/" tabindex="-1">Overview</a></li>
+<li aria-hidden="true" class="main-nav__divider">---</li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-auditing/" tabindex="-1">SEO Auditing</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-monitoring/" tabindex="-1">SEO Monitoring</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-alerting/" tabindex="-1">SEO Alerting</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-change-tracking/" tabindex="-1">SEO Change Tracking</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/log-file-analysis/" tabindex="-1">Log File Analysis</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-insights-reporting/" tabindex="-1">Insights &amp; Reporting</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/api-integrations/" tabindex="-1">APIs &amp; Integrations</a></li>
+</ul>
+</span></li>
+<li class="main-nav__item main-nav__item--has-dropdown js-collapsible-nav"><a class="main-nav__link main-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/solutions/for-agencies/" tabindex="-1"><span>Solutions</span></a><span aria-label="Submenu for Solutions" class="main-nav__subnav main-nav__subnav--stretched js-collapsible-nav-content">
+<span class="nav-group">
+<span aria-hidden="true" class="nav-group__caption">By Industry</span>
+<ul aria-label="Solutions by industry" class="nav-group__content">
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-agencies/" tabindex="-1">Agencies</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-ecommerce/" tabindex="-1">eCommerce</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-marketplaces/" tabindex="-1">Marketplaces</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-publishers/" tabindex="-1">Publishers</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-travel/" tabindex="-1">Travel</a></li>
+</ul>
+</span>
+<span class="nav-group">
+<span aria-hidden="true" class="nav-group__caption">By Role</span>
+<ul aria-label="Solutions by role" class="nav-group__content">
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-executives/" tabindex="-1">Executives</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-marketing-managers/" tabindex="-1">Marketing Managers</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-technical-seos/" tabindex="-1">Technical SEOs</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-content-teams/" tabindex="-1">Content Teams</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-developers/" tabindex="-1">Developers</a></li>
+</ul>
+</span>
+</span></li>
+<li class="main-nav__item"><a class="main-nav__link" href="/case-studies/" tabindex="-1"><span>Case studies</span></a></li>
+</ul>
+</nav>
+</div>
+<div class="header__buttons">
+<div class="js-header-button-onboarding" style="display: none"><a class="button button--small button--action button--is-shining button--is-responsive" href="/go/url/" id="js-btn-trial" role="button" tabindex="-1">
+<span>Start Trial</span>
+</a>
+</div>
+<div class="js-header-button-app" style="display: none">
+<a class="button button--small button--ghost button--small" href="https://app.contentkingapp.com/" role="button" tabindex="-1">
+<span>Go to app</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div id="js-sticky-header-footer"></div>
+</div>
+</div>
+<!-- End Main Sticky Menu -->
+<header class="header header--main" id="js-main-header">
+<div class="header__content">
+<div class="header__logo"><div class="site-logo">
+<a aria-label="Back to the homepage" class="site-logo__container" href="/" rel="home">
+<img alt="ContentKing logo" class="site-logo__image" height="56" src="/assets/images/contentking-conductor-logo.svg" width="200"/>
+</a>
+</div>
+</div>
+<div class="header__nav">
+<div class="header-nav-layout js-off-canvas-panel" data-aria-label="Website navigation" id="offcanvas-panel">
+<div class="header-nav-layout__content">
+<div class="header-nav-layout__close-btn">
+<button aria-label="Close navigation" class="close-button close-button--light js-off-canvas-close-btn" type="button">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+<div class="header-nav-layout__main-part">
+<nav aria-label="Main navigation" role="navigation">
+<ul class="main-nav js-main-nav">
+<li class="main-nav__item main-nav__item--has-dropdown js-collapsible-nav"><a class="main-nav__link main-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/features/"><span>Features</span></a><span class="main-nav__subnav js-collapsible-nav-content">
+<ul aria-label="Submenu for Features" class="nav-group">
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/">Overview</a></li>
+<li aria-hidden="true" class="main-nav__divider">---</li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-auditing/">SEO Auditing</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-monitoring/">SEO Monitoring</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-alerting/">SEO Alerting</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-change-tracking/">SEO Change Tracking</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/log-file-analysis/">Log File Analysis</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-insights-reporting/">Insights &amp; Reporting</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/api-integrations/">APIs &amp; Integrations</a></li>
+</ul>
+</span></li>
+<li class="main-nav__item main-nav__item--has-dropdown js-collapsible-nav"><a class="main-nav__link main-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/solutions/for-agencies/"><span>Solutions</span></a><span aria-label="Submenu for Solutions" class="main-nav__subnav main-nav__subnav--stretched js-collapsible-nav-content">
+<span class="nav-group">
+<span aria-hidden="true" class="nav-group__caption">By Industry</span>
+<ul aria-label="Solutions by industry" class="nav-group__content">
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-agencies/">Agencies</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-ecommerce/">eCommerce</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-marketplaces/">Marketplaces</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-publishers/">Publishers</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-travel/">Travel</a></li>
+</ul>
+</span>
+<span class="nav-group">
+<span aria-hidden="true" class="nav-group__caption">By Role</span>
+<ul aria-label="Solutions by role" class="nav-group__content">
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-executives/">Executives</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-marketing-managers/">Marketing Managers</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-technical-seos/">Technical SEOs</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-content-teams/">Content Teams</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-developers/">Developers</a></li>
+</ul>
+</span>
+</span></li>
+<li class="main-nav__item"><a class="main-nav__link" href="/case-studies/"><span>Case studies</span></a></li>
+</ul>
+</nav>
+</div>
+<div class="header-nav-layout__secondary-part">
+<nav aria-label="Secondary navigation" role="navigation">
+<ul class="secondary-nav js-secondary-nav">
+<li class="secondary-nav__item secondary-nav__item--has-dropdown js-collapsible-nav"><a class="secondary-nav__link secondary-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/academy/"><span>Academy</span></a><ul aria-label="Submenu for Academy" class="secondary-nav__subnav js-collapsible-nav-content"><li class="secondary-nav__subitem secondary-nav__subitem--has-divider">
+<a class="secondary-nav__sublink" href="/academy/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-all"></use>
+</svg>Overview</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/seo-fundamentals-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-seo-fundamentals"></use>
+</svg>SEO Fundamentals</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/technical-seo-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-technical-seo"></use>
+</svg>Technical SEO</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/ecommerce-seo-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-ecommerce-seo"></use>
+</svg>eCommerce SEO</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/international-seo-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-international-seo"></use>
+</svg>International SEO</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/structured-data-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-structured-data"></use>
+</svg>Structured Data</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/processes-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-processes"></use>
+</svg>Content &amp; SEO Processes</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/reporting-management-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-reporting-management"></use>
+</svg>SEO Reporting &amp; Management</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/google-search-console-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-google-search-console"></use>
+</svg>Google Search Console</a>
+</li><li class="secondary-nav__subitem secondary-nav__subitem--has-divider-before">
+<a class="secondary-nav__sublink" href="/academy/faq/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-faq"></use>
+</svg>Frequently Asked SEO Questions</a>
+</li>
+</ul></li>
+<li class="secondary-nav__item secondary-nav__item--has-dropdown js-collapsible-nav"><a class="secondary-nav__link secondary-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/blog/"><span>Blog</span></a><ul aria-label="Submenu for Blog" class="secondary-nav__subnav js-collapsible-nav-content"><li class="secondary-nav__subitem secondary-nav__subitem--has-divider">
+<a aria-label="View all articles" class="secondary-nav__sublink" href="/blog/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-all"></use>
+</svg>View all</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/blog/feature-announcements/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-feature-announcements"></use>
+</svg>Feature Announcements</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/blog/seo-in-focus/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-seo-in-focus"></use>
+</svg>SEO in Focus</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/blog/industry-news/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-industry-news"></use>
+</svg>Industry News</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/blog/other/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-other"></use>
+</svg>Other</a>
+</li>
+</ul></li>
+<li class="secondary-nav__item secondary-nav__item--has-dropdown js-collapsible-nav"><a class="secondary-nav__link secondary-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/certified-partners/"><span>Certified Partners</span></a><ul aria-label="Submenu for Certified Partners" class="secondary-nav__subnav js-collapsible-nav-content secondary-nav__subnav--auto-width"><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/certified-partners/united-states/">United States</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/certified-partners/united-kingdom/">United Kingdom</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/certified-partners/benelux/">Benelux</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/certified-partners/other/">Other</a>
+</li>
+</ul></li>
+<li class="secondary-nav__item"><a class="secondary-nav__link" href="/careers/"><span>Careers</span></a></li>
+<li class="secondary-nav__item"><a class="secondary-nav__link" href="/support/"><span>Support</span></a></li>
+<li class="secondary-nav__item"><a class="secondary-nav__link" href="/contact/"><span>Contact</span></a></li>
+</ul>
+</nav>
+</div>
+<div class="header-nav-layout__button">
+<div class="js-header-button-onboarding" style="display: none"><a class="button button--fullwidth-on-small button--action button--is-shining button--is-responsive" href="/go/url/" role="button">
+<span>Start Trial</span>
+</a>
+</div>
+<div class="js-header-button-app" style="display: none">
+<a class="button button--fullwidth-on-small button--ghost button--small" href="https://app.contentkingapp.com/">
+<span>Go to app</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="header__buttons header__buttons--hidden-on-offnav">
+<button aria-controls="offcanvas-panel" aria-label="Toggle navigation" class="offnav-control">
+<i aria-hidden="true" class="offnav-control__icon"></i>
+<span class="offnav-control__label">Menu</span>
+</button>
+</div>
+</div>
+</header><main class="page__content" id="main-content">
+<section class="section section--light" id="js-reveal-header-boundary">
+<div class="row">
+<div class="small-12 columns">
+<div class="post-detail">
+<div class="post-detail__heading post-detail__heading--with-breadcrumb">
+<div class="heading">
+<nav aria-label="Breadcrumb" class="heading__breadcrumb">
+<ol class="breadcrumb show-for-medium">
+<li class="breadcrumb__item"><a href="/">Home</a></li>
+<li class="breadcrumb__item"><a href="/academy/">Academy</a></li>
+<li class="breadcrumb__item"><a href="/academy/seo-fundamentals-hub/">SEO Fundamentals</a></li>
+<li class="breadcrumb__item breadcrumb__item--is-active"><span aria-current="page">Image SEO</span></li>
+</ol>
+<ul aria-hidden="true" class="hide-for-medium breadcrumb">
+<li class="breadcrumb__item"><a class="backlink" href="/academy/" tabindex="-1">Go to Academy overview</a></li>
+</ul>
+</nav>
+</div>
+</div>
+<div class="post-detail__layout">
+<article class="post-detail__content">
+<div class="post-detail__content-body">
+<div aria-label="List of assigned categories to this article" class="post-detail__badges"><a aria-label="SEO Fundamentals category. Using this link you can show all articles in SEO Fundamentals category." class="academy-category-badge academy-category-badge--seo-fundamentals-category academy-category-badge--default-style" href="/academy/seo-fundamentals-hub/" style="background-color: #478acc;"><span class="academy-category-badge__label">
+		SEO Fundamentals
+	</span></a></div>
+<div class="heading">
+<h1 class="heading__title">Image SEO: the Ultimate Guide</h1>
+<div class="heading__params">
+<span aria-hidden="true" class="heading__label">
+										Last updated:
+									</span>
+<span aria-label="The date of last update" class="heading__caption">
+										August  6, 2021
+									</span>
+</div>
+</div>
+<div class="post-detail__text typo">
+<section aria-label="Image SEO in short" class="highlighted-box highlighted-box--with-background typo-block"><div aria-hidden="true" class="highlighted-box__title">
+<span class="highlighted-box__title-icon"><i class="post-type-icon post-type-icon--reversed-style" style="background-image: url(/assets/images/icons/post-types/image-seo--reversed.svg)"></i></span>Image SEO in short
+	</div>
+<div class="highlighted-box__content">
+<p>Image SEO can be a game-changer for your business.</p>
+<p>In order to be successful at image SEO, pay attention to:</p>
+<ul>
+<li>Your images' discoverability, crawlability, and indexability</li>
+<li>The authority of the pages your images are on</li>
+<li>Those pages' topical relevance</li>
+<li>Image captions</li>
+<li>Image attributes (file name, format, size, and alt attributes)</li>
+<li>How fast your images load</li>
+<li>Providing context about the images – stated using Schema markup</li>
+</ul>
+</div>
+</section>
+<div aria-label="Table of contents" class="highlighted-box" role="navigation">
+<div aria-hidden="true" class="highlighted-box__title">Table of contents</div>
+<div class="highlighted-box__content">
+<ul class="navigation-list">
+<li class="navigation-list__item navigation-list__item--primary"><a href="#what-is-it">What is Image SEO?</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#why-care">Why should you care about Image SEO?</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#influencing-rankings">What influences your images' ranking?</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#discoverability-crawlability-indexability">Discoverability, crawlability, and indexability</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#page-authority">The authority of the page images are on</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#page-topical-relevance">The page's topical relevance</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#image-popularity">Image popularity</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#related-images">Images that are related</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#image-captions">Image captions and surrounding text</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#image-attributes">Image attributes</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#image-load-time">Image load time</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#schema">Use Schema to communicate context</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#image-optimization-tools">Tools to help you analyze image optimization potential</a></li>
+</ul>
+</div>
+</div>
+<h2 id="what-is-it">
+<a aria-hidden="true" class="anchor-link" href="#what-is-it" tabindex="-1"></a>What is Image SEO?</h2>
+<p>Image SEO comprises the activities used for getting images ranked high in search engines' organic listings.</p>
+<p>Just like with pages, search engines try to make sense of images. To make your images rank high, you should do whatever you can to help them with the "making sense" part. In this article, we'll explain how you do this.</p>
+<h2 id="why-care">
+<a aria-hidden="true" class="anchor-link" href="#why-care" tabindex="-1"></a>Why should you care about Image SEO?</h2>
+<p>There are two reasons to care about Image SEO:</p>
+<ol>
+<li>Images can be a huge driver of quality organic traffic. Especially <a href="https://www.searchenginejournal.com/google-image-search-2/238049/" rel="noopener" target="_blank"><span class="extlink">now that Google has removed the "View image" option</span><span class="show-for-sr"> (opens in a new tab)</span></a>, users are much more likely to go to your page.</li>
+<li>When you do Image SEO, you automatically optimize for screen readers, thereby helping visually impaired people use and understand your website better too.</li>
+</ol>
+<p>We bet now you're asking yourself: "Will image SEO be a huge traffic driver for me as well?"</p>
+<p>Whether that's the case depends on your business. For us, it actually only accounts for a fraction of our traffic. Usually, people looking to resolve their SEO questions aren't looking for images. Search engines know this, so they mostly return regular pages in their results.</p>
+<p>As a rule of thumb: if images frequently come up as results for queries you're trying to rank for, Image SEO is important to you. So if you're running an eCommerce site, a celebrity news site, or for instance a stock photo website, Image SEO is hugely important.</p>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/kevin-indig@1x.avif" type="image/avif"/><source srcset="/media/people/kevin-indig@1x.webp" type="image/webp"/><img alt="Kevin Indig" class="image" height="100" src="/media/people/kevin-indig@1x.jpg" title="Kevin Indig" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>Images fulfill three purposes in my mind:</p>
+<ol>
+<li>Image search traffic</li>
+<li>Adding quality to a piece of content</li>
+<li>Improving conversion rate.</li>
+</ol>
+<p>Image search traffic doesn't only come from images.google.com, but also from universal search - and this is important. For some user intents, Google will show videos and images prominently in the SERPs. That's a great workaround if you can't rank at the top organically.</p>
+<p>In terms of content quality, well-done images provide a better user experience and make an article more likely to be shared and linked to. Try to add custom images and graphics and only revert to stock photos as a last resort.</p>
+<p>The same applies to conversions: the better the image in terms of quality and context, the higher the impact on conversions.</p>
+<p>On the flip-side, images pose a challenge in terms of page speed optimization. You need to make sure they're compressed, cached, and loaded optimally.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<a class="user-info__social-icon social-icon social-icon--link social-icon--linkedin" href="https://www.linkedin.com/in/kevinindig/" rel="noopener" target="_blank" title="See my profile on LinkedIn"><span class="extlink">LinkedIn</span><span class="show-for-sr"> (opens in a new tab)</span></a><span class="user-info__name"><a href="https://www.kevin-indig.com/" rel="noopener" target="_blank"><span class="extlink">Kevin Indig</span><span class="show-for-sr"> (opens in a new tab)</span></a></span><span class="user-info__additional-info">, Director of SEO, <a href="https://www.shopify.com/" rel="noopener" target="_blank"><span class="extlink">Shopify</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/cyrus-shepard@1x.avif, /media/people/cyrus-shepard@2x.avif 2x" type="image/avif"/><source srcset="/media/people/cyrus-shepard@1x.webp, /media/people/cyrus-shepard@2x.webp 2x" type="image/webp"/><img alt="Cyrus Shepard" class="image" height="100" loading="lazy" src="/media/people/cyrus-shepard@1x.jpg" srcset="/media/people/cyrus-shepard@1x.jpg, /media/people/cyrus-shepard@2x.jpg 2x" title="Cyrus Shepard" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>Google Images account for <a href="https://sparktoro.com/blog/as-the-antitrust-case-against-google-kicks-off-heres-where-the-doj-should-start/" rel="noopener" target="_blank"><span class="extlink">almost 22% of all search engine market share</span><span class="show-for-sr"> (opens in a new tab)</span></a>. That's a whopping number and is bigger than the search engine market share of YouTube, Facebook, Amazon, and Wikipedia combined.</p>
+<p>Google representatives have been hinting for a while now that they expect both image and video search to be higher growth verticals. As Google continually erodes the percentage of search clicks it sends to publishers, images may be an investment worth considering.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<a class="user-info__social-icon social-icon social-icon--link social-icon--linkedin" href="https://www.linkedin.com/in/cyrusshepard/" rel="noopener" target="_blank" title="See my profile on LinkedIn"><span class="extlink">LinkedIn</span><span class="show-for-sr"> (opens in a new tab)</span></a><span class="user-info__name">Cyrus Shepard</span><span class="user-info__additional-info">, <a href="https://zyppy.com/" rel="noopener" target="_blank"><span class="extlink">Zyppy</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/peter-mead@1x.avif, /media/people/peter-mead@2x.avif 2x" type="image/avif"/><source srcset="/media/people/peter-mead@1x.webp, /media/people/peter-mead@2x.webp 2x" type="image/webp"/><img alt="Peter Mead" class="image" height="100" loading="lazy" src="/media/people/peter-mead@1x.jpg" srcset="/media/people/peter-mead@1x.jpg, /media/people/peter-mead@2x.jpg 2x" title="Peter Mead" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>I've seen good traffic coming from image SEO, particularly for any topics which include diagrams, or explanatory images. But also for images that are fun and entertaining.</p>
+<p>As with any kind of optimization, the more effort you put in to it the better.</p>
+<p>When it comes to image SEO, even just making sure you get all the basics right already helps. Make sure the image quality is good, the dimensions are appropriately sized, the image filename is human readable, and the alt attribute reads well with topical words included.</p>
+<p>Develop a regular optimization practice around images and you will see the SEO benefits.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<span class="user-info__name">Peter Mead</span><span class="user-info__additional-info">, <a href="https://petermeadit.com/" rel="noopener" target="_blank"><span class="extlink">Peter Mead iT</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/sam-mcroberts@1x.avif, /media/people/sam-mcroberts@2x.avif 2x" type="image/avif"/><source srcset="/media/people/sam-mcroberts@1x.webp, /media/people/sam-mcroberts@2x.webp 2x" type="image/webp"/><img alt="Sam McRoberts" class="image" height="100" loading="lazy" src="/media/people/sam-mcroberts@1x.jpg" srcset="/media/people/sam-mcroberts@1x.jpg, /media/people/sam-mcroberts@2x.jpg 2x" title="Sam McRoberts" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>If your business is highly photo reliant (e.g. stock photography, art, unique visual products or adult entertainment), then focusing on image SEO makes sense. Otherwise, it's safe to assign a lower priority to it.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<span class="user-info__name">Sam McRoberts</span><span class="user-info__additional-info">, <a href="https://www.vudumarketing.com/" rel="noopener" target="_blank"><span class="extlink">VUDU Marketing</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<div aria-label="Start new free trial on ContentKing" class="onboarding-cta typo-block highlighted-box false highlighted-box--expressive" data-testid="onboarding-box"><div class="highlighted-box__content">
+<div class="highlighted-box__title">Don’t miss out on organic traffic</div>
+<div class="onboarding-cta__description typo">
+<p>Let ContentKing help. See what can be improved for your site’s image SEO and be alerted to any issues in real-time.</p>
+</div>
+<div class="onboarding-cta__form"><form aria-label="The form used for creating free trial account on ContentKing" class="quickinput-form-layout js-submit-url-start-onboarding quickinput-form-layout--white quickinput-form-layout--is-responsive" data-validate="" novalidate="">
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-unexpected-error form-msg form-msg--error" role="none" style="display: none;">Some unexpected error happened. Please contact us.</span><span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-timeout-error form-msg form-msg--error" role="none" style="display: none;">Something went wrong. Please, try again later.</span><div class="quickinput-form-layout__container">
+<div class="quickinput-form-layout__form-field">
+<label class="show-for-sr" for="onboarding-box-1-url">Domain (required)</label><input aria-required="true" class="js-trial-url large" id="onboarding-box-1-url" name="domain" pattern="url_only" placeholder="www.example.com" required="" type="url"/><span aria-hidden="true" aria-live="off" class="form-error form-bubble" role="none">Please enter a valid domain name (www.example.com).</span><span aria-hidden="true" aria-live="off" class="js-website-already-monitored custom-error form-bubble" role="none" style="display: none;">This domain is already being monitored by ContentKing. Please contact us if you are the rightful owner of this domain.</span><span aria-hidden="true" aria-live="off" class="js-target-redirected custom-error form-bubble" role="none" style="display: none;">This website redirects to <span class="js-target-redirected-domain"></span>. Do you want to add this website instead?</span><span aria-hidden="true" aria-live="off" class="js-blacklisted-domain custom-error form-bubble" role="none" style="display: none;">This domain has been excluded from monitoring. If you own it, please contact us.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain custom-error form-bubble" role="none" style="display: none;">We can't find this domain. Are you sure it's correct?</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-connect custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (connect failure). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-empty-response custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (empty response). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-size-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (size limit). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-time-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (time-out). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-waf custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (blocked by web application firewall). Please contact us for help.</span>
+</div>
+<div class="quickinput-form-layout__form-button"><button class="button js-submit-button button--large button--action button--is-shining button--fullwidth" data-loading-label="Loading" type="submit"><div><span class="button__content"><big>Start your free trial</big><small><span class="show-for-sr">. </span>No credit card needed</small></span></div></button></div>
+</div>
+</form></div>
+</div></div>
+<h2 id="influencing-rankings">
+<a aria-hidden="true" class="anchor-link" href="#influencing-rankings" tabindex="-1"></a>What influences your images' ranking?</h2>
+<p>There's a whole list of factors that will influence your images' rankings:</p>
+<ul>
+<li><a href="/academy/image-seo/#discoverability-crawlability-indexability">Discoverability, crawlability, and indexability</a></li>
+<li><a href="/academy/image-seo/#page-authority">The authority of the page they're on</a></li>
+<li><a href="/academy/image-seo/#page-topical-relevance">That page's topical relevance</a></li>
+<li><a href="/academy/image-seo/#image-popularity">Image popularity</a></li>
+<li><a href="/academy/image-seo/#related-images">Images that are related</a></li>
+<li><a href="/academy/image-seo/#image-captions">Image captions</a></li>
+<li><a href="/academy/image-seo/#image-attributes">Image attributes (file name, format, size and alt)</a></li>
+<li><a href="/academy/image-seo/#image-load-time">Image load time</a></li>
+<li><a href="/academy/image-seo/#schema">Use Schema to communicate context</a></li>
+</ul>
+<p>We'll explain all this in detail below.</p>
+<h2 id="discoverability-crawlability-indexability">
+<a aria-hidden="true" class="anchor-link" href="#discoverability-crawlability-indexability" tabindex="-1"></a>Discoverability, crawlability, and indexability</h2>
+<p>You might think we don't even have to mention this, but people get it wrong all the time. Make sure search engines can discover, crawl, and index your images easily.</p>
+<h3 id="help-search-engines-discover-your-images-with-image-xml-sitemaps">
+<a aria-hidden="true" class="anchor-link" href="#help-search-engines-discover-your-images-with-image-xml-sitemaps" tabindex="-1"></a>Help search engines discover your images with image XML sitemaps</h3>
+<p>Including images in your <a href="/academy/xml-sitemap/">XML sitemaps</a> makes it easy for search engines to discover them, and to prioritize the crawling and indexing of your images.</p>
+<p>You can either create dedicated image XML sitemaps or include your images in your existing XML sitemaps. Both methods are fine, although we recommend creating dedicated image XML sitemaps if your site has thousands of images, as having separate XML sitemaps gives you a better overview when you're analyzing which images are indexed.</p>
+<p>Some guidelines around image XML sitemaps:</p>
+<ul>
+<li>Each <code class="language-plaintext highlighter-rouge">&lt;url&gt;</code> tag can contain up to 1,000 <code class="language-plaintext highlighter-rouge">image:image</code> tags. In other words, you can define 1,000 images per page</li>
+<li>To define an image caption, use <code class="language-plaintext highlighter-rouge">image:caption</code>
+</li>
+<li>To define an image's geographic location, use <code class="language-plaintext highlighter-rouge">image:geo_location</code>
+</li>
+<li>To define an image license, use <code class="language-plaintext highlighter-rouge">image:license</code>
+</li>
+</ul>
+<section aria-label="Useful resources" class="highlighted-box typo-block highlighted-box--with-background highlighted-box--with-icon highlighted-box--resources-style"><div aria-hidden="true" class="highlighted-box__title">Useful resources</div>
+<div class="highlighted-box__content">
+<ul>
+<li><a href="/academy/google-index/">How to Get Google to Index Your Website</a></li>
+<li><a href="https://support.google.com/webmasters/answer/178636" rel="noopener" target="_blank"><span class="extlink">Google's guidelines on XML Sitemaps and images</span><span class="show-for-sr"> (opens in a new tab)</span></a></li>
+</ul>
+</div></section>
+<h3 id="make-sure-your-images-are-crawlable-and-indexable">
+<a aria-hidden="true" class="anchor-link" href="#make-sure-your-images-are-crawlable-and-indexable" tabindex="-1"></a>Make sure your images are crawlable and indexable</h3>
+<p>What can't be crawled, can't be indexed. So make sure an incorrectly set up <a href="/academy/robotstxt/">robots.txt file</a> isn't blocking search engines' access to your images. Don't prevent Googlebot-Image and Googlebot from accessing your images in your robots.txt!</p>
+<p>If you want your images to be indexed by search engines, make sure they don't have a <a href="/academy/meta-robots-tag/#the-x-robots-tag-http-header">X-Robots-Tag HTTP Header</a> noindex directive and are not canonicalized using the HTTP header.</p>
+<p>If you're using the robots <code class="language-plaintext highlighter-rouge">noindex</code> directive on a page which contains the images, the images won't be indexed either (unless they're also on other pages that are indexable).</p>
+<p>Also make sure your pages don't contain the <code class="language-plaintext highlighter-rouge">noimageindex</code> robots directive, which specifically communicates to search engines that you don't want them to index the images on your page.</p>
+<p>When you're serving pages over <code class="language-plaintext highlighter-rouge">HTTPS</code>, prevent serving images over <code class="language-plaintext highlighter-rouge">HTTP</code> as browsers may show a warning in the address bar that your site isn't completely secure. And for search engines, you're just adding another hurdle in finding the right image to rank.</p>
+<div aria-label="Start new free trial on ContentKing" class="onboarding-cta typo-block highlighted-box false highlighted-box--expressive" data-testid="onboarding-box"><div class="highlighted-box__content">
+<div class="highlighted-box__title">Are your images indexable? </div>
+<div class="onboarding-cta__description typo">
+<p>Run a quick check to see if there are any obstacles preventing your images from being indexed.</p>
+</div>
+<div class="onboarding-cta__form"><form aria-label="The form used for creating free trial account on ContentKing" class="quickinput-form-layout js-submit-url-start-onboarding quickinput-form-layout--white quickinput-form-layout--is-responsive" data-validate="" novalidate="">
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-unexpected-error form-msg form-msg--error" role="none" style="display: none;">Some unexpected error happened. Please contact us.</span><span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-timeout-error form-msg form-msg--error" role="none" style="display: none;">Something went wrong. Please, try again later.</span><div class="quickinput-form-layout__container">
+<div class="quickinput-form-layout__form-field">
+<label class="show-for-sr" for="onboarding-box-2-url">Domain (required)</label><input aria-required="true" class="js-trial-url large" id="onboarding-box-2-url" name="domain" pattern="url_only" placeholder="www.example.com" required="" type="url"/><span aria-hidden="true" aria-live="off" class="form-error form-bubble" role="none">Please enter a valid domain name (www.example.com).</span><span aria-hidden="true" aria-live="off" class="js-website-already-monitored custom-error form-bubble" role="none" style="display: none;">This domain is already being monitored by ContentKing. Please contact us if you are the rightful owner of this domain.</span><span aria-hidden="true" aria-live="off" class="js-target-redirected custom-error form-bubble" role="none" style="display: none;">This website redirects to <span class="js-target-redirected-domain"></span>. Do you want to add this website instead?</span><span aria-hidden="true" aria-live="off" class="js-blacklisted-domain custom-error form-bubble" role="none" style="display: none;">This domain has been excluded from monitoring. If you own it, please contact us.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain custom-error form-bubble" role="none" style="display: none;">We can't find this domain. Are you sure it's correct?</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-connect custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (connect failure). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-empty-response custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (empty response). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-size-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (size limit). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-time-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (time-out). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-waf custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (blocked by web application firewall). Please contact us for help.</span>
+</div>
+<div class="quickinput-form-layout__form-button"><button class="button js-submit-button button--large button--action button--is-shining button--fullwidth" data-loading-label="Loading" type="submit"><div><span class="button__content"><big>Start your free trial</big><small><span class="show-for-sr">. </span>No credit card needed</small></span></div></button></div>
+</div>
+</form></div>
+</div></div>
+<p>John Mueller has been kind enough to confirm <a href="https://twitter.com/Stevenvvessum/status/1129402893155667968" rel="noopener" target="_blank"><span class="extlink">our thoughts about robots noindex and its impact on images</span><span class="show-for-sr"> (opens in a new tab)</span></a>:</p>
+<div class="media-container" style="max-width: 600px;"><picture><source media="(max-width: 600px)" srcset="/media/content/contentking-image-seo-john-mueller-effect-of-noindex-on-page-en@1x.avif" type="image/avif"/><source srcset="/media/content/contentking-image-seo-john-mueller-effect-of-noindex-on-page-en@1x.avif" type="image/avif"/><source media="(max-width: 600px)" srcset="/media/content/contentking-image-seo-john-mueller-effect-of-noindex-on-page-en@1x.webp" type="image/webp"/><source srcset="/media/content/contentking-image-seo-john-mueller-effect-of-noindex-on-page-en@1x.webp" type="image/webp"/><img alt="John Mueller answers question from Steven van Vessum about the effect of the robots noindex directive on image indexability" class="image" height="615" loading="lazy" src="/media/content/contentking-image-seo-john-mueller-effect-of-noindex-on-page-en@1x.png" title="John Mueller answers question from Steven van Vessum about the effect of the robots noindex directive on image indexability" width="600"/></picture></div>
+<section aria-label="Useful resources" class="highlighted-box typo-block highlighted-box--with-background highlighted-box--with-icon highlighted-box--resources-style"><div aria-hidden="true" class="highlighted-box__title">Useful resources</div>
+<div class="highlighted-box__content">
+<ul>
+<li><a href="/academy/meta-robots-tag/">Meta robots tag: the ultimate guide</a></li>
+<li><a href="https://developers.google.com/search/reference/robots_meta_tag" rel="noopener" target="_blank"><span class="extlink">Google's guidelines on robots meta tags</span><span class="show-for-sr"> (opens in a new tab)</span></a></li>
+</ul>
+</div></section>
+<h2 id="page-authority">
+<a aria-hidden="true" class="anchor-link" href="#page-authority" tabindex="-1"></a>The authority of the page images are on</h2>
+<p>In the previous section, we mentioned that search engines will be ranking the pages the images are on. Let's take an example to illustrate this. If you search for <a href="https://www.google.com/search?tbm=isch&amp;q=Denzel+Washington" rel="noopener" target="_blank"><span class="extlink">Denzel Washington in Google images search</span><span class="show-for-sr"> (opens in a new tab)</span></a>, this is what you'll see:</p>
+<div class="media-container" style="max-width: 600px;"><picture><source media="(max-width: 600px)" srcset="/media/content/contentking-image-seo-google-images-query-denzel-washington@1x.avif" type="image/avif"/><source srcset="/media/content/contentking-image-seo-google-images-query-denzel-washington@1x.avif, /media/content/contentking-image-seo-google-images-query-denzel-washington@2x.avif 2x" type="image/avif"/><source media="(max-width: 600px)" srcset="/media/content/contentking-image-seo-google-images-query-denzel-washington@1x.webp" type="image/webp"/><source srcset="/media/content/contentking-image-seo-google-images-query-denzel-washington@1x.webp, /media/content/contentking-image-seo-google-images-query-denzel-washington@2x.webp 2x" type="image/webp"/><source media="(max-width: 600px)" srcset="/media/content/contentking-image-seo-google-images-query-denzel-washington@1x.png"/><img alt="Google Images search result page for Denzel Washington" class="image" height="358" loading="lazy" src="/media/content/contentking-image-seo-google-images-query-denzel-washington@1x.png" srcset="/media/content/contentking-image-seo-google-images-query-denzel-washington@1x.png, /media/content/contentking-image-seo-google-images-query-denzel-washington@2x.png 2x" title="Google Images search result page for Denzel Washington" width="600"/></picture></div>
+<p>The top three results are:</p>
+<ol>
+<li><code class="language-plaintext highlighter-rouge">imdb.com</code></li>
+<li><code class="language-plaintext highlighter-rouge">wikipedia.org</code></li>
+<li><code class="language-plaintext highlighter-rouge">variety.com</code></li>
+</ol>
+<p>What do they all have in common? They have a lot of <a href="/academy/authority/">authority</a>. An image benefits greatly here from the authority of the page it's on. Keep this in mind when optimizing your images and when choosing what pages to place your images on.</p>
+<section aria-label="Pro tip" class="highlighted-box typo-block highlighted-box--with-icon highlighted-box--protip-style"><div aria-hidden="true" class="highlighted-box__title">Pro tip</div>
+<div class="highlighted-box__content">
+<p>Ask people who have used your images to properly credit you with a link to the page each image is on. Especially in "boring" niches, where it's hard to build links, this is a great tactic. <a href="/academy/ecommerce-link-building/#credit-for-images-that-are-used-by-others">Read more about this link building method here</a>.</p>
+<p>Just in case people won't give you proper credit, at the very least make sure you watermark your images, so you're still getting brand exposure.</p>
+</div></section>
+<h2 id="page-topical-relevance">
+<a aria-hidden="true" class="anchor-link" href="#page-topical-relevance" tabindex="-1"></a>The page's topical relevance</h2>
+<p>The topic of the page your images are on hugely influences their rankings. In the case of Wikipedia (the second result) for our "Denzel Washington" query, it really helps that they have a 4,000 word page about him, as it adds a lot of relevance to the images on that page for that query.</p>
+<div class="media-container" style="max-width: 600px;"><picture><source media="(max-width: 600px)" srcset="/media/content/contentking-image-seo-page-text-image-en@1x.avif" type="image/avif"/><source srcset="/media/content/contentking-image-seo-page-text-image-en@1x.avif" type="image/avif"/><source media="(max-width: 600px)" srcset="/media/content/contentking-image-seo-page-text-image-en@1x.webp" type="image/webp"/><source srcset="/media/content/contentking-image-seo-page-text-image-en@1x.webp" type="image/webp"/><img alt="Topical relevance of text influences relevance of images on a page" class="image" height="315" loading="lazy" src="/media/content/contentking-image-seo-page-text-image-en@1x.png" title="Topical relevance of text influences relevance of images on a page" width="600"/></picture></div>
+<p>Note that WordPress creates a dedicated "image attachment" page for each image you upload. This adds no value from an SEO point of view, so we recommend <a href="https://themeskills.com/disable-media-attachment-pages-wordpress/" rel="noopener" target="_blank"><span class="extlink">disabling it</span><span class="show-for-sr"> (opens in a new tab)</span></a>. It <a href="/academy/crawl-budget/">eats up crawl budget</a> and makes for near-duplicate content.</p>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/jennifer-wright@1x.avif" type="image/avif"/><source srcset="/media/people/jennifer-wright@1x.webp" type="image/webp"/><img alt="Jennifer Wright" class="image" height="100" loading="lazy" src="/media/people/jennifer-wright@1x.jpg" title="Jennifer Wright" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>Strategically use images to enhance the written content of a page, send stronger keyword signals to search engines, and to improve the experience of your audience. Images help users better understand the information you are trying to convey, and they strengthen the signals to search engines about the quality and relevance of your content. Google suggests using images that are relevant to the text surrounding them, which is similar to the concept of relevant pre and post text surrounding link anchors.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<span class="user-info__name">Jennifer Wright</span><span class="user-info__additional-info">, <a href="https://gofishdigital.com/" rel="noopener" target="_blank"><span class="extlink">Go Fish Digital</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<h2 id="image-popularity">
+<a aria-hidden="true" class="anchor-link" href="#image-popularity" tabindex="-1"></a>Image popularity</h2>
+<p>The amount of times the image is used, an image's popularity, is taken into account by search engines too. If an image is often used, it must be popular and therefore rank highly. Embedding images that other websites are already using, and that search engines already know about, gives you a head start to rank your image.</p>
+<p>Take for example Denzel Washington's Wikipedia headshot. When you do a reverse-image search in Google you'll find it's <a href="https://www.google.com/search?tbs=sbi:AMhZZisp-a_1eUAL5Geo3AUdr_1nNQf0Ma6LtXy3gyxuoplGphpXxFqkFEOmxhGgko2Y-Zjr5aG8hxj2OLPfgJUPp0hMuJ62Y1VqkWssZ7fE3NuYd-y-fhvma9UGyOCgEUEv-Omah0ZsGpfm2RYyAOH7iNJGRzvF8nlMdYNth21wo58yAYgnGSSowuLZbPsJp07v_1k-OdxmIrPrWNt-59c-Z8NHRutDalkTxdcAW0kc7Mt6Nv0QPamIRLjUO4OU2M4r4Zn7ApbHz0_1ZRmQ9GWERPUlx3VkCVXgDLI2HRZmmmnmsgoBgXfu5JRmfbcAYsmbSf4NlyGnhuQtK40NTyOaGvM53erLNUnpPQ" rel="noopener" target="_blank"><span class="extlink">used on lots of other websites</span><span class="show-for-sr"> (opens in a new tab)</span></a>. You don't even have the include the exact same image. It can have different dimensions, different file sizes and even different formats. Google understands it's the same image.</p>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/martin-missfeldt@1x.avif" type="image/avif"/><source srcset="/media/people/martin-missfeldt@1x.webp" type="image/webp"/><img alt="Martin Missfeldt" class="image" height="100" loading="lazy" src="/media/people/martin-missfeldt@1x.jpg" title="Martin Missfeldt" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>Many SEOs know the usual image ranking factors: alt-text, captions, text around the image, heading in front of the image and so on. But what many don't consider is that this only takes into account which queries (!) the image can rank for. It doesn't say anything about the <em>popularity</em> of the image, which is important too. So, how does Google measure the popularity of images? It's quite simple: how often the image is used.</p>
+<p>It doesn't matter if you use the same image physically (by hot linking) or if it is a copy of an image. A copy can even have a different compression, different image dimensions or a different image file size. Google's image algorithm recognizes copies, and related them accordingly. In principle, Google says: "these popular images are used often - so we'll give them priority in the results".</p>
+<p>My tip for you: for a lot of queries, the top ranked images have no copies on the web. They are "single used images". It is usually enough to just upload a second or third version by yourself - if possible, on a different domain with similar content. Or you can get competitors to use the image as well.</p>
+<p>But be careful: if Google has several sources for the same image, then the page that ranks highest will also rank highest in images search.</p>
+<p>Think about this - and you will find a lot of golden nuggets in Googles Image search 🙂 Good luck!</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<span class="user-info__name">Martin Missfeldt</span><span class="user-info__additional-info">, <a href="https://www.tagseoblog.de/" rel="noopener" target="_blank"><span class="extlink">tagSeoBlog</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<h2 id="related-images">
+<a aria-hidden="true" class="anchor-link" href="#related-images" tabindex="-1"></a>Images that are related</h2>
+<p>Including related images about the same topic, with similar content in the images, also helps you rank your images better. Doing so helps become more relevant, and authoritative.</p>
+<p>In case of the <code class="language-plaintext highlighter-rouge">denzel washington</code> query, you should gather different photos of him and put them together on one page.</p>
+<p>Here's another example: let's say you're trying to rank for the query <code class="language-plaintext highlighter-rouge">checklist illustration.</code> Including different illustrations containing checklists helps all these images rank better. Please note that these illustrations should be showing roughly the same thing, in this case a list of checkboxes.</p>
+<p>This is one of the reasons Pinterest has been so successful at driving organic traffic through images - they're hosting millions of images, and their users neatly categorize them too. This is a text book example of how including related images helps you rank.</p>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/steve-toth@1x.avif" type="image/avif"/><source srcset="/media/people/steve-toth@1x.webp" type="image/webp"/><img alt="Steve Toth" class="image" height="100" loading="lazy" src="/media/people/steve-toth@1x.jpg" title="Steve Toth" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>We undertook a large-scale image optimization campaign across at FreshBooks. We followed standard best practices like alt tags and surrounding images with text, but we came to some interesting conclusions once we were into the campaign. We realized that Google definitely uses machine learning to interpret images. We found that by making our images more similar to the top ranking results, we in turn were able to rank better. This may not be easy to do in every case, but in our case we were trying to rank images of invoices. The images that had more boxes and lines performed better than the prettier invoices that featured beautiful images.</p>
+<p>Once we found the recipe to success, we also doubled down on the sheer number of images we included on the page and this is where we saw another significant boost. Our theory is that if you give Google more choice, it is more likely to select images from your site and display them in the image pack.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<span class="user-info__name">Steve Toth</span><span class="user-info__additional-info">, <a href="https://seonotebook.com/" rel="noopener" target="_blank"><span class="extlink">SEO Notebook</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<h2 id="image-captions">
+<a aria-hidden="true" class="anchor-link" href="#image-captions" tabindex="-1"></a>Image captions and surrounding text</h2>
+<p>Text that's in close proximity to images adds to their relevance from a search engine's point of view, and it helps users better understand the content.</p>
+<p>We distinguish two types of text that's in close proximity to images; the first one being captions and the second one being surround text.</p>
+<p>Here's an example of an image caption from our redirects article:</p>
+<div class="media-container" style="max-width: 600px;"><picture><source media="(max-width: 600px)" srcset="/media/content/contentking-image-seo-caption-example-en@1x.avif" type="image/avif"/><source srcset="/media/content/contentking-image-seo-caption-example-en@1x.avif, /media/content/contentking-image-seo-caption-example-en@2x.avif 2x" type="image/avif"/><source media="(max-width: 600px)" srcset="/media/content/contentking-image-seo-caption-example-en@1x.webp" type="image/webp"/><source srcset="/media/content/contentking-image-seo-caption-example-en@1x.webp, /media/content/contentking-image-seo-caption-example-en@2x.webp 2x" type="image/webp"/><source media="(max-width: 600px)" srcset="/media/content/contentking-image-seo-caption-example-en@1x.png"/><img alt="Example of a caption under an image" class="image" height="226" loading="lazy" src="/media/content/contentking-image-seo-caption-example-en@1x.png" srcset="/media/content/contentking-image-seo-caption-example-en@1x.png, /media/content/contentking-image-seo-caption-example-en@2x.png 2x" title="Example of a caption under an image" width="600"/></picture></div>
+<p>And here's an example of an image with related, surrounding text:</p>
+<div class="media-container" style="max-width: 600px;"><img alt="An image of Denzel Washington on Rotten Tomatoes with surrounding text" class="image" height="348" loading="lazy" src="/media/content/contentking-image-seo-image-surround-text-en.png" srcset="/media/content/contentking-image-seo-image-surround-text-en.png, /media/content/contentking-image-seo-image-surround-text-en@2x.png 2x" title="An image of Denzel Washington on Rotten Tomatoes with surrounding text" width="600"/></div>
+<h2 id="image-attributes">
+<a aria-hidden="true" class="anchor-link" href="#image-attributes" tabindex="-1"></a>Image attributes</h2>
+<p>Here's an example HTML snippet for an image:</p>
+<section aria-label="A fragment of code" class="code-box"><div class="code-box__code">
+<figure class="highlight"><pre><code class="language-text" data-lang="text">&lt;img src="https://example.com/images/denzel-washington-graduating-high-school.jpeg" alt="Denzel Washington graduating high school" /&gt;</code></pre></figure>
+</div></section>
+<p>An image tag has a file name, a format, a location where the image can be found, and attributes that provide context. This is another place where search engines will pick up clues on the queries for which your images are relevant. But note that you can overdo this. Don't stuff image file names and <code class="language-plaintext highlighter-rouge">alt</code> attributes full of keywords.</p>
+<p>Here's a breakdown of an image's properties:</p>
+<ul>
+<li>Image file name</li>
+<li>Image format</li>
+<li>Image URL path</li>
+<li>Image <code class="language-plaintext highlighter-rouge">srcset</code> attribute for serving responsive images</li>
+<li>Image <code class="language-plaintext highlighter-rouge">alt</code> attribute</li>
+</ul>
+<h3 id="image-file-name">
+<a aria-hidden="true" class="anchor-link" href="#image-file-name" tabindex="-1"></a>Image file name: how to name images for SEO</h3>
+<p>Make sure the file name is descriptive and fits relevant queries.</p>
+<ul>
+<li>Good: <code class="language-plaintext highlighter-rouge">denzel-washington-graduating-high-school</code>
+</li>
+<li>Bad: <code class="language-plaintext highlighter-rouge">photo</code>
+</li>
+</ul>
+<h3 id="image-formats">
+<a aria-hidden="true" class="anchor-link" href="#image-formats" tabindex="-1"></a>Image formats</h3>
+<p>Choosing the right format for the image helps keep image load times down and image quality good.</p>
+<ul>
+<li>Good: <code class="language-plaintext highlighter-rouge">.jpeg</code> for a photo</li>
+<li>Bad: <code class="language-plaintext highlighter-rouge">.gif</code> for your screenshot that's supposed to show details</li>
+</ul>
+<p>Here are the most popular image formats, and what they're best used for.</p>
+<table>
+<thead>
+<tr>
+<th>Image format</th>
+<th>Best used for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span style="display: inline-block; width: 150px;">JPEG (JPG)</span></td>
+<td>Photos</td>
+</tr>
+<tr>
+<td>PNG</td>
+<td>Logos (as it supports a transparent background) and images that you want to remain sharp, such as screenshots.</td>
+</tr>
+<tr>
+<td>GIF</td>
+<td>Animations</td>
+</tr>
+<tr>
+<td>SVG</td>
+<td>To create images that can scale without ever losing quality (vector images). Maps, icons, and logos are common examples.</td>
+</tr>
+<tr>
+<td>WebP</td>
+<td>Developed by Google, WebP is an alternative to JPG and PNG that can be compressed better. As of yet, it's not supported in Safari (and it is not supported in Internet Explorer at all). We believe WebP has a lot of potential, and we see it as the future of image formats. Use <a href="http://webpurr.com/" rel="noopener" target="_blank"><span class="extlink">Webpurr</span><span class="show-for-sr"> (opens in a new tab)</span></a> or <a href="https://squoosh.app/" rel="noopener" target="_blank"><span class="extlink">Squoosh</span><span class="show-for-sr"> (opens in a new tab)</span></a> to convert images to the WebP format.</td>
+</tr>
+</tbody>
+</table>
+<section aria-label="Useful resources" class="highlighted-box typo-block highlighted-box--with-background highlighted-box--with-icon highlighted-box--resources-style"><div aria-hidden="true" class="highlighted-box__title">Useful resources</div>
+<div class="highlighted-box__content">
+<ul>
+<li>Check out the <a href="https://caniuse.com/" rel="noopener" target="_blank"><span class="extlink">Can I Use website</span><span class="show-for-sr"> (opens in a new tab)</span></a> to see what browsers support what image formats (and much more).</li>
+</ul>
+</div></section>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/alex-florescu@1x.avif" type="image/avif"/><source srcset="/media/people/alex-florescu@1x.webp" type="image/webp"/><img alt="Alex Florescu" class="image" height="100" loading="lazy" src="/media/people/alex-florescu@1x.png" title="Alex Florescu" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>We often see that PNG images are incorrectly used. While having logos or small drawings as PNGs is generally fine, we often see large pictures using this format as well instead of having the JPEG or WebP format. This leads to PNG images that are up to 10 times larger than the JPEG version would have been, significantly slowing down websites. ShortPixel Image Optimizer plugin has an option to automatically convert PNGs to JPEGs and will only do this if the resulting image is smaller than the original. This allows our users to just set up the plugin and then forget about it because the best image format will automatically be used.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<span class="user-info__name">Alex Florescu</span><span class="user-info__additional-info">, <a href="https://shortpixel.com/" rel="noopener" target="_blank"><span class="extlink">ShortPixel</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<h3 id="image-url-path">
+<a aria-hidden="true" class="anchor-link" href="#image-url-path" tabindex="-1"></a>Image URL path</h3>
+<p>You want your images to have a short and logical URL path. Avoid using a chronological folder structure such as for instance the one used by WordPress. Your images are probably timeless, so don't make people think they're outdated.</p>
+<ul>
+<li>Good: <code class="language-plaintext highlighter-rouge">/images/denzel-washington-graduating-high-school.jpeg</code>
+</li>
+<li>Bad: <code class="language-plaintext highlighter-rouge">/wp-content/uploads/2016/09/images/denzel-washington-graduating-high-school.jpeg</code>
+</li>
+</ul>
+<h3 id="image-srcset">
+<a aria-hidden="true" class="anchor-link" href="#image-srcset" tabindex="-1"></a>Image srcset attribute for serving responsive images</h3>
+<p>Considering Google's mobile-first focus, the role of page speed as a ranking factor, and the fact that Google primarily crawls with a mobile user-agent, carefully serving the right image sizes to the right users is essential.</p>
+<p>Thankfully, you can define what versions of an image will be used for different devices and viewports. For instance, if you're browsing a website on your phone, you don't need an image with a width of <code class="language-plaintext highlighter-rouge">1024 px</code>. You can make do with a version that's only <code class="language-plaintext highlighter-rouge">400 px</code> wide, saving you a lot of bandwidth.</p>
+<p>You can define what image to use for what viewport width using the <code class="language-plaintext highlighter-rouge">srcset</code> attribute. Here's an example:</p>
+<section aria-label="A fragment of code" class="code-box"><div class="code-box__code">
+<figure class="highlight"><pre><code class="language-text" data-lang="text">&lt;img src="/images/denzel-washington-graduating-high-school.jpeg" srcset="/images/denzel-washington-graduating-high-school-400.jpg 375w, /images/denzel-washington-graduating-high-school-800.jpg 768w" alt="Denzel Washington graduating high school" /&gt;</code></pre></figure>
+</div></section>
+<p>In this example, we'll serve the image with a <code class="language-plaintext highlighter-rouge">400 px</code> width to screens with a <code class="language-plaintext highlighter-rouge">375 px</code> width viewport and below, the image with a <code class="language-plaintext highlighter-rouge">800 px</code> width to screens with a viewport width above <code class="language-plaintext highlighter-rouge">375 px</code> and up to <code class="language-plaintext highlighter-rouge">768 px</code>, and the default picture to every device with a viewport width higher than <code class="language-plaintext highlighter-rouge">768 px</code>.</p>
+<p>If you want your images to look extra sharp on retina screens, you can serve images with double the pixel density of a normal image. If your normal image has dimensions of 600 x 300 and is called <code class="language-plaintext highlighter-rouge">denzel-washington-graduating-high-school.jpeg</code>, then your retina image should have dimensions of <code class="language-plaintext highlighter-rouge">1200 x 600</code> and be called <code class="language-plaintext highlighter-rouge">denzel-washington-graduating-high-school@2x.jpeg</code>.</p>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/jeff-chang@1x.avif, /media/people/jeff-chang@2x.avif 2x" type="image/avif"/><source srcset="/media/people/jeff-chang@1x.webp, /media/people/jeff-chang@2x.webp 2x" type="image/webp"/><img alt="Jeff Chang" class="image" height="100" loading="lazy" src="/media/people/jeff-chang@1x.jpg" srcset="/media/people/jeff-chang@1x.jpg, /media/people/jeff-chang@2x.jpg 2x" title="Jeff Chang" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>It's important to understand that the same looking image with different image sizes are essentially different images, so if you are currently getting a lot of image search traffic and change your images sizes, expect traffic to drop due to recrawl time. Hopefully it recovers over time, but any image size changes should be monitored by SEO experiment to track traffic changes.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<span class="user-info__name">Jeff Chang</span><span class="user-info__additional-info">, <a href="http://www.growthengblog.com/" rel="noopener" target="_blank"><span class="extlink">Jeff Chang blog</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/stephen-kenwright@1x.avif, /media/people/stephen-kenwright@2x.avif 2x" type="image/avif"/><source srcset="/media/people/stephen-kenwright@1x.webp, /media/people/stephen-kenwright@2x.webp 2x" type="image/webp"/><img alt="Stephen Kenwright" class="image" height="100" loading="lazy" src="/media/people/stephen-kenwright@1x.jpg" srcset="/media/people/stephen-kenwright@1x.jpg, /media/people/stephen-kenwright@2x.jpg 2x" title="Stephen Kenwright" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>Image SEO is about how image files impact performance overall - not just in google.com/images - and they're some of the biggest contributors to slow load times. Serve images through a CDN and make use of adaptive sizes to prevent users loading bigger images than they need to. There are plenty of tools available to help you make the job easier, even if you're not the most technical. For example, <a href="https://responsivebreakpoints.com/" rel="noopener" target="_blank"><span class="extlink">Responsive Breakpoints</span><span class="show-for-sr"> (opens in a new tab)</span></a> can create the <code class="language-plaintext highlighter-rouge">srcset</code> code for adaptive images without you needing to code your own.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<span class="user-info__name">Stephen Kenwright</span><span class="user-info__additional-info">, <a href="https://riseatseven.com/" rel="noopener" target="_blank"><span class="extlink">Rise at Seven</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<h3 id="image-alt-attribute">
+<a aria-hidden="true" class="anchor-link" href="#image-alt-attribute" tabindex="-1"></a>Image alt attribute</h3>
+<p>The <code class="language-plaintext highlighter-rouge">alt</code> attribute, also – incorrectly – called the <code class="language-plaintext highlighter-rouge">alt</code> tag or alternative tag, gives search engines context. It's an important attribute to fill in from an SEO point of view, but also from a user point of view. When an image can't be loaded, it shows the <code class="language-plaintext highlighter-rouge">alt</code> attribute text as a fall-back so users can get an idea of the image's content. This is also used by screen readers to describe what's in the image.</p>
+<div aria-label="Start new free trial on ContentKing" class="onboarding-cta typo-block highlighted-box false highlighted-box--expressive" data-testid="onboarding-box"><div class="highlighted-box__content">
+<div class="highlighted-box__title">Check if your image alt attributes are set up</div>
+<div class="onboarding-cta__description typo">
+<p>Do a quick check to make sure your image alt attributes are filled in and descriptive.</p>
+</div>
+<div class="onboarding-cta__form"><form aria-label="The form used for creating free trial account on ContentKing" class="quickinput-form-layout js-submit-url-start-onboarding quickinput-form-layout--white quickinput-form-layout--is-responsive" data-validate="" novalidate="">
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-unexpected-error form-msg form-msg--error" role="none" style="display: none;">Some unexpected error happened. Please contact us.</span><span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-timeout-error form-msg form-msg--error" role="none" style="display: none;">Something went wrong. Please, try again later.</span><div class="quickinput-form-layout__container">
+<div class="quickinput-form-layout__form-field">
+<label class="show-for-sr" for="onboarding-box-3-url">Domain (required)</label><input aria-required="true" class="js-trial-url large" id="onboarding-box-3-url" name="domain" pattern="url_only" placeholder="www.example.com" required="" type="url"/><span aria-hidden="true" aria-live="off" class="form-error form-bubble" role="none">Please enter a valid domain name (www.example.com).</span><span aria-hidden="true" aria-live="off" class="js-website-already-monitored custom-error form-bubble" role="none" style="display: none;">This domain is already being monitored by ContentKing. Please contact us if you are the rightful owner of this domain.</span><span aria-hidden="true" aria-live="off" class="js-target-redirected custom-error form-bubble" role="none" style="display: none;">This website redirects to <span class="js-target-redirected-domain"></span>. Do you want to add this website instead?</span><span aria-hidden="true" aria-live="off" class="js-blacklisted-domain custom-error form-bubble" role="none" style="display: none;">This domain has been excluded from monitoring. If you own it, please contact us.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain custom-error form-bubble" role="none" style="display: none;">We can't find this domain. Are you sure it's correct?</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-connect custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (connect failure). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-empty-response custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (empty response). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-size-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (size limit). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-time-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (time-out). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-waf custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (blocked by web application firewall). Please contact us for help.</span>
+</div>
+<div class="quickinput-form-layout__form-button"><button class="button js-submit-button button--large button--action button--is-shining button--fullwidth" data-loading-label="Loading" type="submit"><div><span class="button__content"><big>Check my images</big><small><span class="show-for-sr">. </span>No credit card needed</small></span></div></button></div>
+</div>
+</form></div>
+</div></div>
+<section aria-label="A note about image title attribute" class="highlighted-box typo-block highlighted-box--with-background"><div aria-hidden="true" class="highlighted-box__title">A note about image title attribute</div>
+<div class="highlighted-box__content">
+<p>Back in the day, the <code class="language-plaintext highlighter-rouge">title</code> attribute would be used to provide additional context to search engines as well. These days, Google no longer uses it so it doesn't have any SEO purpose anymore.</p>
+</div></section>
+<h2 id="image-load-time">
+<a aria-hidden="true" class="anchor-link" href="#image-load-time" tabindex="-1"></a>Image load time</h2>
+<p>Page speed is one of the ranking factors for search engines (from May 2021 on folded into <a href="/academy/core-web-vitals/">Core Web Vitals</a>). That makes it important for images to load fast too. On top of that, images are using the same <a href="/academy/crawl-budget/">crawl budget</a> your pages and other assets are.</p>
+<p>To make sure your images load fast, make sure to:</p>
+<ul>
+<li>Choose the right image format (as covered in <a href="/academy/image-seo/#image-formats">the section Image formats</a>)</li>
+<li>Serve the right image size (as covered in <a href="/academy/image-seo/#image-srcset">the section Image srcset attribute</a>)</li>
+<li>Compress your images</li>
+</ul>
+<h3 id="image-compression">
+<a aria-hidden="true" class="anchor-link" href="#image-compression" tabindex="-1"></a>Compressing images</h3>
+<p>Compress your images to decrease their file sizes. There are several overall options for compressing images:</p>
+<ul>
+<li>
+<strong>Lossy:</strong> file size is decreased significantly, but the images lose quality. This option makes for the fastest loading images.</li>
+<li>
+<strong>Lossless:</strong> file size is decreased moderately, and the images don't lose quality. This option doesn't help you that much to make images load fast.</li>
+<li>
+<strong>Glossy:</strong> this is the golden mean between "lossy" and "lossless", balancing decreased file size and loss of quality.</li>
+</ul>
+<h3 id="tools">
+<a aria-hidden="true" class="anchor-link" href="#tools" tabindex="-1"></a>Tools to help you compress images</h3>
+<p>Here are examples of tools you can use to compress your images:</p>
+<p>Online apps:</p>
+<ul>
+<li><a href="https://tinypng.com/" rel="noopener" target="_blank"><span class="extlink">TinyPNG</span><span class="show-for-sr"> (opens in a new tab)</span></a></li>
+<li><a href="https://imagify.io/" rel="noopener" target="_blank"><span class="extlink">Imagify</span><span class="show-for-sr"> (opens in a new tab)</span></a></li>
+</ul>
+<p>Tools that integrate with WordPress:</p>
+<ul>
+<li><a href="https://shortpixel.com/" rel="noopener" target="_blank"><span class="extlink">ShortPixel</span><span class="show-for-sr"> (opens in a new tab)</span></a></li>
+<li><a href="https://wordpress.org/plugins/ewww-image-optimizer/" rel="noopener" target="_blank"><span class="extlink">EWWW Image Optimizer</span><span class="show-for-sr"> (opens in a new tab)</span></a></li>
+<li><a href="https://wordpress.org/plugins/imagify/" rel="noopener" target="_blank"><span class="extlink">Imagify</span><span class="show-for-sr"> (opens in a new tab)</span></a></li>
+<li><a href="https://wordpress.org/plugins/wp-smushit/" rel="noopener" target="_blank"><span class="extlink">Smush</span><span class="show-for-sr"> (opens in a new tab)</span></a></li>
+<li><a href="https://wordpress.org/plugins/tiny-compress-images/" rel="noopener" target="_blank"><span class="extlink">TinyPNG</span><span class="show-for-sr"> (opens in a new tab)</span></a></li>
+</ul>
+<p>Tool that integrates with <a href="/academy/magento-seo/">Magento</a>: <a href="https://tinypng.com/third-party" rel="noopener" target="_blank"><span class="extlink">TinyPNG</span><span class="show-for-sr"> (opens in a new tab)</span></a></p>
+<p>Desktop app: <a href="https://imageoptim.com/" rel="noopener" target="_blank"><span class="extlink">ImageOptim</span><span class="show-for-sr"> (opens in a new tab)</span></a></p>
+<section aria-label="Useful resources" class="highlighted-box typo-block highlighted-box--with-background highlighted-box--with-icon highlighted-box--resources-style"><div aria-hidden="true" class="highlighted-box__title">Useful resources</div>
+<div class="highlighted-box__content">
+<ul>
+<li><a href="https://blog.shortpixel.com/difference-lossy-and-lossless-image-compression/" rel="noopener" target="_blank"><span class="extlink">What's the difference between lossy, lossless, and glossy image compression?</span><span class="show-for-sr"> (opens in a new tab)</span></a></li>
+</ul>
+</div></section>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/jess-joyce@1x.avif, /media/people/jess-joyce@2x.avif 2x" type="image/avif"/><source srcset="/media/people/jess-joyce@1x.webp, /media/people/jess-joyce@2x.webp 2x" type="image/webp"/><img alt="Jess Joyce" class="image" height="100" loading="lazy" src="/media/people/jess-joyce@1x.jpg" srcset="/media/people/jess-joyce@1x.jpg, /media/people/jess-joyce@2x.jpg 2x" title="Jess Joyce" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>Lately, the largest thing I've been focusing on for image SEO is large images and proper image types. Crunching, squishing, optimizing, smooshing, and using my favourite tool/Google Chrome Labs project - <a href="https://squoosh.app/" rel="noopener" target="_blank"><span class="extlink">Squoosh</span><span class="show-for-sr"> (opens in a new tab)</span></a>.</p>
+<p>It's been a large part of the sites I've been working on lately and before we can talk about image naming, alt text, captions, and the all-important text that surrounds the image for context - it has to load fast. Whether that be optimizing the image(s) before and directly uploading to their own site, using plugins to optimize image sizing/types, applied programmatically before the images hit the server, through a CDN or the many other ways, there's a conversation to be had in every case.</p>
+<p>I'm very excited for Chrome adding <a href="https://addyosmani.com/blog/lazy-loading/" rel="noopener" target="_blank"><span class="extlink">native lazy loading</span><span class="show-for-sr"> (opens in a new tab)</span></a>, and can't wait to try that out!</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<span class="user-info__name">Jess Joyce</span><span class="user-info__additional-info">, <a href="https://jessjoyce.com/" rel="noopener" target="_blank"><span class="extlink">Jess Joyce</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/bouke-van-veen@1x.avif, /media/people/bouke-van-veen@2x.avif 2x" type="image/avif"/><source srcset="/media/people/bouke-van-veen@1x.webp, /media/people/bouke-van-veen@2x.webp 2x" type="image/webp"/><img alt="Bouke van Veen" class="image" height="100" loading="lazy" src="/media/people/bouke-van-veen@1x.jpg" srcset="/media/people/bouke-van-veen@1x.jpg, /media/people/bouke-van-veen@2x.jpg 2x" title="Bouke van Veen" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>TinyPNG is not your typical compression engine. Each image is analyzed when you upload it. Textures, patterns and colours are automatically identified. The encoder decides based on these characteristics which quality to use. The final result is compared with the orginal and fine-tuned. There are no knobs to turn, you no longer have to adjust the encoding quality yourself.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<span class="user-info__name">Bouke van Veen</span><span class="user-info__additional-info">, <a href="https://tinypng.com/" rel="noopener" target="_blank"><span class="extlink">TinyPNG</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<h3 id="page-speed-best-practices">
+<a aria-hidden="true" class="anchor-link" href="#page-speed-best-practices" tabindex="-1"></a>Page speed best practices that also apply for images</h3>
+<p>In this section we'll cover page speed optimization best practices that go beyond images, and yet are worth noting considering their impact from an SEO and user standpoint.</p>
+<h4 id="serve-images-through-a-cdn">Serve images through a CDN</h4>
+<p>Using a CDN such as Cloudflare to serve your content, including images, has many advantages. Since a CDN enables users to request your content from the server that's closest to them, it greatly decreases load times.</p>
+<h4 id="use-browser-caching">Use browser caching</h4>
+<p>Use browser caching to ensure that images that are used on multiple pages are cached. Examples are images that are used site-wide, such as for example logos in the header, sidebar, and footer.</p>
+<h4 id="lazy-loading">Use lazy loading for images</h4>
+<p>While using lazy loading for images doesn't speed up their loading, it is important from a page speed optimization point of view, and since we're talking about images, it makes sense to mention it here too.</p>
+<p>Defer loading your images until they're needed, and also until after all the elements that are critical to rendering the page are loaded. It's more important for users that pages are quickly usable, than that they look perfect. Why would you immediately load images that are all the way down on a page, when users start reading at the top?</p>
+<h5 id="important-notes-on-lazy-loading">Important notes on lazy loading</h5>
+<p>It's important to note here that it's recommended not to use lazy loading for images that are essential to the page. Search engines won't immediately crawl and index images that are included using lazy loading because for search engines to "see" these images, they first need to render the page. We recommend including all essential images directly in the HTML, and using lazy loading for all non-essential images.</p>
+<section aria-label="Useful resources" class="highlighted-box typo-block highlighted-box--with-background highlighted-box--with-icon highlighted-box--resources-style"><div aria-hidden="true" class="highlighted-box__title">Useful resources</div>
+<div class="highlighted-box__content">
+<ul>
+<li><a href="/academy/page-speed-resources/">Why Page Speed Matters: 10 Case Studies</a></li>
+</ul>
+</div></section>
+<p>There are a lot of developments on the subject of lazy loading, as <a href="https://web.dev/native-lazy-loading" rel="noopener" target="_blank"><span class="extlink">Google announced</span><span class="show-for-sr"> (opens in a new tab)</span></a> on August 6th, 2019 that they're adding native support for lazy loading starting with Chrome 76. We've yet to wait for other major browsers to jump on this band wagon, so keep an eye on this <a href="https://caniuse.com/#feat=loading-lazy-attr" rel="noopener" target="_blank"><span class="extlink">Can I Use</span><span class="show-for-sr"> (opens in a new tab)</span></a> page. This sounds promising though, as this means — when there's enough support  from other browsers — there's no longer a need to implement lazy loading through JavaScript. This means page load times will go down and the whole <a href="/academy/control-crawl-indexing/">crawling and indexing process</a> of your images by search engines will be accelerated too.</p>
+<h2 id="schema">
+<a aria-hidden="true" class="anchor-link" href="#schema" tabindex="-1"></a>Use Schema to communicate context</h2>
+<p>Mark up any image that is representative for your content using Schema.org markup. This helps search engines understand its context, plus it also makes it more likely that you'll win featured snippets with that image. Having the image there makes the featured snippet stand out more, and so you'll also get more clicks.</p>
+<p>Here's an example code snippet referencing an image:</p>
+<section aria-label="A fragment of code" class="code-box"><div class="code-box__code">
+<figure class="highlight"><pre><code class="language-text" data-lang="text">&lt;script type="application/ld+json"&gt;
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.contentkingapp.com/academy/image-seo/"
+    },
+    "headline": "Image SEO: the Ultimate Guide",
+    "image": {
+        "@type": "ImageObject",
+        "@id": "https://www.contentkingapp.com/academy/image-seo/#primaryimage",
+        "url": "https://www.contentkingapp.com/media/social-cards/og-en-contentking-image-seo@2x.png",
+        "width": 1200,
+        "height": 600,
+        "caption": "Image SEO guide"
+    },
+    "datePublished": "2019-05-17T08:00:00+08:00",
+    "dateModified": "2019-05-17T09:20:00+08:00",
+    "author": {
+        "@type": "Person",
+        "name": "Steven van Vessum"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "ContentKing",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.contentkingapp.com/wp-content/uploads/2019/05/contentking-logo@3x.png"
+        }
+    },
+    "description": "A useful guide on increasing your images' rankings"
+}
+&lt;/script&gt;</code></pre></figure>
+</div></section>
+<p>A few pointers:</p>
+<ul>
+<li>Make sure the images referenced in your Schema.org markup can be crawled and indexed, as described in the <a href="/academy/image-seo/#discoverability-crawlability-indexability">"Discoverability, crawlability, and indexability" section</a>.</li>
+<li>The images must be relevant to the page.</li>
+<li>The images must be in <code class="language-plaintext highlighter-rouge">.jpg</code>, <code class="language-plaintext highlighter-rouge">.png</code>, or. <code class="language-plaintext highlighter-rouge">gif</code> format.</li>
+<li>Provide the images at high resolution, with the following aspect ratios: 16x9, 4x3, and 1x1.</li>
+</ul>
+<section aria-label="Useful resources" class="highlighted-box typo-block highlighted-box--with-background highlighted-box--with-icon highlighted-box--resources-style"><div aria-hidden="true" class="highlighted-box__title">Useful resources</div>
+<div class="highlighted-box__content">
+<ul>
+<li><a href="https://developers.google.com/search/docs/data-types/article#article_types" rel="noopener" target="_blank"><span class="extlink">Google's documentation on structured data for articles</span><span class="show-for-sr"> (opens in a new tab)</span></a></li>
+</ul>
+</div></section>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/dan-taylor@1x.avif, /media/people/dan-taylor@2x.avif 2x" type="image/avif"/><source srcset="/media/people/dan-taylor@1x.webp, /media/people/dan-taylor@2x.webp 2x" type="image/webp"/><img alt="Dan Taylor" class="image" height="100" loading="lazy" src="/media/people/dan-taylor@1x.jpg" srcset="/media/people/dan-taylor@1x.jpg, /media/people/dan-taylor@2x.jpg 2x" title="Dan Taylor" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>When it comes to images it's important to remember the basics, and that whilst Google is making great strides and improvements in recognizing the content of images, it's still not a flawless system.</p>
+<p>For example, I uploaded the below photo with the filename orange-ice-cream.jpg and <a href="https://cloud.google.com/vision/overview/docs/" rel="noopener" target="_blank"><span class="extlink">Google's Cloud Vision</span><span class="show-for-sr"> (opens in a new tab)</span></a> is 70% sure it's a baked good – and only 62% sure it's dessert.</p>
+<div class="media-container" style="max-width: 600px;"><picture><source media="(max-width: 600px)" srcset="/media/content/contentking-image-seo-google-images-google-cloud-vision-orange-ice-cream-en@1x.avif" type="image/avif"/><source srcset="/media/content/contentking-image-seo-google-images-google-cloud-vision-orange-ice-cream-en@1x.avif" type="image/avif"/><source media="(max-width: 600px)" srcset="/media/content/contentking-image-seo-google-images-google-cloud-vision-orange-ice-cream-en@1x.webp" type="image/webp"/><source srcset="/media/content/contentking-image-seo-google-images-google-cloud-vision-orange-ice-cream-en@1x.webp" type="image/webp"/><img alt="Google's Cloud Vision tool analyzing a bole of ice cream" class="image" height="350" loading="lazy" src="/media/content/contentking-image-seo-google-images-google-cloud-vision-orange-ice-cream-en@1x.png" title="Google's Cloud Vision tool analyzing a bole of ice cream" width="600"/></picture></div>
+<p>You need to make sure you're making life as easy as possible for Google and giving it as many signals as possible to identify images correctly. Many of <a href="https://support.google.com/webmasters/answer/114016?hl=en" rel="noopener" target="_blank"><span class="extlink">Google's recommendations</span><span class="show-for-sr"> (opens in a new tab)</span></a> haven't changed since 2012, and although basic, they can make your images work a lot harder for your website.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<a class="user-info__social-icon social-icon social-icon--link social-icon--linkedin" href="https://www.linkedin.com/in/danielrwtaylor/" rel="noopener" target="_blank" title="See my profile on LinkedIn"><span class="extlink">LinkedIn</span><span class="show-for-sr"> (opens in a new tab)</span></a><span class="user-info__name">Dan Taylor</span><span class="user-info__additional-info">, <a href="https://salt.agency/" rel="noopener" target="_blank"><span class="extlink">SALT.agency</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<h3 id="open-graph-twitter-cards">
+<a aria-hidden="true" class="anchor-link" href="#open-graph-twitter-cards" tabindex="-1"></a>BONUS: define Open Graph and Twitter Cards images</h3>
+<p>Defining your <a href="/academy/open-graph/">Open Graph</a> and <a href="/academy/twitter-cards/">Twitter Card</a> images is a no-brainer if you care about traffic from social media. That alone is a great reason to always define them.</p>
+<p>While it won't affect your rankings directly, we believe that defining your Open Graph and Twitter Card images adds context to your pages and images for search engines.</p>
+<section aria-label="Useful resources" class="highlighted-box typo-block highlighted-box--with-background highlighted-box--with-icon highlighted-box--resources-style"><div aria-hidden="true" class="highlighted-box__title">Useful resources</div>
+<div class="highlighted-box__content">
+<ul>
+<li><a href="/academy/open-graph/#og-image">Defining Open Card images</a></li>
+<li><a href="/academy/twitter-cards/#image">Defining Twitter Card images</a></li>
+</ul>
+</div></section>
+<h2 id="image-optimization-tools">
+<a aria-hidden="true" class="anchor-link" href="#image-optimization-tools" tabindex="-1"></a>Tools to help you analyze image optimization potential</h2>
+<p>There are several tools out there to help you analyze your potential when it comes to image optimization. They'll analyze the images you're currently using and gauge the optimization potential. In most cases, you can significantly decrease load time – by several seconds.</p>
+<p>List of tools:</p>
+<ul>
+<li><a href="https://webspeedtest.cloudinary.com/" rel="noopener" target="_blank"><span class="extlink">Website Speed Test</span><span class="show-for-sr"> (opens in a new tab)</span></a></li>
+<li><a href="https://developers.google.com/web/tools/lighthouse/#devtools" rel="noopener" target="_blank"><span class="extlink">Google's Lighthouse in Chrome DevTools</span><span class="show-for-sr"> (opens in a new tab)</span></a></li>
+<li><a href="https://gtmetrix.com/" rel="noopener" target="_blank"><span class="extlink">GTMetrics</span><span class="show-for-sr"> (opens in a new tab)</span></a></li>
+<li>
+<a href="https://tinypng.com/analyzer" rel="noopener" target="_blank"><span class="extlink">TinyPNG Analyzer</span><span class="show-for-sr"> (opens in a new tab)</span></a> - This tool not only shows you the current size of your images, it also compresses them in realtime so you can directly see how much you can save.</li>
+</ul>
+<p>Please note that these are automated tools, and that you should take the outcome with a grain of salt. Don't take the outcome as the most important points of action. As with everything in SEO, always remain critical and place things in perspective.</p>
+<p>To conclude, don't just think of images as a means to an end from an SEO point of view. Having appealing images add a lot of value from a conversion rate optimization point of view too. Especially for eCommerce. Take for instance Google Shopping — where one of the fiercest content battles is fought all day, every day. Having great product pages make all the difference there. You can't just use any image for that, there are <a href="https://blog.wakeupdata.com/how-to-implement-product-images-to-get-the-best-conversions" rel="noopener" target="_blank"><span class="extlink">strict guidelines and best practices</span><span class="show-for-sr"> (opens in a new tab)</span></a> to stick to.</p>
+<p>Think we missed anything? Do let us know on <a href="https://twitter.com/contentking" rel="noopener" target="_blank"><span class="extlink">Twitter</span><span class="show-for-sr"> (opens in a new tab)</span></a>!</p>
+</div>
+<div class="post-detail__text">
+<div class="highlighted-box">
+<div class="highlighted-box__content share">
+<div class="share__label">Share this article</div>
+<div class="share__buttons">
+<a class="social-icon social-icon--large social-icon--facebook social-icon--link" href="https://www.facebook.com/sharer/sharer.php?display=popup&amp;u=https://www.contentkingapp.com/academy/image-seo/" onclick="window.open('https://www.facebook.com/sharer/sharer.php?display=popup&amp;u=https://www.contentkingapp.com/academy/image-seo/','ck_popup','toolbar=0,status=0,resizable=1,width=626,height=600')" rel="noopener" target="_blank" title="Share on Facebook"><span class="extlink">Share on Facebook</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+<a class="social-icon social-icon--large social-icon--twitter social-icon--link" href="https://twitter.com/intent/tweet?title=Image%20SEO%3A%20the%20Ultimate%20Guide%C2%A0%E2%80%93%C2%A0url=https://www.contentkingapp.com/academy/image-seo/" onclick="window.open('https://twitter.com/intent/tweet?title=Image%20SEO%3A%20the%20Ultimate%20Guide –&amp;url=https://www.contentkingapp.com/academy/image-seo/','ck_popup','toolbar=0,status=0,resizable=1,width=600,height=340')" rel="noopener" target="_blank" title="Share on Twitter"><span class="extlink">Share on Twitter</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+<a class="social-icon social-icon--large social-icon--linkedin social-icon--link" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.contentkingapp.com/academy/image-seo/" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url=https://www.contentkingapp.com/academy/image-seo/','ck_popup','toolbar=0,status=0,resizable=1,width=600,height=560')" rel="noopener" target="_blank" title="Share on LinkedIn"><span class="extlink">Share on LinkedIn</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+</div>
+</div>
+</div>
+<section aria-label="Overview of article authors" class="author-box">
+<div class="author-box__title">ContentKing Academy Content Team</div>
+<div class="author-box__author">
+<div class="user-overview">
+<div class="user-overview__sidebar">
+<div aria-hidden="true" class="user-overview__avatar">
+<div class="avatar avatar--3-size">
+<div class="avatar__img">
+<picture><source srcset="/media/people/steven-van-vessum@1x.avif, /media/people/steven-van-vessum@2x.avif 2x" type="image/avif"/><source srcset="/media/people/steven-van-vessum@1x.webp, /media/people/steven-van-vessum@2x.webp 2x" type="image/webp"/><img alt="Steven van Vessum" class="" height="100" loading="lazy" src="/media/people/steven-van-vessum@1x.jpg" srcset="/media/people/steven-van-vessum@1x.jpg, /media/people/steven-van-vessum@2x.jpg 2x" title="Steven van Vessum" width="100"/></picture>
+</div>
+</div>
+</div>
+</div>
+<div class="user-overview__content">
+<div class="user-overview__name">
+<span>Steven van Vessum</span><div class="user-overview__data">
+<a class="social-icon social-icon--link social-icon--linkedin" href="https://www.linkedin.com/in/stevenvanvessum" rel="noopener" target="_blank" title="See my profile on LinkedIn"><span class="extlink">LinkedIn</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+<a class="social-icon social-icon--link social-icon--twitter" href="https://twitter.com/stevenvvessum" rel="noopener" target="_blank" title="See my profile on Twitter"><span class="extlink">Twitter</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+</div>
+</div>
+<div class="user-overview__about typo">
+<p>Steven is ContentKing's VP of Community. This means he's involved in everything community and content marketing related. Right where he wants to be. He gets a huge kick out of letting websites rank and loves to talk SEO, content marketing and growth.</p>
+</div>
+<div class="user-overview__see-more-link typo">
+<a href="/team/steven-van-vessum/">View Steven van Vessum's profile</a>
+</div>
+</div>
+</div>
+</div>
+<div class="author-box__author">
+<div class="user-overview">
+<div class="user-overview__sidebar">
+<div aria-hidden="true" class="user-overview__avatar">
+<div class="avatar avatar--3-size">
+<div class="avatar__img">
+<picture><source srcset="/media/people/jessica-rangel@1x.avif, /media/people/jessica-rangel@2x.avif 2x" type="image/avif"/><source srcset="/media/people/jessica-rangel@1x.webp, /media/people/jessica-rangel@2x.webp 2x" type="image/webp"/><img alt="Jessica Rangel" class="" height="100" loading="lazy" src="/media/people/jessica-rangel@1x.jpg" srcset="/media/people/jessica-rangel@1x.jpg, /media/people/jessica-rangel@2x.jpg 2x" title="Jessica Rangel" width="100"/></picture>
+</div>
+</div>
+</div>
+</div>
+<div class="user-overview__content">
+<div class="user-overview__name">
+<span>Jessica Rangel</span><div class="user-overview__data">
+<a class="social-icon social-icon--link social-icon--linkedin" href="https://www.linkedin.com/in/jessicamrangel/" rel="noopener" target="_blank" title="See my profile on LinkedIn"><span class="extlink">LinkedIn</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+</div>
+</div>
+<div class="user-overview__about typo">
+<p>Jessica is a content marketer for ContentKing. Her days are spent writing marketing content, cycling around canals in Amsterdam and attempting to master the Dutch language.</p>
+</div>
+<div class="user-overview__see-more-link typo">
+<a href="/team/jessica-rangel/">View Jessica Rangel's profile</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="follow-up-list">
+<h3 class="follow-up-list__title">Also worth checking out:</h3>
+<div class="follow-up-list__links list" role="list">
+<div role="listitem">
+<a aria-describedby="post-thumbnail-description-539369d4fa7b4a8cdee27c01f82cd007be53dc64" aria-labelledby="post-thumbnail-title-539369d4fa7b4a8cdee27c01f82cd007be53dc64" class="post-thumb-box" href="/academy/core-web-vitals/"><div class="post-thumb-box__icon">
+<i aria-hidden="true" class="post-type-badge post-type-badge--small" style="background-color: #3dc8ff; background-image: url(/assets/images/icons/post-types/core-web-vitals.svg)"></i>
+</div>
+<div class="post-thumb-box__content">
+<h3 class="post-thumb-box__title" id="post-thumbnail-title-539369d4fa7b4a8cdee27c01f82cd007be53dc64" role="presentation"><span>Core Web Vitals</span></h3>
+</div></a>
+</div>
+<div role="listitem">
+<a aria-describedby="post-thumbnail-description-9d01c5f953a98ff28af1df4a757f5de01b4860ec" aria-labelledby="post-thumbnail-title-9d01c5f953a98ff28af1df4a757f5de01b4860ec" class="post-thumb-box" href="/academy/control-crawl-indexing/"><div class="post-thumb-box__icon">
+<i aria-hidden="true" class="post-type-badge post-type-badge--small" style="background-color: #3dc8ff; background-image: url(/assets/images/icons/post-types/crawling-indexing.svg)"></i>
+</div>
+<div class="post-thumb-box__content">
+<h3 class="post-thumb-box__title" id="post-thumbnail-title-9d01c5f953a98ff28af1df4a757f5de01b4860ec" role="presentation"><span>Controlling Crawling &amp; Indexing</span></h3>
+</div></a>
+</div>
+<div role="listitem">
+<a aria-describedby="post-thumbnail-description-4c0286617b9615e711a6c79e22c69717b33fccba" aria-labelledby="post-thumbnail-title-4c0286617b9615e711a6c79e22c69717b33fccba" class="post-thumb-box" href="/academy/meta-robots-tag/"><div class="post-thumb-box__icon">
+<i aria-hidden="true" class="post-type-badge post-type-badge--small" style="background-color: #3dc8ff; background-image: url(/assets/images/icons/post-types/meta-robots.svg)"></i>
+</div>
+<div class="post-thumb-box__content">
+<h3 class="post-thumb-box__title" id="post-thumbnail-title-4c0286617b9615e711a6c79e22c69717b33fccba" role="presentation"><span>Meta Robots Tag</span></h3>
+</div></a>
+</div>
+<div role="listitem">
+<a aria-describedby="post-thumbnail-description-b3b9db7e4280d27c808c2ec7e1cc110333fbe4ce" aria-labelledby="post-thumbnail-title-b3b9db7e4280d27c808c2ec7e1cc110333fbe4ce" class="post-thumb-box" href="/academy/robotstxt/"><div class="post-thumb-box__icon">
+<i aria-hidden="true" class="post-type-badge post-type-badge--small" style="background-color: #3dc8ff; background-image: url(/assets/images/icons/post-types/robots-txt.svg)"></i>
+</div>
+<div class="post-thumb-box__content">
+<h3 class="post-thumb-box__title" id="post-thumbnail-title-b3b9db7e4280d27c808c2ec7e1cc110333fbe4ce" role="presentation"><span>Robots.txt</span></h3>
+</div></a>
+</div>
+<div role="listitem">
+<a aria-describedby="post-thumbnail-description-c4f3aae171f764b23384da122338d4d6487a0ab3" aria-labelledby="post-thumbnail-title-c4f3aae171f764b23384da122338d4d6487a0ab3" class="post-thumb-box" href="/academy/magento-seo/"><div class="post-thumb-box__icon">
+<i aria-hidden="true" class="post-type-badge post-type-badge--small" style="background-color: #b374cc; background-image: url(/assets/images/icons/post-types/magento-seo.svg)"></i>
+</div>
+<div class="post-thumb-box__content">
+<h3 class="post-thumb-box__title" id="post-thumbnail-title-c4f3aae171f764b23384da122338d4d6487a0ab3" role="presentation"><span>Magento 2 SEO Guide</span></h3>
+</div></a>
+</div>
+<div role="listitem">
+<a aria-describedby="post-thumbnail-description-0a9aeb7a489eec722cfd068b2b1f0e7083537c6c" aria-labelledby="post-thumbnail-title-0a9aeb7a489eec722cfd068b2b1f0e7083537c6c" class="post-thumb-box" href="/academy/ecommerce-seo-checklist/"><div class="post-thumb-box__icon">
+<i aria-hidden="true" class="post-type-badge post-type-badge--small" style="background-color: #b374cc; background-image: url(/assets/images/icons/post-types/checklist.svg)"></i>
+</div>
+<div class="post-thumb-box__content">
+<h3 class="post-thumb-box__title" id="post-thumbnail-title-0a9aeb7a489eec722cfd068b2b1f0e7083537c6c" role="presentation"><span>SEO Checklist for eCommerce</span></h3>
+</div></a>
+</div>
+</div>
+</div>
+</div>
+</article>
+<aside class="post-detail__sidebar show-for-large">
+<div aria-hidden="false" class="action-box action-box--is-hidden action-box--with-kevin dark-bg-context js-contextual-action-box sticky-element sticky-element--on-large sticky-element--indented" data-testid="action-sidebar-box" style="--bg: #6b2770">
+<div class="action-box__content">
+<div class="js-contextual-action-box-general" style="display: none;">
+<div class="action-box__text typo">
+<h3 id="image-seo-audit">Image SEO Audit</h3>
+<p>Optimizing your images with ContentKing is a breeze.
+Discover what it can do for your website.</p>
+</div>
+<div class="action-box__form">
+<form aria-label="The form used for creating free trial account on ContentKing" class="quickinput-form-layout quickinput-form-layout--center-aligned js-submit-url-start-onboarding" data-validate="" novalidate="">
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-unexpected-error form-msg form-msg--error" role="none" style="display: none;">Some unexpected error happened. Please contact us.</span>
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-timeout-error form-msg form-msg--error" role="none" style="display: none;">Something went wrong. Please, try again later.</span>
+<div class="quickinput-form-layout__container">
+<div class="quickinput-form-layout__form-field">
+<label class="show-for-sr" for="action-sidebar-box-url-field">Domain (required)</label>
+<input aria-required="true" class="js-trial-url large" id="action-sidebar-box-url-field" name="domain" pattern="url_only" placeholder="www.example.com" required="" type="url"/>
+<span aria-hidden="true" aria-live="off" class="form-error form-bubble" role="none">Please enter a valid domain name (www.example.com).</span>
+<span aria-hidden="true" aria-live="off" class="js-website-already-monitored custom-error form-bubble" role="none" style="display: none;">This domain is already being monitored by ContentKing. Please contact us if you are the rightful owner of this domain.</span>
+<span aria-hidden="true" aria-live="off" class="js-target-redirected custom-error form-bubble" role="none" style="display: none;">This website redirects to <span class="js-target-redirected-domain"></span>. Do you want to add this website instead?</span>
+<span aria-hidden="true" aria-live="off" class="js-blacklisted-domain custom-error form-bubble" role="none" style="display: none;">This domain has been excluded from monitoring. If you own it, please contact us.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain custom-error form-bubble" role="none" style="display: none;">We can't find this domain. Are you sure it's correct?</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-connect custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (connect failure). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-empty-response custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (empty response). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-size-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (size limit). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-time-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (time-out). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-waf custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (blocked by web application firewall). Please contact us for help.</span>
+</div>
+<div class="quickinput-form-layout__form-button">
+<button class="button button--is-shining js-submit-button button--large button--action button--fullwidth" data-loading-label="Loading" type="submit">
+<div>
+<span class="button__content">
+<big>Start your free trial</big>
+<small><span class="show-for-sr">. </span>No credit card needed</small>
+</span>
+</div>
+</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+<div class="js-contextual-action-box-case-study" style="display: none;">
+<div class="discover-case-study">
+<div class="discover-case-study__title">Build vs. Buy: How Danone saved hundreds of thousands of Euros by switching to ContentKing</div>
+<div class="discover-case-study__logo">
+<img alt="Danone logo" height="300" loading="lazy" src="/media/logos/danone-reversed.svg" width="600"/>
+</div>
+<div class="discover-case-study__link typo"><a href="/case-studies/danone/">Discover this case study</a></div>
+</div>
+</div>
+<div class="js-contextual-action-box-ending-trial" style="display: none;">
+<div class="action-box__text typo">
+<h3>Your trial ends soon</h3>
+<p>Sign up now to stay on top of your SEO performance.</p>
+</div>
+<div class="action-box__form">
+<a class="button button--action button--large button--fullwidth button--is-shining" href="https://app.contentkingapp.com/account/billing" rel="noopener" target="_blank"><span class="extlink"><span><span class="button__content"><big>Sign up now</big><small><span class="show-for-sr">. </span>30-day money back guarantee</small></span></span></span><span class="show-for-sr"> (opens in a new tab)</span></a>
+</div>
+</div>
+<div class="js-contextual-action-box-trial-ended" style="display: none;">
+<div class="action-box__text typo">
+<h3>Your trial has ended</h3>
+<p>Sign up now to stay on top of your SEO performance.</p>
+</div>
+<div class="action-box__form">
+<a class="button button--action button--large button--fullwidth button--is-shining" href="https://app.contentkingapp.com/account/billing" rel="noopener" target="_blank"><span class="extlink"><span><span class="button__content"><big>Sign up now</big><small><span class="show-for-sr">. </span>30-day money back guarantee</small></span></span></span><span class="show-for-sr"> (opens in a new tab)</span></a>
+</div>
+</div>
+<div class="action-box__features">
+<div class="labeled-element labeled-element--stretched labeled-element--default-layout typo-block typo-block--bigger-indentation">
+<div class="labeled-element__labels">
+<div class="labeled-element__label">Trusted by the best
+</div>
+<div class="labeled-element__sublabel">
+</div>
+</div>
+<div class="labeled-element__content" role="list"><div class="crossfade-animation crossfade-animation--6-groups" role="presentation">
+<div class="logos-list logos-list--default-gaps" role="presentation">
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Netflix logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/netflix-reversed.svg" title="Netflix" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="H &amp; M logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/hm-reversed.svg" title="H &amp; M" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Adidas logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/adidas-reversed.svg" title="Adidas" width="600"/>
+</div>
+</div>
+</div>
+<div class="logos-list logos-list--default-gaps hidden" role="presentation">
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Unicef logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/unicef-reversed.svg" title="Unicef" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Condé Nast logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/conde-nast-reversed.svg" title="Condé Nast" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Shopify logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/shopify-reversed.svg" title="Shopify" width="600"/>
+</div>
+</div>
+</div>
+<div class="logos-list logos-list--default-gaps hidden" role="presentation">
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Danone logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/danone-reversed.svg" title="Danone" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Fedex logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/fedex-reversed.svg" title="Fedex" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="VOGUE logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/vogue-reversed.svg" title="VOGUE" width="600"/>
+</div>
+</div>
+</div>
+<div class="logos-list logos-list--default-gaps hidden" role="presentation">
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Axa logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/axa-reversed.svg" title="Axa" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Groupon logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/groupon-reversed.svg" title="Groupon" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="The New Yorker logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/the-new-yorker-reversed.svg" title="The New Yorker" width="600"/>
+</div>
+</div>
+</div>
+<div class="logos-list logos-list--default-gaps hidden" role="presentation">
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Norton logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/norton-reversed.svg" title="Norton" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Vodafone logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/vodafone-reversed.svg" title="Vodafone" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Accenture logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/accenture-reversed.svg" title="Accenture" width="600"/>
+</div>
+</div>
+</div>
+<div class="logos-list logos-list--default-gaps hidden" role="presentation">
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Red Hat logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/red-hat-reversed.svg" title="Red Hat" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Reebok logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/reebok-reversed.svg" title="Reebok" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="TELUS logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/telus-reversed.svg" title="TELUS" width="600"/>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<div class="action-box__features">
+<div class="labeled-element">
+<div class="labeled-element__labels">
+<div class="labeled-element__label">
+			Fantastic reviews
+		</div>
+</div>
+<div class="labeled-element__content">
+<a aria-label="Show the overview of ContentKing reviews" class="review-services review-services--small-gaps review-services--indented review-services--centered" href="/reviews/">
+<div class="review-services__service">
+<div aria-label="The summary of ContentKing rating on G2" class="review-badge review-badge--small-size review-badge--g2-service review-badge--light-style">
+<div class="review-badge__header">
+<div aria-label="Rating is 4.8 out of 5 points" class="review-badge__rating-score">
+			4.8 / 5
+		</div>
+</div>
+<div aria-hidden="true" class="review-badge__rating-stars">
+<div aria-label="Rating is 5.0 out of 5 points" class="rating-stars rating-stars--small-size">
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+</div>
+</div>
+</div>
+</div>
+<div class="review-services__service">
+<div aria-label="The summary of ContentKing rating on Capterra" class="review-badge review-badge--small-size review-badge--capterra-service review-badge--light-style">
+<div class="review-badge__header">
+<div aria-label="Rating is 4.9 out of 5 points" class="review-badge__rating-score">
+			4.9 / 5
+		</div>
+</div>
+<div aria-hidden="true" class="review-badge__rating-stars">
+<div aria-label="Rating is 5.0 out of 5 points" class="rating-stars rating-stars--small-size">
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section section--informative" data-testid="start-free-trial">
+<div class="row expanded">
+<div class="small-12 large-12 column">
+<div class="description-row description-row--inline-for-large-up">
+<div>
+<div class="heading heading--white heading--center-aligned">
+<h2 class="heading__title">Start your free trial</h2>
+<h3 class="heading__subtitle">Get up and running in 20 seconds</h3>
+</div>
+<form aria-label="The form used for creating free trial account on ContentKing" class="quickinput-form-layout quickinput-form-layout--center-aligned quickinput-form-layout--is-responsive js-submit-url-start-onboarding" data-validate="" novalidate="">
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-unexpected-error form-msg form-msg--error" role="none" style="display: none;">Some unexpected error happened. Please contact us.</span>
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-timeout-error form-msg form-msg--error" role="none" style="display: none;">Something went wrong. Please, try again later.</span>
+<div class="quickinput-form-layout__container">
+<div class="quickinput-form-layout__form-field">
+<label class="show-for-sr" for="start-free-trial-url-field">Domain (required)</label>
+<input aria-required="true" class="js-trial-url large" id="start-free-trial-url-field" name="domain" pattern="url_only" placeholder="www.example.com" required="" type="url"/>
+<span aria-hidden="true" aria-live="off" class="form-error form-bubble" role="none">Please enter a valid domain name (www.example.com).</span>
+<span aria-hidden="true" aria-live="off" class="js-website-already-monitored custom-error form-bubble" role="none" style="display: none;">This domain is already being monitored by ContentKing. Please contact us if you are the rightful owner of this domain.</span>
+<span aria-hidden="true" aria-live="off" class="js-target-redirected custom-error form-bubble" role="none" style="display: none;">This website redirects to <span class="js-target-redirected-domain"></span>. Do you want to add this website instead?</span>
+<span aria-hidden="true" aria-live="off" class="js-blacklisted-domain custom-error form-bubble" role="none" style="display: none;">This domain has been excluded from monitoring. If you own it, please contact us.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain custom-error form-bubble" role="none" style="display: none;">We can't find this domain. Are you sure it's correct?</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-connect custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (connect failure). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-empty-response custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (empty response). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-size-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (size limit). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-time-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (time-out). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-waf custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (blocked by web application firewall). Please contact us for help.</span>
+</div>
+<div class="quickinput-form-layout__form-button">
+<button class="button button--is-shining js-submit-button button--large button--action button--fullwidth" data-loading-label="Loading" type="submit">
+<div>
+<span class="button__content">
+<big>Start your free trial</big>
+<small><span class="show-for-sr">. </span>No credit card needed</small>
+</span>
+</div>
+</button>
+</div>
+</div>
+<div class="quickinput-form-layout__footer">
+<div aria-label="Show the overview of ContentKing reviews" class="review-services review-services--centered review-services--adaptive-items">
+<div class="review-services__service">
+<div aria-label="The summary of ContentKing rating on G2" class="review-badge review-badge--1-size review-badge--g2-service review-badge--light-style">
+<div class="review-badge__header">
+<div aria-label="Rating is 4.8 out of 5 points" class="review-badge__rating-score">
+			4.8 / 5
+		</div>
+</div>
+<div aria-hidden="true" class="review-badge__rating-stars">
+<div aria-label="Rating is 5.0 out of 5 points" class="rating-stars rating-stars--1-size">
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+</div>
+</div>
+</div>
+</div>
+<div class="review-services__service review-services__service--hidden-on-small">
+<div aria-label="The summary of ContentKing rating on Capterra" class="review-badge review-badge--1-size review-badge--capterra-service review-badge--light-style">
+<div class="review-badge__header">
+<div aria-label="Rating is 4.9 out of 5 points" class="review-badge__rating-score">
+			4.9 / 5
+		</div>
+</div>
+<div aria-hidden="true" class="review-badge__rating-stars">
+<div aria-label="Rating is 5.0 out of 5 points" class="rating-stars rating-stars--1-size">
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+</div>
+</div>
+</div>
+</div>
+<div class="review-services__service review-services__service--hidden-on-small">
+<div aria-label="The summary of ContentKing rating on TrustRadius" class="review-badge review-badge--1-size review-badge--trust-radius-service review-badge--light-style">
+<div class="review-badge__header">
+<div aria-label="Rating is 9.7 out of 10 points" class="review-badge__rating-score">
+			9.7 / 10
+		</div>
+</div>
+<div aria-hidden="true" class="review-badge__rating-stars">
+<div aria-label="Rating is 5.0 out of 5 points" class="rating-stars rating-stars--1-size">
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+<div class="description-row__description">
+<ul class="checklist checklist--white-style">
+<li class="checklist__item"><strong>No credit card required</strong></li>
+<li class="checklist__item"><strong>No installation needed</strong></li>
+<li class="checklist__item"><strong>No strings attached</strong></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<div id="js-campaign-widget-container"></div><footer class="footer" role="contentinfo">
+<div class="footer__row">
+<div class="footer__column">
+<div class="footer__column-body">
+<nav aria-label="The latest articles on our blog" class="footer__column-block footer-block" role="navigation"><h3 class="footer-block__title"><a aria-label="View all articles" href="/blog/"><span>Blog</span> <span aria-hidden="true" class="footer-block__title-cta">View all</span></a></h3>
+<div class="footer-block__nav"><ul class="footer-posts-nav">
+<li class="footer-posts-nav__item">
+<a href="/blog/log-file-analysis-extended-cloudflare-logpush/"><svg aria-hidden="true" class="footer-posts-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-feature-announcements"></use>
+</svg>Log File Analysis for Cloudflare sites via Logpush
+							</a>
+</li>
+<li class="footer-posts-nav__item">
+<a href="/blog/log-file-analysis-extended-fastly/"><svg aria-hidden="true" class="footer-posts-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-feature-announcements"></use>
+</svg>ContentKing Log File Analysis for Fastly
+							</a>
+</li>
+<li class="footer-posts-nav__item">
+<a href="/blog/log-file-analysis-extended/"><svg aria-hidden="true" class="footer-posts-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-feature-announcements"></use>
+</svg>Extended ContentKing Log File Analysis
+							</a>
+</li>
+<li class="footer-posts-nav__item">
+<a href="/blog/brightonseo-spring-recap-2022/"><svg aria-hidden="true" class="footer-posts-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-other"></use>
+</svg>ContentKing &amp; Conductor at brightonSEO
+							</a>
+</li>
+<li class="footer-posts-nav__item">
+<a href="/blog/brightonseo-spring-2022/"><svg aria-hidden="true" class="footer-posts-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-other"></use>
+</svg>brightonSEO Spring 2022
+							</a>
+</li>
+</ul></div>
+</nav>
+</div>
+</div>
+<div class="footer__column">
+<div class="footer__column-body">
+<nav aria-label="Important article in our Academy" class="footer__column-block footer-block" role="navigation"><h3 class="footer-block__title"><a aria-label="View all articles" href="/academy/"><span>Academy</span> <span aria-hidden="true" class="footer-block__title-cta">View all</span></a></h3>
+<div class="footer-block__nav"><ul class="footer-posts-nav">
+<li class="footer-posts-nav__item"><a href="/academy/robotstxt/">Robots.txt</a></li>
+<li class="footer-posts-nav__item"><a href="/academy/redirects/">Redirects</a></li>
+<li class="footer-posts-nav__item"><a href="/academy/shopify-seo/">Shopify SEO Guide</a></li>
+<li class="footer-posts-nav__item"><a href="/academy/magento-seo/">Magento 2 SEO Guide</a></li>
+<li class="footer-posts-nav__item footer-posts-nav__item--tagged"><a data-tag="FAQ" href="/academy/faq/">Frequently Asked SEO Questions</a></li></ul></div>
+</nav>
+</div>
+</div>
+<div class="footer__column footer__column--smaller-width">
+<div class="footer__column-body">
+<nav aria-label="Find more about us and about our story" class="footer__column-block footer-block" role="navigation"><h3 class="footer-block__title"><a href="/about-us/"><span>About us</span></a></h3>
+<div class="footer-block__nav">
+<ul class="footer-posts-nav">
+<li class="footer-posts-nav__item"><a href="/about-us/">Our story</a></li><li class="footer-posts-nav__item"><a href="/team/">Meet our team</a></li><li class="footer-posts-nav__item"><a href="/careers/">Careers</a></li><li class="footer-posts-nav__item"><a href="/contact/">Contact us</a></li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+<div class="footer__column footer__column--box">
+<div class="footer__column-body">
+<div class="footer__column-block footer__column-block--box">
+<section class="footer-box"><a aria-label="Show all reviews" class="footer-box__reviews" href="/reviews/">
+<span aria-hidden="true" class="footer-box__rating-stars">
+<div aria-label="Rating is 5.0 out of 5 points" class="rating-stars rating-stars--small-size"><div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div><div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div><div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div><div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div><div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div></div>
+</span><span class="footer-box__rating-label">130+ user reviews</span>
+</a>
+<div aria-label="Contact details" class="footer-box__content">
+<ul aria-label="Contact details" class="contact-list contact-list--footer"><li aria-label="Support section" class="contact-list__item">
+<i aria-hidden="true" class="contact-list__icon contact-list__icon--support"></i>
+<a aria-label="Show support section" class="contact-list__link" href="/support/">Support</a>
+</li><li aria-label="Phone numbers" class="contact-list__item">
+<i aria-hidden="true" class="contact-list__icon contact-list__icon--phone"></i>
+<div class="contact-list__link">
+<a href="tel:00442032908992">UK: +44 20 3290 8992</a><br/>
+<a href="tel:0019196479205">US: +1 919-647-9205</a><br/></div>
+</li><li aria-label="Email address" class="contact-list__item">
+<i aria-hidden="true" class="contact-list__icon contact-list__icon--support-email"></i>
+<div class="contact-list__link">
+<a href="mailto:support@contentkingapp.com">support@contentkingapp.com</a><br/></div>
+</li></ul>
+</div>
+<div class="footer-box__content">
+<ul class="contact-list contact-list--footer"><li class="contact-list__item">
+<i aria-hidden="true" class="contact-list__icon contact-list__icon--newsletter"></i>
+<a class="contact-list__link" href="/newsletter/">Sign up for our newsletter</a>
+</li></ul>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+<div class="footer__row">
+<div class="footer__bottom-column show-for-large">
+<div class="footer__column-body">
+				Copyright © 2023 ContentKing
+			</div>
+</div>
+<nav aria-label="Additional navigation" class="footer__bottom-column" role="navigation">
+<div class="footer__column-body"><ul class="footer-nav">
+<li class="footer-nav__item">
+<a href="/accessibility/">Accessibility</a></li>
+<li class="footer-nav__item">
+<a href="/legal/privacy-policy/">Privacy Policy</a></li>
+<li class="footer-nav__item">
+<a href="/legal/cookie-policy/">Cookie Policy</a></li>
+<li class="footer-nav__item"><a class="js-open-cookie-preferences" href="#">Cookie Preferences</a></li>
+<li class="footer-nav__item">
+<a href="/legal/terms-of-use/">Terms of Use</a></li>
+</ul>
+</div>
+</nav>
+</div>
+</footer></div><div aria-hidden="true" class="dialog-bg" tabindex="-1"></div>
+<div aria-hidden="true" aria-labelledby="exit-intent-heading" aria-modal="true" class="dialog dialog--slide-in-effect js-exit-intent-dialog" data-ga-label="Generic" id="exit-intent" inert="" role="dialog">
+<div class="dialog-box dialog-box--highlighted-bg js-dialog-box">
+<div class="dialog-box__heading heading heading--center-aligned heading--white">
+<div class="heading__title heading__title--small js-title" data-alt-title="Leave, but don't miss out." id="exit-intent-heading">So soon? Well, before you go...</div>
+<div class="heading__subtitle heading__subtitle--large"><strong>Sign up for our newsletter.</strong></div>
+</div>
+<div class="dialog-box__content">
+<div class="exit-intent">
+<div class="exit-intent__content">
+<img alt="" class="exit-intent__illustration" height="231" loading="lazy" src="/assets/images/materials/newsletter@1x.png" srcset="/assets/images/materials/newsletter@1x.png 1x, /assets/images/materials/newsletter@2x.png 2x" width="214">
+<ul class="checklist checklist--white-style">
+<li class="checklist__item"><strong>Join over 35,000 smart people</strong></li>
+<li class="checklist__item"><strong>Loaded with carefully curated content on SEO and digital marketing</strong></li>
+<li class="checklist__item"><strong>Insightful articles, data-driven research, podcasts and videos</strong></li>
+</ul>
+</img></div>
+<div class="exit-intent__form">
+<form action="https://becontentking.us11.list-manage.com/subscribe/post?u=14598b22fff6346e4f141215b&amp;id=1506b77091" class="js-newsletter-signup" data-validate="" method="post" name="mc-embedded-subscribe-form" novalidate="">
+<div class="overlay-response js-newsletter-signup-response">
+<div class="overlay-response__source">
+<div class="quickinput-form-layout quickinput-form-layout--is-responsive quickinput-form-layout--white quickinput-form-layout--center-aligned">
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-newsletter-signup-response-error form-msg form-msg--error" role="none" style="display: none;">Something went wrong. Please, try again later.</span>
+<div class="quickinput-form-layout__container">
+<div class="quickinput-form-layout__form-field">
+<label class="show-for-sr" for="newsletter-exit-intent-email-field">Email (required)</label>
+<input aria-required="true" autocomplete="off" class="large" id="newsletter-exit-intent-email-field" name="EMAIL" placeholder="email@example.com" required="" type="email" value=""/>
+<span aria-hidden="true" aria-live="off" class="form-error form-bubble" role="none">Please enter a valid email address.</span>
+</div>
+<input name="SOURCE" type="hidden" value="English website">
+<input class="js-newsletter-signup-source-url-field" name="SOURCE_URL" type="hidden" value="https://www.contentkingapp.com/blog/12-content-engagement-kpis-need-tracking/">
+<input name="LANGUAGE" type="hidden" value="en">
+<input class="js-newsletter-signup-creative-field" name="CREATIVE" type="hidden" value="[Exit intent] Newsletter sign-up">
+<div aria-hidden="true" style="position: absolute; left: -5000px;"><label for="newsletter-exit-intent-email-field-question">Question</label><input id="newsletter-exit-intent-email-field-question" name="b_14598b22fff6346e4f141215b_1506b77091" tabindex="-1" type="text" value=""/></div>
+<div class="quickinput-form-layout__form-button quickinput-form-layout__form-button--default">
+<button class="button button--is-shining js-submit-button button--large button--action button--fullwidth" data-loading-label="Loading" name="subscribe" type="submit">
+<div>
+<span class="button__content">
+<big>Subscribe</big>
+</span>
+</div>
+</button>
+</div>
+</input></input></input></input></div>
+<div class="quickinput-form-layout__note">You can opt-out at any time with a single click.</div>
+<div class="exit-intent-close-link">
+<a data-close="" href="#" onclick="return false;">No thanks, I don't want to stay updated on digital marketing.</a>
+</div>
+</div>
+</div>
+<div class="overlay-response__response js-newsletter-signup-response-messages" tabindex="-1">
+<div aria-hidden="true" aria-live="off" class="js-newsletter-signup-response-success overlay-response__message overlay-response__message--large overlay-response__message--success" role="none" style="display: none;">
+<div>Thank you for your subscription, welcome aboard!</div>
+<div class="exit-intent-close-link">
+<a data-close="" href="#" onclick="return false;">Continue to our website</a>
+</div>
+</div>
+<div aria-hidden="true" aria-live="off" class="js-newsletter-signup-response-already-in-list overlay-response__message overlay-response__message--large" role="none" style="display: none;">You're already a subscriber to our newsletter. <br/>Thanks for being a loyal reader!</div>
+<div aria-hidden="true" aria-live="off" class="js-newsletter-signup-response-pending overlay-response__message overlay-response__message--large" role="none" style="display: none;">Please confirm your sign-up to our newsletter using the confirmation email that we just sent you.</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<!-- Close button -->
+<button aria-label="Close this modal window" class="close-button close-button--light" data-close="" type="button">
+<span aria-hidden="true">×</span>
+</button>
+<div class="dialog-box__footer">
+<div class="dialog-box__footer-container">
+<div class="js-modal-lazy-logos lazy-logos" data-id="exit-intent"></div>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="cookie-banner-heading" aria-modal="true" class="dialog dialog--slide-in-effect" id="cookie-banner-general" inert="" role="dialog">
+<div class="cookie-consent-dlg">
+<div class="cookie-consent-dlg__scrollable-container">
+<div class="cookie-consent-dlg__content">
+<div class="cookie-consent-dlg__heading">
+<div class="cookie-consent-dlg__title" id="cookie-banner-general-heading">This website uses cookies</div>
+</div>
+<div class="cookie-consent-dlg__text typo">
+<p>We use cookies to improve user experience and analyze website traffic. By clicking “Accept all“, you agree to our website's cookie use as described in our <a class="js-cookie-banner-show-policy" href="#">Cookie Policy</a>. You can change your cookie settings by clicking “<a class="js-cookie-banner-show-preferences" href="#">Preferences</a>”.</p>
+</div>
+</div>
+<div class="cookie-consent-dlg__footer">
+<div class="cookie-consent-dlg__buttons">
+<button class="button button--hollow-highlighted js-cookie-banner-show-preferences">
+<span>Preferences</span>
+</button>
+<button class="button button--hollow-highlighted js-cookie-banner-decline-all">
+<span>Reject all</span>
+</button>
+<button class="button button--action js-cookie-banner-accept-all">
+<span>Accept all</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="cookie-banner-policy-heading" aria-modal="true" class="dialog dialog--slide-in-effect" data-cookie-policy-version="f0cbb742597d5cb7e9db2f680777051bbd82001f" id="cookie-banner-policy" inert="" role="dialog">
+<div class="cookie-consent-dlg">
+<div class="cookie-consent-dlg__scrollable-container">
+<div class="cookie-consent-dlg__content">
+<div class="cookie-consent-dlg__heading">
+<div class="cookie-consent-dlg__title" id="cookie-banner-policy-heading">Cookie Policy</div>
+</div>
+<div class="cookie-consent-dlg__text typo">
+<p><em>Last updated January 24, 2022</em></p>
+<p>When you use our website <a href="https://www.contentkingapp.com/">www.contentkingapp.com</a> (“Website”), we may place cookies. This Cookie Policy explains what cookies are and in which way cookies are stored on, and information is read from, your computer, mobile device and/or tablet (“Devices”). Please read this Cookie Policy carefully in order to understand what type of cookies ContentKing uses, the information we collect using cookies and how that information is used.</p>
+<h2 id="what-are-cookies">What are cookies?</h2>
+<p>Cookies are small text files which are stored on the browser or hard drive of your Device when you visit a webpage or use an application. Cookies may be needed to show the webpage or application on your Device and are also used to enhance the user experience. Cookies cannot damage your Devices or the files saved on it. There are different types of cookies. Some cookies come directly from our website (first party cookies) and others come from third parties which place cookies on our site (third party cookies).</p>
+<p>Cookies can be stored for varying lengths of time on your browser or device. Session cookies are deleted from your computer or device when you close your web-browser. Persistent cookies will remain stored on your computer or Device until deleted or until they reach their expiry date.</p>
+<h2 id="how-do-we-use-cookies">How do we use cookies?</h2>
+<h3 id="essential-technical-cookies">Essential (Technical) cookies</h3>
+<p>We try to provide an advanced and user-friendly website that adapts automatically to needs and wishes of our visitors and users. To achieve this, we use technical cookies to i.e. show you our Website, to make it function correctly, to create your ContentKing account, to sign you in and to manage your requests. These technical cookies are necessary for our website to function properly.</p>
+<h3 id="functional-cookies">Functional cookies</h3>
+<p>We also use functional cookies to remember your preferences and settings (as username, password, language etc.) and to help you to use the Website efficiently and effectively. These functional cookies are not strictly necessary for the functioning of our Website, but they add functionality for you and enhance your experience.</p>
+<h3 id="analytical-cookies">Analytical cookies</h3>
+<p>We use analytical cookies in order to collect statistics about the use and visits of the Website. These analytic cookies generate statistical and other information about website use by means of cookies, which are stored on users’ Devices. The information generated relating to our Website is used to create reports about the use of the Website. Analytical cookies may be placed without your consent, unless such cookies have an impact on your privacy. In such cases, prior consent will be asked for.</p>
+<h3 id="google-analytics">Google Analytics</h3>
+<p>We use Google Analytics cookies in order to collect statistics about the use and visits of the Website. With these analytical cookies a permanent cookie is saved on your device to register your use of the Website. Google Analytics analyses this data and provides us with the results. This way, we obtain insight into the traffic of the Website and the way in which the Website is used. Based on this information we are able to make specific adjustments to the Website.</p>
+<p>The information that we obtain is transferred to Google and stored by Google on servers outside the European Economic Area. We have entered into a data processing agreement with Google in which agreements have been made regarding the processing of personal data.</p>
+<p>If you would like more information about analytical cookies and their expiry date, please visit the Google Analytics <a href="https://developers.google.com/analytics/devguides/collection/gajs/cookie-usage">information page</a>. Google also offers an <a href="https://tools.google.com/dlpage/gaoptout?hl=en">opt-out option</a> for data collection within the scope of Google Analytics.</p>
+<h3 id="marketing-cookies">Marketing cookies</h3>
+<p>We use third party marketing cookies in order to follow your internet browsing behavior and collect data and information on your browsing behavior from various websites you visited. This information is used to make the content of the displayed advertisements as relevant as possible, and to limit repetition of the same advertisements.</p>
+<h3 id="social-plug-ins">Social plug-ins</h3>
+<p>By using the Website you can get access to social media websites, such as Facebook, Twitter and LinkedIn. These buttons come with a code which has been made by these networks themselves. Using these so called social plug-ins you can login to your social media profile and subsequently share information from the Website with others. With these social plug-ins third party marketing cookies are saved on your Devices. These cookies serve the purpose of optimizing your user experience.</p>
+<p>Companies such as LinkedIn, Twitter and Facebook may share your personal data outside the European Economic Area. Please read our Privacy Policy <a href="/legal/privacy-policy/">here</a> and the respective social network’s privacy statement to see how these companies treat your (personal) data.</p>
+<h3 id="pixels">Pixels</h3>
+<p>We also place pixels of third parties. A pixel keeps track of your surfing behavior and how you use the Website. These data are aggregated and give us information about the target group that visits our website. Based on this information, we can show an advertisement to a specific or similar target group on the website of the third party that produced the pixel.</p>
+<h2 id="disable-or-delete-cookies">Disable or delete cookies</h2>
+<p>When you first visit the Website, we ask you to give consent for cookies that are not necessary or functional and that have an impact on your privacy. If you do not give consent, these cookies will not be placed. In that case, you may not be able to use all the functionalities on our Website.</p>
+<p>You can configure your browser so that you do not receive any cookies the next time you use the website. You can read here how you can remove different types of cookies in different browsers. Please consult the help-function of your browser if your browser is not listed below.</p>
+<ul>
+<li><a href="https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&amp;hl=en-GB">Chrome</a></li>
+<li><a href="https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox">Firefox</a></li>
+<li><a href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09">Edge</a></li>
+<li><a href="https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac">Safari</a></li>
+</ul>
+<p>Note: Refusing or deleting cookies only affects the Device and the browser on which you perform this action. If you use different Devices and/or browsers you will need to repeat the above described actions on these Devices and/or browsers.</p>
+<h2 id="privacy">Privacy</h2>
+<p>It is possible that information collected through a cookie or obtained otherwise, contains personal data. If this is the case, our Privacy Policy is applicable on the processing of these data. The Privacy Policy can be read <a href="/legal/privacy-policy/">here</a>.</p>
+<h2 id="can-this-cookie-policy-be-changed">Can this Cookie Policy be changed?</h2>
+<p>We may amend this Cookie Policy in the future. If there are substantive or material changes that may affect one or more of the parties involved to a considerable extent, we inform those involved in advance. Our changed Cookie Policy will also be available on this web page, so it is recommended to regularly have a look at this page.</p>
+<h2 id="overview-cookies">Overview cookies</h2>
+<h3 id="essential-technical-cookies-1">Essential (Technical) cookies</h3>
+<p>Essential (Technical) cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function (properly) without these cookies.</p>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">viewedOuibounceModal</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>ContentKing</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store state of having closed the exit intent modal.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 month</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">nette-samesite</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>ContentKing</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Communication with account service.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>Session</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">session_timestamp</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>ContentKing</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Utility for tracking of session start time.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>Session</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>SessionStorage</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">what-intent</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>ContentKing</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Utility for tracking the current input method.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>Session</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>SessionStorage</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">what-input</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>ContentKing</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Utility for tracking the current input method.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>Session</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>SessionStorage</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">contentking</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>ContentKing</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store state for website functioning.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 day</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>LocalStorage</td>
+</tr>
+</tbody>
+</table>
+<h3 id="statistics-analytical-cookies">Statistics (analytical cookies)</h3>
+<p>These cookies help us to understand how visitors interact with websites by collecting and reporting information anonymously.</p>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_ga</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Google Analytics</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store and count pageviews.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>2 years</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_ga_*</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Google Analytics</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store and count pageviews.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>2 years</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_gcl_au</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Google AdSense</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store and track conversions.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>3 months</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_gid</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Google Analytics</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store and count pageviews.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 day</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_dc_gtm_*</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Google Analytics</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store number of service requests.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 minute</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">wd</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Information about browser window dimensions.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 day</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<h3 id="marketing-social-plug-ins-third-party-marketing-cookies-pixels">Marketing (Social plug-ins, third party marketing cookies, pixels)</h3>
+<p>Marketing cookies are used to follow visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers.</p>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">intercom-session-*</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Intercom</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Contact, communication, support.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 week</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">intercom-id-*</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Intercom</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Contact, communication, support.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>9 months</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">li_gc</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>LinkedIn</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>2 years</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">lidc</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>LinkedIn</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 day</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">bcookie</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>LinkedIn</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>2 years</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_uetsid</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Microsoft Advertising</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 day</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_uetvid</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Microsoft Advertising</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 year</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">tap_vid</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Tapfiliate</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Affiliate marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 year</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie &amp; LocalStorage</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_fbp</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>3 months</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_fbc</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>3 months</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">fr</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>3 months</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">xs</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>3 months</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">dpr</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>5 days</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">c_user</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>30 days</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">sb</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 year, 1 month, 14 days</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">datr</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 year, 1 month, 14 days</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">muc</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Twitter</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 year, 10 months, 3 days</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">muc-ads</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Twitter</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 year, 10 months, 3 days</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cookie-consent-dlg__footer">
+<div class="cookie-consent-dlg__buttons">
+<button class="button button--highlighted js-cookie-banner-show-general">
+<span>Back</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="cookie-banner-preferences-heading" aria-modal="true" class="dialog dialog--slide-in-effect" id="cookie-banner-preferences" inert="" role="dialog">
+<div class="cookie-consent-dlg">
+<div class="cookie-consent-dlg__scrollable-container">
+<div class="cookie-consent-dlg__content">
+<div class="cookie-consent-dlg__heading">
+<div class="cookie-consent-dlg__title" id="cookie-banner-preferences-heading">Your Cookie Preferences</div>
+</div>
+<div aria-hidden="true" class="form-msg form-msg--warning typo js-intercom-warning-message" style="display: none;">
+<p>Our chat requires cookies to function. Please enable Marketing cookies to continue, alternatively you can contact us via email at <a href="mailto:support@contentkingapp.com">support@contentkingapp.com</a></p>
+</div>
+<div class="cookie-consent-dlg__text typo">
+<p>We use different types of cookies to optimize your experience on our website. Click on the categories below to learn more about their purposes. You may choose which types of cookies to allow. Remember that disabling cookies may affect your experience on the website. You can learn more about how we use cookies by visiting our <a class="js-cookie-banner-show-policy" href="#">Cookie Policy</a>.</p>
+</div>
+<form class="cookie-consent-dlg__preferences">
+<div>
+<div class="cookie-consent-dlg__preference-option">
+<input checked="checked" disabled="disabled" id="essential_storage" name="essential_storage" type="checkbox">
+<label for="essential_storage">Essential (Technical) cookies</label>
+</input></div>
+<p>Essential (Technical) cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function (properly) without these cookies.</p>
+</div>
+<div>
+<div class="cookie-consent-dlg__preference-option">
+<input id="analytics_storage" name="analytics_storage" type="checkbox">
+<label for="analytics_storage">Statistics (analytical cookies)</label>
+</input></div>
+<p>These cookies help us to understand how visitors interact with websites by collecting and reporting information anonymously.</p>
+</div>
+<div>
+<div class="cookie-consent-dlg__preference-option">
+<input id="ad_storage" name="ad_storage" type="checkbox">
+<label for="ad_storage">Marketing (Social plug-ins, third party marketing cookies, pixels)</label>
+</input></div>
+<p>Marketing cookies are used to follow visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers.</p>
+</div>
+</form>
+</div>
+<div class="cookie-consent-dlg__footer">
+<div class="cookie-consent-dlg__buttons">
+<button class="button button--hollow-highlighted js-cookie-banner-decline-all">
+<span>Reject all</span>
+</button>
+<button class="button button--action js-cookie-banner-accept-selected">
+<span>Accept selected</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="/assets/js/libraries.js?cb=6d0f457c83ce1f9617c4686abb84c45a" type="text/javascript"></script>
+<script src="/assets/js/app.js?cb=f179e9e0a225b14d8cf7bbe24cb2a6fa}" type="text/javascript"></script>
+</body>
+</html>

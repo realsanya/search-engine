@@ -1,0 +1,2588 @@
+<!DOCTYPE html>
+
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Website Migrations: The Ultimate Guide to Successfully Manage Them</title>
+<link href="https://iframe.videodelivery.net" rel="preconnect dns-prefetch"/>
+<script>(function(c,u,v,n,p,e,z,A,w){function k(a){if(!x){x=!0;var l=u.getElementsByTagName(v)[0],d=u.createElement(v);d.src=A;d.crossorigin="anonymous";d.addEventListener("load",function(){try{c[n]=r;c[p]=t;var b=c[e],d=b.init;b.init=function(a){for(var b in a)Object.prototype.hasOwnProperty.call(a,b)&&(w[b]=a[b]);d(w)};B(a,b)}catch(g){console.error(g)}});l.parentNode.insertBefore(d,l)}}function B(a,l){try{for(var d=m.data,b=0;b<a.length;b++)if("function"===typeof a[b])a[b]();var e=!1,g=c.__SENTRY__;"undefined"!==
+typeof g&&g.hub&&g.hub.getClient()&&(e=!0);g=!1;for(b=0;b<d.length;b++)if(d[b].f){g=!0;var f=d[b];!1===e&&"init"!==f.f&&l.init();e=!0;l[f.f].apply(l,f.a)}!1===e&&!1===g&&l.init();var h=c[n],k=c[p];for(b=0;b<d.length;b++)d[b].e&&h?h.apply(c,d[b].e):d[b].p&&k&&k.apply(c,[d[b].p])}catch(C){console.error(C)}}for(var f=!0,y=!1,q=0;q<document.scripts.length;q++)if(-1<document.scripts[q].src.indexOf(z)){f="no"!==document.scripts[q].getAttribute("data-lazy");break}var x=!1,h=[],m=function(a){(a.e||a.p||a.f&&
+-1<a.f.indexOf("capture")||a.f&&-1<a.f.indexOf("showReportDialog"))&&f&&k(h);m.data.push(a)};m.data=[];c[e]=c[e]||{};c[e].onLoad=function(a){h.push(a);f&&!y||k(h)};c[e].forceLoad=function(){y=!0;f&&setTimeout(function(){k(h)})};"init addBreadcrumb captureMessage captureException captureEvent configureScope withScope showReportDialog".split(" ").forEach(function(a){c[e][a]=function(){m({f:a,a:arguments})}});var r=c[n];c[n]=function(a,e,d,b,f){m({e:[].slice.call(arguments)});r&&r.apply(c,arguments)};
+var t=c[p];c[p]=function(a){m({p:a.reason});t&&t.apply(c,arguments)};f||setTimeout(function(){k(h)})})(window,document,"script","onerror","onunhandledrejection","Sentry","a5184105d8fc40669d0a2d883d87688d","https://browser.sentry-cdn.com/6.13.3/bundle.min.js",{"dsn":"https://a5184105d8fc40669d0a2d883d87688d@o29016.ingest.sentry.io/65692","release":"c82be011c","environment":"production"});</script>
+<script>
+// Define dataLayer and the gtag function.
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
+var storage = window.localStorage.getItem('contentking');
+var defaultConsents = {'ad_storage': 'denied', 'analytics_storage': 'denied', 'functionality_storage': 'denied', 'personalization_storage': 'denied', 'security_storage': 'denied' };
+if (storage) { storage = JSON.parse(storage); if (storage['cookie-consent'] && storage['cookie-consent']['consents']) { defaultConsents = storage['cookie-consent']['consents']; } }
+gtag('consent', 'default', defaultConsents);
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TX8N5H');</script>
+<!-- End Google Tag Manager -->
+<link as="font" crossorigin="" href="https://www.contentkingapp.com/assets/fonts/proxima-nova-normal-700.subset.woff2" rel="preload" type="font/woff2">
+<link as="font" crossorigin="" href="https://www.contentkingapp.com/assets/fonts/proxima-nova-normal-400.subset.woff2" rel="preload" type="font/woff2"/>
+<link href="/assets/css/app.css?cb=3d7688a9dcdb78775593b482c519b511" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.contentkingapp.com/assets/images/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="https://www.contentkingapp.com/assets/images/favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="https://www.contentkingapp.com/assets/images/favicons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="https://www.contentkingapp.com/assets/images/favicons/site.webmanifest" rel="manifest"/>
+<link href="https://www.contentkingapp.com/assets/images/favicons/favicon.ico" rel="shortcut icon">
+<meta content="ContentKing" name="apple-mobile-web-app-title"/>
+<meta content="ContentKing" name="application-name"/>
+<meta content="#ffffff" name="msapplication-TileColor"/>
+<meta content="https://www.contentkingapp.com/assets/images/favicons/browserconfig.xml" name="msapplication-config"/>
+<meta content="https://www.contentkingapp.com/assets/images/favicons/mstile-144x144.png" name="msapplication-TileImage"/>
+<meta content="#ffffff" name="theme-color"/>
+<link href="https://www.contentkingapp.com/academy/website-migrations/" hreflang="en" rel="alternate"/>
+<link href="https://www.contentkingapp.com/academy/website-migrations/" hreflang="x-default" rel="alternate"/>
+<meta content="Learn how to successfully manage large scale website migrations. You'll be prepared for whatever the universe throws at you during your next migration!" name="description"/>
+<link href="https://www.contentkingapp.com/academy/website-migrations/" rel="canonical"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="article" property="og:type"/>
+<meta content="Website Migrations: The Ultimate Guide to Success" property="og:title"/>
+<meta content="There's no need for website migrations to go wrong. Learn how!" property="og:description"/>
+<meta content="https://www.contentkingapp.com/academy/website-migrations/" property="og:url"/>
+<meta content="ContentKing" property="og:site_name"/>
+<meta content="https://www.contentkingapp.com/media/social-cards/academy/contentking-academy-website-migrations-og@2x.png" property="og:image"/>
+<meta content="https://www.contentkingapp.com/media/social-cards/academy/contentking-academy-website-migrations-og@2x.png" property="og:image:secure_url"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="The Ultimate Guide to Successful Website Migrations" name="twitter:title"/>
+<meta content="Learn how to tame website migrations using our structured approach. There's no need for them to go wrong!" name="twitter:description"/>
+<meta content="@contentking" name="twitter:site"/>
+<meta content="https://www.contentkingapp.com/media/social-cards/academy/contentking-academy-website-migrations-tc@2x.png" name="twitter:image"/>
+<meta content="@contentking" name="twitter:creator"/>
+<meta content="on" name="twitter:dnt"/>
+<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Corporation",
+		"name": "ContentKing",
+		"url": "https://www.contentkingapp.com/",
+		"telephone": "+1 919-647-9205",
+		"address":
+		{
+			"@type": "PostalAddress",
+			"streetAddress": "Warmoesstraat 149-151",
+			"addressLocality": "Amsterdam",
+			"postalCode": "1012 JC",
+			"addressCountry": "NL"
+		},
+		"logo": "https://www.contentkingapp.com/assets/images/logo-schema.svg",
+		"sameAs": [
+			"https://www.facebook.com/contentkingapp/",
+			"https://twitter.com/contentking",
+			"https://www.instagram.com/contentkingapp/",
+			"https://www.linkedin.com/company/10169361/"
+		]
+	}
+</script>
+<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Article",
+		"mainEntityOfPage": {
+			"@type": "WebPage",
+			"@id": "https://www.contentkingapp.com/academy/website-migrations/"
+		},
+		"headline": "The Ultimate Guide to Successful Website Migrations",
+		"image": "https://www.contentkingapp.com/media/social-cards/academy/contentking-academy-website-migrations-og@2x.png",
+		"author": {
+			"@type": "Person",
+			"name": "Steven van&nbsp;Vessum",
+			"description": "Steven is ContentKing's VP of Community. This means he's involved in everything community and content marketing related. Right where he wants to be. He gets a huge kick out of letting websites rank and loves to talk SEO, content marketing and growth.",
+			"worksFor": {
+			   "@type": "Organization",
+			   "name": "ContentKing"
+			},
+			"jobTitle": "VP of Community","image": "https://www.contentkingapp.com/media/people/steven-van-vessum@2x.jpg",
+			"sameAs": [
+				"https://www.linkedin.com/in/stevenvanvessum",
+				"https://twitter.com/stevenvvessum",
+				"https://www.instagram.com/svanvessum/",
+				"https://www.facebook.com/stevenvanvessum"
+			]
+		},
+		"contributor": {
+			"@type": "Person",
+			"name": "Jessica Rangel",
+			"description": "Jessica is a content marketer for ContentKing. Her days are spent writing marketing content, cycling around canals in Amsterdam and attempting to master the Dutch language.",
+			"worksFor": {
+			   "@type": "Organization",
+			   "name": "ContentKing"
+			},
+			"jobTitle": "Content Marketer","image": "https://www.contentkingapp.com/media/people/jessica-rangel@2x.jpg",
+			"sameAs": [
+				"https://www.linkedin.com/in/jessicamrangel/"
+			]
+		},
+		"publisher": {
+			"@type": "Organization",
+			"name": "ContentKing",
+			"logo": {
+				"@type": "ImageObject",
+				"url": "https://www.contentkingapp.com/assets/images/logo-schema.svg"
+			}
+		},
+		"datePublished": "2018-12-11",
+		"dateModified": "2021-10-12"
+	}
+</script>
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [
+		{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "Home",
+			"item": "https://www.contentkingapp.com/"
+		}, {
+			"@type": "ListItem",
+			"position": 2,
+			"name": "Academy",
+			"item": "https://www.contentkingapp.com/academy/"
+		}, {
+			"@type": "ListItem",
+			"position": 3,
+			"name": "Content & SEO Processes",
+			"item": "https://www.contentkingapp.com/academy/processes-hub/"
+		}, {
+			"@type": "ListItem",
+			"position": 4,
+			"name": "Website Migrations guide"
+		}
+	]
+}
+</script>
+</link></link></head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-TX8N5H" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<a class="skip-link" href="/academy/website-migrations/#main-content">
+	Jump to Main Content
+</a>
+<div class="js-content page"><!-- Main Sticky Menu -->
+<div aria-hidden="true" class="header__sticky-wrapper">
+<div class="header__wrapper header__wrapper--is-anchored" id="js-sticky-header">
+<div class="header header--slim">
+<div class="header__content">
+<div class="header__logo"><div class="site-logo site-logo--slim">
+<a class="site-logo__container" href="/" rel="home" tabindex="-1">
+<img alt="ContentKing logo" class="site-logo__image" height="56" src="/assets/images/contentking-conductor-logo.svg" width="200"/>
+</a>
+</div>
+</div>
+<div class="header__nav">
+<nav aria-label="Main navigation" role="navigation">
+<ul class="main-nav js-main-nav">
+<li class="main-nav__item main-nav__item--has-dropdown js-collapsible-nav"><a class="main-nav__link main-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/features/" tabindex="-1"><span>Features</span></a><span class="main-nav__subnav js-collapsible-nav-content">
+<ul aria-label="Submenu for Features" class="nav-group">
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/" tabindex="-1">Overview</a></li>
+<li aria-hidden="true" class="main-nav__divider">---</li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-auditing/" tabindex="-1">SEO Auditing</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-monitoring/" tabindex="-1">SEO Monitoring</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-alerting/" tabindex="-1">SEO Alerting</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-change-tracking/" tabindex="-1">SEO Change Tracking</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/log-file-analysis/" tabindex="-1">Log File Analysis</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-insights-reporting/" tabindex="-1">Insights &amp; Reporting</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/api-integrations/" tabindex="-1">APIs &amp; Integrations</a></li>
+</ul>
+</span></li>
+<li class="main-nav__item main-nav__item--has-dropdown js-collapsible-nav"><a class="main-nav__link main-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/solutions/for-agencies/" tabindex="-1"><span>Solutions</span></a><span aria-label="Submenu for Solutions" class="main-nav__subnav main-nav__subnav--stretched js-collapsible-nav-content">
+<span class="nav-group">
+<span aria-hidden="true" class="nav-group__caption">By Industry</span>
+<ul aria-label="Solutions by industry" class="nav-group__content">
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-agencies/" tabindex="-1">Agencies</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-ecommerce/" tabindex="-1">eCommerce</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-marketplaces/" tabindex="-1">Marketplaces</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-publishers/" tabindex="-1">Publishers</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-travel/" tabindex="-1">Travel</a></li>
+</ul>
+</span>
+<span class="nav-group">
+<span aria-hidden="true" class="nav-group__caption">By Role</span>
+<ul aria-label="Solutions by role" class="nav-group__content">
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-executives/" tabindex="-1">Executives</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-marketing-managers/" tabindex="-1">Marketing Managers</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-technical-seos/" tabindex="-1">Technical SEOs</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-content-teams/" tabindex="-1">Content Teams</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-developers/" tabindex="-1">Developers</a></li>
+</ul>
+</span>
+</span></li>
+<li class="main-nav__item"><a class="main-nav__link" href="/case-studies/" tabindex="-1"><span>Case studies</span></a></li>
+</ul>
+</nav>
+</div>
+<div class="header__buttons">
+<div class="js-header-button-onboarding" style="display: none"><a class="button button--small button--action button--is-shining button--is-responsive" href="/go/url/" id="js-btn-trial" role="button" tabindex="-1">
+<span>Start Trial</span>
+</a>
+</div>
+<div class="js-header-button-app" style="display: none">
+<a class="button button--small button--ghost button--small" href="https://app.contentkingapp.com/" role="button" tabindex="-1">
+<span>Go to app</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div id="js-sticky-header-footer"></div>
+</div>
+</div>
+<!-- End Main Sticky Menu -->
+<header class="header header--main" id="js-main-header">
+<div class="header__content">
+<div class="header__logo"><div class="site-logo">
+<a aria-label="Back to the homepage" class="site-logo__container" href="/" rel="home">
+<img alt="ContentKing logo" class="site-logo__image" height="56" src="/assets/images/contentking-conductor-logo.svg" width="200"/>
+</a>
+</div>
+</div>
+<div class="header__nav">
+<div class="header-nav-layout js-off-canvas-panel" data-aria-label="Website navigation" id="offcanvas-panel">
+<div class="header-nav-layout__content">
+<div class="header-nav-layout__close-btn">
+<button aria-label="Close navigation" class="close-button close-button--light js-off-canvas-close-btn" type="button">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+<div class="header-nav-layout__main-part">
+<nav aria-label="Main navigation" role="navigation">
+<ul class="main-nav js-main-nav">
+<li class="main-nav__item main-nav__item--has-dropdown js-collapsible-nav"><a class="main-nav__link main-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/features/"><span>Features</span></a><span class="main-nav__subnav js-collapsible-nav-content">
+<ul aria-label="Submenu for Features" class="nav-group">
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/">Overview</a></li>
+<li aria-hidden="true" class="main-nav__divider">---</li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-auditing/">SEO Auditing</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-monitoring/">SEO Monitoring</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-alerting/">SEO Alerting</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-change-tracking/">SEO Change Tracking</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/log-file-analysis/">Log File Analysis</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-insights-reporting/">Insights &amp; Reporting</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/api-integrations/">APIs &amp; Integrations</a></li>
+</ul>
+</span></li>
+<li class="main-nav__item main-nav__item--has-dropdown js-collapsible-nav"><a class="main-nav__link main-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/solutions/for-agencies/"><span>Solutions</span></a><span aria-label="Submenu for Solutions" class="main-nav__subnav main-nav__subnav--stretched js-collapsible-nav-content">
+<span class="nav-group">
+<span aria-hidden="true" class="nav-group__caption">By Industry</span>
+<ul aria-label="Solutions by industry" class="nav-group__content">
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-agencies/">Agencies</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-ecommerce/">eCommerce</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-marketplaces/">Marketplaces</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-publishers/">Publishers</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-travel/">Travel</a></li>
+</ul>
+</span>
+<span class="nav-group">
+<span aria-hidden="true" class="nav-group__caption">By Role</span>
+<ul aria-label="Solutions by role" class="nav-group__content">
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-executives/">Executives</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-marketing-managers/">Marketing Managers</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-technical-seos/">Technical SEOs</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-content-teams/">Content Teams</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-developers/">Developers</a></li>
+</ul>
+</span>
+</span></li>
+<li class="main-nav__item"><a class="main-nav__link" href="/case-studies/"><span>Case studies</span></a></li>
+</ul>
+</nav>
+</div>
+<div class="header-nav-layout__secondary-part">
+<nav aria-label="Secondary navigation" role="navigation">
+<ul class="secondary-nav js-secondary-nav">
+<li class="secondary-nav__item secondary-nav__item--has-dropdown js-collapsible-nav"><a class="secondary-nav__link secondary-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/academy/"><span>Academy</span></a><ul aria-label="Submenu for Academy" class="secondary-nav__subnav js-collapsible-nav-content"><li class="secondary-nav__subitem secondary-nav__subitem--has-divider">
+<a class="secondary-nav__sublink" href="/academy/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-all"></use>
+</svg>Overview</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/seo-fundamentals-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-seo-fundamentals"></use>
+</svg>SEO Fundamentals</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/technical-seo-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-technical-seo"></use>
+</svg>Technical SEO</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/ecommerce-seo-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-ecommerce-seo"></use>
+</svg>eCommerce SEO</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/international-seo-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-international-seo"></use>
+</svg>International SEO</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/structured-data-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-structured-data"></use>
+</svg>Structured Data</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/processes-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-processes"></use>
+</svg>Content &amp; SEO Processes</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/reporting-management-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-reporting-management"></use>
+</svg>SEO Reporting &amp; Management</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/google-search-console-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-google-search-console"></use>
+</svg>Google Search Console</a>
+</li><li class="secondary-nav__subitem secondary-nav__subitem--has-divider-before">
+<a class="secondary-nav__sublink" href="/academy/faq/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-faq"></use>
+</svg>Frequently Asked SEO Questions</a>
+</li>
+</ul></li>
+<li class="secondary-nav__item secondary-nav__item--has-dropdown js-collapsible-nav"><a class="secondary-nav__link secondary-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/blog/"><span>Blog</span></a><ul aria-label="Submenu for Blog" class="secondary-nav__subnav js-collapsible-nav-content"><li class="secondary-nav__subitem secondary-nav__subitem--has-divider">
+<a aria-label="View all articles" class="secondary-nav__sublink" href="/blog/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-all"></use>
+</svg>View all</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/blog/feature-announcements/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-feature-announcements"></use>
+</svg>Feature Announcements</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/blog/seo-in-focus/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-seo-in-focus"></use>
+</svg>SEO in Focus</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/blog/industry-news/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-industry-news"></use>
+</svg>Industry News</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/blog/other/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-other"></use>
+</svg>Other</a>
+</li>
+</ul></li>
+<li class="secondary-nav__item secondary-nav__item--has-dropdown js-collapsible-nav"><a class="secondary-nav__link secondary-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/certified-partners/"><span>Certified Partners</span></a><ul aria-label="Submenu for Certified Partners" class="secondary-nav__subnav js-collapsible-nav-content secondary-nav__subnav--auto-width"><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/certified-partners/united-states/">United States</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/certified-partners/united-kingdom/">United Kingdom</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/certified-partners/benelux/">Benelux</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/certified-partners/other/">Other</a>
+</li>
+</ul></li>
+<li class="secondary-nav__item"><a class="secondary-nav__link" href="/careers/"><span>Careers</span></a></li>
+<li class="secondary-nav__item"><a class="secondary-nav__link" href="/support/"><span>Support</span></a></li>
+<li class="secondary-nav__item"><a class="secondary-nav__link" href="/contact/"><span>Contact</span></a></li>
+</ul>
+</nav>
+</div>
+<div class="header-nav-layout__button">
+<div class="js-header-button-onboarding" style="display: none"><a class="button button--fullwidth-on-small button--action button--is-shining button--is-responsive" href="/go/url/" role="button">
+<span>Start Trial</span>
+</a>
+</div>
+<div class="js-header-button-app" style="display: none">
+<a class="button button--fullwidth-on-small button--ghost button--small" href="https://app.contentkingapp.com/">
+<span>Go to app</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="header__buttons header__buttons--hidden-on-offnav">
+<button aria-controls="offcanvas-panel" aria-label="Toggle navigation" class="offnav-control">
+<i aria-hidden="true" class="offnav-control__icon"></i>
+<span class="offnav-control__label">Menu</span>
+</button>
+</div>
+</div>
+</header><main class="page__content" id="main-content">
+<section class="section section--light" id="js-reveal-header-boundary">
+<div class="row">
+<div class="small-12 columns">
+<div class="post-detail">
+<div class="post-detail__heading post-detail__heading--with-breadcrumb">
+<div class="heading">
+<nav aria-label="Breadcrumb" class="heading__breadcrumb">
+<ol class="breadcrumb show-for-medium">
+<li class="breadcrumb__item"><a href="/">Home</a></li>
+<li class="breadcrumb__item"><a href="/academy/">Academy</a></li>
+<li class="breadcrumb__item"><a href="/academy/processes-hub/">Content &amp; SEO Processes</a></li>
+<li class="breadcrumb__item breadcrumb__item--is-active"><span aria-current="page">Website Migrations guide</span></li>
+</ol>
+<ul aria-hidden="true" class="hide-for-medium breadcrumb">
+<li class="breadcrumb__item"><a class="backlink" href="/academy/" tabindex="-1">Go to Academy overview</a></li>
+</ul>
+</nav>
+</div>
+</div>
+<div class="post-detail__layout">
+<article class="post-detail__content">
+<div class="post-detail__content-body">
+<div aria-label="List of assigned categories to this article" class="post-detail__badges"><a aria-label="Content &amp; SEO Processes category. Using this link you can show all articles in Content &amp; SEO Processes category." class="academy-category-badge academy-category-badge--processes-category academy-category-badge--default-style" href="/academy/processes-hub/" style="background-color: #f7b500;"><span class="academy-category-badge__label">
+		Content &amp; SEO Processes
+	</span></a></div>
+<div class="heading">
+<h1 class="heading__title">The Ultimate Guide to Successful Website Migrations</h1>
+<div class="heading__params">
+<span aria-hidden="true" class="heading__label">
+										Last updated:
+									</span>
+<span aria-label="The date of last update" class="heading__caption">
+										October 12, 2021
+									</span>
+</div>
+</div>
+<div class="post-detail__text typo">
+<div aria-label="Table of contents" class="highlighted-box" role="navigation">
+<div aria-hidden="true" class="highlighted-box__title">Table of contents</div>
+<div class="highlighted-box__content">
+<ul class="navigation-list">
+<li class="navigation-list__item navigation-list__item--primary"><a href="#types">What we classify as a website migration</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#why-tricky">Why website migrations are tricky</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#success">How to successfully handle website migrations</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#why-they-fail">Why website migrations fail</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#process">The website migration process</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#last-note">A final note on website migrations</a></li>
+</ul>
+</div>
+</div>
+<p>We all have to deal with website migrations sooner or later. In this article we'll explain our phased approach to website migrations, including an in-depth website migration checklist, so you can ace your future migrations.</p>
+<h2 id="types">
+<a aria-hidden="true" class="anchor-link" href="#types" tabindex="-1"></a>What we classify as a website migration</h2>
+<p>It's important that we outline what we classify as a website migration before moving forward.</p>
+<p>Website migrations come in many flavors; some are tiny and others are massive.</p>
+<p>The most common ones are:</p>
+<ol>
+<li>
+<strong>Changing URLs:</strong> you want to e.g. <a href="/academy/urls/#best-practices">shorten URLs for readability</a>, fix incorrect URLs, or future-proof URLs by removing the year from the <a href="/academy/urls/faq/slug/">URL slug</a>.</li>
+<li>
+<strong>Merging content:</strong> you've got multiple pages about the same topic that are cannibalizing each other, so you're merging them together.</li>
+<li>
+<strong>Website redesign launch:</strong> you're changing the whole look and feel of your website—and often adding, changing, or removing content too.</li>
+<li>
+<strong>Changing your website architecture and/or URL structure:</strong> for example you're adding new services and products to your site, or you're unhappy with your current information architecture, which brings you to redo it.</li>
+<li>
+<strong>Switching from HTTP to HTTPS:</strong> your website's going to be served over a secure connection, and so all of your URLs will change.</li>
+<li>
+<strong>Switching hosting providers:</strong> for instance you're unhappy with your website's performance at your current hosting provider.</li>
+<li>
+<strong>Switching to a new CMS:</strong> for example your website has grown massively in terms of pages, functionality, and visitors, and you're in need of a more robust CMS system.</li>
+<li>
+<strong>Switching domain names:</strong> you're changing your domain name.</li>
+<li>
+<strong>Merging websites:</strong> for example you're acquiring a business, and you're looking to consolidate its website into your existing one. Or you're switching from a multi-domain strategy to a single-domain strategy.</li>
+</ol>
+<h2 id="why-tricky">
+<a aria-hidden="true" class="anchor-link" href="#why-tricky" tabindex="-1"></a>Why website migrations are tricky</h2>
+<p>When you're making changes to pages that are ranking in search engines, you're rocking the boat. There's always the chance that you'll lose your rankings when you start making changes. Yes, you understood right: <strong>there are absolutely no guarantees that your rankings will return to the same level after your migration</strong>.</p>
+<p>That's a frightening thought, and one that demands that even the most seasoned SEOs bring in their A-game.</p>
+<p>Here's <a href="https://twitter.com/JohnMu/status/988936277721534464" rel="noopener" target="_blank"><span class="extlink">John Muellers take</span><span class="show-for-sr"> (opens in a new tab)</span></a>:</p>
+<div class="media-container" style="max-width: 1178px;"><img alt="John Mueller Website Migrations" class="image" height="532" src="/wp-content/uploads/2018/12/john-mueller-website-migrations.png" title="John Mueller Website Migrations" width="1178"/></div>
+<p>The good news is that by handling website migrations well, you can ensure that there's little to no negative effect on the website's rankings.</p>
+<div aria-label="Start new free trial on ContentKing" class="onboarding-cta typo-block highlighted-box false highlighted-box--expressive" data-testid="onboarding-box"><div class="highlighted-box__content">
+<div class="highlighted-box__title">Catch SEO issues before a site migration</div>
+<div class="onboarding-cta__description typo">
+<p>Easily track and monitor changes with ContentKing. Be alerted to any issues that occur so you can fix them early on.</p>
+</div>
+<div class="onboarding-cta__form"><form aria-label="The form used for creating free trial account on ContentKing" class="quickinput-form-layout js-submit-url-start-onboarding quickinput-form-layout--white quickinput-form-layout--is-responsive" data-validate="" novalidate="">
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-unexpected-error form-msg form-msg--error" role="none" style="display: none;">Some unexpected error happened. Please contact us.</span><span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-timeout-error form-msg form-msg--error" role="none" style="display: none;">Something went wrong. Please, try again later.</span><div class="quickinput-form-layout__container">
+<div class="quickinput-form-layout__form-field">
+<label class="show-for-sr" for="onboarding-box-1-url">Domain (required)</label><input aria-required="true" class="js-trial-url large" id="onboarding-box-1-url" name="domain" pattern="url_only" placeholder="www.example.com" required="" type="url"/><span aria-hidden="true" aria-live="off" class="form-error form-bubble" role="none">Please enter a valid domain name (www.example.com).</span><span aria-hidden="true" aria-live="off" class="js-website-already-monitored custom-error form-bubble" role="none" style="display: none;">This domain is already being monitored by ContentKing. Please contact us if you are the rightful owner of this domain.</span><span aria-hidden="true" aria-live="off" class="js-target-redirected custom-error form-bubble" role="none" style="display: none;">This website redirects to <span class="js-target-redirected-domain"></span>. Do you want to add this website instead?</span><span aria-hidden="true" aria-live="off" class="js-blacklisted-domain custom-error form-bubble" role="none" style="display: none;">This domain has been excluded from monitoring. If you own it, please contact us.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain custom-error form-bubble" role="none" style="display: none;">We can't find this domain. Are you sure it's correct?</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-connect custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (connect failure). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-empty-response custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (empty response). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-size-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (size limit). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-time-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (time-out). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-waf custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (blocked by web application firewall). Please contact us for help.</span>
+</div>
+<div class="quickinput-form-layout__form-button"><button class="button js-submit-button button--large button--action button--is-shining button--fullwidth" data-loading-label="Loading" type="submit"><div><span class="button__content"><big>Start your free trial</big><small><span class="show-for-sr">. </span>No credit card needed</small></span></div></button></div>
+</div>
+</form></div>
+</div></div>
+<h2 id="success">
+<a aria-hidden="true" class="anchor-link" href="#success" tabindex="-1"></a>How to successfully handle website migrations</h2>
+<div class="media-container" style="max-width: 1200px;"><img alt="Website Migrations" class="image" height="444" loading="lazy" src="/wp-content/uploads/2018/11/ContentKing-Website-Migration-EN-Moving-van.png" title="Website Migrations" width="1200"/></div>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/barry-adams@1x.avif, /media/people/barry-adams@2x.avif 2x" type="image/avif"/><source srcset="/media/people/barry-adams@1x.webp, /media/people/barry-adams@2x.webp 2x" type="image/webp"/><img alt="Barry Adams" class="image" height="100" loading="lazy" src="/media/people/barry-adams@1x.jpg" srcset="/media/people/barry-adams@1x.jpg, /media/people/barry-adams@2x.jpg 2x" title="Barry Adams" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>Any site migration that involves URL changes needs to be very carefully considered. From domain name changes to tech stack updates, when you start changing your website's URLs you are basically throwing away your old ranking signals and hoping that with judicious use of redirects you can get search engines to associate those signals with your new URLs.</p>
+<p>And even if you accomplish that, some value will be lost in the transfer. As a rule, I always advise against changing URLs unless you really need to. It can be easier to improve rankings on non-ideal URLs than to migrate to and rank optimised URLs.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<span class="user-info__name">Barry Adams</span><span class="user-info__additional-info">, Independent SEO Consultant, <a href="https://www.polemicdigital.com/" rel="noopener" target="_blank"><span class="extlink">Polemic Digital</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--is-flipped avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/aleyda-solis@1x.avif, /media/people/aleyda-solis@2x.avif 2x" type="image/avif"/><source srcset="/media/people/aleyda-solis@1x.webp, /media/people/aleyda-solis@2x.webp 2x" type="image/webp"/><img alt="Aleyda Solis" class="image" height="100" loading="lazy" src="/media/people/aleyda-solis@1x.jpg" srcset="/media/people/aleyda-solis@1x.jpg, /media/people/aleyda-solis@2x.jpg 2x" title="Aleyda Solis" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>Some of the best practices I follow are:</p>
+<ul>
+<li>Verify with all of the stakeholders the desired outcome and goals from the migration, its scope, as well as resources and timings to be able to plan ahead and coordinate with all of the involved areas and teams.</li>
+<li>Use as many data sources as possible to identify all the URLs that are needed to take into consideration for the migration: those identified from your own crawls, Google Analytics, Search Console pages, SEMrush, Ahrefs, Sistrix, pages with rankings and external links, URLs with activity from log files, etc. to avoid leaving anything out.</li>
+<li>Establish your priority pages -those with a higher traffic and conversion impact- to validate and monitor more closely during the migration process.</li>
+<li>Set a (closed) test environment to validate the website migration with enough time to check and solve any potential issues that arise before the public launch.</li>
+<li>Leave a monitoring system (to track crawling, indexing, rankings, traffic, conversions) set to start following up the new pages destinations as soon as they're released, to identify and fix important issues fast.</li>
+<li>Continue monitoring the website migration evolution overtime, avoiding to undo Web migration related configuration without checking that they're not required anymore.</li>
+</ul>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<a class="user-info__social-icon social-icon social-icon--link social-icon--linkedin" href="https://www.linkedin.com/in/aleyda/" rel="noopener" target="_blank" title="See my profile on LinkedIn"><span class="extlink">LinkedIn</span><span class="show-for-sr"> (opens in a new tab)</span></a><span class="user-info__name">Aleyda Solis</span><span class="user-info__additional-info">, International SEO Consultant &amp; Founder, <a href="https://www.orainti.com/" rel="noopener" target="_blank"><span class="extlink">Orainti</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<p>The best way to approach website migrations is to avoid them completely.</p>
+<p>We're not kidding, it's true. How can you achieve this?</p>
+<p>Think long and hard about your website architecture when you initially launch a website. If that's new to you, check out <a href="/academy/ecommerce-architecture/">our article on website architectures</a>.</p>
+<p>Even when a migration seems to be on its way, you need to ask yourself: "is this migration actually worth it?"</p>
+<p>Besides the obvious SEO risks involved when you're changing URLs, website migrations also impact your social shares. You need to migrate these as well.</p>
+<p>Since you probably came to this article looking for best practices regarding your impending website migration, the next piece of advice is to change as little as possible in one go.</p>
+<p>All the changes you're going to make will have an impact on your rankings, so making the website migration a multi-stage process is a smart thing to do. Now, it certainly sounds attractive to just have one big bang that involves launching on a new domain while launching a new design and publishing a whole new SEO strategy too.</p>
+<p>But when your rankings tank, where will you <a href="/academy/ranking-drop/">start diagnosing your ranking drop</a>?</p>
+<p>Successful website migrations are planned well, and executed with military precision.</p>
+<p>We managed dozens of large-scale website migrations in our agency days, and nowadays we witness dozens of them going down on the websites that ContentKing is monitoring <strong>on a daily basis</strong>. And they don't always go well. Lucky for them, ContentKing spots issues quickly, as it monitors in real-time, which enables our customers to take action as issues unfold. But it's still frustrating and time-consuming, and it's often completely unnecessary.</p>
+<p>This alert was sent by ContentKing right after a migration went wrong:</p>
+<div class="media-container" style="max-width: 1538px;"><img alt="Pages became non indexable after website migrations" class="image" height="450" loading="lazy" src="/wp-content/uploads/2018/12/contentking-alert-pages-non-indexable.png" title="Pages became non indexable after website migrations" width="1538"/></div>
+<p>Remember, prevention is better than a cure: it's a lot easier and cheaper to prevent website migrations from going wrong in the first place than to recover from a failed website migration.</p>
+<h2 id="why-they-fail">
+<a aria-hidden="true" class="anchor-link" href="#why-they-fail" tabindex="-1"></a>Why website migrations fail</h2>
+<div class="media-container" style="max-width: 1200px;"><picture><source media="(max-width: 600px)" srcset="/wp-content/uploads/2018/12/ContentKing-Website-Migrations-Fail@1x.png"/><img alt="Website migrations fail" class="image" height="444" loading="lazy" src="/wp-content/uploads/2018/12/ContentKing-Website-Migrations-Fail@1x.png" srcset="/wp-content/uploads/2018/12/ContentKing-Website-Migrations-Fail@1x.png, /wp-content/uploads/2018/12/ContentKing-Website-Migrations-Fail@2x.png 2x" title="Website migrations fail" width="1200"/></picture></div>
+<p>When website migrations fail, it's usually because of:</p>
+<ol>
+<li>A lack of awareness of the risks involved in website migrations</li>
+<li>Poor planning</li>
+<li>A shaky migration checklist (or no checklist at all)</li>
+<li>A lack of knowledge by the parties involved</li>
+</ol>
+<p>You might ask: "So how do I address this to make my migration successful?"</p>
+<p>Hopefully, we've already given you enough inspiration in the previous sections to prevent a lack of awareness of the risks involved.</p>
+<p>In the next sections we'll cover how to get the planning right and how to put together a kickass website migration checklist, and we'll provide background information around important topics that you'll have to deal with during the migration.</p>
+<section aria-label="Pro tip" class="highlighted-box typo-block highlighted-box--with-icon highlighted-box--protip-style"><div aria-hidden="true" class="highlighted-box__title">Pro tip</div>
+<div class="highlighted-box__content">
+<p>It's important to note that, even if you flawlessly execute a website migration, you may still be looking at a long road to organic traffic recovery. Simply because at some point, things are just out of your hands and it's Google's turn to work their magic.</p>
+<p>Especially in case of domain migrations, the road to recovery can sometimes even take six to twelve months.</p>
+</div></section>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--is-flipped avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/aleyda-solis@1x.avif, /media/people/aleyda-solis@2x.avif 2x" type="image/avif"/><source srcset="/media/people/aleyda-solis@1x.webp, /media/people/aleyda-solis@2x.webp 2x" type="image/webp"/><img alt="Aleyda Solis" class="image" height="100" loading="lazy" src="/media/people/aleyda-solis@1x.jpg" srcset="/media/people/aleyda-solis@1x.jpg, /media/people/aleyda-solis@2x.jpg 2x" title="Aleyda Solis" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>I've found that website migrations tend to fail when:</p>
+<ul>
+<li>There isn't a well-defined goal of what the purpose and the scope is of the website migration in order to achieve the desired result.</li>
+<li>Not all required URLs are taken into consideration for the migration (e.g. some resources or older pages are left out).</li>
+<li>Legacy crawling and indexing issues, that haven't been solved pre-migration, are carried over and become even more complex to solve.</li>
+<li>The migration is not well validated first in a test environment before its public release.</li>
+<li>The migration is not well validated right after the public release to fix important issues before they have a bigger negative impact.</li>
+<li>The most important pages from a traffic and conversion perspective are not prioritized to be validated and monitored more closely.</li>
+</ul>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<a class="user-info__social-icon social-icon social-icon--link social-icon--linkedin" href="https://www.linkedin.com/in/aleyda/" rel="noopener" target="_blank" title="See my profile on LinkedIn"><span class="extlink">LinkedIn</span><span class="show-for-sr"> (opens in a new tab)</span></a><span class="user-info__name">Aleyda Solis</span><span class="user-info__additional-info">, International SEO Consultant &amp; Founder, <a href="https://www.orainti.com/" rel="noopener" target="_blank"><span class="extlink">Orainti</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/cyrus-shepard@1x.avif, /media/people/cyrus-shepard@2x.avif 2x" type="image/avif"/><source srcset="/media/people/cyrus-shepard@1x.webp, /media/people/cyrus-shepard@2x.webp 2x" type="image/webp"/><img alt="Cyrus Shepard" class="image" height="100" loading="lazy" src="/media/people/cyrus-shepard@1x.jpg" srcset="/media/people/cyrus-shepard@1x.jpg, /media/people/cyrus-shepard@2x.jpg 2x" title="Cyrus Shepard" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>In my experience, website migrations work best when:</p>
+<ol>
+<li>Search demand for the brand/website is high</li>
+<li>There are a smaller + manageable # of URLs</li>
+<li>There is sufficient incoming link equity</li>
+</ol>
+<p>Folks often overlook #1, but out of all of these, it may be one of the most correlated with successful migrations. If folks are looking for "Brand X" in Google search results, it's in everyone's best interest for Google to serve up the right website.</p>
+<p>While it's no silver bullet, websites with high branded search volume seem to have an advantage here. That said, the less branded search volume you have, combined with an unmanageable number of page with low external link equity, the more you may be in for a potential headache with your migration.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<a class="user-info__social-icon social-icon social-icon--link social-icon--linkedin" href="https://www.linkedin.com/in/cyrusshepard/" rel="noopener" target="_blank" title="See my profile on LinkedIn"><span class="extlink">LinkedIn</span><span class="show-for-sr"> (opens in a new tab)</span></a><span class="user-info__name">Cyrus Shepard</span><span class="user-info__additional-info">, <a href="https://zyppy.com/" rel="noopener" target="_blank"><span class="extlink">Zyppy</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<h2 id="process">
+<a aria-hidden="true" class="anchor-link" href="#process" tabindex="-1"></a>The website migration process</h2>
+<div class="media-container" style="max-width: 1200px;"><picture><source media="(max-width: 600px)" srcset="/wp-content/uploads/2018/12/ContentKing-Website-Migrations-Process@1x.png"/><img alt="Website migration process" class="image" height="444" loading="lazy" src="/wp-content/uploads/2018/12/ContentKing-Website-Migrations-Process@1x.png" srcset="/wp-content/uploads/2018/12/ContentKing-Website-Migrations-Process@1x.png, /wp-content/uploads/2018/12/ContentKing-Website-Migrations-Process@2x.png 2x" title="Website migration process" width="1200"/></picture></div>
+<p>We've come to see the website migration process as having these phases:</p>
+<ol>
+<li><a href="/academy/website-migrations/#phase-1-planning">Planning</a></li>
+<li><a href="/academy/website-migrations/#phase-2-pre-migration-preparation">Pre-migration preparation</a></li>
+<li><a href="/academy/website-migrations/#phase-3-prep-migration-testing">Pre-migration testing</a></li>
+<li><a href="/academy/website-migrations/#phase-4-launch">Launch</a></li>
+<li><a href="/academy/website-migrations/#phase-5-post-migration-testing">Post-migration review</a></li>
+<li><a href="/academy/website-migrations/#phase-6-post-migration-follow-up">Post migration follow-up</a></li>
+<li><a href="/academy/website-migrations/#phase-7-post-migration-monitoring">Post-migration monitoring</a></li>
+<li><a href="/academy/website-migrations/#evaluation">Evaluating the success of your website migration</a></li>
+</ol>
+<h3 id="phase-1-planning">
+<a aria-hidden="true" class="anchor-link" href="#phase-1-planning" tabindex="-1"></a>Phase 1: Planning</h3>
+<p>Planning is essential to a successful website migration. Take the time you need to allocate enough resources to the website migration project, compose a solid migration checklist, educate people within the team, and make them aware of the risks involved.</p>
+<p>The website migration's planning starts when it's first being discussed—even if that's just floating some ideas. From this moment on, SEO experts will need to be involved.</p>
+<h4 id="scope-the-website-migration">Scope the website migration</h4>
+<p>First you scope the website migration: what's going to change, and who's impacted? There's a difference between some content being moved within the website and a complete redesign being launched. The former is a lot less risky, and requires a lot less resources than the latter.</p>
+<h4 id="build-a-website-migration-team">Build a website migration team</h4>
+<p>Build a website migration team that includes everyone whom the website migration impacts. This often include: system administrators, developers, designers, copywriters, project managers, SEOs, legal, and management. Plan a kick-off meeting with everyone in the room, so everyone's on the same page.</p>
+<p>Clearly identify who's managing the website migration (this might be an SEO expert, but that's not absolutely necessary).</p>
+<h4 id="identify-concerns-and-define-goals">Identify concerns and define goals</h4>
+<p>Ask all the people involved what their concerns are, and what it takes for the website migration to be successful in their eyes. This is also where you define the goals for the website migration. Without these goals, you can't determine whether the migration was successful when you go on to evaluate it post-migration.</p>
+<h4 id="explain-the-risks-involved-and-what-to-expect">Explain the risks involved and what to expect</h4>
+<p>Explain to the whole team the risks involved in doing the migration, what to expect in terms of traffic drops after the migration, and why this happens. It's likely you'll see fluctuations in rankings and a (temporary) drop in traffic. This is common, so manage expectations.</p>
+<h4 id="map-out-tasks">Map out tasks</h4>
+<p>Create a list of what needs to be done <strong>before</strong>, <strong>during</strong>, and <strong>after</strong> the website migration, and assign it all to the right people. That's where the website migration checklist, which we'll cover in upcoming sections, will come in handy.</p>
+<p>You can for instance use Google Spreadsheets or Trello to manage the planning and assign tasks.</p>
+<h4 id="choose-the-best-moment-to-launch">Choose the best moment to launch</h4>
+<p>Now that you know what a website migration comprises, you can choose the best moment to launch. Avoid launching around holidays and peak times, and don't launch on Friday afternoon because "it's a great way to end the week."</p>
+<p>Tuesdays and Wednesdays are usually good days to launch, because Mondays are notorious for meetings, and meanwhile you'll have a few days before the weekend to fix high-impact issues. Scheduling the launch at 10 AM gives people enough time to get to work and do their morning meetings / standups. Plus it gives you most of the day to focus on the migration.</p>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/dawn-anderson@1x.avif" type="image/avif"/><source srcset="/media/people/dawn-anderson@1x.webp" type="image/webp"/><img alt="Dawn Anderson" class="image" height="100" loading="lazy" src="/media/people/dawn-anderson@1x.png" title="Dawn Anderson" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>Start working well ahead of any migration on getting the technical SEO of the current site into much better shape so that every time Google comes crawling, the quality is overall just a little bit better.</p>
+<p>Don't let an existing site stagnate for a year with poor quality content and technical SEO whilst you build something better because the quality of the existing site will just be seen as lower and lower in Google's eyes. Keep working on the new site and the existing site in tandem, although this seems to be more effort. You'll get a better result when you ultimately switch over with a more robust platform and even better content.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<span class="user-info__name">Dawn Anderson</span><span class="user-info__additional-info">, <a href="https://bertey.com/" rel="noopener" target="_blank"><span class="extlink">Bertey</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/bartosz-goralewicz@1x.avif, /media/people/bartosz-goralewicz@2x.avif 2x" type="image/avif"/><source srcset="/media/people/bartosz-goralewicz@1x.webp, /media/people/bartosz-goralewicz@2x.webp 2x" type="image/webp"/><img alt="Bartosz Góralewicz" class="image" height="200" loading="lazy" src="/media/people/bartosz-goralewicz@1x.jpg" srcset="/media/people/bartosz-goralewicz@1x.jpg, /media/people/bartosz-goralewicz@2x.jpg 2x" title="Bartosz Góralewicz" width="200"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>Platform or framework migrations often involve Information Architecture improvements and changes in the URL structure - with the latter being generally advised against. What's worse is subsequently failing to transfer the acquired page authority onto the new URLs. Additionally, multinational websites often unnecessarily inflate the URL count by including many new, but in their case redundant geotargeted site variants. Add in failed hreflang implementation, and it can lead to its organic visibility plummeting.</p>
+<p>The key aspect is preparation, gathering as much data about your current site structure as possible BEFORE you pull the plug on the old site. Fully crawling enterprise sites can take months, so rely on alternative URL list sources like GSC and server logs to create appropriate mapping between the old and new.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<a class="user-info__social-icon social-icon social-icon--link social-icon--linkedin" href="https://www.linkedin.com/in/goralewicz/" rel="noopener" target="_blank" title="See my profile on LinkedIn"><span class="extlink">LinkedIn</span><span class="show-for-sr"> (opens in a new tab)</span></a><span class="user-info__name">Bartosz Góralewicz</span><span class="user-info__additional-info">, <a href="https://www.onely.com/" rel="noopener" target="_blank"><span class="extlink">Onely</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<h3 id="phase-2-pre-migration-preparation">
+<a aria-hidden="true" class="anchor-link" href="#phase-2-pre-migration-preparation" tabindex="-1"></a>Phase 2: Pre-migration preparation</h3>
+<p>During the pre-migration preparation phase, you prepare everything you're going to need along the way. This is where the heavy lifting is done.</p>
+<h4 id="define-seo-requirements">Define SEO requirements</h4>
+<p>If the website migration involves a redesign or CMS change, be sure to define the SEO requirements that apply for the developers. Examples of things that need to be addressed:</p>
+<ul>
+<li>URL structure</li>
+<li>Meta information (titles and descriptions)</li>
+<li>Body content and headings</li>
+<li>Hreflang</li>
+<li>XML Sitemaps</li>
+<li>Structured Data (e.g. Schema.org)</li>
+<li>Load time</li>
+</ul>
+<p>There's much more to say about this—but that demands an article of its own.</p>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/greg-gifford@1x.avif, /media/people/greg-gifford@2x.avif 2x" type="image/avif"/><source srcset="/media/people/greg-gifford@1x.webp, /media/people/greg-gifford@2x.webp 2x" type="image/webp"/><img alt="Greg Gifford" class="image" height="100" loading="lazy" src="/media/people/greg-gifford@1x.jpg" srcset="/media/people/greg-gifford@1x.jpg, /media/people/greg-gifford@2x.jpg 2x" title="Greg Gifford" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>The biggest problem we see with site migrations for dealers is that each platform is structured differently. The technology running the sites is different, default page URLs are different, each vendor has its own CMS, and goals and events are tracked differently in Google Analytics.</p>
+<p>Most vendors don't put in any effort to ease the transition, which inevitably causes traffic drops as Google tries to figure out what's going on. Content changes, every URL is suddenly different, and schema markup might have even changed.</p>
+<p>Ideally, you should always try to transfer content as-is. If you can't keep your URLs the same, it's imperative that you set up 301 redirects properly. You've got to make sure your schema markup is correct on the new site, and that your forms are submitting to the right places (and that they're being tracked properly). Otherwise, you're in for lots of problems…</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<span class="user-info__name">Greg Gifford</span><span class="user-info__additional-info">, <a href="https://twitter.com/GregGifford" rel="noopener" target="_blank"><span class="extlink">Twitter</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<h4 id="evaluate-the-design">Evaluate the design</h4>
+<p>If the website migration involves a redesign, it's essential that the redesign be evaluated by the SEO experts involved. Why? Because the design prescribes if and where content and links are positioned, and this has a massive impact on your SEO strategy.</p>
+<p>Example: you may find out that the designer didn't find it necessary to include body content in the product category pages—and the detail pages.</p>
+<p>To avoid frustration and wasted money, involve SEO experts from the moment the first wireframe drafts are made.</p>
+<h4 id="content-inventory">Content inventory</h4>
+<p>When doing a website migration, you need to know what content is impacted by the migration. The first step is to list what content you have. We call this running <a href="/academy/content-optimization/#step-1-content-inventory">content inventory</a>, and it's basically creating a full overview of your website's content.</p>
+<p>Use every tool at your disposal to paint a full picture of all of your website's content. That includes crawling your site with ContentKing, exporting all the pages from your CMS, and using analytics software to find all the pages that are getting traffic.</p>
+<p>Here's a screenshot of pages with their Google Analytics data in ContentKing:</p>
+<div class="media-container" style="max-width: 1570px;"><img alt="ContentKing Pages overview with Google Analytics data" class="image" height="349" loading="lazy" src="/wp-content/uploads/2018/12/contentking-urls-with-google-analytics-data.png" title="ContentKing Pages overview with Google Analytics data" width="1570"/></div>
+<div aria-label="Start new free trial on ContentKing" class="onboarding-cta typo-block highlighted-box false highlighted-box--expressive" data-testid="onboarding-box"><div class="highlighted-box__content">
+<div class="highlighted-box__title">Need help with content inventory?</div>
+<div class="onboarding-cta__description typo">
+<p>Let ContentKing do the heavy lifting! Audit your content inventory, track all changes, and be alerted to any issues as they occur.</p>
+</div>
+<div class="onboarding-cta__form"><form aria-label="The form used for creating free trial account on ContentKing" class="quickinput-form-layout js-submit-url-start-onboarding quickinput-form-layout--white quickinput-form-layout--is-responsive" data-validate="" novalidate="">
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-unexpected-error form-msg form-msg--error" role="none" style="display: none;">Some unexpected error happened. Please contact us.</span><span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-timeout-error form-msg form-msg--error" role="none" style="display: none;">Something went wrong. Please, try again later.</span><div class="quickinput-form-layout__container">
+<div class="quickinput-form-layout__form-field">
+<label class="show-for-sr" for="onboarding-box-2-url">Domain (required)</label><input aria-required="true" class="js-trial-url large" id="onboarding-box-2-url" name="domain" pattern="url_only" placeholder="www.example.com" required="" type="url"/><span aria-hidden="true" aria-live="off" class="form-error form-bubble" role="none">Please enter a valid domain name (www.example.com).</span><span aria-hidden="true" aria-live="off" class="js-website-already-monitored custom-error form-bubble" role="none" style="display: none;">This domain is already being monitored by ContentKing. Please contact us if you are the rightful owner of this domain.</span><span aria-hidden="true" aria-live="off" class="js-target-redirected custom-error form-bubble" role="none" style="display: none;">This website redirects to <span class="js-target-redirected-domain"></span>. Do you want to add this website instead?</span><span aria-hidden="true" aria-live="off" class="js-blacklisted-domain custom-error form-bubble" role="none" style="display: none;">This domain has been excluded from monitoring. If you own it, please contact us.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain custom-error form-bubble" role="none" style="display: none;">We can't find this domain. Are you sure it's correct?</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-connect custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (connect failure). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-empty-response custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (empty response). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-size-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (size limit). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-time-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (time-out). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-waf custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (blocked by web application firewall). Please contact us for help.</span>
+</div>
+<div class="quickinput-form-layout__form-button"><button class="button js-submit-button button--large button--action button--is-shining button--fullwidth" data-loading-label="Loading" type="submit"><div><span class="button__content"><big>Start your free trial</big><small><span class="show-for-sr">. </span>No credit card needed</small></span></div></button></div>
+</div>
+</form></div>
+</div></div>
+<p>Don't forget that other media types, such as images and PDF files, are also content, and these too play a role in your SEO success.</p>
+<h4 id="audit-your-content-and-identify-top-performing-pages">Audit your content and identify top-performing pages</h4>
+<div class="media-container" style="max-width: 1500px;"><picture><source media="(max-width: 600px)" srcset="/wp-content/uploads/2018/12/ContentKing-Website-Migrations-KPI@1x.png"/><img alt="Top performing pages" class="image" height="889" loading="lazy" src="/wp-content/uploads/2018/12/ContentKing-Website-Migrations-KPI@1x.png" srcset="/wp-content/uploads/2018/12/ContentKing-Website-Migrations-KPI@1x.png, /wp-content/uploads/2018/12/ContentKing-Website-Migrations-KPI@2x.png 2x" title="Top performing pages" width="1500"/></picture></div>
+<p>Pull up <a href="/academy/kpis-to-measure-seo-success/">the KPIs for each page</a> on your site, and identify top-performing pages. Your top-performing pages are the pages that generate the most revenue and conversions and drive the most traffic. You need to prioritize your efforts, so it's essential that you know your top-performing pages.</p>
+<p>Identify your top-performing pages using the KPIs you just pulled up and verify this list of top-performing pages using:</p>
+<ul>
+<li>ContentKing: Go to Pages and sort based on Importance, which takes into account a variety of factors that determine importance, including Google Analytics and Google Search Console data. You can filter on all of this data, as well as set up segments for it.</li>
+<li>Rank tracking tools</li>
+<li>Analytics software, e.g. in Google Analytics
+    <ul>
+<li>
+<code class="language-plaintext highlighter-rouge">Behavior</code> &gt; <code class="language-plaintext highlighter-rouge">Landing Pages</code>
+</li>
+<li>
+<code class="language-plaintext highlighter-rouge">Conversions</code> &gt; <code class="language-plaintext highlighter-rouge">Goals</code>
+</li>
+<li>
+<code class="language-plaintext highlighter-rouge">Conversions</code> &gt; <code class="language-plaintext highlighter-rouge">E-commerce</code>
+</li>
+</ul>
+</li>
+<li>Backlink data from tools such as Google Search Console, Ahrefs, and Majestic</li>
+</ul>
+<p>Indicate whether pages will still exist after the migration and whether they'll be moved, consolidated, or even removed. You'll need this information later on, when you'll be drafting your redirect plan.</p>
+<h4 id="fit-the-new-content-into-the-information-architecture">Fit the new content into the information architecture</h4>
+<p>If you're going to be adding new content, it's important that you determine whether this new content can be part of the existing website architecture or not. If your existing website architecture isn't flexible enough to accommodate this new content, you need to rework your website architecture.</p>
+<h4 id="update-your-rank-tracking-tool">Update your rank-tracking tool</h4>
+<p>You've identified your key pages, and you've already touched on some of the keywords these pages are ranking for. Now it's time to update your rank-tracking tool to make sure you're tracking all of the queries you're ranking for. This is important, as you need to monitor these queries after the migration to make sure you're getting back on top.</p>
+<p>Pull up your list of top-performing pages and make sure all the queries they're ranking for are being tracked in your rank-tracking tool. Use tools such as Google Search Console, Ahrefs, and SEMrush to verify that you're tracking all of the important queries.</p>
+<h4 id="redirect-plan">Redirect plan</h4>
+<div class="media-container" style="max-width: 1200px;"><picture><source media="(max-width: 600px)" srcset="/wp-content/uploads/2018/06/ContentKing-Redirect-EN-Redirect-301@1x.png"/><img alt="Redirect plan" class="image" height="354" loading="lazy" src="/wp-content/uploads/2018/06/ContentKing-Redirect-EN-Redirect-301@1x.png" srcset="/wp-content/uploads/2018/06/ContentKing-Redirect-EN-Redirect-301@1x.png, /wp-content/uploads/2018/06/ContentKing-Redirect-EN-Redirect-301@2x.png 2x" title="Redirect plan" width="1200"/></picture></div>
+<p>Your redirect plan describes what domains and URLs need to be redirected when you launch. Keep in mind that you probably already have redirects in place within your existing website. If you don't migrate these, that can have a severe negative impact on your SEO performance.</p>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/dawn-anderson@1x.avif" type="image/avif"/><source srcset="/media/people/dawn-anderson@1x.webp" type="image/webp"/><img alt="Dawn Anderson" class="image" height="100" loading="lazy" src="/media/people/dawn-anderson@1x.png" title="Dawn Anderson" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>Investigate how redirects are currently implemented. Are they configured on a web server level (e.g. .htaccess) or are they being handled by a CMS plugin? If the website is moving to an entirely different platform (e.g. different CMS or framework, then they are all going to break. Investigating the redirects are currently in place, and how they are implemented is an essential part of the migration. Conveniently this also gives you the opportunity to tackle redirect chains.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<span class="user-info__name">Dawn Anderson</span><span class="user-info__additional-info">, <a href="https://bertey.com/" rel="noopener" target="_blank"><span class="extlink">Bertey</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<p>Make a list of the domains and URLs that are currently redirecting and put these in a spreadsheet with three columns:</p>
+<ul>
+<li>Column A: the domain or URL of the URL that's being redirected currently.</li>
+<li>Column B: the destination of the existing redirect.</li>
+<li>Column C: the destination of the new redirect.</li>
+</ul>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/david-iwanow@1x.avif, /media/people/david-iwanow@2x.avif 2x" type="image/avif"/><source srcset="/media/people/david-iwanow@1x.webp, /media/people/david-iwanow@2x.webp 2x" type="image/webp"/><img alt="David Iwanow" class="image" height="100" loading="lazy" src="/media/people/david-iwanow@1x.jpg" srcset="/media/people/david-iwanow@1x.jpg, /media/people/david-iwanow@2x.jpg 2x" title="David Iwanow" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>A key thing to remember is to check what old domains you might have forgotten about, which should continue redirecting to the new site.</p>
+<p>Check Google Analytics's hostname report (<code class="language-plaintext highlighter-rouge">Technology</code> &gt; <code class="language-plaintext highlighter-rouge">Network</code> and choose 'Hostname' as primary dimension) to see if there are any strange domains or subdomains capturing traffic currently and make sure they are included in the redirect plan.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<span class="user-info__name">David Iwanow</span><span class="user-info__additional-info">, <a href="https://travel-network.co/" rel="noopener" target="_blank"><span class="extlink">Travel Network</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<p>Let's look at an example.</p>
+<p>Let's say there are three domains redirecting to a website:</p>
+<ul>
+<li>Domain A 301-redirects to <code class="language-plaintext highlighter-rouge">https://example.com</code>
+</li>
+<li>Domain B 301-redirects to <code class="language-plaintext highlighter-rouge">https://example.com</code>
+</li>
+<li>Domain C 301-redirects to <code class="language-plaintext highlighter-rouge">https://example.com/shop/</code>
+</li>
+</ul>
+<p>And there are redirects in place because of a URL change for the shop page: <code class="language-plaintext highlighter-rouge">https://example.com/store/</code> 301-redirects <code class="language-plaintext highlighter-rouge">https://example.com/shop/</code>.</p>
+<p>Then the domain changes from <code class="language-plaintext highlighter-rouge">example.com</code> to <code class="language-plaintext highlighter-rouge">example-new.com</code>. The new URL of the shop page is: <code class="language-plaintext highlighter-rouge">https://example-new.com/shop/</code>.</p>
+<p>Then this is what the redirects need to look like:</p>
+<ul>
+<li>Domain A 301-redirects to <code class="language-plaintext highlighter-rouge">https://example-new.com</code>
+</li>
+<li>Domain B 301-redirects to <code class="language-plaintext highlighter-rouge">https://example-new.com</code>
+</li>
+<li>Domain C 301-redirects to <code class="language-plaintext highlighter-rouge">https://example-new.com/shop/</code>
+</li>
+<li>
+<code class="language-plaintext highlighter-rouge">https://example.com/store/</code> 301-redirects to <code class="language-plaintext highlighter-rouge">https://example-new.com/shop/</code>
+</li>
+</ul>
+<p>The next step here is to supplement this list of redirects with URLs that are going to changing due to the migration.</p>
+<p>Please note that you need to avoid having <a href="/academy/redirects/faq/redirect-chains/">chained redirects</a>. A chained redirect is when one URL is requested, and a redirect is used to redirect it to another URL and in turn this particular URL is redirected as well.</p>
+<div class="media-container" style="max-width: 1200px;"><picture><source media="(max-width: 600px)" srcset="/wp-content/uploads/2018/06/ContentKing-Redirect-EN-Redirect-chain@1x.png"/><img alt="Redirect chain" class="image" height="354" loading="lazy" src="/wp-content/uploads/2018/06/ContentKing-Redirect-EN-Redirect-chain@1x.png" srcset="/wp-content/uploads/2018/06/ContentKing-Redirect-EN-Redirect-chain@1x.png, /wp-content/uploads/2018/06/ContentKing-Redirect-EN-Redirect-chain@2x.png 2x" title="Redirect chain" width="1200"/></picture></div>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/dawn-anderson@1x.avif" type="image/avif"/><source srcset="/media/people/dawn-anderson@1x.webp" type="image/webp"/><img alt="Dawn Anderson" class="image" height="100" loading="lazy" src="/media/people/dawn-anderson@1x.png" title="Dawn Anderson" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>Don't presume that the redirection mapping will be straightforward. You need to know fully how the URLs are generated and whether they are generated on a parameter by parameter basis. Is there built-in contingency in the current platform, or custom build for URL clash, and if there is a clash what would the output be? These areas are often the beginning of <a href="/academy/redirects/faq/redirect-loops/">infinite loops</a> and circular dependency if you are not careful.</p>
+<p>You also have to consider whether you can sensibly use wildcards and regex when you are mapping domains at scale, because they don't always work as you'd expect them to fully. Test everything in a staging environment beforehand. It may mean that you can't actually take everything with you when you switch over. If that's the case then bear in mind you will lose very likely some domain relevance at a topic level because the pages you lost will have contributed something. I've also seen cases where people use an opportunity such as a migration to "get rid of the cruft" while in reality some of that cruft (content wise) was likely adding to their overall topical relevance.</p>
+<p>I've also seen a lot of cases where people seem to think that you can merely redirect / remap up to the nearest category. This is not the case, because unless the content is pretty much the same you're not going to have a doc / term map to doc / term map and this would be considered <a href="/academy/index-coverage/faq/submitted-soft-404/">a soft 404</a>. There is loss there. So, think wisely!</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<span class="user-info__name">Dawn Anderson</span><span class="user-info__additional-info">, <a href="https://bertey.com/" rel="noopener" target="_blank"><span class="extlink">Bertey</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<h4 id="set-up-page-redirects-correctly">Set up page redirects correctly</h4>
+<p>Always redirect old URLs to the most relevant new URLs, instead of just redirecting them to the new homepage.</p>
+<p>If you don't, these redirects can be seen by search engines as soft 404s, resulting in less link value passed on in general. Also, you'll see dramatic ranking drops for all of your pages that used to rank.</p>
+<div aria-label="Start new free trial on ContentKing" class="onboarding-cta typo-block highlighted-box false highlighted-box--expressive" data-testid="onboarding-box"><div class="highlighted-box__content">
+<div class="highlighted-box__title">Are redirects hurting your SEO performance?</div>
+<div class="onboarding-cta__description typo">
+<p>Poorly configured redirects can seriously impact your SEO efforts.
+Run a quick check with ContentKing and see what can be improved.</p>
+</div>
+<div class="onboarding-cta__form"><form aria-label="The form used for creating free trial account on ContentKing" class="quickinput-form-layout js-submit-url-start-onboarding quickinput-form-layout--white quickinput-form-layout--is-responsive" data-validate="" novalidate="">
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-unexpected-error form-msg form-msg--error" role="none" style="display: none;">Some unexpected error happened. Please contact us.</span><span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-timeout-error form-msg form-msg--error" role="none" style="display: none;">Something went wrong. Please, try again later.</span><div class="quickinput-form-layout__container">
+<div class="quickinput-form-layout__form-field">
+<label class="show-for-sr" for="onboarding-box-3-url">Domain (required)</label><input aria-required="true" class="js-trial-url large" id="onboarding-box-3-url" name="domain" pattern="url_only" placeholder="www.example.com" required="" type="url"/><span aria-hidden="true" aria-live="off" class="form-error form-bubble" role="none">Please enter a valid domain name (www.example.com).</span><span aria-hidden="true" aria-live="off" class="js-website-already-monitored custom-error form-bubble" role="none" style="display: none;">This domain is already being monitored by ContentKing. Please contact us if you are the rightful owner of this domain.</span><span aria-hidden="true" aria-live="off" class="js-target-redirected custom-error form-bubble" role="none" style="display: none;">This website redirects to <span class="js-target-redirected-domain"></span>. Do you want to add this website instead?</span><span aria-hidden="true" aria-live="off" class="js-blacklisted-domain custom-error form-bubble" role="none" style="display: none;">This domain has been excluded from monitoring. If you own it, please contact us.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain custom-error form-bubble" role="none" style="display: none;">We can't find this domain. Are you sure it's correct?</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-connect custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (connect failure). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-empty-response custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (empty response). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-size-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (size limit). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-time-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (time-out). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-waf custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (blocked by web application firewall). Please contact us for help.</span>
+</div>
+<div class="quickinput-form-layout__form-button"><button class="button js-submit-button button--large button--action button--is-shining button--fullwidth" data-loading-label="Loading" type="submit"><div><span class="button__content"><big>Start your free trial</big><small><span class="show-for-sr">. </span>No credit card needed</small></span></div></button></div>
+</div>
+</form></div>
+</div></div>
+<h4 id="set-up-domain-redirects-correctly">Set up domain redirects correctly</h4>
+<p>It's a common mistake to incorrectly configure domain redirects during a website migration, resulting in multiple redirect hops. For instance, when you request a domain that's currently redirected, you want it to redirect to the final destination URL right away, regardless of whether or not the right protocol and subdomain were requested.</p>
+<p>Again, let's look at an example:</p>
+<ul>
+<li>
+<code class="language-plaintext highlighter-rouge">http://www.redirecting-domain.com</code> 301-redirects to <code class="language-plaintext highlighter-rouge">https://www.redirecting-domain.com</code>
+</li>
+<li>Let's say you're going to move to <code class="language-plaintext highlighter-rouge">https://example-new.com</code>
+</li>
+<li>Then <code class="language-plaintext highlighter-rouge">http://www.redirecting-domain.com</code> should 301-redirect directly to <code class="language-plaintext highlighter-rouge">https://example-new.com</code>
+</li>
+</ul>
+<section class="highlighted-box typo-block highlighted-box--with-background"><div class="highlighted-box__content">
+<p><strong>Pro tip:</strong> if you'll be switching domain names and merging websites (scenarios eight and nine)—keep in mind that domain names can have a search engine penalty, and that this penalty may be carried over when the old domain is redirected to the new domain.</p>
+</div></section>
+<h4 id="update-urls-in-other-places">Update URLs in other places</h4>
+<p>URL changes don't just impact SEO. They impact all of your marketing efforts; from PPC campaigns to your email newsletter and brochures.</p>
+<p>Inform everyone within your marketing team what URLs are going to change, so they can prepare appropriately.</p>
+<p>Some examples:</p>
+<ul>
+<li>Google ads (and be sure to update Google Shopping feeds too)</li>
+<li>Twitter ads</li>
+<li>Facebook ads</li>
+<li>Reddit ads</li>
+<li>LinkedIn ads</li>
+<li>Social media accounts</li>
+<li>Newsletter templates</li>
+<li>Transactional emails</li>
+<li>Offline brochures</li>
+</ul>
+<p>It's important to update the paid campaigns for two reasons in particular:</p>
+<ol>
+<li>If your redirects fail, you don't want your paid campaigns to suffer too.</li>
+<li>Paid campaigns may be paused by your advertising networks when the destination URLs used in the ads are redirected.</li>
+</ol>
+<p>Please note: these updates shouldn't be published until the launch.</p>
+<h4 id="prepare-a-paid-campaign-for-rebranding-and-for-the-most-important-queries">Prepare a paid campaign for rebranding and for the most important queries</h4>
+<p>If you're rebranding, it makes sense to set up paid campaigns for queries around both the old and new brand, to ensure that as many visitors as possible reach your site.</p>
+<p>Also, when you start the migration, and search engines have to fully crawl and index your new site, there's a good chance you'll see a temporary drop in your rankings. If you can't afford to have less traffic on the site, you can prepare paid campaigns. This compensates for the loss of organic traffic with paid traffic to keep your revenue numbers on par.</p>
+<h4 id="xml-sitemap-containing-old-urls">XML sitemap containing old URLs</h4>
+<p>Contrary to popular belief, it's important to hold on to an XML sitemap that contains your old URLs when you're migrating, because this way you'll help search engines find your new URLs faster, by feeding them the redirected old URLs. Keep the XML sitemap with the old URLs present on your site until the new URLs are indexed well.</p>
+<h4 id="set-up-a-separate-environment">Set up a separate environment</h4>
+<p>It's a best practice to work with a separate environment where you do your testing. You just don't make technical changes to the live site, because it's very risky: if something goes wrong, that impacts your visitors directly.</p>
+<p>For the website migration to go smoothly, it's essential that you have a separate environment next to the production environment where you can fill in content, test, and prepare for the launch. We'll call this environment the 'new' environment and the current environment the 'old' environment moving forward. Both the new and the old environment, meanwhile, themselves have a production and a staging environment. Testing is done in the staging environments.</p>
+<p>Having separate environments has the following benefits:</p>
+<ul>
+<li>Prior to going live, you can test if all the functionality is working fine in the new environment.</li>
+<li>You can audit the new environment to check if all your content is set up correctly, and if the new website is SEO proof, i.e. optimized.</li>
+<li>The old environment can be used to quickly answer such questions as: "uhh, how did we do this again on the old site?". At some point, you'll end up asking yourself what features, content, CTA buttons and metadata you had on the old site. If you're changing domains, be sure to also keep your old site in ContentKing for a while so that you can retain your change history data. Move the old environment to a subdomain (example: <code class="language-plaintext highlighter-rouge">https://old.example.com</code>) and make sure it's not accessible to search engines via HTTP authentication (whitelisting IPs and/or requiring a username and password)</li>
+<li>You can quickly roll back the launch, for example by changing the DNS records.</li>
+</ul>
+<p><strong>Important</strong><br/>
+Make sure your new environment is not accessible to the public. The best way to go about this is <a href="/academy/protect-staging-environment/#method-1-http-auth">using HTTP Authentication</a>. We recommend whitelisting the IP addresses at your office, and allowing external parties and remote team members access via username/password.</p>
+<p>This is a better approach than to use robots.txt and the robots noindex directive, because these don't prevent other people from accessing them, and search engines will not always honor these directives.</p>
+<h4 id="rolling-back-the-launch">Rolling back the launch</h4>
+<p>Being able to roll back the launch is great, but you need to have a plan in place for this scenario. It's important to define under what conditions you roll back a launch, and who calls the rollback.</p>
+<p>In most cases, it's the project manager who decides to roll back a launch as he's the liaison among all the departments that are involved in the migration, but still, be sure to explicitly determine who can decide to roll back.</p>
+<p>As for when to roll back a launch, you need to define that beforehand, so you don't have to define it in the heat of the moment.</p>
+<p>Basically, roll back for anything that's going to severely impact revenue (more than you can afford) and that cannot be resolved quickly.</p>
+<h4 id="lower-the-ttl-for-your-dns-records">Lower the TTL for your DNS records</h4>
+<p>One important part of your pre-migration preparation is to lower the time-to-live (TTL) of your DNS records. The TTL states how long DNS servers should hold on to your domain's DNS records before requesting them again. The lower the TTL, the more frequently they'll request them and the more quickly a DNS change will be propagated. Having a low TTL enables you to migrate quickly and gives you the flexibility to roll back the migration in case issues arise.</p>
+<p>When to lower the TTL in preparation for the migration depends on your current TTL, as that's how long it will take for the new TTL value to take effect everywhere.</p>
+<p>We recommend lowering the TTL to 300 (the value is in seconds, so this equals 5 minutes) before the launch.</p>
+<h3 id="phase-3-prep-migration-testing">
+<a aria-hidden="true" class="anchor-link" href="#phase-3-prep-migration-testing" tabindex="-1"></a>Phase 3: Pre-migration testing</h3>
+<p>You've made all the necessary arrangements and prepared well, and now it's time to put everything to the test and do pre-migration testing to make sure you're ready to hit the launch button on launch day.</p>
+<h4 id="making-sure-you-can-access-the-new-environment">Making sure you can access the new environment</h4>
+<p>If you're going to migrate to a domain name that's currently not in use, you don't need to do anything, because you can access it right away. If the migration will take place on an existing domain name, then you can adjust your host(s) file or go through a local DNS server.</p>
+<h4 id="test-redirects">Test redirects</h4>
+<p>Test whether the redirects from your redirect plan are actually implemented and working fine.</p>
+<p>We recommend that you test them by checking some samples manually, and running the majority in bulk using a tool like Screaming Frog.</p>
+<h4 id="seo-checks">SEO checks</h4>
+<p>Now crawl the new environment with ContentKing and go through all of these checks to make sure <a href="/academy/seo-requirements-new-website/">the new website is SEO proof</a>:</p>
+<ul>
+<li>
+<strong>URL structure:</strong> go through the list of URLs and check whether the URL structure is correct. <a href="/academy/urls/">Read more on URL structure</a>.</li>
+<li>
+<strong>Titles, meta descriptions and headings:</strong> are they in line with your SEO strategy? Read more on <a href="/academy/title-tag/">titles</a>, <a href="/academy/meta-description/">meta descriptions</a>, and <a href="/academy/headings/">headings</a>.</li>
+<li>
+<strong>Body content:</strong> do all your pages have content?</li>
+<li>
+<strong>Internal link structure:</strong> is your link structure in line with your SEO strategy, and do the most important pages have enough links from strong, related pages? Are internal links updated to point to new URLs instead of the old URLs?</li>
+<li>
+<strong>Canonical URLs:</strong> are your canonical URLs correctly used to point to the canonical variant of a page, to consolidate signals and prevent duplicate content? <a href="/academy/canonical/">Read more on canonical URLs</a>.</li>
+<li>
+<strong>Robots directives:</strong> are robots directives correctly used to prevent pages from getting indexed, preventing duplicate content in the process? <a href="/academy/meta-robots-tag/">Read more on robots directives</a>.</li>
+<li>
+<strong>Crawler traps:</strong> does the new website suffer from the presence of crawler traps—a virtually infinite amount of URLs being generated? <a href="/academy/crawler-traps/">Read more about crawler traps</a>.</li>
+<li>
+<strong>Structured data:</strong> is structured data such as Schema, Open Graph, and Twitter Cards set up correctly? Read more about <a href="/academy/schema/">Schema</a>, <a href="/academy/open-graph/">Open Graph</a>, and <a href="/academy/twitter-cards/">Twitter Cards</a>.</li>
+<li>
+<strong>Correct status codes:</strong> are pages returning the correct status codes? Use only 301 redirects for redirects, 404 status code for pages that don't exist, and 410 status codes for un-migrated pages that have been removed and won't ever come back. <a href="/academy/http-status-codes/">Read more on HTTP status codes</a>.</li>
+<li>
+<strong>Broken links:</strong> check the site for any broken links. In particular, look for links to old URLs and URLs used to preview unpublished pages.</li>
+<li>
+<strong>Hreflang:</strong> if your website is available in multiple languages, and you're using hreflang, make sure that your hreflang implementation is valid. <a href="/academy/hreflang/">Read more on hreflang</a>.</li>
+<li>
+<strong>Pagination:</strong> if you're using pagination on the new site, for example for product category pages or blog archive pages, then make sure the new pagination implementation is valid. <a href="/academy/pagination/">Read more on pagination</a>.</li>
+<li>
+<strong>Page speed:</strong> while after the launch you'll see how the website performs in practice, you can run page speed checks on the new site already at this stage, using for instance ContentKing. We recommend setting up segments for slow pages to easily track these.</li>
+<li>
+<strong>Domain redirects:</strong> are the domain redirects set up correctly? If your canonical domain is <code class="language-plaintext highlighter-rouge">https://example.com</code>, then you need to make sure <code class="language-plaintext highlighter-rouge">https://www.example.com</code>, <code class="language-plaintext highlighter-rouge">http://example.com</code> and <code class="language-plaintext highlighter-rouge">http://www.example.com</code> all 301 redirect to <code class="language-plaintext highlighter-rouge">https://example.com</code> with just one hop. <a href="/academy/redirects/#redirect-to-preferred-version-of-your-website-url">Read more on domain redirects</a>.</li>
+<li>
+<strong>XML sitemap:</strong> does the new site contain a valid XML sitemap that only contains indexable pages? <a href="/academy/xml-sitemap/">Read more on XML sitemaps</a>.</li>
+<li>
+<strong>Robots.txt:</strong> is there a robots.txt present on the new site, and does it contain all the necessary directives? If you've prevented others from accessing the new environment using robots.txt, don't be alarmed if ContentKing flags that. You can feel free to ignore this issue. <a href="/academy/robotstxt/">Read more on robots.txt</a>.</li>
+</ul>
+<div aria-label="Start new free trial on ContentKing" class="onboarding-cta typo-block highlighted-box false highlighted-box--expressive" data-testid="onboarding-box"><div class="highlighted-box__content">
+<div class="highlighted-box__title">SEO checks on auto-pilot</div>
+<div class="onboarding-cta__description typo">
+<p>Let ContentKing keep a watchful eye on your new site while you prepare for the migration!</p>
+</div>
+<div class="onboarding-cta__form"><form aria-label="The form used for creating free trial account on ContentKing" class="quickinput-form-layout js-submit-url-start-onboarding quickinput-form-layout--white quickinput-form-layout--is-responsive" data-validate="" novalidate="">
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-unexpected-error form-msg form-msg--error" role="none" style="display: none;">Some unexpected error happened. Please contact us.</span><span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-timeout-error form-msg form-msg--error" role="none" style="display: none;">Something went wrong. Please, try again later.</span><div class="quickinput-form-layout__container">
+<div class="quickinput-form-layout__form-field">
+<label class="show-for-sr" for="onboarding-box-4-url">Domain (required)</label><input aria-required="true" class="js-trial-url large" id="onboarding-box-4-url" name="domain" pattern="url_only" placeholder="www.example.com" required="" type="url"/><span aria-hidden="true" aria-live="off" class="form-error form-bubble" role="none">Please enter a valid domain name (www.example.com).</span><span aria-hidden="true" aria-live="off" class="js-website-already-monitored custom-error form-bubble" role="none" style="display: none;">This domain is already being monitored by ContentKing. Please contact us if you are the rightful owner of this domain.</span><span aria-hidden="true" aria-live="off" class="js-target-redirected custom-error form-bubble" role="none" style="display: none;">This website redirects to <span class="js-target-redirected-domain"></span>. Do you want to add this website instead?</span><span aria-hidden="true" aria-live="off" class="js-blacklisted-domain custom-error form-bubble" role="none" style="display: none;">This domain has been excluded from monitoring. If you own it, please contact us.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain custom-error form-bubble" role="none" style="display: none;">We can't find this domain. Are you sure it's correct?</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-connect custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (connect failure). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-empty-response custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (empty response). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-size-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (size limit). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-time-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (time-out). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-waf custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (blocked by web application firewall). Please contact us for help.</span>
+</div>
+<div class="quickinput-form-layout__form-button"><button class="button js-submit-button button--large button--action button--is-shining button--fullwidth" data-loading-label="Loading" type="submit"><div><span class="button__content"><big>Start your free trial</big><small><span class="show-for-sr">. </span>No credit card needed</small></span></div></button></div>
+</div>
+</form></div>
+</div></div>
+<h4 id="triaging-any-issues">Triaging any issues</h4>
+<p>When doing pre-migration testing, you'll always spot issues. Triage all the issues that come up and determine whether these issues are release-blocking, or whether they can be fixed after launch. Be pragmatic, and keep the migration goals that you defined at the start of the project in mind.</p>
+<p>Pushing back a release is costly, so weigh the pros and cons carefully with each issue that you uncover.</p>
+<p>If nothing serious comes up, or if you fix enough issues that you can remain comfortable with launching, then you can move on to the next phase: launching!</p>
+<h3 id="phase-4-launch">
+<a aria-hidden="true" class="anchor-link" href="#phase-4-launch" tabindex="-1"></a>Phase 4: Launch!</h3>
+<div class="media-container" style="max-width: 1200px;"><picture><source media="(max-width: 600px)" srcset="/wp-content/uploads/2018/12/ContentKing-Website-Migrations-Launch@1x.png"/><img alt="Website migration launch" class="image" height="444" loading="lazy" src="/wp-content/uploads/2018/12/ContentKing-Website-Migrations-Launch@1x.png" srcset="/wp-content/uploads/2018/12/ContentKing-Website-Migrations-Launch@1x.png, /wp-content/uploads/2018/12/ContentKing-Website-Migrations-Launch@2x.png 2x" title="Website migration launch" width="1200"/></picture></div>
+<p>Launch day is always exciting (and somewhat frightening). But you've prepared well, and you have performed pre-migration testing. Nothing major has come up, or it's been fixed already, so you're confident the migration will go well.</p>
+<h4 id="make-the-new-site-accessible">Make the new site accessible</h4>
+<p>Remove any limitations that you've set up there to keep out search engines and users prior to launching, such as:</p>
+<ul>
+<li>HTTP authentication (as discussed in the <a href="/academy/website-migrations/#separate-environment">"Set up a separate environment"</a> section.)</li>
+<li>Any robots noindex directives (both meta robots and X-Robots-Tag)</li>
+<li>Any Robots.txt disallows</li>
+</ul>
+<h4 id="update-dns-records">Update DNS records</h4>
+<p>Now update your DNS records to point them to the new environment.</p>
+<h3 id="phase-5-post-migration-testing">
+<a aria-hidden="true" class="anchor-link" href="#phase-5-post-migration-testing" tabindex="-1"></a>Phase 5: Post-migration review</h3>
+<p>Congratulations on the launch!</p>
+<p>But, before you start high-fiving everyone: make sure everything is working properly in the new production environment. In this phase, you'll decide whether the launch went well, or whether you need to roll it back. It's important to prevent falling for the <a href="https://en.wikipedia.org/wiki/Sunk_cost" rel="noopener" target="_blank"><span class="extlink">sunk-cost fallacy</span><span class="show-for-sr"> (opens in a new tab)</span></a>, meaning: if you've already been fixing issues for three hours and you're still not there yet, don't tell yourself you're "too far to go back"; you can still make the call to roll back the launch.</p>
+<p>Work your way through this checklist of high-priority checks to make sure the website is in good shape:</p>
+<ul>
+<li>
+<strong>Test top-performing pages:</strong> test your top-performing pages to ensure they're working properly and contain the right content.</li>
+<li>
+<strong>New robots.txt:</strong> does the new website's robots.txt provide the right access to the right crawlers?</li>
+<li>
+<strong>Old robots.txt:</strong> if you're dealing with domain name changes, does the old website's robots.txt provide search engines access so that they can follow the redirects? More often than you think, a damaging <code class="language-plaintext highlighter-rouge">Disallow: /</code> is added to the old domain's robots.txt.</li>
+<li>
+<strong>Robots directives:</strong> are the robots directives set up correctly (check both meta robots and X-Robots-Tag).</li>
+<li>
+<strong>Redirects:</strong> are all redirects in place and working properly?</li>
+<li>
+<strong>SEO checks:</strong> go through <a href="/academy/website-migrations/#seo-checks">the SEO checks we discussed in Phase 3</a> and make sure everything is in order.</li>
+<li>
+<strong>XML sitemaps:</strong> as part of your SEO check, you made sure that the new XML sitemap would be correct. As discussed, you also need to make sure the XML sitemap with the old URLs is accessible on the old domain, so that search engines can discover the new pages quickly. Keep the XML sitemaps containing old URLs online for a month.</li>
+<li>
+<strong>Analytics:</strong> make sure all required analytics software is working properly and the right tracking IDs are present. Often during migrations, either they're left inactive, or staging IDs are present. These are problems, as you're losing out on valuable data—the first signs of your new website's performance. Luckily ContentKing checks both the presence of analytics software and its tracking IDs on all pages by default. You want to keep using the same tracking IDs, as you want to easily compare the previous performance of the website with its current performance.</li>
+</ul>
+<p>With such a massive undertaking as a website migration, you're bound to encounter issues. That's normal. You'll likely end up with a list of small issues that you need to address. But because you thought ahead and allocated development resources to post-migration fixes, there's no trouble there—they can be addressed right away!</p>
+<h3 id="phase-6-post-migration-follow-up">
+<a aria-hidden="true" class="anchor-link" href="#phase-6-post-migration-follow-up" tabindex="-1"></a>Phase 6: Post-migration follow-up</h3>
+<p>Is everything still looking good? If so, you can move forward with the steps below:</p>
+<h4 id="registering-new-website-properties-in-google-search-console-and-bing-webmaster-tools">Registering new website properties in Google Search Console and Bing Webmaster Tools</h4>
+<p>If you migrated to a new domain, be sure to register the new domain in Google Search Console (GSC) and Bing Webmaster Tools (BWT) and tell them about your XML sitemap.</p>
+<p>Be sure to register all the versions of the domain:</p>
+<ul>
+<li><code class="language-plaintext highlighter-rouge">http://example.com</code></li>
+<li><code class="language-plaintext highlighter-rouge">https://example.com</code></li>
+<li><code class="language-plaintext highlighter-rouge">http://www.example.com</code></li>
+<li><code class="language-plaintext highlighter-rouge">https://www.example.com</code></li>
+</ul>
+<h4 id="gsc-and-bwt-change-of-address">GSC and BWT: change of address</h4>
+<p>If you've migrated to a new domain, tell Google and Bing about this using the Change of Address feature.</p>
+<h4 id="gsc-fetch-and-render">GSC: Fetch and Render</h4>
+<p>Use Google Search Console's Fetch and Render feature to make sure Google can request and render your pages. This is a useful feature to make sure you didn't miss anything.</p>
+<h4 id="paid-campaigns">Paid campaigns</h4>
+<p>Now push the updated paid campaigns you prepared live, so that the destination URLs point to your new URLs (and if there's a brand change, so that the ad texts mention the new brand).</p>
+<p>If you've prepared paid campaigns around rebranding and your most important queries, this is the time to activate these too.</p>
+<h4 id="update-backlinks">Update backlinks</h4>
+<p>Reach out to websites that are linking to your old websites to update their links to point to the new site. This lowers load time for your visitors, passes on more link value, and in the case of a new brand, helps boost its visibility.</p>
+<h4 id="increase-ttl-of-dns-records">Increase TTL of DNS records</h4>
+<p>A few days after the migration, you can safely increase the TTL of the site's DNS records. What value you'll be increasing it to depends; if you're using a CDN they are often still quite low, while if you're not, they're usually higher (anywhere from a few hours to a few days). But in any case, set it to the pre-migration value.</p>
+<h4 id="make-old-environment-accessible">Make old environment accessible</h4>
+<p>Make the old environment accessible through a subdomain, as described in the <a href="/academy/website-migrations/#separate-environment">"Set up a separate environment"</a> section.</p>
+<h4 id="remove-the-old-staging-environment">Remove the old staging environment</h4>
+<p>Now is also the time to remove the old staging environment, as the old environment only serves as a reference and is no longer being developed.</p>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/patrick-stox@1x.avif" type="image/avif"/><source srcset="/media/people/patrick-stox@1x.webp" type="image/webp"/><img alt="Patrick Stox" class="image" height="100" loading="lazy" src="/media/people/patrick-stox@1x.jpg" title="Patrick Stox" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>Get control of and monitor the renewal of the old domain, you don't want this to expire. Also decide how to bring this into your system whether you maintain the old server/hosting and redirects and renew the security certificate there (if it was https) or forward the domain and maintain the redirects in your current infrastructure and use a multi-domain/SAN certificate. Even if the certificates expire, Google still seems to follow the redirects but users will get a warning message. If you had left the old domain indexed by using a 302 for the purpose of warning people of a brand switch (this is useful if you haven't given users warning in advance of the switch), then an expired security certificate can be devastating as people coming from search will not reach your current website.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<a class="user-info__social-icon social-icon social-icon--link social-icon--linkedin" href="https://www.linkedin.com/in/patrickstox/" rel="noopener" target="_blank" title="See my profile on LinkedIn"><span class="extlink">LinkedIn</span><span class="show-for-sr"> (opens in a new tab)</span></a><span class="user-info__name">Patrick Stox</span><span class="user-info__additional-info">, <a href="https://www.stoxseo.com/" rel="noopener" target="_blank"><span class="extlink">Raleigh based Technical SEO</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<h3 id="phase-7-post-migration-monitoring">
+<a aria-hidden="true" class="anchor-link" href="#phase-7-post-migration-monitoring" tabindex="-1"></a>Phase 7: Post-migration monitoring</h3>
+<h4 id="monitor-your-kpis">Monitor your KPIs</h4>
+<p>Monitor your KPIs to make sure the new website is performing well. This goes beyond SEO of course, as SEO is often just one of the main sources for traffic, conversions, and revenue.</p>
+<p>Since migrations have a big impact on SEO results, zoom in on monitoring <a href="/academy/kpis-to-measure-seo-success/">your SEO KPIs</a> to check that the migration went well (i.e. that search engines understand the new site and what it should rank for).</p>
+<p>One part of monitoring is checking the number of pages that are indexed for the old website (this should go down) and the new website (this should go up if you've published more content!) using Google Search Console. The XML Sitemaps come in handy here if you've split them up per website section. That way you can easily track the indexing process per website section.</p>
+<h4 id="monitor-4xx-errors">Monitor 4xx errors</h4>
+<p>Monitor the new website for 4xx errors with ContentKing. In particular, you should be on the lookout for 404 and 410 errors.</p>
+<p>Additionally, check your server logs to find 4xx errors that ContentKing may not be monitoring, and check Google Search Console to see if Google has hit any 4xx errors.</p>
+<p>If these 4xx errors are unexpected, fix them by redirecting these URLs or by updating the links to the URLs that return 4xx errors.</p>
+<h3 id="evaluation">
+<a aria-hidden="true" class="anchor-link" href="#evaluation" tabindex="-1"></a>Phase 8: Evaluating the success of your website migration</h3>
+<p>During the migration's planning phase, all the people that the migration would impact shared their concerns and goals. This made it clear what it would take to make the migration a success.</p>
+<p>Now is it similarly time to look back on the migration:</p>
+<ul>
+<li>Were all the concerns addressed? If not, why not?</li>
+<li>Were all the goals met? If not, why not?</li>
+<li>What were the most important things learned?</li>
+<li>What do you need to improve next time?</li>
+</ul>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/patrick-stox@1x.avif" type="image/avif"/><source srcset="/media/people/patrick-stox@1x.webp" type="image/webp"/><img alt="Patrick Stox" class="image" height="100" loading="lazy" src="/media/people/patrick-stox@1x.jpg" title="Patrick Stox" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>It's never too late to fix redirects. Ahrefs' "Best by links" report is my go to for this. Filter by 404 to show what's not redirected, or 3xx to see what might be redirected to the wrong location.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<a class="user-info__social-icon social-icon social-icon--link social-icon--linkedin" href="https://www.linkedin.com/in/patrickstox/" rel="noopener" target="_blank" title="See my profile on LinkedIn"><span class="extlink">LinkedIn</span><span class="show-for-sr"> (opens in a new tab)</span></a><span class="user-info__name">Patrick Stox</span><span class="user-info__additional-info">, <a href="https://www.stoxseo.com/" rel="noopener" target="_blank"><span class="extlink">Raleigh based Technical SEO</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<h2 id="last-note">
+<a aria-hidden="true" class="anchor-link" href="#last-note" tabindex="-1"></a>A final note on website migrations</h2>
+<p>As you've seen: website migrations can be really tricky. In order to ace your website migration you need to have a solid plan that's executed with military precision.</p>
+<p>Monitor both the new staging environment and the new production environment with ContentKing: you'll always have fresh data, you'll be able to easily keep track of on-page SEO changes. and you'll be alerted proactively of any high-impact changes and issues.</p>
+<p>Website migrations are hard enough as it is; there's no need to make them harder and add work due to a lack of alerts and a need for manual checks.</p>
+<h3 id="how-did-your-migration-go-let-us-know-">
+<a aria-hidden="true" class="anchor-link" href="#how-did-your-migration-go-let-us-know-" tabindex="-1"></a>How did your migration go? Let us know 🙂</h3>
+<p>When you use the website migration checklist, do let us know how it went. If there's anything we haven't covered, let us know, and we'll be happy to expand our website migration guide.</p>
+</div>
+<div class="post-detail__text">
+<div class="highlighted-box">
+<div class="highlighted-box__content share">
+<div class="share__label">Share this article</div>
+<div class="share__buttons">
+<a class="social-icon social-icon--large social-icon--facebook social-icon--link" href="https://www.facebook.com/sharer/sharer.php?display=popup&amp;u=https://www.contentkingapp.com/academy/website-migrations/" onclick="window.open('https://www.facebook.com/sharer/sharer.php?display=popup&amp;u=https://www.contentkingapp.com/academy/website-migrations/','ck_popup','toolbar=0,status=0,resizable=1,width=626,height=600')" rel="noopener" target="_blank" title="Share on Facebook"><span class="extlink">Share on Facebook</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+<a class="social-icon social-icon--large social-icon--twitter social-icon--link" href="https://twitter.com/intent/tweet?title=The%20Ultimate%20Guide%20to%20Successful%20Website%20Migrations%C2%A0%E2%80%93%C2%A0url=https://www.contentkingapp.com/academy/website-migrations/" onclick="window.open('https://twitter.com/intent/tweet?title=The%20Ultimate%20Guide%20to%20Successful%20Website%20Migrations –&amp;url=https://www.contentkingapp.com/academy/website-migrations/','ck_popup','toolbar=0,status=0,resizable=1,width=600,height=340')" rel="noopener" target="_blank" title="Share on Twitter"><span class="extlink">Share on Twitter</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+<a class="social-icon social-icon--large social-icon--linkedin social-icon--link" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.contentkingapp.com/academy/website-migrations/" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url=https://www.contentkingapp.com/academy/website-migrations/','ck_popup','toolbar=0,status=0,resizable=1,width=600,height=560')" rel="noopener" target="_blank" title="Share on LinkedIn"><span class="extlink">Share on LinkedIn</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+</div>
+</div>
+</div>
+<section aria-label="Overview of article authors" class="author-box">
+<div class="author-box__title">ContentKing Academy Content Team</div>
+<div class="author-box__author">
+<div class="user-overview">
+<div class="user-overview__sidebar">
+<div aria-hidden="true" class="user-overview__avatar">
+<div class="avatar avatar--3-size">
+<div class="avatar__img">
+<picture><source srcset="/media/people/steven-van-vessum@1x.avif, /media/people/steven-van-vessum@2x.avif 2x" type="image/avif"/><source srcset="/media/people/steven-van-vessum@1x.webp, /media/people/steven-van-vessum@2x.webp 2x" type="image/webp"/><img alt="Steven van Vessum" class="" height="100" loading="lazy" src="/media/people/steven-van-vessum@1x.jpg" srcset="/media/people/steven-van-vessum@1x.jpg, /media/people/steven-van-vessum@2x.jpg 2x" title="Steven van Vessum" width="100"/></picture>
+</div>
+</div>
+</div>
+</div>
+<div class="user-overview__content">
+<div class="user-overview__name">
+<span>Steven van Vessum</span><div class="user-overview__data">
+<a class="social-icon social-icon--link social-icon--linkedin" href="https://www.linkedin.com/in/stevenvanvessum" rel="noopener" target="_blank" title="See my profile on LinkedIn"><span class="extlink">LinkedIn</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+<a class="social-icon social-icon--link social-icon--twitter" href="https://twitter.com/stevenvvessum" rel="noopener" target="_blank" title="See my profile on Twitter"><span class="extlink">Twitter</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+</div>
+</div>
+<div class="user-overview__about typo">
+<p>Steven is ContentKing's VP of Community. This means he's involved in everything community and content marketing related. Right where he wants to be. He gets a huge kick out of letting websites rank and loves to talk SEO, content marketing and growth.</p>
+</div>
+<div class="user-overview__see-more-link typo">
+<a href="/team/steven-van-vessum/">View Steven van Vessum's profile</a>
+</div>
+</div>
+</div>
+</div>
+<div class="author-box__author">
+<div class="user-overview">
+<div class="user-overview__sidebar">
+<div aria-hidden="true" class="user-overview__avatar">
+<div class="avatar avatar--3-size">
+<div class="avatar__img">
+<picture><source srcset="/media/people/jessica-rangel@1x.avif, /media/people/jessica-rangel@2x.avif 2x" type="image/avif"/><source srcset="/media/people/jessica-rangel@1x.webp, /media/people/jessica-rangel@2x.webp 2x" type="image/webp"/><img alt="Jessica Rangel" class="" height="100" loading="lazy" src="/media/people/jessica-rangel@1x.jpg" srcset="/media/people/jessica-rangel@1x.jpg, /media/people/jessica-rangel@2x.jpg 2x" title="Jessica Rangel" width="100"/></picture>
+</div>
+</div>
+</div>
+</div>
+<div class="user-overview__content">
+<div class="user-overview__name">
+<span>Jessica Rangel</span><div class="user-overview__data">
+<a class="social-icon social-icon--link social-icon--linkedin" href="https://www.linkedin.com/in/jessicamrangel/" rel="noopener" target="_blank" title="See my profile on LinkedIn"><span class="extlink">LinkedIn</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+</div>
+</div>
+<div class="user-overview__about typo">
+<p>Jessica is a content marketer for ContentKing. Her days are spent writing marketing content, cycling around canals in Amsterdam and attempting to master the Dutch language.</p>
+</div>
+<div class="user-overview__see-more-link typo">
+<a href="/team/jessica-rangel/">View Jessica Rangel's profile</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</article>
+<aside class="post-detail__sidebar show-for-large">
+<div aria-hidden="false" class="action-box action-box--is-hidden action-box--with-kevin dark-bg-context js-contextual-action-box sticky-element sticky-element--on-large sticky-element--indented" data-testid="action-sidebar-box" style="--bg: #6b2770">
+<div class="action-box__content">
+<div class="js-contextual-action-box-general" style="display: none;">
+<div class="action-box__text typo">
+<h3 id="no-more-surprises">No more surprises</h3>
+<p>Get a firm grip on your migration with ContentKing.
+See what changes are made and get alerted in case of trouble.</p>
+</div>
+<div class="action-box__form">
+<form aria-label="The form used for creating free trial account on ContentKing" class="quickinput-form-layout quickinput-form-layout--center-aligned js-submit-url-start-onboarding" data-validate="" novalidate="">
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-unexpected-error form-msg form-msg--error" role="none" style="display: none;">Some unexpected error happened. Please contact us.</span>
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-timeout-error form-msg form-msg--error" role="none" style="display: none;">Something went wrong. Please, try again later.</span>
+<div class="quickinput-form-layout__container">
+<div class="quickinput-form-layout__form-field">
+<label class="show-for-sr" for="action-sidebar-box-url-field">Domain (required)</label>
+<input aria-required="true" class="js-trial-url large" id="action-sidebar-box-url-field" name="domain" pattern="url_only" placeholder="www.example.com" required="" type="url"/>
+<span aria-hidden="true" aria-live="off" class="form-error form-bubble" role="none">Please enter a valid domain name (www.example.com).</span>
+<span aria-hidden="true" aria-live="off" class="js-website-already-monitored custom-error form-bubble" role="none" style="display: none;">This domain is already being monitored by ContentKing. Please contact us if you are the rightful owner of this domain.</span>
+<span aria-hidden="true" aria-live="off" class="js-target-redirected custom-error form-bubble" role="none" style="display: none;">This website redirects to <span class="js-target-redirected-domain"></span>. Do you want to add this website instead?</span>
+<span aria-hidden="true" aria-live="off" class="js-blacklisted-domain custom-error form-bubble" role="none" style="display: none;">This domain has been excluded from monitoring. If you own it, please contact us.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain custom-error form-bubble" role="none" style="display: none;">We can't find this domain. Are you sure it's correct?</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-connect custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (connect failure). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-empty-response custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (empty response). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-size-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (size limit). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-time-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (time-out). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-waf custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (blocked by web application firewall). Please contact us for help.</span>
+</div>
+<div class="quickinput-form-layout__form-button">
+<button class="button button--is-shining js-submit-button button--large button--action button--fullwidth" data-loading-label="Loading" type="submit">
+<div>
+<span class="button__content">
+<big>Start your free trial</big>
+<small><span class="show-for-sr">. </span>No credit card needed</small>
+</span>
+</div>
+</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+<div class="js-contextual-action-box-case-study" style="display: none;">
+<div class="discover-case-study">
+<div class="discover-case-study__title">Build vs. Buy: How Danone saved hundreds of thousands of Euros by switching to ContentKing</div>
+<div class="discover-case-study__logo">
+<img alt="Danone logo" height="300" loading="lazy" src="/media/logos/danone-reversed.svg" width="600"/>
+</div>
+<div class="discover-case-study__link typo"><a href="/case-studies/danone/">Discover this case study</a></div>
+</div>
+</div>
+<div class="js-contextual-action-box-ending-trial" style="display: none;">
+<div class="action-box__text typo">
+<h3>Your trial ends soon</h3>
+<p>Sign up now to stay on top of your SEO performance.</p>
+</div>
+<div class="action-box__form">
+<a class="button button--action button--large button--fullwidth button--is-shining" href="https://app.contentkingapp.com/account/billing" rel="noopener" target="_blank"><span class="extlink"><span><span class="button__content"><big>Sign up now</big><small><span class="show-for-sr">. </span>30-day money back guarantee</small></span></span></span><span class="show-for-sr"> (opens in a new tab)</span></a>
+</div>
+</div>
+<div class="js-contextual-action-box-trial-ended" style="display: none;">
+<div class="action-box__text typo">
+<h3>Your trial has ended</h3>
+<p>Sign up now to stay on top of your SEO performance.</p>
+</div>
+<div class="action-box__form">
+<a class="button button--action button--large button--fullwidth button--is-shining" href="https://app.contentkingapp.com/account/billing" rel="noopener" target="_blank"><span class="extlink"><span><span class="button__content"><big>Sign up now</big><small><span class="show-for-sr">. </span>30-day money back guarantee</small></span></span></span><span class="show-for-sr"> (opens in a new tab)</span></a>
+</div>
+</div>
+<div class="action-box__features">
+<div class="labeled-element labeled-element--stretched labeled-element--default-layout typo-block typo-block--bigger-indentation">
+<div class="labeled-element__labels">
+<div class="labeled-element__label">Trusted by the best
+</div>
+<div class="labeled-element__sublabel">
+</div>
+</div>
+<div class="labeled-element__content" role="list"><div class="crossfade-animation crossfade-animation--6-groups" role="presentation">
+<div class="logos-list logos-list--default-gaps" role="presentation">
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Netflix logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/netflix-reversed.svg" title="Netflix" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="H &amp; M logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/hm-reversed.svg" title="H &amp; M" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Adidas logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/adidas-reversed.svg" title="Adidas" width="600"/>
+</div>
+</div>
+</div>
+<div class="logos-list logos-list--default-gaps hidden" role="presentation">
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Unicef logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/unicef-reversed.svg" title="Unicef" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Condé Nast logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/conde-nast-reversed.svg" title="Condé Nast" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Shopify logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/shopify-reversed.svg" title="Shopify" width="600"/>
+</div>
+</div>
+</div>
+<div class="logos-list logos-list--default-gaps hidden" role="presentation">
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Danone logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/danone-reversed.svg" title="Danone" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Fedex logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/fedex-reversed.svg" title="Fedex" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="VOGUE logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/vogue-reversed.svg" title="VOGUE" width="600"/>
+</div>
+</div>
+</div>
+<div class="logos-list logos-list--default-gaps hidden" role="presentation">
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Axa logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/axa-reversed.svg" title="Axa" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Groupon logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/groupon-reversed.svg" title="Groupon" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="The New Yorker logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/the-new-yorker-reversed.svg" title="The New Yorker" width="600"/>
+</div>
+</div>
+</div>
+<div class="logos-list logos-list--default-gaps hidden" role="presentation">
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Norton logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/norton-reversed.svg" title="Norton" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Vodafone logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/vodafone-reversed.svg" title="Vodafone" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Accenture logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/accenture-reversed.svg" title="Accenture" width="600"/>
+</div>
+</div>
+</div>
+<div class="logos-list logos-list--default-gaps hidden" role="presentation">
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Red Hat logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/red-hat-reversed.svg" title="Red Hat" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Reebok logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/reebok-reversed.svg" title="Reebok" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="TELUS logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/telus-reversed.svg" title="TELUS" width="600"/>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<div class="action-box__features">
+<div class="labeled-element">
+<div class="labeled-element__labels">
+<div class="labeled-element__label">
+			Fantastic reviews
+		</div>
+</div>
+<div class="labeled-element__content">
+<a aria-label="Show the overview of ContentKing reviews" class="review-services review-services--small-gaps review-services--indented review-services--centered" href="/reviews/">
+<div class="review-services__service">
+<div aria-label="The summary of ContentKing rating on G2" class="review-badge review-badge--small-size review-badge--g2-service review-badge--light-style">
+<div class="review-badge__header">
+<div aria-label="Rating is 4.8 out of 5 points" class="review-badge__rating-score">
+			4.8 / 5
+		</div>
+</div>
+<div aria-hidden="true" class="review-badge__rating-stars">
+<div aria-label="Rating is 5.0 out of 5 points" class="rating-stars rating-stars--small-size">
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+</div>
+</div>
+</div>
+</div>
+<div class="review-services__service">
+<div aria-label="The summary of ContentKing rating on Capterra" class="review-badge review-badge--small-size review-badge--capterra-service review-badge--light-style">
+<div class="review-badge__header">
+<div aria-label="Rating is 4.9 out of 5 points" class="review-badge__rating-score">
+			4.9 / 5
+		</div>
+</div>
+<div aria-hidden="true" class="review-badge__rating-stars">
+<div aria-label="Rating is 5.0 out of 5 points" class="rating-stars rating-stars--small-size">
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section section--informative" data-testid="start-free-trial">
+<div class="row expanded">
+<div class="small-12 large-12 column">
+<div class="description-row description-row--inline-for-large-up">
+<div>
+<div class="heading heading--white heading--center-aligned">
+<h2 class="heading__title">Start your free trial</h2>
+<h3 class="heading__subtitle">Get up and running in 20 seconds</h3>
+</div>
+<form aria-label="The form used for creating free trial account on ContentKing" class="quickinput-form-layout quickinput-form-layout--center-aligned quickinput-form-layout--is-responsive js-submit-url-start-onboarding" data-validate="" novalidate="">
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-unexpected-error form-msg form-msg--error" role="none" style="display: none;">Some unexpected error happened. Please contact us.</span>
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-timeout-error form-msg form-msg--error" role="none" style="display: none;">Something went wrong. Please, try again later.</span>
+<div class="quickinput-form-layout__container">
+<div class="quickinput-form-layout__form-field">
+<label class="show-for-sr" for="start-free-trial-url-field">Domain (required)</label>
+<input aria-required="true" class="js-trial-url large" id="start-free-trial-url-field" name="domain" pattern="url_only" placeholder="www.example.com" required="" type="url"/>
+<span aria-hidden="true" aria-live="off" class="form-error form-bubble" role="none">Please enter a valid domain name (www.example.com).</span>
+<span aria-hidden="true" aria-live="off" class="js-website-already-monitored custom-error form-bubble" role="none" style="display: none;">This domain is already being monitored by ContentKing. Please contact us if you are the rightful owner of this domain.</span>
+<span aria-hidden="true" aria-live="off" class="js-target-redirected custom-error form-bubble" role="none" style="display: none;">This website redirects to <span class="js-target-redirected-domain"></span>. Do you want to add this website instead?</span>
+<span aria-hidden="true" aria-live="off" class="js-blacklisted-domain custom-error form-bubble" role="none" style="display: none;">This domain has been excluded from monitoring. If you own it, please contact us.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain custom-error form-bubble" role="none" style="display: none;">We can't find this domain. Are you sure it's correct?</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-connect custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (connect failure). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-empty-response custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (empty response). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-size-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (size limit). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-time-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (time-out). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-waf custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (blocked by web application firewall). Please contact us for help.</span>
+</div>
+<div class="quickinput-form-layout__form-button">
+<button class="button button--is-shining js-submit-button button--large button--action button--fullwidth" data-loading-label="Loading" type="submit">
+<div>
+<span class="button__content">
+<big>Start your free trial</big>
+<small><span class="show-for-sr">. </span>No credit card needed</small>
+</span>
+</div>
+</button>
+</div>
+</div>
+<div class="quickinput-form-layout__footer">
+<div aria-label="Show the overview of ContentKing reviews" class="review-services review-services--centered review-services--adaptive-items">
+<div class="review-services__service">
+<div aria-label="The summary of ContentKing rating on G2" class="review-badge review-badge--1-size review-badge--g2-service review-badge--light-style">
+<div class="review-badge__header">
+<div aria-label="Rating is 4.8 out of 5 points" class="review-badge__rating-score">
+			4.8 / 5
+		</div>
+</div>
+<div aria-hidden="true" class="review-badge__rating-stars">
+<div aria-label="Rating is 5.0 out of 5 points" class="rating-stars rating-stars--1-size">
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+</div>
+</div>
+</div>
+</div>
+<div class="review-services__service review-services__service--hidden-on-small">
+<div aria-label="The summary of ContentKing rating on Capterra" class="review-badge review-badge--1-size review-badge--capterra-service review-badge--light-style">
+<div class="review-badge__header">
+<div aria-label="Rating is 4.9 out of 5 points" class="review-badge__rating-score">
+			4.9 / 5
+		</div>
+</div>
+<div aria-hidden="true" class="review-badge__rating-stars">
+<div aria-label="Rating is 5.0 out of 5 points" class="rating-stars rating-stars--1-size">
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+</div>
+</div>
+</div>
+</div>
+<div class="review-services__service review-services__service--hidden-on-small">
+<div aria-label="The summary of ContentKing rating on TrustRadius" class="review-badge review-badge--1-size review-badge--trust-radius-service review-badge--light-style">
+<div class="review-badge__header">
+<div aria-label="Rating is 9.7 out of 10 points" class="review-badge__rating-score">
+			9.7 / 10
+		</div>
+</div>
+<div aria-hidden="true" class="review-badge__rating-stars">
+<div aria-label="Rating is 5.0 out of 5 points" class="rating-stars rating-stars--1-size">
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+<div class="description-row__description">
+<ul class="checklist checklist--white-style">
+<li class="checklist__item"><strong>No credit card required</strong></li>
+<li class="checklist__item"><strong>No installation needed</strong></li>
+<li class="checklist__item"><strong>No strings attached</strong></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<div id="js-campaign-widget-container"></div><footer class="footer" role="contentinfo">
+<div class="footer__row">
+<div class="footer__column">
+<div class="footer__column-body">
+<nav aria-label="The latest articles on our blog" class="footer__column-block footer-block" role="navigation"><h3 class="footer-block__title"><a aria-label="View all articles" href="/blog/"><span>Blog</span> <span aria-hidden="true" class="footer-block__title-cta">View all</span></a></h3>
+<div class="footer-block__nav"><ul class="footer-posts-nav">
+<li class="footer-posts-nav__item">
+<a href="/blog/log-file-analysis-extended-cloudflare-logpush/"><svg aria-hidden="true" class="footer-posts-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-feature-announcements"></use>
+</svg>Log File Analysis for Cloudflare sites via Logpush
+							</a>
+</li>
+<li class="footer-posts-nav__item">
+<a href="/blog/log-file-analysis-extended-fastly/"><svg aria-hidden="true" class="footer-posts-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-feature-announcements"></use>
+</svg>ContentKing Log File Analysis for Fastly
+							</a>
+</li>
+<li class="footer-posts-nav__item">
+<a href="/blog/log-file-analysis-extended/"><svg aria-hidden="true" class="footer-posts-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-feature-announcements"></use>
+</svg>Extended ContentKing Log File Analysis
+							</a>
+</li>
+<li class="footer-posts-nav__item">
+<a href="/blog/brightonseo-spring-recap-2022/"><svg aria-hidden="true" class="footer-posts-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-other"></use>
+</svg>ContentKing &amp; Conductor at brightonSEO
+							</a>
+</li>
+<li class="footer-posts-nav__item">
+<a href="/blog/brightonseo-spring-2022/"><svg aria-hidden="true" class="footer-posts-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-other"></use>
+</svg>brightonSEO Spring 2022
+							</a>
+</li>
+</ul></div>
+</nav>
+</div>
+</div>
+<div class="footer__column">
+<div class="footer__column-body">
+<nav aria-label="Important article in our Academy" class="footer__column-block footer-block" role="navigation"><h3 class="footer-block__title"><a aria-label="View all articles" href="/academy/"><span>Academy</span> <span aria-hidden="true" class="footer-block__title-cta">View all</span></a></h3>
+<div class="footer-block__nav"><ul class="footer-posts-nav">
+<li class="footer-posts-nav__item"><a href="/academy/robotstxt/">Robots.txt</a></li>
+<li class="footer-posts-nav__item"><a href="/academy/redirects/">Redirects</a></li>
+<li class="footer-posts-nav__item"><a href="/academy/shopify-seo/">Shopify SEO Guide</a></li>
+<li class="footer-posts-nav__item"><a href="/academy/magento-seo/">Magento 2 SEO Guide</a></li>
+<li class="footer-posts-nav__item footer-posts-nav__item--tagged"><a data-tag="FAQ" href="/academy/faq/">Frequently Asked SEO Questions</a></li></ul></div>
+</nav>
+</div>
+</div>
+<div class="footer__column footer__column--smaller-width">
+<div class="footer__column-body">
+<nav aria-label="Find more about us and about our story" class="footer__column-block footer-block" role="navigation"><h3 class="footer-block__title"><a href="/about-us/"><span>About us</span></a></h3>
+<div class="footer-block__nav">
+<ul class="footer-posts-nav">
+<li class="footer-posts-nav__item"><a href="/about-us/">Our story</a></li><li class="footer-posts-nav__item"><a href="/team/">Meet our team</a></li><li class="footer-posts-nav__item"><a href="/careers/">Careers</a></li><li class="footer-posts-nav__item"><a href="/contact/">Contact us</a></li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+<div class="footer__column footer__column--box">
+<div class="footer__column-body">
+<div class="footer__column-block footer__column-block--box">
+<section class="footer-box"><a aria-label="Show all reviews" class="footer-box__reviews" href="/reviews/">
+<span aria-hidden="true" class="footer-box__rating-stars">
+<div aria-label="Rating is 5.0 out of 5 points" class="rating-stars rating-stars--small-size"><div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div><div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div><div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div><div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div><div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div></div>
+</span><span class="footer-box__rating-label">130+ user reviews</span>
+</a>
+<div aria-label="Contact details" class="footer-box__content">
+<ul aria-label="Contact details" class="contact-list contact-list--footer"><li aria-label="Support section" class="contact-list__item">
+<i aria-hidden="true" class="contact-list__icon contact-list__icon--support"></i>
+<a aria-label="Show support section" class="contact-list__link" href="/support/">Support</a>
+</li><li aria-label="Phone numbers" class="contact-list__item">
+<i aria-hidden="true" class="contact-list__icon contact-list__icon--phone"></i>
+<div class="contact-list__link">
+<a href="tel:00442032908992">UK: +44 20 3290 8992</a><br>
+<a href="tel:0019196479205">US: +1 919-647-9205</a><br/></br></div>
+</li><li aria-label="Email address" class="contact-list__item">
+<i aria-hidden="true" class="contact-list__icon contact-list__icon--support-email"></i>
+<div class="contact-list__link">
+<a href="mailto:support@contentkingapp.com">support@contentkingapp.com</a><br/></div>
+</li></ul>
+</div>
+<div class="footer-box__content">
+<ul class="contact-list contact-list--footer"><li class="contact-list__item">
+<i aria-hidden="true" class="contact-list__icon contact-list__icon--newsletter"></i>
+<a class="contact-list__link" href="/newsletter/">Sign up for our newsletter</a>
+</li></ul>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+<div class="footer__row">
+<div class="footer__bottom-column show-for-large">
+<div class="footer__column-body">
+				Copyright © 2023 ContentKing
+			</div>
+</div>
+<nav aria-label="Additional navigation" class="footer__bottom-column" role="navigation">
+<div class="footer__column-body"><ul class="footer-nav">
+<li class="footer-nav__item">
+<a href="/accessibility/">Accessibility</a></li>
+<li class="footer-nav__item">
+<a href="/legal/privacy-policy/">Privacy Policy</a></li>
+<li class="footer-nav__item">
+<a href="/legal/cookie-policy/">Cookie Policy</a></li>
+<li class="footer-nav__item"><a class="js-open-cookie-preferences" href="#">Cookie Preferences</a></li>
+<li class="footer-nav__item">
+<a href="/legal/terms-of-use/">Terms of Use</a></li>
+</ul>
+</div>
+</nav>
+</div>
+</footer></div><div aria-hidden="true" class="dialog-bg" tabindex="-1"></div>
+<div aria-hidden="true" aria-labelledby="exit-intent-heading" aria-modal="true" class="dialog dialog--slide-in-effect js-exit-intent-dialog" data-ga-label="Generic" id="exit-intent" inert="" role="dialog">
+<div class="dialog-box dialog-box--highlighted-bg js-dialog-box">
+<div class="dialog-box__heading heading heading--center-aligned heading--white">
+<div class="heading__title heading__title--small js-title" data-alt-title="Leave, but don't miss out." id="exit-intent-heading">So soon? Well, before you go...</div>
+<div class="heading__subtitle heading__subtitle--large"><strong>Sign up for our newsletter.</strong></div>
+</div>
+<div class="dialog-box__content">
+<div class="exit-intent">
+<div class="exit-intent__content">
+<img alt="" class="exit-intent__illustration" height="231" loading="lazy" src="/assets/images/materials/newsletter@1x.png" srcset="/assets/images/materials/newsletter@1x.png 1x, /assets/images/materials/newsletter@2x.png 2x" width="214">
+<ul class="checklist checklist--white-style">
+<li class="checklist__item"><strong>Join over 35,000 smart people</strong></li>
+<li class="checklist__item"><strong>Loaded with carefully curated content on SEO and digital marketing</strong></li>
+<li class="checklist__item"><strong>Insightful articles, data-driven research, podcasts and videos</strong></li>
+</ul>
+</img></div>
+<div class="exit-intent__form">
+<form action="https://becontentking.us11.list-manage.com/subscribe/post?u=14598b22fff6346e4f141215b&amp;id=1506b77091" class="js-newsletter-signup" data-validate="" method="post" name="mc-embedded-subscribe-form" novalidate="">
+<div class="overlay-response js-newsletter-signup-response">
+<div class="overlay-response__source">
+<div class="quickinput-form-layout quickinput-form-layout--is-responsive quickinput-form-layout--white quickinput-form-layout--center-aligned">
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-newsletter-signup-response-error form-msg form-msg--error" role="none" style="display: none;">Something went wrong. Please, try again later.</span>
+<div class="quickinput-form-layout__container">
+<div class="quickinput-form-layout__form-field">
+<label class="show-for-sr" for="newsletter-exit-intent-email-field">Email (required)</label>
+<input aria-required="true" autocomplete="off" class="large" id="newsletter-exit-intent-email-field" name="EMAIL" placeholder="email@example.com" required="" type="email" value=""/>
+<span aria-hidden="true" aria-live="off" class="form-error form-bubble" role="none">Please enter a valid email address.</span>
+</div>
+<input name="SOURCE" type="hidden" value="English website">
+<input class="js-newsletter-signup-source-url-field" name="SOURCE_URL" type="hidden" value="https://www.contentkingapp.com/blog/12-content-engagement-kpis-need-tracking/">
+<input name="LANGUAGE" type="hidden" value="en">
+<input class="js-newsletter-signup-creative-field" name="CREATIVE" type="hidden" value="[Exit intent] Newsletter sign-up">
+<div aria-hidden="true" style="position: absolute; left: -5000px;"><label for="newsletter-exit-intent-email-field-question">Question</label><input id="newsletter-exit-intent-email-field-question" name="b_14598b22fff6346e4f141215b_1506b77091" tabindex="-1" type="text" value=""/></div>
+<div class="quickinput-form-layout__form-button quickinput-form-layout__form-button--default">
+<button class="button button--is-shining js-submit-button button--large button--action button--fullwidth" data-loading-label="Loading" name="subscribe" type="submit">
+<div>
+<span class="button__content">
+<big>Subscribe</big>
+</span>
+</div>
+</button>
+</div>
+</input></input></input></input></div>
+<div class="quickinput-form-layout__note">You can opt-out at any time with a single click.</div>
+<div class="exit-intent-close-link">
+<a data-close="" href="#" onclick="return false;">No thanks, I don't want to stay updated on digital marketing.</a>
+</div>
+</div>
+</div>
+<div class="overlay-response__response js-newsletter-signup-response-messages" tabindex="-1">
+<div aria-hidden="true" aria-live="off" class="js-newsletter-signup-response-success overlay-response__message overlay-response__message--large overlay-response__message--success" role="none" style="display: none;">
+<div>Thank you for your subscription, welcome aboard!</div>
+<div class="exit-intent-close-link">
+<a data-close="" href="#" onclick="return false;">Continue to our website</a>
+</div>
+</div>
+<div aria-hidden="true" aria-live="off" class="js-newsletter-signup-response-already-in-list overlay-response__message overlay-response__message--large" role="none" style="display: none;">You're already a subscriber to our newsletter. <br/>Thanks for being a loyal reader!</div>
+<div aria-hidden="true" aria-live="off" class="js-newsletter-signup-response-pending overlay-response__message overlay-response__message--large" role="none" style="display: none;">Please confirm your sign-up to our newsletter using the confirmation email that we just sent you.</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<!-- Close button -->
+<button aria-label="Close this modal window" class="close-button close-button--light" data-close="" type="button">
+<span aria-hidden="true">×</span>
+</button>
+<div class="dialog-box__footer">
+<div class="dialog-box__footer-container">
+<div class="js-modal-lazy-logos lazy-logos" data-id="exit-intent"></div>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="cookie-banner-heading" aria-modal="true" class="dialog dialog--slide-in-effect" id="cookie-banner-general" inert="" role="dialog">
+<div class="cookie-consent-dlg">
+<div class="cookie-consent-dlg__scrollable-container">
+<div class="cookie-consent-dlg__content">
+<div class="cookie-consent-dlg__heading">
+<div class="cookie-consent-dlg__title" id="cookie-banner-general-heading">This website uses cookies</div>
+</div>
+<div class="cookie-consent-dlg__text typo">
+<p>We use cookies to improve user experience and analyze website traffic. By clicking “Accept all“, you agree to our website's cookie use as described in our <a class="js-cookie-banner-show-policy" href="#">Cookie Policy</a>. You can change your cookie settings by clicking “<a class="js-cookie-banner-show-preferences" href="#">Preferences</a>”.</p>
+</div>
+</div>
+<div class="cookie-consent-dlg__footer">
+<div class="cookie-consent-dlg__buttons">
+<button class="button button--hollow-highlighted js-cookie-banner-show-preferences">
+<span>Preferences</span>
+</button>
+<button class="button button--hollow-highlighted js-cookie-banner-decline-all">
+<span>Reject all</span>
+</button>
+<button class="button button--action js-cookie-banner-accept-all">
+<span>Accept all</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="cookie-banner-policy-heading" aria-modal="true" class="dialog dialog--slide-in-effect" data-cookie-policy-version="f0cbb742597d5cb7e9db2f680777051bbd82001f" id="cookie-banner-policy" inert="" role="dialog">
+<div class="cookie-consent-dlg">
+<div class="cookie-consent-dlg__scrollable-container">
+<div class="cookie-consent-dlg__content">
+<div class="cookie-consent-dlg__heading">
+<div class="cookie-consent-dlg__title" id="cookie-banner-policy-heading">Cookie Policy</div>
+</div>
+<div class="cookie-consent-dlg__text typo">
+<p><em>Last updated January 24, 2022</em></p>
+<p>When you use our website <a href="https://www.contentkingapp.com/">www.contentkingapp.com</a> (“Website”), we may place cookies. This Cookie Policy explains what cookies are and in which way cookies are stored on, and information is read from, your computer, mobile device and/or tablet (“Devices”). Please read this Cookie Policy carefully in order to understand what type of cookies ContentKing uses, the information we collect using cookies and how that information is used.</p>
+<h2 id="what-are-cookies">What are cookies?</h2>
+<p>Cookies are small text files which are stored on the browser or hard drive of your Device when you visit a webpage or use an application. Cookies may be needed to show the webpage or application on your Device and are also used to enhance the user experience. Cookies cannot damage your Devices or the files saved on it. There are different types of cookies. Some cookies come directly from our website (first party cookies) and others come from third parties which place cookies on our site (third party cookies).</p>
+<p>Cookies can be stored for varying lengths of time on your browser or device. Session cookies are deleted from your computer or device when you close your web-browser. Persistent cookies will remain stored on your computer or Device until deleted or until they reach their expiry date.</p>
+<h2 id="how-do-we-use-cookies">How do we use cookies?</h2>
+<h3 id="essential-technical-cookies">Essential (Technical) cookies</h3>
+<p>We try to provide an advanced and user-friendly website that adapts automatically to needs and wishes of our visitors and users. To achieve this, we use technical cookies to i.e. show you our Website, to make it function correctly, to create your ContentKing account, to sign you in and to manage your requests. These technical cookies are necessary for our website to function properly.</p>
+<h3 id="functional-cookies">Functional cookies</h3>
+<p>We also use functional cookies to remember your preferences and settings (as username, password, language etc.) and to help you to use the Website efficiently and effectively. These functional cookies are not strictly necessary for the functioning of our Website, but they add functionality for you and enhance your experience.</p>
+<h3 id="analytical-cookies">Analytical cookies</h3>
+<p>We use analytical cookies in order to collect statistics about the use and visits of the Website. These analytic cookies generate statistical and other information about website use by means of cookies, which are stored on users’ Devices. The information generated relating to our Website is used to create reports about the use of the Website. Analytical cookies may be placed without your consent, unless such cookies have an impact on your privacy. In such cases, prior consent will be asked for.</p>
+<h3 id="google-analytics">Google Analytics</h3>
+<p>We use Google Analytics cookies in order to collect statistics about the use and visits of the Website. With these analytical cookies a permanent cookie is saved on your device to register your use of the Website. Google Analytics analyses this data and provides us with the results. This way, we obtain insight into the traffic of the Website and the way in which the Website is used. Based on this information we are able to make specific adjustments to the Website.</p>
+<p>The information that we obtain is transferred to Google and stored by Google on servers outside the European Economic Area. We have entered into a data processing agreement with Google in which agreements have been made regarding the processing of personal data.</p>
+<p>If you would like more information about analytical cookies and their expiry date, please visit the Google Analytics <a href="https://developers.google.com/analytics/devguides/collection/gajs/cookie-usage">information page</a>. Google also offers an <a href="https://tools.google.com/dlpage/gaoptout?hl=en">opt-out option</a> for data collection within the scope of Google Analytics.</p>
+<h3 id="marketing-cookies">Marketing cookies</h3>
+<p>We use third party marketing cookies in order to follow your internet browsing behavior and collect data and information on your browsing behavior from various websites you visited. This information is used to make the content of the displayed advertisements as relevant as possible, and to limit repetition of the same advertisements.</p>
+<h3 id="social-plug-ins">Social plug-ins</h3>
+<p>By using the Website you can get access to social media websites, such as Facebook, Twitter and LinkedIn. These buttons come with a code which has been made by these networks themselves. Using these so called social plug-ins you can login to your social media profile and subsequently share information from the Website with others. With these social plug-ins third party marketing cookies are saved on your Devices. These cookies serve the purpose of optimizing your user experience.</p>
+<p>Companies such as LinkedIn, Twitter and Facebook may share your personal data outside the European Economic Area. Please read our Privacy Policy <a href="/legal/privacy-policy/">here</a> and the respective social network’s privacy statement to see how these companies treat your (personal) data.</p>
+<h3 id="pixels">Pixels</h3>
+<p>We also place pixels of third parties. A pixel keeps track of your surfing behavior and how you use the Website. These data are aggregated and give us information about the target group that visits our website. Based on this information, we can show an advertisement to a specific or similar target group on the website of the third party that produced the pixel.</p>
+<h2 id="disable-or-delete-cookies">Disable or delete cookies</h2>
+<p>When you first visit the Website, we ask you to give consent for cookies that are not necessary or functional and that have an impact on your privacy. If you do not give consent, these cookies will not be placed. In that case, you may not be able to use all the functionalities on our Website.</p>
+<p>You can configure your browser so that you do not receive any cookies the next time you use the website. You can read here how you can remove different types of cookies in different browsers. Please consult the help-function of your browser if your browser is not listed below.</p>
+<ul>
+<li><a href="https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&amp;hl=en-GB">Chrome</a></li>
+<li><a href="https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox">Firefox</a></li>
+<li><a href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09">Edge</a></li>
+<li><a href="https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac">Safari</a></li>
+</ul>
+<p>Note: Refusing or deleting cookies only affects the Device and the browser on which you perform this action. If you use different Devices and/or browsers you will need to repeat the above described actions on these Devices and/or browsers.</p>
+<h2 id="privacy">Privacy</h2>
+<p>It is possible that information collected through a cookie or obtained otherwise, contains personal data. If this is the case, our Privacy Policy is applicable on the processing of these data. The Privacy Policy can be read <a href="/legal/privacy-policy/">here</a>.</p>
+<h2 id="can-this-cookie-policy-be-changed">Can this Cookie Policy be changed?</h2>
+<p>We may amend this Cookie Policy in the future. If there are substantive or material changes that may affect one or more of the parties involved to a considerable extent, we inform those involved in advance. Our changed Cookie Policy will also be available on this web page, so it is recommended to regularly have a look at this page.</p>
+<h2 id="overview-cookies">Overview cookies</h2>
+<h3 id="essential-technical-cookies-1">Essential (Technical) cookies</h3>
+<p>Essential (Technical) cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function (properly) without these cookies.</p>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">viewedOuibounceModal</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>ContentKing</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store state of having closed the exit intent modal.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 month</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">nette-samesite</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>ContentKing</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Communication with account service.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>Session</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">session_timestamp</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>ContentKing</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Utility for tracking of session start time.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>Session</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>SessionStorage</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">what-intent</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>ContentKing</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Utility for tracking the current input method.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>Session</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>SessionStorage</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">what-input</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>ContentKing</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Utility for tracking the current input method.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>Session</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>SessionStorage</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">contentking</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>ContentKing</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store state for website functioning.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 day</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>LocalStorage</td>
+</tr>
+</tbody>
+</table>
+<h3 id="statistics-analytical-cookies">Statistics (analytical cookies)</h3>
+<p>These cookies help us to understand how visitors interact with websites by collecting and reporting information anonymously.</p>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_ga</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Google Analytics</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store and count pageviews.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>2 years</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_ga_*</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Google Analytics</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store and count pageviews.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>2 years</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_gcl_au</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Google AdSense</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store and track conversions.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>3 months</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_gid</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Google Analytics</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store and count pageviews.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 day</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_dc_gtm_*</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Google Analytics</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store number of service requests.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 minute</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">wd</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Information about browser window dimensions.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 day</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<h3 id="marketing-social-plug-ins-third-party-marketing-cookies-pixels">Marketing (Social plug-ins, third party marketing cookies, pixels)</h3>
+<p>Marketing cookies are used to follow visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers.</p>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">intercom-session-*</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Intercom</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Contact, communication, support.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 week</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">intercom-id-*</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Intercom</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Contact, communication, support.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>9 months</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">li_gc</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>LinkedIn</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>2 years</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">lidc</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>LinkedIn</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 day</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">bcookie</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>LinkedIn</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>2 years</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_uetsid</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Microsoft Advertising</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 day</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_uetvid</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Microsoft Advertising</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 year</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">tap_vid</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Tapfiliate</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Affiliate marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 year</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie &amp; LocalStorage</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_fbp</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>3 months</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_fbc</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>3 months</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">fr</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>3 months</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">xs</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>3 months</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">dpr</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>5 days</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">c_user</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>30 days</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">sb</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 year, 1 month, 14 days</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">datr</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 year, 1 month, 14 days</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">muc</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Twitter</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 year, 10 months, 3 days</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">muc-ads</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Twitter</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 year, 10 months, 3 days</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cookie-consent-dlg__footer">
+<div class="cookie-consent-dlg__buttons">
+<button class="button button--highlighted js-cookie-banner-show-general">
+<span>Back</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="cookie-banner-preferences-heading" aria-modal="true" class="dialog dialog--slide-in-effect" id="cookie-banner-preferences" inert="" role="dialog">
+<div class="cookie-consent-dlg">
+<div class="cookie-consent-dlg__scrollable-container">
+<div class="cookie-consent-dlg__content">
+<div class="cookie-consent-dlg__heading">
+<div class="cookie-consent-dlg__title" id="cookie-banner-preferences-heading">Your Cookie Preferences</div>
+</div>
+<div aria-hidden="true" class="form-msg form-msg--warning typo js-intercom-warning-message" style="display: none;">
+<p>Our chat requires cookies to function. Please enable Marketing cookies to continue, alternatively you can contact us via email at <a href="mailto:support@contentkingapp.com">support@contentkingapp.com</a></p>
+</div>
+<div class="cookie-consent-dlg__text typo">
+<p>We use different types of cookies to optimize your experience on our website. Click on the categories below to learn more about their purposes. You may choose which types of cookies to allow. Remember that disabling cookies may affect your experience on the website. You can learn more about how we use cookies by visiting our <a class="js-cookie-banner-show-policy" href="#">Cookie Policy</a>.</p>
+</div>
+<form class="cookie-consent-dlg__preferences">
+<div>
+<div class="cookie-consent-dlg__preference-option">
+<input checked="checked" disabled="disabled" id="essential_storage" name="essential_storage" type="checkbox">
+<label for="essential_storage">Essential (Technical) cookies</label>
+</input></div>
+<p>Essential (Technical) cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function (properly) without these cookies.</p>
+</div>
+<div>
+<div class="cookie-consent-dlg__preference-option">
+<input id="analytics_storage" name="analytics_storage" type="checkbox">
+<label for="analytics_storage">Statistics (analytical cookies)</label>
+</input></div>
+<p>These cookies help us to understand how visitors interact with websites by collecting and reporting information anonymously.</p>
+</div>
+<div>
+<div class="cookie-consent-dlg__preference-option">
+<input id="ad_storage" name="ad_storage" type="checkbox">
+<label for="ad_storage">Marketing (Social plug-ins, third party marketing cookies, pixels)</label>
+</input></div>
+<p>Marketing cookies are used to follow visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers.</p>
+</div>
+</form>
+</div>
+<div class="cookie-consent-dlg__footer">
+<div class="cookie-consent-dlg__buttons">
+<button class="button button--hollow-highlighted js-cookie-banner-decline-all">
+<span>Reject all</span>
+</button>
+<button class="button button--action js-cookie-banner-accept-selected">
+<span>Accept selected</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="/assets/js/libraries.js?cb=6d0f457c83ce1f9617c4686abb84c45a" type="text/javascript"></script>
+<script src="/assets/js/app.js?cb=f179e9e0a225b14d8cf7bbe24cb2a6fa}" type="text/javascript"></script>
+</body>
+</html>

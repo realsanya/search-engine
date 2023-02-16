@@ -1,0 +1,3407 @@
+<!DOCTYPE html>
+
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The State of SEO Quality Assurance in 2021 - ContentKing</title>
+<link href="https://iframe.videodelivery.net" rel="preconnect dns-prefetch"/>
+<script>(function(c,u,v,n,p,e,z,A,w){function k(a){if(!x){x=!0;var l=u.getElementsByTagName(v)[0],d=u.createElement(v);d.src=A;d.crossorigin="anonymous";d.addEventListener("load",function(){try{c[n]=r;c[p]=t;var b=c[e],d=b.init;b.init=function(a){for(var b in a)Object.prototype.hasOwnProperty.call(a,b)&&(w[b]=a[b]);d(w)};B(a,b)}catch(g){console.error(g)}});l.parentNode.insertBefore(d,l)}}function B(a,l){try{for(var d=m.data,b=0;b<a.length;b++)if("function"===typeof a[b])a[b]();var e=!1,g=c.__SENTRY__;"undefined"!==
+typeof g&&g.hub&&g.hub.getClient()&&(e=!0);g=!1;for(b=0;b<d.length;b++)if(d[b].f){g=!0;var f=d[b];!1===e&&"init"!==f.f&&l.init();e=!0;l[f.f].apply(l,f.a)}!1===e&&!1===g&&l.init();var h=c[n],k=c[p];for(b=0;b<d.length;b++)d[b].e&&h?h.apply(c,d[b].e):d[b].p&&k&&k.apply(c,[d[b].p])}catch(C){console.error(C)}}for(var f=!0,y=!1,q=0;q<document.scripts.length;q++)if(-1<document.scripts[q].src.indexOf(z)){f="no"!==document.scripts[q].getAttribute("data-lazy");break}var x=!1,h=[],m=function(a){(a.e||a.p||a.f&&
+-1<a.f.indexOf("capture")||a.f&&-1<a.f.indexOf("showReportDialog"))&&f&&k(h);m.data.push(a)};m.data=[];c[e]=c[e]||{};c[e].onLoad=function(a){h.push(a);f&&!y||k(h)};c[e].forceLoad=function(){y=!0;f&&setTimeout(function(){k(h)})};"init addBreadcrumb captureMessage captureException captureEvent configureScope withScope showReportDialog".split(" ").forEach(function(a){c[e][a]=function(){m({f:a,a:arguments})}});var r=c[n];c[n]=function(a,e,d,b,f){m({e:[].slice.call(arguments)});r&&r.apply(c,arguments)};
+var t=c[p];c[p]=function(a){m({p:a.reason});t&&t.apply(c,arguments)};f||setTimeout(function(){k(h)})})(window,document,"script","onerror","onunhandledrejection","Sentry","a5184105d8fc40669d0a2d883d87688d","https://browser.sentry-cdn.com/6.13.3/bundle.min.js",{"dsn":"https://a5184105d8fc40669d0a2d883d87688d@o29016.ingest.sentry.io/65692","release":"c82be011c","environment":"production"});</script>
+<script>
+// Define dataLayer and the gtag function.
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
+var storage = window.localStorage.getItem('contentking');
+var defaultConsents = {'ad_storage': 'denied', 'analytics_storage': 'denied', 'functionality_storage': 'denied', 'personalization_storage': 'denied', 'security_storage': 'denied' };
+if (storage) { storage = JSON.parse(storage); if (storage['cookie-consent'] && storage['cookie-consent']['consents']) { defaultConsents = storage['cookie-consent']['consents']; } }
+gtag('consent', 'default', defaultConsents);
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TX8N5H');</script>
+<!-- End Google Tag Manager -->
+<link as="font" crossorigin="" href="https://www.contentkingapp.com/assets/fonts/proxima-nova-normal-700.subset.woff2" rel="preload" type="font/woff2">
+<link as="font" crossorigin="" href="https://www.contentkingapp.com/assets/fonts/proxima-nova-normal-400.subset.woff2" rel="preload" type="font/woff2"/>
+<link href="/assets/css/app.css?cb=3d7688a9dcdb78775593b482c519b511" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.contentkingapp.com/assets/images/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="https://www.contentkingapp.com/assets/images/favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="https://www.contentkingapp.com/assets/images/favicons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="https://www.contentkingapp.com/assets/images/favicons/site.webmanifest" rel="manifest"/>
+<link href="https://www.contentkingapp.com/assets/images/favicons/favicon.ico" rel="shortcut icon">
+<meta content="ContentKing" name="apple-mobile-web-app-title"/>
+<meta content="ContentKing" name="application-name"/>
+<meta content="#ffffff" name="msapplication-TileColor"/>
+<meta content="https://www.contentkingapp.com/assets/images/favicons/browserconfig.xml" name="msapplication-config"/>
+<meta content="https://www.contentkingapp.com/assets/images/favicons/mstile-144x144.png" name="msapplication-TileImage"/>
+<meta content="#ffffff" name="theme-color"/>
+<link href="https://www.contentkingapp.com/research/state-of-seo-qa/" hreflang="en" rel="alternate"/>
+<link href="https://www.contentkingapp.com/research/state-of-seo-qa/" hreflang="x-default" rel="alternate"/>
+<meta content="Curious how SEOs around the world detect, understand, react to and resolve SEO issues? Take a look!" name="description"/>
+<link href="https://www.contentkingapp.com/research/state-of-seo-qa/" rel="canonical"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="website" property="og:type"/>
+<meta content="The State of SEO Quality Assurance in 2021 - ContentKing" property="og:title"/>
+<meta content="Curious how SEOs detect, react to and resolve SEO issues?" property="og:description"/>
+<meta content="https://www.contentkingapp.com/research/state-of-seo-qa/" property="og:url"/>
+<meta content="ContentKing" property="og:site_name"/>
+<meta content="https://www.contentkingapp.com/media/social-cards/og-en-contentking-default@2x.png" property="og:image"/>
+<meta content="https://www.contentkingapp.com/media/social-cards/og-en-contentking-default@2x.png" property="og:image:secure_url"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="The State of SEO Quality Assurance in 2021 - ContentKing" name="twitter:title"/>
+<meta content="Curious how SEOs detect, react to and resolve SEO issues?" name="twitter:description"/>
+<meta content="@contentking" name="twitter:site"/>
+<meta content="https://www.contentkingapp.com/media/social-cards/og-en-contentking-default@2x.png" name="twitter:image"/>
+<meta content="@contentking" name="twitter:creator"/>
+<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Corporation",
+		"name": "ContentKing",
+		"url": "https://www.contentkingapp.com/",
+		"telephone": "+1 919-647-9205",
+		"address":
+		{
+			"@type": "PostalAddress",
+			"streetAddress": "Warmoesstraat 149-151",
+			"addressLocality": "Amsterdam",
+			"postalCode": "1012 JC",
+			"addressCountry": "NL"
+		},
+		"logo": "https://www.contentkingapp.com/assets/images/logo-schema.svg",
+		"sameAs": [
+			"https://www.facebook.com/contentkingapp/",
+			"https://twitter.com/contentking",
+			"https://www.instagram.com/contentkingapp/",
+			"https://www.linkedin.com/company/10169361/"
+		]
+	}
+</script>
+</link></link></head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-TX8N5H" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<a class="skip-link" href="/research/state-of-seo-qa/#main-content">
+	Jump to Main Content
+</a>
+<div class="js-content page"><!-- Main Sticky Menu -->
+<div aria-hidden="true" class="header__sticky-wrapper">
+<div class="header__wrapper header__wrapper--is-anchored" id="js-sticky-header">
+<div class="header header--slim">
+<div class="header__content">
+<div class="header__logo"><div class="site-logo site-logo--slim">
+<a class="site-logo__container" href="/" rel="home" tabindex="-1">
+<img alt="ContentKing logo" class="site-logo__image" height="56" src="/assets/images/contentking-conductor-logo.svg" width="200"/>
+</a>
+</div>
+</div>
+<div class="header__nav">
+<nav aria-label="Main navigation" role="navigation">
+<ul class="main-nav js-main-nav">
+<li class="main-nav__item main-nav__item--has-dropdown js-collapsible-nav"><a class="main-nav__link main-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/features/" tabindex="-1"><span>Features</span></a><span class="main-nav__subnav js-collapsible-nav-content">
+<ul aria-label="Submenu for Features" class="nav-group">
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/" tabindex="-1">Overview</a></li>
+<li aria-hidden="true" class="main-nav__divider">---</li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-auditing/" tabindex="-1">SEO Auditing</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-monitoring/" tabindex="-1">SEO Monitoring</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-alerting/" tabindex="-1">SEO Alerting</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-change-tracking/" tabindex="-1">SEO Change Tracking</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/log-file-analysis/" tabindex="-1">Log File Analysis</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-insights-reporting/" tabindex="-1">Insights &amp; Reporting</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/api-integrations/" tabindex="-1">APIs &amp; Integrations</a></li>
+</ul>
+</span></li>
+<li class="main-nav__item main-nav__item--has-dropdown js-collapsible-nav"><a class="main-nav__link main-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/solutions/for-agencies/" tabindex="-1"><span>Solutions</span></a><span aria-label="Submenu for Solutions" class="main-nav__subnav main-nav__subnav--stretched js-collapsible-nav-content">
+<span class="nav-group">
+<span aria-hidden="true" class="nav-group__caption">By Industry</span>
+<ul aria-label="Solutions by industry" class="nav-group__content">
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-agencies/" tabindex="-1">Agencies</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-ecommerce/" tabindex="-1">eCommerce</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-marketplaces/" tabindex="-1">Marketplaces</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-publishers/" tabindex="-1">Publishers</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-travel/" tabindex="-1">Travel</a></li>
+</ul>
+</span>
+<span class="nav-group">
+<span aria-hidden="true" class="nav-group__caption">By Role</span>
+<ul aria-label="Solutions by role" class="nav-group__content">
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-executives/" tabindex="-1">Executives</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-marketing-managers/" tabindex="-1">Marketing Managers</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-technical-seos/" tabindex="-1">Technical SEOs</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-content-teams/" tabindex="-1">Content Teams</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-developers/" tabindex="-1">Developers</a></li>
+</ul>
+</span>
+</span></li>
+<li class="main-nav__item"><a class="main-nav__link" href="/case-studies/" tabindex="-1"><span>Case studies</span></a></li>
+</ul>
+</nav>
+</div>
+<div class="header__buttons">
+<div class="js-header-button-onboarding" style="display: none"><a class="button button--small button--action button--is-shining button--is-responsive" href="/go/url/" id="js-btn-trial" role="button" tabindex="-1">
+<span>Start Trial</span>
+</a>
+</div>
+<div class="js-header-button-app" style="display: none">
+<a class="button button--small button--ghost button--small" href="https://app.contentkingapp.com/" role="button" tabindex="-1">
+<span>Go to app</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div id="js-sticky-header-footer"></div>
+</div>
+</div>
+<!-- End Main Sticky Menu -->
+<header class="header header--main" id="js-main-header">
+<div class="header__content">
+<div class="header__logo"><div class="site-logo">
+<a aria-label="Back to the homepage" class="site-logo__container" href="/" rel="home">
+<img alt="ContentKing logo" class="site-logo__image" height="56" src="/assets/images/contentking-conductor-logo.svg" width="200"/>
+</a>
+</div>
+</div>
+<div class="header__nav">
+<div class="header-nav-layout js-off-canvas-panel" data-aria-label="Website navigation" id="offcanvas-panel">
+<div class="header-nav-layout__content">
+<div class="header-nav-layout__close-btn">
+<button aria-label="Close navigation" class="close-button close-button--light js-off-canvas-close-btn" type="button">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+<div class="header-nav-layout__main-part">
+<nav aria-label="Main navigation" role="navigation">
+<ul class="main-nav js-main-nav">
+<li class="main-nav__item main-nav__item--has-dropdown js-collapsible-nav"><a class="main-nav__link main-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/features/"><span>Features</span></a><span class="main-nav__subnav js-collapsible-nav-content">
+<ul aria-label="Submenu for Features" class="nav-group">
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/">Overview</a></li>
+<li aria-hidden="true" class="main-nav__divider">---</li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-auditing/">SEO Auditing</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-monitoring/">SEO Monitoring</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-alerting/">SEO Alerting</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-change-tracking/">SEO Change Tracking</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/log-file-analysis/">Log File Analysis</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-insights-reporting/">Insights &amp; Reporting</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/api-integrations/">APIs &amp; Integrations</a></li>
+</ul>
+</span></li>
+<li class="main-nav__item main-nav__item--has-dropdown js-collapsible-nav"><a class="main-nav__link main-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/solutions/for-agencies/"><span>Solutions</span></a><span aria-label="Submenu for Solutions" class="main-nav__subnav main-nav__subnav--stretched js-collapsible-nav-content">
+<span class="nav-group">
+<span aria-hidden="true" class="nav-group__caption">By Industry</span>
+<ul aria-label="Solutions by industry" class="nav-group__content">
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-agencies/">Agencies</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-ecommerce/">eCommerce</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-marketplaces/">Marketplaces</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-publishers/">Publishers</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-travel/">Travel</a></li>
+</ul>
+</span>
+<span class="nav-group">
+<span aria-hidden="true" class="nav-group__caption">By Role</span>
+<ul aria-label="Solutions by role" class="nav-group__content">
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-executives/">Executives</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-marketing-managers/">Marketing Managers</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-technical-seos/">Technical SEOs</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-content-teams/">Content Teams</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-developers/">Developers</a></li>
+</ul>
+</span>
+</span></li>
+<li class="main-nav__item"><a class="main-nav__link" href="/case-studies/"><span>Case studies</span></a></li>
+</ul>
+</nav>
+</div>
+<div class="header-nav-layout__secondary-part">
+<nav aria-label="Secondary navigation" role="navigation">
+<ul class="secondary-nav js-secondary-nav">
+<li class="secondary-nav__item secondary-nav__item--has-dropdown js-collapsible-nav"><a class="secondary-nav__link secondary-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/academy/"><span>Academy</span></a><ul aria-label="Submenu for Academy" class="secondary-nav__subnav js-collapsible-nav-content"><li class="secondary-nav__subitem secondary-nav__subitem--has-divider">
+<a class="secondary-nav__sublink" href="/academy/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-all"></use>
+</svg>Overview</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/seo-fundamentals-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-seo-fundamentals"></use>
+</svg>SEO Fundamentals</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/technical-seo-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-technical-seo"></use>
+</svg>Technical SEO</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/ecommerce-seo-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-ecommerce-seo"></use>
+</svg>eCommerce SEO</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/international-seo-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-international-seo"></use>
+</svg>International SEO</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/structured-data-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-structured-data"></use>
+</svg>Structured Data</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/processes-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-processes"></use>
+</svg>Content &amp; SEO Processes</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/reporting-management-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-reporting-management"></use>
+</svg>SEO Reporting &amp; Management</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/google-search-console-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-google-search-console"></use>
+</svg>Google Search Console</a>
+</li><li class="secondary-nav__subitem secondary-nav__subitem--has-divider-before">
+<a class="secondary-nav__sublink" href="/academy/faq/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-faq"></use>
+</svg>Frequently Asked SEO Questions</a>
+</li>
+</ul></li>
+<li class="secondary-nav__item secondary-nav__item--has-dropdown js-collapsible-nav"><a class="secondary-nav__link secondary-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/blog/"><span>Blog</span></a><ul aria-label="Submenu for Blog" class="secondary-nav__subnav js-collapsible-nav-content"><li class="secondary-nav__subitem secondary-nav__subitem--has-divider">
+<a aria-label="View all articles" class="secondary-nav__sublink" href="/blog/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-all"></use>
+</svg>View all</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/blog/feature-announcements/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-feature-announcements"></use>
+</svg>Feature Announcements</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/blog/seo-in-focus/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-seo-in-focus"></use>
+</svg>SEO in Focus</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/blog/industry-news/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-industry-news"></use>
+</svg>Industry News</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/blog/other/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-other"></use>
+</svg>Other</a>
+</li>
+</ul></li>
+<li class="secondary-nav__item secondary-nav__item--has-dropdown js-collapsible-nav"><a class="secondary-nav__link secondary-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/certified-partners/"><span>Certified Partners</span></a><ul aria-label="Submenu for Certified Partners" class="secondary-nav__subnav js-collapsible-nav-content secondary-nav__subnav--auto-width"><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/certified-partners/united-states/">United States</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/certified-partners/united-kingdom/">United Kingdom</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/certified-partners/benelux/">Benelux</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/certified-partners/other/">Other</a>
+</li>
+</ul></li>
+<li class="secondary-nav__item"><a class="secondary-nav__link" href="/careers/"><span>Careers</span></a></li>
+<li class="secondary-nav__item"><a class="secondary-nav__link" href="/support/"><span>Support</span></a></li>
+<li class="secondary-nav__item"><a class="secondary-nav__link" href="/contact/"><span>Contact</span></a></li>
+</ul>
+</nav>
+</div>
+<div class="header-nav-layout__button">
+<div class="js-header-button-onboarding" style="display: none"><a class="button button--fullwidth-on-small button--action button--is-shining button--is-responsive" href="/go/url/" role="button">
+<span>Start Trial</span>
+</a>
+</div>
+<div class="js-header-button-app" style="display: none">
+<a class="button button--fullwidth-on-small button--ghost button--small" href="https://app.contentkingapp.com/">
+<span>Go to app</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="header__buttons header__buttons--hidden-on-offnav">
+<button aria-controls="offcanvas-panel" aria-label="Toggle navigation" class="offnav-control">
+<i aria-hidden="true" class="offnav-control__icon"></i>
+<span class="offnav-control__label">Menu</span>
+</button>
+</div>
+</div>
+</header><main class="page__content" id="main-content">
+<section class="section section--report dark-bg-context" id="js-reveal-header-boundary">
+<div class="row">
+<div class="small-12 columns">
+<article class="post-detail">
+<div class="post-detail__layout">
+<div class="post-detail__content">
+<div class="post-detail__badges">
+<div aria-hidden="true" class="research-badge">ContentKing research</div>
+</div>
+<div class="post-detail__heading">
+<div class="heading heading--white">
+<h1 class="heading__title">The State of SEO Quality Assurance in 2021</h1>
+</div>
+</div>
+</div>
+</div>
+<div class="post-detail__layout post-detail__layout--reversed-order">
+<div class="post-detail__sidebar">
+<div class="action-box dark-bg-context sticky-element sticky-element--on-large">
+<div aria-label="Table of contents" class="action-box__content typo js-scroll-navigation-highlight">
+<ul class="navigation-list">
+<li class="navigation-list__item navigation-list__item--primary"><a href="#survey-report">Survey Report</a></li>
+<li class="navigation-list__item navigation-list__item--secondary"><a href="#methodology">Methodology</a></li>
+<li class="navigation-list__item navigation-list__item--secondary"><a href="#demographics">Demographics</a></li>
+<li class="navigation-list__item navigation-list__item--secondary"><a href="#seo-teams">SEO Team composition</a></li>
+<li class="navigation-list__item navigation-list__item--secondary"><a href="#frequency-seo-incidents">Frequency and impact of SEO Incidents</a></li>
+<li class="navigation-list__item navigation-list__item--secondary"><a href="#identifying-addressing-seo-issues">Identifying and addressing SEO Issues</a></li>
+<li class="navigation-list__item navigation-list__item--secondary"><a href="#site-characteristics">Site characteristics and technology</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="post-detail__content">
+<div class="post-detail__text typo">
+<p class="perex">ContentKing commissioned the largest-scale study of its kind to date, to understand how SEOs around the world detect, understand, react to and resolve SEO issues on sites they work on.
+</p>
+<div aria-label="Links to interesting passages of upcoming text" class="typo-block columns-list columns-list--compact columns-list--small-up-1 columns-list--medium-up-2 columns-list--equalize-together" role="list">
+<div class="columns-list__column" role="listitem">
+<a class="read-more-box" href="#when-the-worst-recent-seo-incident-occurred">
+<span class="read-more-box__text">For 29% of the respondents their worst recent SEO incident occurred within the past 3 months.</span>
+<span aria-hidden="true" class="read-more-box__cta-label">Read more</span>
+</a>
+</div>
+<div class="columns-list__column" role="listitem">
+<a class="read-more-box" href="#seo-incidents-estimated-impact-on-the-companys-revenue">
+<span class="read-more-box__text">45% of the respondents' worst recent SEO incident had an impact of $10K or more on their most important website.</span>
+<span aria-hidden="true" class="read-more-box__cta-label">Read more</span>
+</a>
+</div>
+<div class="columns-list__column" role="listitem">
+<a class="read-more-box" href="#time-spent-on-detecting-and-solving-newly-introduced-issues">
+<span class="read-more-box__text">Nearly half of the respondents spend 25% or more of their time detecting and solving newly introduced SEO incidents.</span>
+<span aria-hidden="true" class="read-more-box__cta-label">Read more</span>
+</a>
+</div>
+<div class="columns-list__column" role="listitem">
+<a class="read-more-box" href="#how-easy-it-is-to-detect-incidents">
+<span class="read-more-box__text">Only 10% of the respondents finds it “very easy” to detect SEO incidents.</span>
+<span aria-hidden="true" class="read-more-box__cta-label">Read more</span>
+</a>
+</div>
+</div>
+<hr/>
+<h2 id="survey-report">
+<a aria-hidden="true" class="anchor-link" href="#survey-report" tabindex="-1"></a>Survey Report</h2>
+<h3 class="toc" id="methodology">
+<a aria-hidden="true" class="anchor-link" href="#methodology" tabindex="-1"></a>Methodology</h3>
+<p>This survey was conducted online by Genesis Research Associates. A total of 1,263 SEO professionals completed the survey between April 21 - May 17, 2021.</p>
+<p>In order to qualify for the study, all respondents indicated that SEO is at least "somewhat important" in their current jobs.</p>
+<p>Respondents were drawn from a variety of lists/sources, including:</p>
+<ul>
+<li>Past and current ContentKing customers and trial users</li>
+<li>ContentKing newsletter subscribers and social media contacts</li>
+<li>Industry Slack teams, Facebook groups and subreddits</li>
+<li>Industry newsletter listings (both sponsored and co-marketing)</li>
+</ul>
+<p>Respondents were asked about their experiences with SEO incidents, the causes of those incidents, their methods for identifying issues, and how long it took to identify and resolve those incidents.</p>
+<p>The findings in this report are accurate within ± 3.1%. Differences reported as statistically significant were tested at 95% probability.</p>
+<div class="highlighted-box">
+<div class="highlighted-box__content">
+<div class="share">
+<div class="share__label">Share this research report</div>
+<div class="share__buttons">
+<a class="social-icon social-icon--large social-icon--facebook social-icon--link" href="https://www.facebook.com/sharer/sharer.php?display=popup&amp;u=https://www.contentkingapp.com/research/state-of-seo-qa/" onclick="window.open('https://www.facebook.com/sharer/sharer.php?display=popup&amp;u=https://www.contentkingapp.com/research/state-of-seo-qa/','ck_popup','toolbar=0,status=0,resizable=1,width=626,height=600')" rel="noopener" target="_blank" title="Share on Facebook"><span class="extlink">Share on Facebook</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+<a class="social-icon social-icon--large social-icon--twitter social-icon--link" href="https://twitter.com/intent/tweet?title=The%20State%20of%20SEO%20Quality%20Assurance%20in%202021%C2%A0%E2%80%93%C2%A0url=https://www.contentkingapp.com/research/state-of-seo-qa/" onclick="window.open('https://twitter.com/intent/tweet?title=The%20State%20of%20SEO%20Quality%20Assurance%20in%202021 –&amp;url=https://www.contentkingapp.com/research/state-of-seo-qa/','ck_popup','toolbar=0,status=0,resizable=1,width=600,height=340')" rel="noopener" target="_blank" title="Share on Twitter"><span class="extlink">Share on Twitter</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+<a class="social-icon social-icon--large social-icon--linkedin social-icon--link" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.contentkingapp.com/research/state-of-seo-qa/" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url=https://www.contentkingapp.com/research/state-of-seo-qa/','ck_popup','toolbar=0,status=0,resizable=1,width=600,height=560')" rel="noopener" target="_blank" title="Share on LinkedIn"><span class="extlink">Share on LinkedIn</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+</div>
+</div>
+</div>
+</div>
+<h3 class="toc" id="demographics">
+<a aria-hidden="true" class="anchor-link" href="#demographics" tabindex="-1"></a>Demographics</h3>
+<div class="block">
+<h4 id="importance-of-seo-in-current-job-function">Importance of SEO in current job function</h4>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="donut-chart-3szn6sc16udr"></div>
+</figure>
+<style>
+	#donut-chart-3szn6sc16udr {
+		
+		min-height: 290px
+	}
+
+	@media (max-width: 550px) {
+		#donut-chart-3szn6sc16udr {
+			min-height: 435.0px
+		}
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createDonutChart(
+			document.getElementById('donut-chart-3szn6sc16udr'),
+			[{"color":"#007EF3","label":"Most important part of my job","size":61},{"color":"#F4A21E","label":"A very important part of my job","size":31},{"color":"#DD3F4F","label":"Somewhat important part of my job","size":8}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,263",
+				dark: true,
+				description: "Importance of SEO in current job function. Based on 1,263 responses.",
+				height: 290,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>The vast marjority of the respondents (92%) indicated that SEO is at least “a very important part of their jobs”.</p>
+</div>
+<div class="block">
+<h4 id="areas-of-seo-that-apply-to-their-job">Areas of SEO that apply to their job</h4>
+<p>This question allowed multiple responses.</p>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-80l8wdrhaju3"></div>
+</figure>
+<style>
+	#bar-chart-80l8wdrhaju3 {
+		
+		min-height: 330px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-80l8wdrhaju3'),
+			[{"color":"#7C238E","label":"Content","size":59},{"color":"#007EF3","label":"Technical","size":66},{"color":"#11A864","label":"Link Building or Digital PR","size":29},{"color":"#F4A21E","label":"Management","size":63},{"color":"#DD3F4F","label":"Other","size":9}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,263",
+				dark: true,
+				description: "Best description of SEO job. Based on 1,263 responses.",
+				height: 330,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>Most of the respondents are involved in multiple areas of SEO; nearly ⅔ have management responsibilities.</p>
+</div>
+<div class="block">
+<h4 id="years-of-professional-experience-in-seo">Years of professional experience in SEO</h4>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-pwks5cn5i83r"></div>
+</figure>
+<style>
+	#bar-chart-pwks5cn5i83r {
+		
+		min-height: 340px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-pwks5cn5i83r'),
+			[{"color":"#7C238E","label":"<1 year","size":3},{"color":"#007EF3","label":"1-2 years","size":12},{"color":"#11A864","label":"3-5 years","size":30},{"color":"#F4A21E","label":"6-10 years","size":28},{"color":"#DD3F4F","label":">10 years","size":27}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,263",
+				dark: true,
+				description: undefined,
+				height: 340,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>The vast majority (85%) of the respondents had been working in SEO for at least 3 years.</p>
+</div>
+<div class="block">
+<h4 id="number-of-sites-responsible-for">Number of sites responsible for</h4>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-vag9ux07vzq5"></div>
+</figure>
+<style>
+	#bar-chart-vag9ux07vzq5 {
+		
+		min-height: 340px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-vag9ux07vzq5'),
+			[{"color":"#7C238E","label":"1","size":14},{"color":"#007EF3","label":"2","size":10},{"color":"#11A864","label":"3-5","size":26},{"color":"#F4A21E","label":"6-10","size":20},{"color":"#DD3F4F","label":">10","size":30}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,263",
+				dark: true,
+				description: undefined,
+				height: 340,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<div aria-label="Start new free trial on ContentKing" class="onboarding-cta typo-block highlighted-box false highlighted-box--expressive" data-testid="onboarding-box"><div class="highlighted-box__content">
+<div class="highlighted-box__title">Having difficulty keeping track of what is going on?</div>
+<div class="onboarding-cta__description typo">
+<p>Let ContentKing do the heavy lifting. Get up and running in 20 seconds!</p>
+</div>
+<div class="onboarding-cta__form"><form aria-label="The form used for creating free trial account on ContentKing" class="quickinput-form-layout js-submit-url-start-onboarding quickinput-form-layout--white quickinput-form-layout--is-responsive" data-validate="" novalidate="">
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-unexpected-error form-msg form-msg--error" role="none" style="display: none;">Some unexpected error happened. Please contact us.</span><span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-timeout-error form-msg form-msg--error" role="none" style="display: none;">Something went wrong. Please, try again later.</span><div class="quickinput-form-layout__container">
+<div class="quickinput-form-layout__form-field">
+<label class="show-for-sr" for="onboarding-box-1-url">Domain (required)</label><input aria-required="true" class="js-trial-url large" id="onboarding-box-1-url" name="domain" pattern="url_only" placeholder="www.example.com" required="" type="url"/><span aria-hidden="true" aria-live="off" class="form-error form-bubble" role="none">Please enter a valid domain name (www.example.com).</span><span aria-hidden="true" aria-live="off" class="js-website-already-monitored custom-error form-bubble" role="none" style="display: none;">This domain is already being monitored by ContentKing. Please contact us if you are the rightful owner of this domain.</span><span aria-hidden="true" aria-live="off" class="js-target-redirected custom-error form-bubble" role="none" style="display: none;">This website redirects to <span class="js-target-redirected-domain"></span>. Do you want to add this website instead?</span><span aria-hidden="true" aria-live="off" class="js-blacklisted-domain custom-error form-bubble" role="none" style="display: none;">This domain has been excluded from monitoring. If you own it, please contact us.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain custom-error form-bubble" role="none" style="display: none;">We can't find this domain. Are you sure it's correct?</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-connect custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (connect failure). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-empty-response custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (empty response). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-size-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (size limit). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-time-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (time-out). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-waf custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (blocked by web application firewall). Please contact us for help.</span>
+</div>
+<div class="quickinput-form-layout__form-button"><button class="button js-submit-button button--large button--action button--is-shining button--fullwidth" data-loading-label="Loading" type="submit"><div><span class="button__content"><big>Start your free trial</big><small><span class="show-for-sr">. </span>No credit card needed</small></span></div></button></div>
+</div>
+</form></div>
+</div></div>
+<p>76% of the respondents are responsible for more than 2 websites, with nearly ⅓ of the respondents being responsible for more than 10 sites.</p>
+<p><strong>Note</strong>: if the same site is accessible on different domains, for example in a multi-domain setup, it was counted as one site.</p>
+</div>
+<div class="block">
+<h4 id="number-of-sites-responsible-for-in-house-vs-agency">Number of sites responsible for <small>(In-house vs. Agency)</small>
+</h4>
+<div class="typo-block chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="grouped-bar-chart-j623dsh23fyj"></div>
+</figure>
+<style>
+	#grouped-bar-chart-j623dsh23fyj {
+		
+		min-height: 340px
+	}
+
+	@media (max-width: 550px) {
+		#grouped-bar-chart-j623dsh23fyj {
+			min-height: 425.0px
+		}
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createGroupedBarChart(
+			document.getElementById('grouped-bar-chart-j623dsh23fyj'),
+			["1","2","3-5","6-10",">10"],
+			[{"color":"#007EF3","label":"In-house","bars":[34,17,28,9,12],"barDescription":"{value}% of respondents working in-house are responsible for {category} sites."},{"color":"#F4A21E","label":"Agency","bars":[5,5,26,25,39],"barDescription":"{value}% of respondents working for agencies are responsible for {category} sites."}],
+			{
+				animated: false,
+				caption: "No. of in-house responses: 433 <br> No. of agency responses: 452",
+				dark: true,
+				description: "Number of sites responsible for (in-house vs. agency). Based on 885 responses.",
+				height: 340,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>Over ⅓ of in-house respondents are responsible for only 1 site, whereas most agency respondents are responsible for 6 sites or more.</p>
+</div>
+<div class="block">
+<h4 id="ownership-of-sites-responsible-for-own-vs-client-vs-both">Ownership of sites responsible for <small>(Own vs. Client vs Both)</small>
+</h4>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="donut-chart-4aez1dcmdwmq"></div>
+</figure>
+<style>
+	#donut-chart-4aez1dcmdwmq {
+		
+		min-height: 270px
+	}
+
+	@media (max-width: 550px) {
+		#donut-chart-4aez1dcmdwmq {
+			min-height: 405.0px
+		}
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createDonutChart(
+			document.getElementById('donut-chart-4aez1dcmdwmq'),
+			[{"color":"#007EF3","label":"Own site(s)","size":34},{"color":"#F4A21E","label":"Client site(s)","size":36},{"color":"#DD3F4F","label":"Both","size":30}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,263",
+				dark: true,
+				description: undefined,
+				height: 270,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>Nearly ⅓ of the respondents were responsible for both in-house and client sites.</p>
+</div>
+<div class="block">
+<h4 id="company-location">Company location</h4>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-10cnygfihllx"></div>
+</figure>
+<style>
+	#bar-chart-10cnygfihllx {
+		
+		min-height: 400px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-10cnygfihllx'),
+			[{"color":"#7C238E","label":"Europe","size":57},{"color":"#007EF3","label":"US or Canada","size":32},{"color":"#11A864","label":"Asia","size":4},{"color":"#F4A21E","label":"Australia / New Zealand","size":3},{"color":"#DD3F4F","label":"Latin America","size":2},{"color":"#5C6773","label":"Middle East","size":1},{"color":"#B7D019","label":"Africa","size":1}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,263",
+				dark: true,
+				description: undefined,
+				height: 400,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>The vast majority (89%) of the respondents work for companies located in Europe, the United States or Canada.</p>
+</div>
+<div class="block">
+<h4 id="importance-of-site-to-overall-business--revenue">Importance of site to overall business / revenue</h4>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-wb8d4y34gac5"></div>
+</figure>
+<style>
+	#bar-chart-wb8d4y34gac5 {
+		
+		min-height: 320px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-wb8d4y34gac5'),
+			[{"color":"#7C238E","label":"Extremely important","size":66},{"color":"#007EF3","label":"Very important","size":22},{"color":"#11A864","label":"Somewhat important","size":9},{"color":"#F4A21E","label":"Not very important","size":3},{"color":"#DD3F4F","label":"Not at all important","size":1}],
+			{
+				animated: false,
+				caption: "No. of responses: 432",
+				dark: true,
+				description: undefined,
+				height: 320,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>According to ⅔ of the in-house respondents, the most important site that they are responsible for is “extremely important” to the company’s overall business/revenue generation.</p>
+</div>
+<div class="block">
+<h4 id="respondents-industry">Respondents' industry</h4>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-lnf9eliywffm"></div>
+</figure>
+<style>
+	#bar-chart-lnf9eliywffm {
+		
+		min-height: 430px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-lnf9eliywffm'),
+			[{"color":"#7C238E","label":"Agency","size":65},{"color":"#007EF3","label":"Ecommerce","size":9},{"color":"#11A864","label":"Software","size":7},{"color":"#F4A21E","label":"Publisher","size":4},{"color":"#DD3F4F","label":"Financial Services","size":2},{"color":"#5C6773","label":"Marketplace / Classifieds","size":2},{"color":"#B7D019","label":"Travel","size":1},{"color":"#FF65B3","label":"Other","size":10}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,263",
+				dark: true,
+				description: undefined,
+				height: 430,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>Most respondents (65%) work in agencies. Among in-house respondents' industries, eCommerce and Software were the most common.</p>
+</div>
+<div class="block">
+<h4 id="company-size">Company size</h4>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-y5307bgu1p5y"></div>
+</figure>
+<style>
+	#bar-chart-y5307bgu1p5y {
+		
+		min-height: 395px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-y5307bgu1p5y'),
+			[{"color":"#7C238E","label":"1-10","size":26},{"color":"#007EF3","label":"11-50","size":31},{"color":"#11A864","label":"51-250","size":19},{"color":"#F4A21E","label":"251-1,000","size":11},{"color":"#DD3F4F","label":"1,001-50,000","size":6},{"color":"#5C6773","label":"5,001-10,000","size":2},{"color":"#B7D019","label":"More than 10,000","size":5}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,263",
+				dark: true,
+				description: undefined,
+				height: 395,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>Nearly ⅔ of the respondents works at a company that employs more than 10 people.</p>
+</div>
+<div class="block">
+<h4 id="company-size-agencies">Company size (Agencies)</h4>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-bea5ncd2d7t5"></div>
+</figure>
+<style>
+	#bar-chart-bea5ncd2d7t5 {
+		
+		min-height: 395px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-bea5ncd2d7t5'),
+			[{"color":"#7C238E","label":"1-10","size":32},{"color":"#007EF3","label":"11-50","size":35},{"color":"#11A864","label":"51-250","size":19},{"color":"#F4A21E","label":"251-1,000","size":8},{"color":"#DD3F4F","label":"1,001-50,000","size":3},{"color":"#5C6773","label":"5,001-10,000","size":1},{"color":"#B7D019","label":"More than 10,000","size":2}],
+			{
+				animated: false,
+				caption: "No. of responses: 827",
+				dark: true,
+				description: undefined,
+				height: 395,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>Nearly ⅓ of the agency respondents work for agency employing 10 or less staff.</p>
+</div>
+<div class="block">
+<h4 id="company-size-in-house">Company size (In-house)</h4>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-2smlynt2rb08"></div>
+</figure>
+<style>
+	#bar-chart-2smlynt2rb08 {
+		
+		min-height: 395px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-2smlynt2rb08'),
+			[{"color":"#7C238E","label":"1-10","size":14},{"color":"#007EF3","label":"11-50","size":23},{"color":"#11A864","label":"51-250","size":21},{"color":"#F4A21E","label":"251-1,000","size":16},{"color":"#DD3F4F","label":"1,001-50,000","size":11},{"color":"#5C6773","label":"5,001-10,000","size":4},{"color":"#B7D019","label":"More than 10,000","size":11}],
+			{
+				animated: false,
+				caption: "No. of responses: 432",
+				dark: true,
+				description: undefined,
+				height: 395,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>Nearly ⅔ of the in-house respondents work for a company that employs more than 50 staff.</p>
+</div>
+<h3 class="toc" id="seo-teams">
+<a aria-hidden="true" class="anchor-link" href="#seo-teams" tabindex="-1"></a>SEO Team composition</h3>
+<div class="block">
+<h4 id="size-of-seo-teams">Size of SEO teams</h4>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-f2qd98onwow5"></div>
+</figure>
+<style>
+	#bar-chart-f2qd98onwow5 {
+		
+		min-height: 320px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-f2qd98onwow5'),
+			[{"color":"#7C238E","label":"1","size":15},{"color":"#007EF3","label":"2","size":24},{"color":"#11A864","label":"3-10","size":49},{"color":"#F4A21E","label":"11-20","size":7},{"color":"#DD3F4F","label":">20","size":4}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,263",
+				dark: true,
+				description: undefined,
+				height: 320,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p><strong>Note</strong>: both people who implement SEO changes and people who advise and oversee SEO are included.</p>
+</div>
+<div class="block">
+<h4 id="role-of-people-who-can-push-changes-to-the-most-important-site">Role of people who can push changes to the most important site</h4>
+<p>This question allowed multiple responses.</p>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-7tcv9bgzpgxn"></div>
+</figure>
+<style>
+	#bar-chart-7tcv9bgzpgxn {
+		
+		min-height: 320px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-7tcv9bgzpgxn'),
+			[{"color":"#7C238E","label":"Developers / Engineers","size":83},{"color":"#007EF3","label":"Marketing team","size":68},{"color":"#11A864","label":"Content / Editorial writers","size":65},{"color":"#F4A21E","label":"End users / visitors (UGC)","size":11},{"color":"#DD3F4F","label":"Anyone else","size":7}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,263",
+				dark: true,
+				description: undefined,
+				height: 320,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>Most respondents indicated that people with various roles can push changes to their site.</p>
+</div>
+<div class="block">
+<h4 id="number-of-people-who-can-push-changes-to-the-most-important-site">Number of people who can push changes to the most important site</h4>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-qikgdt455abs"></div>
+</figure>
+<style>
+	#bar-chart-qikgdt455abs {
+		
+		min-height: 320px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-qikgdt455abs'),
+			[{"color":"#7C238E","label":"1","size":7},{"color":"#007EF3","label":"2-10","size":71},{"color":"#11A864","label":"11-25","size":13},{"color":"#F4A21E","label":"26-50","size":4},{"color":"#DD3F4F","label":">50","size":5}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,263",
+				dark: true,
+				description: undefined,
+				height: 320,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<div aria-label="Start new free trial on ContentKing" class="onboarding-cta typo-block highlighted-box false highlighted-box--expressive" data-testid="onboarding-box"><div class="highlighted-box__content">
+<div class="highlighted-box__title">More cooks in the kitchen = more SEO incidents</div>
+<div class="onboarding-cta__description typo">
+<p>Don't be caught off guard. Be alerted the moment incidents happen!</p>
+</div>
+<div class="onboarding-cta__form"><form aria-label="The form used for creating free trial account on ContentKing" class="quickinput-form-layout js-submit-url-start-onboarding quickinput-form-layout--white quickinput-form-layout--is-responsive" data-validate="" novalidate="">
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-unexpected-error form-msg form-msg--error" role="none" style="display: none;">Some unexpected error happened. Please contact us.</span><span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-timeout-error form-msg form-msg--error" role="none" style="display: none;">Something went wrong. Please, try again later.</span><div class="quickinput-form-layout__container">
+<div class="quickinput-form-layout__form-field">
+<label class="show-for-sr" for="onboarding-box-2-url">Domain (required)</label><input aria-required="true" class="js-trial-url large" id="onboarding-box-2-url" name="domain" pattern="url_only" placeholder="www.example.com" required="" type="url"/><span aria-hidden="true" aria-live="off" class="form-error form-bubble" role="none">Please enter a valid domain name (www.example.com).</span><span aria-hidden="true" aria-live="off" class="js-website-already-monitored custom-error form-bubble" role="none" style="display: none;">This domain is already being monitored by ContentKing. Please contact us if you are the rightful owner of this domain.</span><span aria-hidden="true" aria-live="off" class="js-target-redirected custom-error form-bubble" role="none" style="display: none;">This website redirects to <span class="js-target-redirected-domain"></span>. Do you want to add this website instead?</span><span aria-hidden="true" aria-live="off" class="js-blacklisted-domain custom-error form-bubble" role="none" style="display: none;">This domain has been excluded from monitoring. If you own it, please contact us.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain custom-error form-bubble" role="none" style="display: none;">We can't find this domain. Are you sure it's correct?</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-connect custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (connect failure). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-empty-response custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (empty response). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-size-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (size limit). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-time-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (time-out). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-waf custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (blocked by web application firewall). Please contact us for help.</span>
+</div>
+<div class="quickinput-form-layout__form-button"><button class="button js-submit-button button--large button--action button--is-shining button--fullwidth" data-loading-label="Loading" type="submit"><div><span class="button__content"><big>Start your free trial</big><small><span class="show-for-sr">. </span>No credit card needed</small></span></div></button></div>
+</div>
+</form></div>
+</div></div>
+<p>Most respondents indicated that 2-10 people can push changes to the most important site.</p>
+</div>
+<div class="block">
+<h4 id="number-of-people-who-can-push-changes-to-the-most-important-site-in-house-vs-agency">Number of people who can push changes to the most important site <small>(in-house vs agency)</small>
+</h4>
+<div class="typo-block chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="grouped-bar-chart-qggp2979gqk1"></div>
+</figure>
+<style>
+	#grouped-bar-chart-qggp2979gqk1 {
+		
+		min-height: 340px
+	}
+
+	@media (max-width: 550px) {
+		#grouped-bar-chart-qggp2979gqk1 {
+			min-height: 425.0px
+		}
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createGroupedBarChart(
+			document.getElementById('grouped-bar-chart-qggp2979gqk1'),
+			["1","2-10","11-25","26-50",">50"],
+			[{"color":"#007EF3","label":"In-house","bars":[9,56,18,6,11]},{"color":"#F4A21E","label":"Agency","bars":[5,78,13,3,1]}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,263",
+				dark: true,
+				description: undefined,
+				height: 340,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+</div>
+<h3 class="toc" id="frequency-seo-incidents">
+<a aria-hidden="true" class="anchor-link" href="#frequency-seo-incidents" tabindex="-1"></a>Frequency and impact of SEO Incidents</h3>
+<div class="block">
+<h4 id="when-an-organic-traffic-drop-is-considered-a-significant-seo-incident">When an organic traffic drop is considered a significant SEO incident</h4>
+<p>The respondents were told that “SEO incidents” means unintended changes such as pages being removed, key meta-data being changed, robots.txt preventing access to crawlers, or anything else that negatively affects your SEO performance.</p>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-begvbgct6arr"></div>
+</figure>
+<style>
+	#bar-chart-begvbgct6arr {
+		
+		min-height: 325px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-begvbgct6arr'),
+			[{"color":"#7C238E","label":"1-5% drop","size":11},{"color":"#007EF3","label":"6-10% drop","size":43},{"color":"#11A864","label":"11-20% drop","size":34},{"color":"#F4A21E","label":"21-30% drop","size":10},{"color":"#DD3F4F","label":">30% drop","size":3}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,263",
+				dark: true,
+				description: undefined,
+				height: 325,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p><strong>Note</strong>:</p>
+<ul>
+<li>A traffic drop of 10% or less is considered a “significant incident” by just over half (54%) of these respondents.</li>
+</ul>
+</div>
+<div class="block">
+<h4 id="number-of-seo-incidents-in-past-12-months">Number of SEO incidents in past 12 months</h4>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-bbdapu4hiqsc"></div>
+</figure>
+<style>
+	#bar-chart-bbdapu4hiqsc {
+		
+		min-height: 280px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-bbdapu4hiqsc'),
+			[{"color":"#7C238E","label":"None","size":15},{"color":"#007EF3","label":"1-2","size":49},{"color":"#11A864","label":"3-5","size":27},{"color":"#F4A21E","label":"6-10","size":5},{"color":"#DD3F4F","label":"More than 10","size":4}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,200",
+				dark: true,
+				description: undefined,
+				height: 280,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>85% of the respondents had at least one moderate-to-high SEO incident in the past 12 months, and 34% of the respondents had experienced 3 or more serious incidents in the past year.</p>
+</div>
+<div class="block">
+<h4 id="change-in-frequency-of-seo-incidents-occurring-compared-to-1-year-ago">Change in frequency of SEO incidents occurring compared to 1 year ago</h4>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-619idykzizl6"></div>
+</figure>
+<style>
+	#bar-chart-619idykzizl6 {
+		
+		min-height: 330px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-619idykzizl6'),
+			[{"color":"#7C238E","label":"Increasing a lot","size":2},{"color":"#007EF3","label":"Increasing somewhat","size":18},{"color":"#11A864","label":"Unchanged","size":58},{"color":"#F4A21E","label":"Decreasing somewhat","size":18},{"color":"#DD3F4F","label":"Decreasing a lot","size":3}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,263",
+				dark: true,
+				description: undefined,
+				height: 330,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>Most (58%) indicated that the frequency of incidents is unchanged vs. 1 year ago. About equal numbers said that incident frequency has been increasing or decreasing.</p>
+<p>Below, you can see the responses split between ContentKing users and non-ContentKing users:</p>
+<div class="typo-block chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="grouped-bar-chart-c4z33n8c9gl1"></div>
+</figure>
+<style>
+	#grouped-bar-chart-c4z33n8c9gl1 {
+		
+		min-height: 340px
+	}
+
+	@media (max-width: 550px) {
+		#grouped-bar-chart-c4z33n8c9gl1 {
+			min-height: 425.0px
+		}
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createGroupedBarChart(
+			document.getElementById('grouped-bar-chart-c4z33n8c9gl1'),
+			["Increasing","Unchanged","Decreasing"],
+			[{"color":"#007EF3","label":"ContentKing users","bars":[22,49,29]},{"color":"#F4A21E","label":"Non-ContentKing users","bars":[20,60,20]}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,263",
+				dark: true,
+				description: undefined,
+				height: 340,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<div class="typo-block">
+<div class="contentking-differentiator dark-bg-context">
+<div class="contentking-differentiator__box">
+<div class="contentking-differentiator__content">
+<div class="contentking-differentiator__title">The sidekick you can rely on</div>
+<div class="contentking-differentiator__text">
+					ContentKing users were more likely to report that the number of incidents is decreasing than non-ContentKing users.
+				</div>
+</div>
+<div aria-label="Using next buttons you can share this text on social networks" class="contentking-differentiator__cta">
+<div aria-hidden="true" class="contentking-differentiator__share-label">
+					Share on
+				</div>
+<div class="contentking-differentiator__share-buttons">
+<a class="social-icon social-icon--facebook social-icon--link" href="https://www.facebook.com/sharer/sharer.php?display=popup&amp;u=https://www.contentkingapp.com/research/state-of-seo-qa/&amp;quote=The%20sidekick%20you%20can%20rely%20on%C2%A0%E2%80%93%C2%A0ContentKing%20users%20were%20more%20likely%20to%20report%20that%20the%20number%20of%20incidents%20is%20decreasing%20than%20non-ContentKing%20users." onclick="window.open('https://www.facebook.com/sharer/sharer.php?display=popup&amp;u=https://www.contentkingapp.com/research/state-of-seo-qa/&amp;quote=The%20sidekick%20you%20can%20rely%20on – ContentKing%20users%20were%20more%20likely%20to%20report%20that%20the%20number%20of%20incidents%20is%20decreasing%20than%20non-ContentKing%20users.','ck_popup','toolbar=0,status=0,resizable=1,width=626,height=600')" rel="noopener" target="_blank" title="Share on Facebook"><span class="extlink">Share on Facebook</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+<a class="social-icon social-icon--twitter social-icon--link" href="https://twitter.com/intent/tweet?title=ContentKing%20users%20were%20more%20likely%20to%20report%20that%20the%20number%20of%20incidents%20is%20decreasing%20than%20non-ContentKing%20users.%C2%A0%E2%80%93%C2%A0url=https://www.contentkingapp.com/research/state-of-seo-qa/" onclick="window.open('https://twitter.com/intent/tweet?title=ContentKing%20users%20were%20more%20likely%20to%20report%20that%20the%20number%20of%20incidents%20is%20decreasing%20than%20non-ContentKing%20users. –&amp;url=https://www.contentkingapp.com/research/state-of-seo-qa/','ck_popup','toolbar=0,status=0,resizable=1,width=600,height=340')" rel="noopener" target="_blank" title="Share on Twitter"><span class="extlink">Share on Twitter</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="block">
+<h4 id="when-the-worst-recent-seo-incident-occurred">When the worst recent SEO incident occurred</h4>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-noa2zmv2bmw"></div>
+</figure>
+<style>
+	#bar-chart-noa2zmv2bmw {
+		
+		min-height: 330px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-noa2zmv2bmw'),
+			[{"color":"#7C238E","label":"Within the past 4 weeks","size":11},{"color":"#007EF3","label":"4 weeks - 3 months ago","size":19},{"color":"#11A864","label":"3-6 months ago","size":18},{"color":"#F4A21E","label":"6-12 months ago","size":23},{"color":"#DD3F4F","label":"1-2 years ago","size":30}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,135",
+				dark: true,
+				description: undefined,
+				height: 330,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>For nearly ⅓ of the respondents, their worst recent SEO incident occured within the last 3 months.</p>
+<div class="typo-block">
+<div class="contentking-differentiator dark-bg-context">
+<div class="contentking-differentiator__box">
+<div class="contentking-differentiator__content">
+<div class="contentking-differentiator__title">Murphy's law applies to SEO, too.</div>
+<div class="contentking-differentiator__text">
+					30% of the respondents indicated that their worst recent SEO incident occurred within the last 3 months.
+				</div>
+</div>
+<div aria-label="Using next buttons you can share this text on social networks" class="contentking-differentiator__cta">
+<div aria-hidden="true" class="contentking-differentiator__share-label">
+					Share on
+				</div>
+<div class="contentking-differentiator__share-buttons">
+<a class="social-icon social-icon--facebook social-icon--link" href="https://www.facebook.com/sharer/sharer.php?display=popup&amp;u=https://www.contentkingapp.com/research/state-of-seo-qa/&amp;quote=Murphy%27s%20law%20applies%20to%20SEO%2C%20too.%C2%A0%E2%80%93%C2%A030%25%20of%20the%20respondents%20indicated%20that%20their%20worst%20recent%20SEO%20incident%20occurred%20within%20the%20last%203%20months." onclick="window.open('https://www.facebook.com/sharer/sharer.php?display=popup&amp;u=https://www.contentkingapp.com/research/state-of-seo-qa/&amp;quote=Murphy%27s%20law%20applies%20to%20SEO%2C%20too. – 30%25%20of%20the%20respondents%20indicated%20that%20their%20worst%20recent%20SEO%20incident%20occurred%20within%20the%20last%203%20months.','ck_popup','toolbar=0,status=0,resizable=1,width=626,height=600')" rel="noopener" target="_blank" title="Share on Facebook"><span class="extlink">Share on Facebook</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+<a class="social-icon social-icon--twitter social-icon--link" href="https://twitter.com/intent/tweet?title=30%25%20of%20the%20respondents%20indicated%20that%20their%20worst%20recent%20SEO%20incident%20occurred%20within%20the%20last%203%20months.%C2%A0%E2%80%93%C2%A0url=https://www.contentkingapp.com/research/state-of-seo-qa/" onclick="window.open('https://twitter.com/intent/tweet?title=30%25%20of%20the%20respondents%20indicated%20that%20their%20worst%20recent%20SEO%20incident%20occurred%20within%20the%20last%203%20months. –&amp;url=https://www.contentkingapp.com/research/state-of-seo-qa/','ck_popup','toolbar=0,status=0,resizable=1,width=600,height=340')" rel="noopener" target="_blank" title="Share on Twitter"><span class="extlink">Share on Twitter</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="block">
+<h4 id="issues-involved-in-this-incident">Issues involved in this incident</h4>
+<p>This question allowed multiple responses.</p>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-2jbcj8rft9q0"></div>
+</figure>
+<style>
+	#bar-chart-2jbcj8rft9q0 {
+		
+		min-height: 430px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-2jbcj8rft9q0'),
+			[{"color":"#7C238E","label":"Indexability or crawlability","size":45},{"color":"#007EF3","label":"URL deletion or redirection","size":38},{"color":"#11A864","label":"Link issues","size":36},{"color":"#F4A21E","label":"Page speed issues","size":30},{"color":"#DD3F4F","label":"Changes to onpage content or meta data","size":28},{"color":"#5C6773","label":"Changes to hreflang or canonical tags","size":19},{"color":"#B7D019","label":"Crawler traps","size":9},{"color":"#FF65B3","label":"Other issues","size":17}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,108",
+				dark: true,
+				description: undefined,
+				height: 430,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>Oftentimes, when SEO incidents happen they are caused by more than one issue. In nearly half the SEO incidents, crawlability and indexability issues play a role.</p>
+<div aria-label="Start new free trial on ContentKing" class="onboarding-cta typo-block highlighted-box false highlighted-box--expressive" data-testid="onboarding-box"><div class="highlighted-box__content">
+<div class="highlighted-box__title">SEOs are righfully concerned about crawlability and indexability issues</div>
+<div class="onboarding-cta__description typo">
+<p>Don't let these issues catch you off guard. Be alerted the moment SEO disasters strike!</p>
+</div>
+<div class="onboarding-cta__form"><form aria-label="The form used for creating free trial account on ContentKing" class="quickinput-form-layout js-submit-url-start-onboarding quickinput-form-layout--white quickinput-form-layout--is-responsive" data-validate="" novalidate="">
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-unexpected-error form-msg form-msg--error" role="none" style="display: none;">Some unexpected error happened. Please contact us.</span><span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-timeout-error form-msg form-msg--error" role="none" style="display: none;">Something went wrong. Please, try again later.</span><div class="quickinput-form-layout__container">
+<div class="quickinput-form-layout__form-field">
+<label class="show-for-sr" for="onboarding-box-3-url">Domain (required)</label><input aria-required="true" class="js-trial-url large" id="onboarding-box-3-url" name="domain" pattern="url_only" placeholder="www.example.com" required="" type="url"/><span aria-hidden="true" aria-live="off" class="form-error form-bubble" role="none">Please enter a valid domain name (www.example.com).</span><span aria-hidden="true" aria-live="off" class="js-website-already-monitored custom-error form-bubble" role="none" style="display: none;">This domain is already being monitored by ContentKing. Please contact us if you are the rightful owner of this domain.</span><span aria-hidden="true" aria-live="off" class="js-target-redirected custom-error form-bubble" role="none" style="display: none;">This website redirects to <span class="js-target-redirected-domain"></span>. Do you want to add this website instead?</span><span aria-hidden="true" aria-live="off" class="js-blacklisted-domain custom-error form-bubble" role="none" style="display: none;">This domain has been excluded from monitoring. If you own it, please contact us.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain custom-error form-bubble" role="none" style="display: none;">We can't find this domain. Are you sure it's correct?</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-connect custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (connect failure). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-empty-response custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (empty response). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-size-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (size limit). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-time-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (time-out). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-waf custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (blocked by web application firewall). Please contact us for help.</span>
+</div>
+<div class="quickinput-form-layout__form-button"><button class="button js-submit-button button--large button--action button--is-shining button--fullwidth" data-loading-label="Loading" type="submit"><div><span class="button__content"><big>Start your free trial</big><small><span class="show-for-sr">. </span>No credit card needed</small></span></div></button></div>
+</div>
+</form></div>
+</div></div>
+</div>
+<div class="block">
+<h4 id="time-from-introduction-of-the-problem-to-its-detection">Time from introduction of the problem to its detection</h4>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-2clpr8vt8hew"></div>
+</figure>
+<style>
+	#bar-chart-2clpr8vt8hew {
+		
+		min-height: 430px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-2clpr8vt8hew'),
+			[{"color":"#7C238E","label":"Less than 1 day","size":20},{"color":"#007EF3","label":"1-3 days","size":31},{"color":"#11A864","label":"4-7 days","size":22},{"color":"#F4A21E","label":"8-14 days","size":12},{"color":"#DD3F4F","label":"15-30 days","size":7},{"color":"#5C6773","label":"More than 30 days","size":8}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,081",
+				dark: true,
+				description: undefined,
+				height: 430,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>Interesting findings:</p>
+<ul>
+<li>80% of the SEO incidents took at least 1 day to detect</li>
+<li>For nearly 50% of the SEO incidents, detection takes 4-7 days or more.</li>
+</ul>
+</div>
+<div class="block">
+<h4 id="length-of-entire-incident-from-introduction-of-the-problem-to-the-final-fix">Length of entire incident, from introduction of the problem to the final fix</h4>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-qwejupqj96av"></div>
+</figure>
+<style>
+	#bar-chart-qwejupqj96av {
+		
+		min-height: 430px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-qwejupqj96av'),
+			[{"color":"#7C238E","label":"Less than 1 day","size":7},{"color":"#007EF3","label":"1-3 days","size":18},{"color":"#11A864","label":"4-7 days","size":18},{"color":"#F4A21E","label":"8-14 days","size":15},{"color":"#DD3F4F","label":"15-30 days","size":15},{"color":"#5C6773","label":"More than 30 days","size":28}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,076",
+				dark: true,
+				description: undefined,
+				height: 430,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>Interesting findings:</p>
+<ul>
+<li>58% of the SEO incidents last longer than 7 days.</li>
+<li>28% of the SEO incidents even lasted longer than 30 days.</li>
+</ul>
+<p>Think about this: if an SEO incident costs a portion of your site's traffic each day that it's live, how much would that amount to?</p>
+</div>
+<div class="block">
+<h4 id="estimated-impact-on-companys-revenue-of-the-worst-recent-seo-incident">Estimated impact on company's revenue of the worst recent SEO incident</h4>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-53z24i20piti"></div>
+</figure>
+<style>
+	#bar-chart-53z24i20piti {
+		
+		min-height: 430px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-53z24i20piti'),
+			[{"color":"#7C238E","label":"None","size":14},{"color":"#007EF3","label":"Less than $10,000","size":41},{"color":"#11A864","label":"$10,000-$50,000","size":26},{"color":"#F4A21E","label":"$50,000-$200,000","size":11},{"color":"#DD3F4F","label":"$200,000-$1 million","size":6},{"color":"#5C6773","label":"$1 million or more","size":2}],
+			{
+				animated: false,
+				caption: "No. of responses: 922",
+				dark: true,
+				description: undefined,
+				height: 430,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<div class="typo-block">
+<div class="contentking-differentiator dark-bg-context">
+<div class="contentking-differentiator__box">
+<div class="contentking-differentiator__content">
+<div class="contentking-differentiator__title">SEO incidents are expensive.</div>
+<div class="contentking-differentiator__text">
+					Nearly half of the worst SEO incidents respondents experienced cost $10,000 or more.
+				</div>
+</div>
+<div aria-label="Using next buttons you can share this text on social networks" class="contentking-differentiator__cta">
+<div aria-hidden="true" class="contentking-differentiator__share-label">
+					Share on
+				</div>
+<div class="contentking-differentiator__share-buttons">
+<a class="social-icon social-icon--facebook social-icon--link" href="https://www.facebook.com/sharer/sharer.php?display=popup&amp;u=https://www.contentkingapp.com/research/state-of-seo-qa/&amp;quote=SEO%20incidents%20are%20expensive.%C2%A0%E2%80%93%C2%A0Nearly%20half%20of%20the%20worst%20SEO%20incidents%20respondents%20experienced%20cost%20%2410%2C000%20or%20more." onclick="window.open('https://www.facebook.com/sharer/sharer.php?display=popup&amp;u=https://www.contentkingapp.com/research/state-of-seo-qa/&amp;quote=SEO%20incidents%20are%20expensive. – Nearly%20half%20of%20the%20worst%20SEO%20incidents%20respondents%20experienced%20cost%20%2410%2C000%20or%20more.','ck_popup','toolbar=0,status=0,resizable=1,width=626,height=600')" rel="noopener" target="_blank" title="Share on Facebook"><span class="extlink">Share on Facebook</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+<a class="social-icon social-icon--twitter social-icon--link" href="https://twitter.com/intent/tweet?title=Nearly%20half%20of%20the%20worst%20SEO%20incidents%20respondents%20experienced%20cost%20%2410%2C000%20or%20more.%C2%A0%E2%80%93%C2%A0url=https://www.contentkingapp.com/research/state-of-seo-qa/" onclick="window.open('https://twitter.com/intent/tweet?title=Nearly%20half%20of%20the%20worst%20SEO%20incidents%20respondents%20experienced%20cost%20%2410%2C000%20or%20more. –&amp;url=https://www.contentkingapp.com/research/state-of-seo-qa/','ck_popup','toolbar=0,status=0,resizable=1,width=600,height=340')" rel="noopener" target="_blank" title="Share on Twitter"><span class="extlink">Share on Twitter</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="block">
+<h4 id="estimated-impact-on-companys-revenue-of-the-worst-recent-seo-incident-had-it-lasted-for-4-weeks">Estimated impact on company's revenue of the worst recent SEO incident, had it lasted for 4 weeks</h4>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-f9lt5nm7sd8b"></div>
+</figure>
+<style>
+	#bar-chart-f9lt5nm7sd8b {
+		
+		min-height: 430px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-f9lt5nm7sd8b'),
+			[{"color":"#7C238E","label":"None","size":7},{"color":"#007EF3","label":"Less than $10,000","size":23},{"color":"#11A864","label":"$10,000-$50,000","size":33},{"color":"#F4A21E","label":"$50,000-$200,000","size":23},{"color":"#DD3F4F","label":"$200,000-$1 million","size":11},{"color":"#5C6773","label":"$1 million or more","size":4}],
+			{
+				animated: false,
+				caption: "No. of responses: 497",
+				dark: true,
+				description: undefined,
+				height: 430,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>When respondents were asked to estimate the revenue impact had their issue lasted 4 weeks, more than ⅓ indicated that the impact would’ve been more than $50K.</p>
+</div>
+<h3 class="toc" id="identifying-addressing-seo-issues">
+<a aria-hidden="true" class="anchor-link" href="#identifying-addressing-seo-issues" tabindex="-1"></a>Identifying and addressing SEO Issues</h3>
+<div class="block">
+<h4 id="methods-of-detecting-seo-issues">Methods of detecting SEO issues</h4>
+<p>This question allowed multiple responses.</p>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-g6zy54ix5gbs"></div>
+</figure>
+<style>
+	#bar-chart-g6zy54ix5gbs {
+		
+		min-height: 395px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-g6zy54ix5gbs'),
+			[{"color":"#7C238E","label":"Crawler/auditor","size":82},{"color":"#007EF3","label":"SERP/traffic changes","size":71},{"color":"#11A864","label":"Manual QA","size":52},{"color":"#F4A21E","label":"Reports from other teams","size":26},{"color":"#DD3F4F","label":"ContentKing","size":18},{"color":"#5C6773","label":"Custom-developed solution","size":18},{"color":"#B7D019","label":"Other","size":9}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,263",
+				dark: true,
+				description: undefined,
+				height: 395,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>Interesting findings:</p>
+<ul>
+<li>Teams consisting of more than 10 people are more likely to also rely on reports from other teams and custom solutions.</li>
+<li>Large sites (&gt; 1M pages) are almost 50% more likely to use manual/QA testing as one of their detection methods compared to smaller sites.</li>
+</ul>
+</div>
+<div class="block">
+<h4 id="time-spent-on-detecting-and-solving-newly-introduced-issues">Time spent on detecting and solving newly introduced issues</h4>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-s3gpiyihe45n"></div>
+</figure>
+<style>
+	#bar-chart-s3gpiyihe45n {
+		
+		min-height: 360px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-s3gpiyihe45n'),
+			[{"color":"#7C238E","label":"Less than 10% of my time","size":20},{"color":"#007EF3","label":"About 10%","size":32},{"color":"#11A864","label":"About 25%","size":23},{"color":"#F4A21E","label":"About 33%","size":11},{"color":"#DD3F4F","label":"About 50%","size":8},{"color":"#5C6773","label":"More than 50% of my time","size":6}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,263",
+				dark: true,
+				description: undefined,
+				height: 360,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<div class="typo-block">
+<div class="contentking-differentiator dark-bg-context">
+<div class="contentking-differentiator__box">
+<div class="contentking-differentiator__content">
+<div class="contentking-differentiator__title">Identifying SEO incidents is time-consuming.</div>
+<div class="contentking-differentiator__text">
+					25% of the respondents spends at least ⅓ of their work time identifying and resolving new SEO issues.
+				</div>
+</div>
+<div aria-label="Using next buttons you can share this text on social networks" class="contentking-differentiator__cta">
+<div aria-hidden="true" class="contentking-differentiator__share-label">
+					Share on
+				</div>
+<div class="contentking-differentiator__share-buttons">
+<a class="social-icon social-icon--facebook social-icon--link" href="https://www.facebook.com/sharer/sharer.php?display=popup&amp;u=https://www.contentkingapp.com/research/state-of-seo-qa/&amp;quote=Identifying%20SEO%20incidents%20is%20time-consuming.%C2%A0%E2%80%93%C2%A025%25%20of%20the%20respondents%20spends%20at%20least%20%E2%85%93%20of%20their%20work%20time%20identifying%20and%20resolving%20new%20SEO%20issues." onclick="window.open('https://www.facebook.com/sharer/sharer.php?display=popup&amp;u=https://www.contentkingapp.com/research/state-of-seo-qa/&amp;quote=Identifying%20SEO%20incidents%20is%20time-consuming. – 25%25%20of%20the%20respondents%20spends%20at%20least%20%E2%85%93%20of%20their%20work%20time%20identifying%20and%20resolving%20new%20SEO%20issues.','ck_popup','toolbar=0,status=0,resizable=1,width=626,height=600')" rel="noopener" target="_blank" title="Share on Facebook"><span class="extlink">Share on Facebook</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+<a class="social-icon social-icon--twitter social-icon--link" href="https://twitter.com/intent/tweet?title=25%25%20of%20the%20respondents%20spends%20at%20least%20%E2%85%93%20of%20their%20work%20time%20identifying%20and%20resolving%20new%20SEO%20issues.%C2%A0%E2%80%93%C2%A0url=https://www.contentkingapp.com/research/state-of-seo-qa/" onclick="window.open('https://twitter.com/intent/tweet?title=25%25%20of%20the%20respondents%20spends%20at%20least%20%E2%85%93%20of%20their%20work%20time%20identifying%20and%20resolving%20new%20SEO%20issues. –&amp;url=https://www.contentkingapp.com/research/state-of-seo-qa/','ck_popup','toolbar=0,status=0,resizable=1,width=600,height=340')" rel="noopener" target="_blank" title="Share on Twitter"><span class="extlink">Share on Twitter</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="block">
+<h4 id="time-spent-on-detecting-and-solving-newly-introduced-issues-in-relation-to-number-of-incidents-per-year">Time spent on detecting and solving newly introduced issues <small>(in relation to number of incidents per year)</small>
+</h4>
+<div class="typo-block chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="grouped-bar-chart-ety1vdt9tx19"></div>
+</figure>
+<style>
+	#grouped-bar-chart-ety1vdt9tx19 {
+		
+		min-height: 350px
+	}
+
+	@media (max-width: 550px) {
+		#grouped-bar-chart-ety1vdt9tx19 {
+			min-height: 437.5px
+		}
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createGroupedBarChart(
+			document.getElementById('grouped-bar-chart-ety1vdt9tx19'),
+			["no incidents","1-2 incidents","3-5 incidents",">5 incidents"],
+			[{"color":"#007EF3","label":"10% or less <br />time spent","bars":[31,22,13,10]},{"color":"#F4A21E","label":"33% or more <br />time spent","bars":[19,20,29,37]}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,200",
+				dark: true,
+				description: undefined,
+				height: 350,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>Respondents that spend 33% or more of their time on detecting and solving newly introduced issues are much more likely to deal with SEO incidents, than those that spend 10% or less of their time on this.</p>
+<div aria-label="Start new free trial on ContentKing" class="onboarding-cta typo-block highlighted-box false highlighted-box--expressive" data-testid="onboarding-box"><div class="highlighted-box__content">
+<div class="highlighted-box__title">Safe a lot of time on identifying SEO incidents</div>
+<div class="onboarding-cta__description typo">
+<p>Let ContentKing watch over your sites, instead of doing it yourself. Leverage your unique abilities to further your SEO performance!</p>
+</div>
+<div class="onboarding-cta__form"><form aria-label="The form used for creating free trial account on ContentKing" class="quickinput-form-layout js-submit-url-start-onboarding quickinput-form-layout--white quickinput-form-layout--is-responsive" data-validate="" novalidate="">
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-unexpected-error form-msg form-msg--error" role="none" style="display: none;">Some unexpected error happened. Please contact us.</span><span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-timeout-error form-msg form-msg--error" role="none" style="display: none;">Something went wrong. Please, try again later.</span><div class="quickinput-form-layout__container">
+<div class="quickinput-form-layout__form-field">
+<label class="show-for-sr" for="onboarding-box-4-url">Domain (required)</label><input aria-required="true" class="js-trial-url large" id="onboarding-box-4-url" name="domain" pattern="url_only" placeholder="www.example.com" required="" type="url"/><span aria-hidden="true" aria-live="off" class="form-error form-bubble" role="none">Please enter a valid domain name (www.example.com).</span><span aria-hidden="true" aria-live="off" class="js-website-already-monitored custom-error form-bubble" role="none" style="display: none;">This domain is already being monitored by ContentKing. Please contact us if you are the rightful owner of this domain.</span><span aria-hidden="true" aria-live="off" class="js-target-redirected custom-error form-bubble" role="none" style="display: none;">This website redirects to <span class="js-target-redirected-domain"></span>. Do you want to add this website instead?</span><span aria-hidden="true" aria-live="off" class="js-blacklisted-domain custom-error form-bubble" role="none" style="display: none;">This domain has been excluded from monitoring. If you own it, please contact us.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain custom-error form-bubble" role="none" style="display: none;">We can't find this domain. Are you sure it's correct?</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-connect custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (connect failure). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-empty-response custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (empty response). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-size-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (size limit). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-time-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (time-out). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-waf custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (blocked by web application firewall). Please contact us for help.</span>
+</div>
+<div class="quickinput-form-layout__form-button"><button class="button js-submit-button button--large button--action button--is-shining button--fullwidth" data-loading-label="Loading" type="submit"><div><span class="button__content"><big>Start your free trial</big><small><span class="show-for-sr">. </span>No credit card needed</small></span></div></button></div>
+</div>
+</form></div>
+</div></div>
+</div>
+<div class="block">
+<h4 id="how-easy-it-is-to-detect-incidents">How easy it is to detect incidents</h4>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-otk5lziks71g"></div>
+</figure>
+<style>
+	#bar-chart-otk5lziks71g {
+		
+		min-height: 275px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-otk5lziks71g'),
+			[{"color":"#7C238E","label":"Very easy","size":10},{"color":"#007EF3","label":"Somewhat easy","size":51},{"color":"#11A864","label":"Somewhat difficult","size":35},{"color":"#F4A21E","label":"Very difficult","size":5}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,263",
+				dark: true,
+				description: undefined,
+				height: 275,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>Below, you can see the responses split between ContentKing users and non-ContentKing users:</p>
+<div class="typo-block chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="grouped-bar-chart-al0ptngqzh0d"></div>
+</figure>
+<style>
+	#grouped-bar-chart-al0ptngqzh0d {
+		
+		min-height: 340px
+	}
+
+	@media (max-width: 550px) {
+		#grouped-bar-chart-al0ptngqzh0d {
+			min-height: 425.0px
+		}
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createGroupedBarChart(
+			document.getElementById('grouped-bar-chart-al0ptngqzh0d'),
+			["Very easy","Somewhat easy","Somewhat difficult","Very difficult"],
+			[{"color":"#007EF3","label":"ContentKing users","bars":[17,56,23,4]},{"color":"#F4A21E","label":"Non-ContentKing users","bars":[8,50,37,5]}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,263",
+				dark: true,
+				description: undefined,
+				height: 340,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<div class="typo-block">
+<div class="contentking-differentiator dark-bg-context">
+<div class="contentking-differentiator__box">
+<div class="contentking-differentiator__content">
+<div class="contentking-differentiator__title">ContentKing makes SEO life easier.</div>
+<div class="contentking-differentiator__text">
+					ContentKing users were 2x as likely to respond that detecting newly introduced SEO issues is "very easy" than non-ContentKing users.
+				</div>
+</div>
+<div aria-label="Using next buttons you can share this text on social networks" class="contentking-differentiator__cta">
+<div aria-hidden="true" class="contentking-differentiator__share-label">
+					Share on
+				</div>
+<div class="contentking-differentiator__share-buttons">
+<a class="social-icon social-icon--facebook social-icon--link" href="https://www.facebook.com/sharer/sharer.php?display=popup&amp;u=https://www.contentkingapp.com/research/state-of-seo-qa/&amp;quote=ContentKing%20makes%20SEO%20life%20easier.%C2%A0%E2%80%93%C2%A0ContentKing%20users%20were%202x%20as%20likely%20to%20respond%20that%20detecting%20newly%20introduced%20SEO%20issues%20is%20%22very%20easy%22%20than%20non-ContentKing%20users." onclick="window.open('https://www.facebook.com/sharer/sharer.php?display=popup&amp;u=https://www.contentkingapp.com/research/state-of-seo-qa/&amp;quote=ContentKing%20makes%20SEO%20life%20easier. – ContentKing%20users%20were%202x%20as%20likely%20to%20respond%20that%20detecting%20newly%20introduced%20SEO%20issues%20is%20%22very%20easy%22%20than%20non-ContentKing%20users.','ck_popup','toolbar=0,status=0,resizable=1,width=626,height=600')" rel="noopener" target="_blank" title="Share on Facebook"><span class="extlink">Share on Facebook</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+<a class="social-icon social-icon--twitter social-icon--link" href="https://twitter.com/intent/tweet?title=ContentKing%20users%20were%202x%20as%20likely%20to%20respond%20that%20detecting%20newly%20introduced%20SEO%20issues%20is%20%22very%20easy%22%20than%20non-ContentKing%20users.%C2%A0%E2%80%93%C2%A0url=https://www.contentkingapp.com/research/state-of-seo-qa/" onclick="window.open('https://twitter.com/intent/tweet?title=ContentKing%20users%20were%202x%20as%20likely%20to%20respond%20that%20detecting%20newly%20introduced%20SEO%20issues%20is%20%22very%20easy%22%20than%20non-ContentKing%20users. –&amp;url=https://www.contentkingapp.com/research/state-of-seo-qa/','ck_popup','toolbar=0,status=0,resizable=1,width=600,height=340')" rel="noopener" target="_blank" title="Share on Twitter"><span class="extlink">Share on Twitter</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>Interesting findings:</p>
+<ul>
+<li>40% indicated that it is at least “somewhat difficult” to detect newly-introduced SEO issues.</li>
+<li>Technical SEOs were more likely to say it's very easy to detect SEO incidents vs content or link building roles.</li>
+<li>In-house teams were almost twice as likely to say that detecting SEO incidents is very difficult vs. agency professionals.</li>
+<li>SEO professionals with more than 10 years of experience were around twice as likely to respond that detecting SEO incidents is very easy.</li>
+</ul>
+<div aria-label="Start new free trial on ContentKing" class="onboarding-cta typo-block highlighted-box false highlighted-box--expressive" data-testid="onboarding-box"><div class="highlighted-box__content">
+<div class="highlighted-box__title">With ContentKing, detecting SEO incidents is a breeze</div>
+<div class="onboarding-cta__description typo">
+<p>Let ContentKing do the heavy lifting and keep a watchful eye on your sites!</p>
+</div>
+<div class="onboarding-cta__form"><form aria-label="The form used for creating free trial account on ContentKing" class="quickinput-form-layout js-submit-url-start-onboarding quickinput-form-layout--white quickinput-form-layout--is-responsive" data-validate="" novalidate="">
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-unexpected-error form-msg form-msg--error" role="none" style="display: none;">Some unexpected error happened. Please contact us.</span><span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-timeout-error form-msg form-msg--error" role="none" style="display: none;">Something went wrong. Please, try again later.</span><div class="quickinput-form-layout__container">
+<div class="quickinput-form-layout__form-field">
+<label class="show-for-sr" for="onboarding-box-5-url">Domain (required)</label><input aria-required="true" class="js-trial-url large" id="onboarding-box-5-url" name="domain" pattern="url_only" placeholder="www.example.com" required="" type="url"/><span aria-hidden="true" aria-live="off" class="form-error form-bubble" role="none">Please enter a valid domain name (www.example.com).</span><span aria-hidden="true" aria-live="off" class="js-website-already-monitored custom-error form-bubble" role="none" style="display: none;">This domain is already being monitored by ContentKing. Please contact us if you are the rightful owner of this domain.</span><span aria-hidden="true" aria-live="off" class="js-target-redirected custom-error form-bubble" role="none" style="display: none;">This website redirects to <span class="js-target-redirected-domain"></span>. Do you want to add this website instead?</span><span aria-hidden="true" aria-live="off" class="js-blacklisted-domain custom-error form-bubble" role="none" style="display: none;">This domain has been excluded from monitoring. If you own it, please contact us.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain custom-error form-bubble" role="none" style="display: none;">We can't find this domain. Are you sure it's correct?</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-connect custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (connect failure). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-empty-response custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (empty response). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-size-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (size limit). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-time-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (time-out). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-waf custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (blocked by web application firewall). Please contact us for help.</span>
+</div>
+<div class="quickinput-form-layout__form-button"><button class="button js-submit-button button--large button--action button--is-shining button--fullwidth" data-loading-label="Loading" type="submit"><div><span class="button__content"><big>Start your free trial</big><small><span class="show-for-sr">. </span>No credit card needed</small></span></div></button></div>
+</div>
+</form></div>
+</div></div>
+</div>
+<div class="block">
+<h4 id="how-easy-it-is-to-detect-incidents-compared-to-1-year-ago">How easy it is to detect incidents compared to 1 year ago</h4>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-ed4g3mq7z1z0"></div>
+</figure>
+<style>
+	#bar-chart-ed4g3mq7z1z0 {
+		
+		min-height: 325px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-ed4g3mq7z1z0'),
+			[{"color":"#7C238E","label":"Becoming much easier","size":14},{"color":"#007EF3","label":"Becoming somewhat easier","size":36},{"color":"#11A864","label":"Unchanged","size":44},{"color":"#F4A21E","label":"Becoming somewhat more difficult","size":5},{"color":"#DD3F4F","label":"Becoming much more difficult","size":1}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,263",
+				dark: true,
+				description: undefined,
+				height: 325,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>Below, you can see the responses split between ContentKing users and non-ContentKing users:</p>
+<div class="typo-block chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="grouped-bar-chart-edlfukfd5i56"></div>
+</figure>
+<style>
+	#grouped-bar-chart-edlfukfd5i56 {
+		
+		min-height: 340px
+	}
+
+	@media (max-width: 550px) {
+		#grouped-bar-chart-edlfukfd5i56 {
+			min-height: 425.0px
+		}
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createGroupedBarChart(
+			document.getElementById('grouped-bar-chart-edlfukfd5i56'),
+			["Becoming easier","Unchanged","Becoming more difficult"],
+			[{"color":"#007EF3","label":"ContentKing users","bars":[68,28,4]},{"color":"#F4A21E","label":"Non-ContentKing users","bars":[46,48,6]}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,263",
+				dark: true,
+				description: undefined,
+				height: 340,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<div class="typo-block">
+<div class="contentking-differentiator dark-bg-context">
+<div class="contentking-differentiator__box">
+<div class="contentking-differentiator__content">
+<div class="contentking-differentiator__title">ContentKing makes detection of issues easier.</div>
+<div class="contentking-differentiator__text">
+					ContentKing users were nearly 3x as likely to say it’s becoming much easier to detect incidents than non-ContentKing users.
+				</div>
+</div>
+<div aria-label="Using next buttons you can share this text on social networks" class="contentking-differentiator__cta">
+<div aria-hidden="true" class="contentking-differentiator__share-label">
+					Share on
+				</div>
+<div class="contentking-differentiator__share-buttons">
+<a class="social-icon social-icon--facebook social-icon--link" href="https://www.facebook.com/sharer/sharer.php?display=popup&amp;u=https://www.contentkingapp.com/research/state-of-seo-qa/&amp;quote=ContentKing%20makes%20detection%20of%20issues%20easier.%C2%A0%E2%80%93%C2%A0ContentKing%20users%20were%20nearly%203x%20as%20likely%20to%20say%20it%E2%80%99s%20becoming%20much%20easier%20to%20detect%20incidents%20than%20non-ContentKing%20users." onclick="window.open('https://www.facebook.com/sharer/sharer.php?display=popup&amp;u=https://www.contentkingapp.com/research/state-of-seo-qa/&amp;quote=ContentKing%20makes%20detection%20of%20issues%20easier. – ContentKing%20users%20were%20nearly%203x%20as%20likely%20to%20say%20it%E2%80%99s%20becoming%20much%20easier%20to%20detect%20incidents%20than%20non-ContentKing%20users.','ck_popup','toolbar=0,status=0,resizable=1,width=626,height=600')" rel="noopener" target="_blank" title="Share on Facebook"><span class="extlink">Share on Facebook</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+<a class="social-icon social-icon--twitter social-icon--link" href="https://twitter.com/intent/tweet?title=ContentKing%20users%20were%20nearly%203x%20as%20likely%20to%20say%20it%E2%80%99s%20becoming%20much%20easier%20to%20detect%20incidents%20than%20non-ContentKing%20users.%C2%A0%E2%80%93%C2%A0url=https://www.contentkingapp.com/research/state-of-seo-qa/" onclick="window.open('https://twitter.com/intent/tweet?title=ContentKing%20users%20were%20nearly%203x%20as%20likely%20to%20say%20it%E2%80%99s%20becoming%20much%20easier%20to%20detect%20incidents%20than%20non-ContentKing%20users. –&amp;url=https://www.contentkingapp.com/research/state-of-seo-qa/','ck_popup','toolbar=0,status=0,resizable=1,width=600,height=340')" rel="noopener" target="_blank" title="Share on Twitter"><span class="extlink">Share on Twitter</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>Interesting findings:</p>
+<ul>
+<li>Half of surveyed SEO professionals said that issue detection is becoming easier vs. only 6% who believe it is getting more difficult.</li>
+<li>Conversely, users who reported "becoming somewhat more difficult" were nearly twice more likely to use manual QA and SERPs as one of their detection methods.</li>
+<li>Those who use Manual QA testing were significantly more likely than ContentKing users to say it’s getting more difficult to find errors.</li>
+<li>About one in five that indicated it’s become more difficult attribute this to too much workload.</li>
+<li>About one in three that indicated it’s become more difficult attribute this to constant changes, and changes becoming more complex in general.</li>
+</ul>
+</div>
+<div class="block">
+<h4 id="relative-concern-about-seo-issues">Relative concern about SEO issues</h4>
+<p>For this question, respondents were asked to allocate 100% of their concern across several issues.</p>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-uen8s3zez967"></div>
+</figure>
+<style>
+	#bar-chart-uen8s3zez967 {
+		
+		min-height: 420px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-uen8s3zez967'),
+			[{"color":"#7C238E","label":"Preventing technical issues from being rolled out","size":24},{"color":"#007EF3","label":"Quickly detecting technical issues that have been rolled out","size":22},{"color":"#11A864","label":"The time it takes to correct newly introduced issues","size":21},{"color":"#F4A21E","label":"Preventing unwanted (meta) content changes from being rolled out","size":17},{"color":"#DD3F4F","label":"Quickly detecting unwanted (meta) content changes that have been rolled out","size":16}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,263",
+				dark: true,
+				description: undefined,
+				height: 420,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>SEO professionals are particularly concerned about preventing issues from going live. When they do go live, they're concerned about their rapid detection and repair.</p>
+<p>Futhermore, technical SEO issues are much more concerning than unwanted content/meta-content changes.</p>
+</div>
+<div class="block">
+<h4 id="confidence-in-ability-to-detect-underlying-cause-of-traffic-drops">Confidence in ability to detect underlying cause of traffic drops</h4>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-9xy3qgniwpvl"></div>
+</figure>
+<style>
+	#bar-chart-9xy3qgniwpvl {
+		
+		min-height: 280px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-9xy3qgniwpvl'),
+			[{"color":"#7C238E","label":"Very confident","size":23},{"color":"#007EF3","label":"Somewhat confident","size":60},{"color":"#11A864","label":"Not very confident","size":16},{"color":"#F4A21E","label":"Not at all confident","size":2}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,263",
+				dark: true,
+				description: undefined,
+				height: 280,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>Interesting findings:</p>
+<ul>
+<li>One in four (23%) are “very confident” that they have the ability to quickly identify the underlying causes of drops in site traffic.</li>
+<li>Those who use a custom solution as one of their detection methods are most confident in their ability to find the underlying cause of drops in organic traffic quickly enough.</li>
+<li>Agency SEO professionals are more likely to be very confident than in-house SEO professionals.</li>
+<li>As expected, longer experience in SEO correlates with higher likelihood confidence to identify underlying causes of drops in site traffic.</li>
+</ul>
+</div>
+<div class="block">
+<h4 id="confidence-in-ability-to-identify-technical-seo-issues-that-have-been-rolled-out">Confidence in ability to identify technical SEO issues that have been rolled out</h4>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-m8ve0byk5jwe"></div>
+</figure>
+<style>
+	#bar-chart-m8ve0byk5jwe {
+		
+		min-height: 280px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-m8ve0byk5jwe'),
+			[{"color":"#7C238E","label":"Very confident","size":39},{"color":"#007EF3","label":"Somewhat confident","size":42},{"color":"#11A864","label":"Not very confident","size":16},{"color":"#F4A21E","label":"Not at all confident","size":3}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,263",
+				dark: true,
+				description: undefined,
+				height: 280,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>Below, you can see the responses split between ContentKing users and non-ContentKing users:</p>
+<div class="typo-block chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="grouped-bar-chart-dgwgqvjdyicw"></div>
+</figure>
+<style>
+	#grouped-bar-chart-dgwgqvjdyicw {
+		
+		min-height: 340px
+	}
+
+	@media (max-width: 550px) {
+		#grouped-bar-chart-dgwgqvjdyicw {
+			min-height: 425.0px
+		}
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createGroupedBarChart(
+			document.getElementById('grouped-bar-chart-dgwgqvjdyicw'),
+			["Confident","Not Confident"],
+			[{"color":"#007EF3","label":"ContentKing users","bars":[88,12]},{"color":"#F4A21E","label":"Non-ContentKing users","bars":[80,20]}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,263",
+				dark: true,
+				description: undefined,
+				height: 340,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<div class="typo-block">
+<div class="contentking-differentiator dark-bg-context">
+<div class="contentking-differentiator__box">
+<div class="contentking-differentiator__content">
+<div class="contentking-differentiator__title">ContentKing inspires confidence.</div>
+<div class="contentking-differentiator__text">
+					ContentKing users were significantly more likely to feel confident about detecting technical SEO issues that have been rolled out.
+				</div>
+</div>
+<div aria-label="Using next buttons you can share this text on social networks" class="contentking-differentiator__cta">
+<div aria-hidden="true" class="contentking-differentiator__share-label">
+					Share on
+				</div>
+<div class="contentking-differentiator__share-buttons">
+<a class="social-icon social-icon--facebook social-icon--link" href="https://www.facebook.com/sharer/sharer.php?display=popup&amp;u=https://www.contentkingapp.com/research/state-of-seo-qa/&amp;quote=ContentKing%20inspires%20confidence.%C2%A0%E2%80%93%C2%A0ContentKing%20users%20were%20significantly%20more%20likely%20to%20feel%20confident%20about%20detecting%20technical%20SEO%20issues%20that%20have%20been%20rolled%20out." onclick="window.open('https://www.facebook.com/sharer/sharer.php?display=popup&amp;u=https://www.contentkingapp.com/research/state-of-seo-qa/&amp;quote=ContentKing%20inspires%20confidence. – ContentKing%20users%20were%20significantly%20more%20likely%20to%20feel%20confident%20about%20detecting%20technical%20SEO%20issues%20that%20have%20been%20rolled%20out.','ck_popup','toolbar=0,status=0,resizable=1,width=626,height=600')" rel="noopener" target="_blank" title="Share on Facebook"><span class="extlink">Share on Facebook</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+<a class="social-icon social-icon--twitter social-icon--link" href="https://twitter.com/intent/tweet?title=ContentKing%20users%20were%20significantly%20more%20likely%20to%20feel%20confident%20about%20detecting%20technical%20SEO%20issues%20that%20have%20been%20rolled%20out.%C2%A0%E2%80%93%C2%A0url=https://www.contentkingapp.com/research/state-of-seo-qa/" onclick="window.open('https://twitter.com/intent/tweet?title=ContentKing%20users%20were%20significantly%20more%20likely%20to%20feel%20confident%20about%20detecting%20technical%20SEO%20issues%20that%20have%20been%20rolled%20out. –&amp;url=https://www.contentkingapp.com/research/state-of-seo-qa/','ck_popup','toolbar=0,status=0,resizable=1,width=600,height=340')" rel="noopener" target="_blank" title="Share on Twitter"><span class="extlink">Share on Twitter</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>Interesting findings:</p>
+<ul>
+<li>Respondents are more likely to feel “very confident” that they can identify technical SEO issues (39%) than identifying causes of drops in organic traffic (23%).</li>
+<li>Those who use reports from teams as one of their detection methods are more likely than others to not feel confident about their ability to detect technical issues quickly enough.</li>
+<li>ContentKing users are significantly more likely to feel confident about this ability.</li>
+</ul>
+</div>
+<div class="block">
+<h4 id="confidence-in-ability-to-identify-unwanted-contentmeta-content-changes">Confidence in ability to identify unwanted content/meta-content changes</h4>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-bgoiymv2gtsb"></div>
+</figure>
+<style>
+	#bar-chart-bgoiymv2gtsb {
+		
+		min-height: 280px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-bgoiymv2gtsb'),
+			[{"color":"#7C238E","label":"Very confident","size":31},{"color":"#007EF3","label":"Somewhat confident","size":47},{"color":"#11A864","label":"Not very confident","size":20},{"color":"#F4A21E","label":"Not at all confident","size":2}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,263",
+				dark: true,
+				description: undefined,
+				height: 280,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>Interesting findings:</p>
+<ul>
+<li>31% of the respondents are "very confident" that they can quickly identify unwanted content/meta-content changes.</li>
+<li>ContentKing users were significantly more likely to feel “very confident” about detecting unwanted content/meta-content changes that have been rolled out.</li>
+<li>Respondents with a technical role are more likely to feel "very confident" about identifying these changes than those that are charged with website content.</li>
+</ul>
+</div>
+<h3 class="toc" id="site-characteristics">
+<a aria-hidden="true" class="anchor-link" href="#site-characteristics" tabindex="-1"></a>Site characteristics and technology</h3>
+<div class="block">
+<h4 id="types-of-content-on-the-most-important-site-they-manage">Types of content on the most important site they manage</h4>
+<p>This question allowed multiple responses.</p>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-mpktdkzdvzwh"></div>
+</figure>
+<style>
+	#bar-chart-mpktdkzdvzwh {
+		
+		min-height: 450px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-mpktdkzdvzwh'),
+			[{"color":"#7C238E","label":"Product catalog/listings","size":51},{"color":"#007EF3","label":"Medical or financial content","size":20},{"color":"#11A864","label":"Media (eg. stock images or videos as primary content)","size":19},{"color":"#F4A21E","label":"User-generated content (forums, reviews, etc.)","size":13},{"color":"#DD3F4F","label":"Marketplace/classifieds (user- or data feed-driven)","size":10},{"color":"#5C6773","label":"Up-to-the-minute news/real-time updates","size":9},{"color":"#B7D019","label":"None of these","size":24}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,263",
+				dark: true,
+				description: "Types of content on the most important site. Based on 1,263 responses",
+				height: 450,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>For more than half of the respondents, their most important site contains a product catelog.</p>
+</div>
+<div class="block">
+<h4 id="amount-of-pages-on-the-most-important-site">Amount of pages on the most important site</h4>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-5npyoly0zzrz"></div>
+</figure>
+<style>
+	#bar-chart-5npyoly0zzrz {
+		
+		min-height: 390px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-5npyoly0zzrz'),
+			[{"color":"#7C238E","label":"Up to 1K","size":33},{"color":"#007EF3","label":">1K-10K","size":30},{"color":"#11A864","label":">10K-100K","size":19},{"color":"#F4A21E","label":">100K-1M","size":11},{"color":"#DD3F4F","label":">1M-5M","size":4},{"color":"#5C6773","label":">5M-10M","size":1},{"color":"#B7D019","label":">10M","size":3}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,263",
+				dark: true,
+				description: undefined,
+				height: 390,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>⅔ of these sites contain more than 1,000 pages.</p>
+</div>
+<div class="block">
+<h4 id="features-on-the-most-important-site">Features on the most important site</h4>
+<p>This question allowed multiple responses.</p>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-awb0wynlcq6p"></div>
+</figure>
+<style>
+	#bar-chart-awb0wynlcq6p {
+		
+		min-height: 335px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-awb0wynlcq6p'),
+			[{"color":"#7C238E","label":"On-site search","size":61},{"color":"#007EF3","label":"Purchases or other financial transactions","size":48},{"color":"#11A864","label":"Heavily reliant on search filters","size":29},{"color":"#F4A21E","label":"Content is automatically generated/updated","size":24},{"color":"#DD3F4F","label":"None of these","size":18}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,263",
+				dark: true,
+				description: undefined,
+				height: 335,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>More than half (61%) of these sites support on-site search, and nearly half (48%) enable purchases or financial transactions.</p>
+</div>
+<div class="block">
+<h4 id="usage-of-client-side-rendering-on-the-most-important-site">Usage of client-side rendering on the most important site</h4>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="donut-chart-5k7vyx4ozj8g"></div>
+</figure>
+<style>
+	#donut-chart-5k7vyx4ozj8g {
+		
+		min-height: 300px
+	}
+
+	@media (max-width: 550px) {
+		#donut-chart-5k7vyx4ozj8g {
+			min-height: 450.0px
+		}
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createDonutChart(
+			document.getElementById('donut-chart-5k7vyx4ozj8g'),
+			[{"color":"#007EF3","label":"Yes, with SSR/pre-rendering solutions","size":29},{"color":"#F4A21E","label":"Yes, without SSR/pre-rendering solutions","size":19},{"color":"#DD3F4F","label":"No CSR","size":52}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,263",
+				dark: true,
+				description: undefined,
+				height: 300,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>About half (48%) rely on client-side rendering, while 29% uses server-side rendering or a pre-rendering solution.</p>
+</div>
+<div class="block">
+<h4 id="technologies-used-on-the-most-important-site">Technologies used on the most important site</h4>
+<p>This question allowed multiple responses.</p>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-8bfogrmo74nw"></div>
+</figure>
+<style>
+	#bar-chart-8bfogrmo74nw {
+		
+		min-height: 280px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-8bfogrmo74nw'),
+			[{"color":"#7C238E","label":"Off-the-shelf, self-hosted platform","size":51},{"color":"#007EF3","label":"Custom-built platform","size":46},{"color":"#11A864","label":"Off-the-shelf, managed platform","size":28},{"color":"#F4A21E","label":"Other","size":5}],
+			{
+				animated: false,
+				caption: "No. of responses: 1,263",
+				dark: true,
+				description: undefined,
+				height: 280,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>Interesting findings:</p>
+<ul>
+<li>Half (51%) use an off-the-shelf, self-hosted web platform such as WordPress.</li>
+<li>Nearly half (48%) use a custom-built platform.</li>
+<li>Just over 1 in four (28%) use off-the-shelf managed platforms such as Adobe Commerce Cloud.</li>
+</ul>
+</div>
+<div class="block">
+<h4 id="off-the-shelf-platforms-used-on-the-most-important-site">Off-the-shelf platforms used on the most important site</h4>
+<p>This question allowed multiple responses.</p>
+<div class="typo-block chart-layout chart-layout--dark">
+<figure class="chart-layout__canvas">
+<div id="bar-chart-bqwfyqb9yltz"></div>
+</figure>
+<style>
+	#bar-chart-bqwfyqb9yltz {
+		
+		min-height: 390px
+	}
+</style>
+<script>
+	document.addEventListener('DOMContentLoaded', () => {
+		createBarChart(
+			document.getElementById('bar-chart-bqwfyqb9yltz'),
+			[{"color":"#7C238E","label":"Wordpress","size":74},{"color":"#007EF3","label":"Magento","size":13},{"color":"#11A864","label":"Drupal","size":7},{"color":"#F4A21E","label":"Salesforce","size":7},{"color":"#DD3F4F","label":"Joomla","size":2},{"color":"#5C6773","label":"SAP","size":1},{"color":"#B7D019","label":"Other","size":22}],
+			{
+				animated: false,
+				caption: "No. of responses: 768",
+				dark: true,
+				description: undefined,
+				height: 390,
+				title: undefined,
+				width: undefined,
+			}
+		);
+	});
+</script>
+</div>
+<p>Those who use an off-the-shelf platform were asked to indicate which one(s) they use. Three in four of these respondents (74%) use Wordpress.</p>
+<div aria-label="Start new free trial on ContentKing" class="onboarding-cta typo-block highlighted-box false highlighted-box--expressive" data-testid="onboarding-box"><div class="highlighted-box__content">
+<div class="highlighted-box__title">360° SEO awareness</div>
+<div class="onboarding-cta__description typo">
+<p>Let ContentKing track what's going on on your sites and alert you in case of trouble!</p>
+</div>
+<div class="onboarding-cta__form"><form aria-label="The form used for creating free trial account on ContentKing" class="quickinput-form-layout js-submit-url-start-onboarding quickinput-form-layout--white quickinput-form-layout--is-responsive" data-validate="" novalidate="">
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-unexpected-error form-msg form-msg--error" role="none" style="display: none;">Some unexpected error happened. Please contact us.</span><span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-timeout-error form-msg form-msg--error" role="none" style="display: none;">Something went wrong. Please, try again later.</span><div class="quickinput-form-layout__container">
+<div class="quickinput-form-layout__form-field">
+<label class="show-for-sr" for="onboarding-box-6-url">Domain (required)</label><input aria-required="true" class="js-trial-url large" id="onboarding-box-6-url" name="domain" pattern="url_only" placeholder="www.example.com" required="" type="url"/><span aria-hidden="true" aria-live="off" class="form-error form-bubble" role="none">Please enter a valid domain name (www.example.com).</span><span aria-hidden="true" aria-live="off" class="js-website-already-monitored custom-error form-bubble" role="none" style="display: none;">This domain is already being monitored by ContentKing. Please contact us if you are the rightful owner of this domain.</span><span aria-hidden="true" aria-live="off" class="js-target-redirected custom-error form-bubble" role="none" style="display: none;">This website redirects to <span class="js-target-redirected-domain"></span>. Do you want to add this website instead?</span><span aria-hidden="true" aria-live="off" class="js-blacklisted-domain custom-error form-bubble" role="none" style="display: none;">This domain has been excluded from monitoring. If you own it, please contact us.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain custom-error form-bubble" role="none" style="display: none;">We can't find this domain. Are you sure it's correct?</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-connect custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (connect failure). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-empty-response custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (empty response). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-size-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (size limit). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-time-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (time-out). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-waf custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (blocked by web application firewall). Please contact us for help.</span>
+</div>
+<div class="quickinput-form-layout__form-button"><button class="button js-submit-button button--large button--action button--is-shining button--fullwidth" data-loading-label="Loading" type="submit"><div><span class="button__content"><big>Start your free trial</big><small><span class="show-for-sr">. </span>No credit card needed</small></span></div></button></div>
+</div>
+</form></div>
+</div></div>
+</div>
+</div>
+<div class="highlighted-box">
+<div class="highlighted-box__content share">
+<div class="share__label">Share this article</div>
+<div class="share__buttons">
+<a class="social-icon social-icon--large social-icon--facebook social-icon--link" href="https://www.facebook.com/sharer/sharer.php?display=popup&amp;u=https://www.contentkingapp.com/research/state-of-seo-qa/" onclick="window.open('https://www.facebook.com/sharer/sharer.php?display=popup&amp;u=https://www.contentkingapp.com/research/state-of-seo-qa/','ck_popup','toolbar=0,status=0,resizable=1,width=626,height=600')" rel="noopener" target="_blank" title="Share on Facebook"><span class="extlink">Share on Facebook</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+<a class="social-icon social-icon--large social-icon--twitter social-icon--link" href="https://twitter.com/intent/tweet?title=The%20State%20of%20SEO%20Quality%20Assurance%20in%202021%C2%A0%E2%80%93%C2%A0url=https://www.contentkingapp.com/research/state-of-seo-qa/" onclick="window.open('https://twitter.com/intent/tweet?title=The%20State%20of%20SEO%20Quality%20Assurance%20in%202021 –&amp;url=https://www.contentkingapp.com/research/state-of-seo-qa/','ck_popup','toolbar=0,status=0,resizable=1,width=600,height=340')" rel="noopener" target="_blank" title="Share on Twitter"><span class="extlink">Share on Twitter</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+<a class="social-icon social-icon--large social-icon--linkedin social-icon--link" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.contentkingapp.com/research/state-of-seo-qa/" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url=https://www.contentkingapp.com/research/state-of-seo-qa/','ck_popup','toolbar=0,status=0,resizable=1,width=600,height=560')" rel="noopener" target="_blank" title="Share on LinkedIn"><span class="extlink">Share on LinkedIn</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<section class="section section--informative" data-testid="start-free-trial">
+<div class="row expanded">
+<div class="small-12 large-12 column">
+<div class="description-row description-row--inline-for-large-up">
+<div>
+<div class="heading heading--white heading--center-aligned">
+<h2 class="heading__title">Revolutionize your workflow with ContentKing
+</h2>
+<h3 class="heading__subtitle">Get up and running in 20 seconds</h3>
+</div>
+<form aria-label="The form used for creating free trial account on ContentKing" class="quickinput-form-layout quickinput-form-layout--center-aligned quickinput-form-layout--is-responsive js-submit-url-start-onboarding" data-validate="" novalidate="">
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-unexpected-error form-msg form-msg--error" role="none" style="display: none;">Some unexpected error happened. Please contact us.</span>
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-timeout-error form-msg form-msg--error" role="none" style="display: none;">Something went wrong. Please, try again later.</span>
+<div class="quickinput-form-layout__container">
+<div class="quickinput-form-layout__form-field">
+<label class="show-for-sr" for="start-free-trial-url-field">Domain (required)</label>
+<input aria-required="true" class="js-trial-url large" id="start-free-trial-url-field" name="domain" pattern="url_only" placeholder="www.example.com" required="" type="url"/>
+<span aria-hidden="true" aria-live="off" class="form-error form-bubble" role="none">Please enter a valid domain name (www.example.com).</span>
+<span aria-hidden="true" aria-live="off" class="js-website-already-monitored custom-error form-bubble" role="none" style="display: none;">This domain is already being monitored by ContentKing. Please contact us if you are the rightful owner of this domain.</span>
+<span aria-hidden="true" aria-live="off" class="js-target-redirected custom-error form-bubble" role="none" style="display: none;">This website redirects to <span class="js-target-redirected-domain"></span>. Do you want to add this website instead?</span>
+<span aria-hidden="true" aria-live="off" class="js-blacklisted-domain custom-error form-bubble" role="none" style="display: none;">This domain has been excluded from monitoring. If you own it, please contact us.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain custom-error form-bubble" role="none" style="display: none;">We can't find this domain. Are you sure it's correct?</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-connect custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (connect failure). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-empty-response custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (empty response). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-size-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (size limit). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-time-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (time-out). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-waf custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (blocked by web application firewall). Please contact us for help.</span>
+</div>
+<div class="quickinput-form-layout__form-button">
+<button class="button button--is-shining js-submit-button button--large button--action button--fullwidth" data-loading-label="Loading" type="submit">
+<div>
+<span class="button__content">
+<big>Start your free trial</big>
+<small><span class="show-for-sr">. </span>No credit card needed</small>
+</span>
+</div>
+</button>
+</div>
+</div>
+<div class="quickinput-form-layout__footer">
+<div aria-label="Show the overview of ContentKing reviews" class="review-services review-services--centered review-services--adaptive-items">
+<div class="review-services__service">
+<div aria-label="The summary of ContentKing rating on G2" class="review-badge review-badge--1-size review-badge--g2-service review-badge--light-style">
+<div class="review-badge__header">
+<div aria-label="Rating is 4.8 out of 5 points" class="review-badge__rating-score">
+			4.8 / 5
+		</div>
+</div>
+<div aria-hidden="true" class="review-badge__rating-stars">
+<div aria-label="Rating is 5.0 out of 5 points" class="rating-stars rating-stars--1-size">
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+</div>
+</div>
+</div>
+</div>
+<div class="review-services__service review-services__service--hidden-on-small">
+<div aria-label="The summary of ContentKing rating on Capterra" class="review-badge review-badge--1-size review-badge--capterra-service review-badge--light-style">
+<div class="review-badge__header">
+<div aria-label="Rating is 4.9 out of 5 points" class="review-badge__rating-score">
+			4.9 / 5
+		</div>
+</div>
+<div aria-hidden="true" class="review-badge__rating-stars">
+<div aria-label="Rating is 5.0 out of 5 points" class="rating-stars rating-stars--1-size">
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+</div>
+</div>
+</div>
+</div>
+<div class="review-services__service review-services__service--hidden-on-small">
+<div aria-label="The summary of ContentKing rating on TrustRadius" class="review-badge review-badge--1-size review-badge--trust-radius-service review-badge--light-style">
+<div class="review-badge__header">
+<div aria-label="Rating is 9.7 out of 10 points" class="review-badge__rating-score">
+			9.7 / 10
+		</div>
+</div>
+<div aria-hidden="true" class="review-badge__rating-stars">
+<div aria-label="Rating is 5.0 out of 5 points" class="rating-stars rating-stars--1-size">
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+<div class="description-row__description">
+<ul class="checklist checklist--white-style">
+<li class="checklist__item"><strong>No credit card required</strong></li>
+<li class="checklist__item"><strong>No installation needed</strong></li>
+<li class="checklist__item"><strong>No strings attached</strong></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<div id="js-campaign-widget-container"></div><footer class="footer" role="contentinfo">
+<div class="footer__row">
+<div class="footer__column">
+<div class="footer__column-body">
+<nav aria-label="The latest articles on our blog" class="footer__column-block footer-block" role="navigation"><h3 class="footer-block__title"><a aria-label="View all articles" href="/blog/"><span>Blog</span> <span aria-hidden="true" class="footer-block__title-cta">View all</span></a></h3>
+<div class="footer-block__nav"><ul class="footer-posts-nav">
+<li class="footer-posts-nav__item">
+<a href="/blog/log-file-analysis-extended-cloudflare-logpush/"><svg aria-hidden="true" class="footer-posts-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-feature-announcements"></use>
+</svg>Log File Analysis for Cloudflare sites via Logpush
+							</a>
+</li>
+<li class="footer-posts-nav__item">
+<a href="/blog/log-file-analysis-extended-fastly/"><svg aria-hidden="true" class="footer-posts-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-feature-announcements"></use>
+</svg>ContentKing Log File Analysis for Fastly
+							</a>
+</li>
+<li class="footer-posts-nav__item">
+<a href="/blog/log-file-analysis-extended/"><svg aria-hidden="true" class="footer-posts-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-feature-announcements"></use>
+</svg>Extended ContentKing Log File Analysis
+							</a>
+</li>
+<li class="footer-posts-nav__item">
+<a href="/blog/brightonseo-spring-recap-2022/"><svg aria-hidden="true" class="footer-posts-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-other"></use>
+</svg>ContentKing &amp; Conductor at brightonSEO
+							</a>
+</li>
+<li class="footer-posts-nav__item">
+<a href="/blog/brightonseo-spring-2022/"><svg aria-hidden="true" class="footer-posts-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-other"></use>
+</svg>brightonSEO Spring 2022
+							</a>
+</li>
+</ul></div>
+</nav>
+</div>
+</div>
+<div class="footer__column">
+<div class="footer__column-body">
+<nav aria-label="Important article in our Academy" class="footer__column-block footer-block" role="navigation"><h3 class="footer-block__title"><a aria-label="View all articles" href="/academy/"><span>Academy</span> <span aria-hidden="true" class="footer-block__title-cta">View all</span></a></h3>
+<div class="footer-block__nav"><ul class="footer-posts-nav">
+<li class="footer-posts-nav__item"><a href="/academy/robotstxt/">Robots.txt</a></li>
+<li class="footer-posts-nav__item"><a href="/academy/redirects/">Redirects</a></li>
+<li class="footer-posts-nav__item"><a href="/academy/shopify-seo/">Shopify SEO Guide</a></li>
+<li class="footer-posts-nav__item"><a href="/academy/magento-seo/">Magento 2 SEO Guide</a></li>
+<li class="footer-posts-nav__item footer-posts-nav__item--tagged"><a data-tag="FAQ" href="/academy/faq/">Frequently Asked SEO Questions</a></li></ul></div>
+</nav>
+</div>
+</div>
+<div class="footer__column footer__column--smaller-width">
+<div class="footer__column-body">
+<nav aria-label="Find more about us and about our story" class="footer__column-block footer-block" role="navigation"><h3 class="footer-block__title"><a href="/about-us/"><span>About us</span></a></h3>
+<div class="footer-block__nav">
+<ul class="footer-posts-nav">
+<li class="footer-posts-nav__item"><a href="/about-us/">Our story</a></li><li class="footer-posts-nav__item"><a href="/team/">Meet our team</a></li><li class="footer-posts-nav__item"><a href="/careers/">Careers</a></li><li class="footer-posts-nav__item"><a href="/contact/">Contact us</a></li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+<div class="footer__column footer__column--box">
+<div class="footer__column-body">
+<div class="footer__column-block footer__column-block--box">
+<section class="footer-box"><a aria-label="Show all reviews" class="footer-box__reviews" href="/reviews/">
+<span aria-hidden="true" class="footer-box__rating-stars">
+<div aria-label="Rating is 5.0 out of 5 points" class="rating-stars rating-stars--small-size"><div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div><div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div><div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div><div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div><div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div></div>
+</span><span class="footer-box__rating-label">130+ user reviews</span>
+</a>
+<div aria-label="Contact details" class="footer-box__content">
+<ul aria-label="Contact details" class="contact-list contact-list--footer"><li aria-label="Support section" class="contact-list__item">
+<i aria-hidden="true" class="contact-list__icon contact-list__icon--support"></i>
+<a aria-label="Show support section" class="contact-list__link" href="/support/">Support</a>
+</li><li aria-label="Phone numbers" class="contact-list__item">
+<i aria-hidden="true" class="contact-list__icon contact-list__icon--phone"></i>
+<div class="contact-list__link">
+<a href="tel:00442032908992">UK: +44 20 3290 8992</a><br/>
+<a href="tel:0019196479205">US: +1 919-647-9205</a><br/></div>
+</li><li aria-label="Email address" class="contact-list__item">
+<i aria-hidden="true" class="contact-list__icon contact-list__icon--support-email"></i>
+<div class="contact-list__link">
+<a href="mailto:support@contentkingapp.com">support@contentkingapp.com</a><br/></div>
+</li></ul>
+</div>
+<div class="footer-box__content">
+<ul class="contact-list contact-list--footer"><li class="contact-list__item">
+<i aria-hidden="true" class="contact-list__icon contact-list__icon--newsletter"></i>
+<a class="contact-list__link" href="/newsletter/">Sign up for our newsletter</a>
+</li></ul>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+<div class="footer__row">
+<div class="footer__bottom-column show-for-large">
+<div class="footer__column-body">
+				Copyright © 2023 ContentKing
+			</div>
+</div>
+<nav aria-label="Additional navigation" class="footer__bottom-column" role="navigation">
+<div class="footer__column-body"><ul class="footer-nav">
+<li class="footer-nav__item">
+<a href="/accessibility/">Accessibility</a></li>
+<li class="footer-nav__item">
+<a href="/legal/privacy-policy/">Privacy Policy</a></li>
+<li class="footer-nav__item">
+<a href="/legal/cookie-policy/">Cookie Policy</a></li>
+<li class="footer-nav__item"><a class="js-open-cookie-preferences" href="#">Cookie Preferences</a></li>
+<li class="footer-nav__item">
+<a href="/legal/terms-of-use/">Terms of Use</a></li>
+</ul>
+</div>
+</nav>
+</div>
+</footer></div><div aria-hidden="true" class="dialog-bg" tabindex="-1"></div>
+<div aria-hidden="true" aria-labelledby="exit-intent-heading" aria-modal="true" class="dialog dialog--slide-in-effect js-exit-intent-dialog" data-ga-label="Generic" id="exit-intent" inert="" role="dialog">
+<div class="dialog-box dialog-box--highlighted-bg js-dialog-box">
+<div class="dialog-box__heading heading heading--center-aligned heading--white">
+<div class="heading__title heading__title--small js-title" data-alt-title="Leave, but don't miss out." id="exit-intent-heading">So soon? Well, before you go...</div>
+<div class="heading__subtitle heading__subtitle--large"><strong>Sign up for our newsletter.</strong></div>
+</div>
+<div class="dialog-box__content">
+<div class="exit-intent">
+<div class="exit-intent__content">
+<img alt="" class="exit-intent__illustration" height="231" loading="lazy" src="/assets/images/materials/newsletter@1x.png" srcset="/assets/images/materials/newsletter@1x.png 1x, /assets/images/materials/newsletter@2x.png 2x" width="214"/>
+<ul class="checklist checklist--white-style">
+<li class="checklist__item"><strong>Join over 35,000 smart people</strong></li>
+<li class="checklist__item"><strong>Loaded with carefully curated content on SEO and digital marketing</strong></li>
+<li class="checklist__item"><strong>Insightful articles, data-driven research, podcasts and videos</strong></li>
+</ul>
+</div>
+<div class="exit-intent__form">
+<form action="https://becontentking.us11.list-manage.com/subscribe/post?u=14598b22fff6346e4f141215b&amp;id=1506b77091" class="js-newsletter-signup" data-validate="" method="post" name="mc-embedded-subscribe-form" novalidate="">
+<div class="overlay-response js-newsletter-signup-response">
+<div class="overlay-response__source">
+<div class="quickinput-form-layout quickinput-form-layout--is-responsive quickinput-form-layout--white quickinput-form-layout--center-aligned">
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-newsletter-signup-response-error form-msg form-msg--error" role="none" style="display: none;">Something went wrong. Please, try again later.</span>
+<div class="quickinput-form-layout__container">
+<div class="quickinput-form-layout__form-field">
+<label class="show-for-sr" for="newsletter-exit-intent-email-field">Email (required)</label>
+<input aria-required="true" autocomplete="off" class="large" id="newsletter-exit-intent-email-field" name="EMAIL" placeholder="email@example.com" required="" type="email" value=""/>
+<span aria-hidden="true" aria-live="off" class="form-error form-bubble" role="none">Please enter a valid email address.</span>
+</div>
+<input name="SOURCE" type="hidden" value="English website">
+<input class="js-newsletter-signup-source-url-field" name="SOURCE_URL" type="hidden" value="https://www.contentkingapp.com/blog/12-content-engagement-kpis-need-tracking/">
+<input name="LANGUAGE" type="hidden" value="en">
+<input class="js-newsletter-signup-creative-field" name="CREATIVE" type="hidden" value="[Exit intent] Newsletter sign-up">
+<div aria-hidden="true" style="position: absolute; left: -5000px;"><label for="newsletter-exit-intent-email-field-question">Question</label><input id="newsletter-exit-intent-email-field-question" name="b_14598b22fff6346e4f141215b_1506b77091" tabindex="-1" type="text" value=""/></div>
+<div class="quickinput-form-layout__form-button quickinput-form-layout__form-button--default">
+<button class="button button--is-shining js-submit-button button--large button--action button--fullwidth" data-loading-label="Loading" name="subscribe" type="submit">
+<div>
+<span class="button__content">
+<big>Subscribe</big>
+</span>
+</div>
+</button>
+</div>
+</input></input></input></input></div>
+<div class="quickinput-form-layout__note">You can opt-out at any time with a single click.</div>
+<div class="exit-intent-close-link">
+<a data-close="" href="#" onclick="return false;">No thanks, I don't want to stay updated on digital marketing.</a>
+</div>
+</div>
+</div>
+<div class="overlay-response__response js-newsletter-signup-response-messages" tabindex="-1">
+<div aria-hidden="true" aria-live="off" class="js-newsletter-signup-response-success overlay-response__message overlay-response__message--large overlay-response__message--success" role="none" style="display: none;">
+<div>Thank you for your subscription, welcome aboard!</div>
+<div class="exit-intent-close-link">
+<a data-close="" href="#" onclick="return false;">Continue to our website</a>
+</div>
+</div>
+<div aria-hidden="true" aria-live="off" class="js-newsletter-signup-response-already-in-list overlay-response__message overlay-response__message--large" role="none" style="display: none;">You're already a subscriber to our newsletter. <br/>Thanks for being a loyal reader!</div>
+<div aria-hidden="true" aria-live="off" class="js-newsletter-signup-response-pending overlay-response__message overlay-response__message--large" role="none" style="display: none;">Please confirm your sign-up to our newsletter using the confirmation email that we just sent you.</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<!-- Close button -->
+<button aria-label="Close this modal window" class="close-button close-button--light" data-close="" type="button">
+<span aria-hidden="true">×</span>
+</button>
+<div class="dialog-box__footer">
+<div class="dialog-box__footer-container">
+<div class="js-modal-lazy-logos lazy-logos" data-id="exit-intent"></div>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="cookie-banner-heading" aria-modal="true" class="dialog dialog--slide-in-effect" id="cookie-banner-general" inert="" role="dialog">
+<div class="cookie-consent-dlg">
+<div class="cookie-consent-dlg__scrollable-container">
+<div class="cookie-consent-dlg__content">
+<div class="cookie-consent-dlg__heading">
+<div class="cookie-consent-dlg__title" id="cookie-banner-general-heading">This website uses cookies</div>
+</div>
+<div class="cookie-consent-dlg__text typo">
+<p>We use cookies to improve user experience and analyze website traffic. By clicking “Accept all“, you agree to our website's cookie use as described in our <a class="js-cookie-banner-show-policy" href="#">Cookie Policy</a>. You can change your cookie settings by clicking “<a class="js-cookie-banner-show-preferences" href="#">Preferences</a>”.</p>
+</div>
+</div>
+<div class="cookie-consent-dlg__footer">
+<div class="cookie-consent-dlg__buttons">
+<button class="button button--hollow-highlighted js-cookie-banner-show-preferences">
+<span>Preferences</span>
+</button>
+<button class="button button--hollow-highlighted js-cookie-banner-decline-all">
+<span>Reject all</span>
+</button>
+<button class="button button--action js-cookie-banner-accept-all">
+<span>Accept all</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="cookie-banner-policy-heading" aria-modal="true" class="dialog dialog--slide-in-effect" data-cookie-policy-version="f0cbb742597d5cb7e9db2f680777051bbd82001f" id="cookie-banner-policy" inert="" role="dialog">
+<div class="cookie-consent-dlg">
+<div class="cookie-consent-dlg__scrollable-container">
+<div class="cookie-consent-dlg__content">
+<div class="cookie-consent-dlg__heading">
+<div class="cookie-consent-dlg__title" id="cookie-banner-policy-heading">Cookie Policy</div>
+</div>
+<div class="cookie-consent-dlg__text typo">
+<p><em>Last updated January 24, 2022</em></p>
+<p>When you use our website <a href="https://www.contentkingapp.com/">www.contentkingapp.com</a> (“Website”), we may place cookies. This Cookie Policy explains what cookies are and in which way cookies are stored on, and information is read from, your computer, mobile device and/or tablet (“Devices”). Please read this Cookie Policy carefully in order to understand what type of cookies ContentKing uses, the information we collect using cookies and how that information is used.</p>
+<h2 id="what-are-cookies">What are cookies?</h2>
+<p>Cookies are small text files which are stored on the browser or hard drive of your Device when you visit a webpage or use an application. Cookies may be needed to show the webpage or application on your Device and are also used to enhance the user experience. Cookies cannot damage your Devices or the files saved on it. There are different types of cookies. Some cookies come directly from our website (first party cookies) and others come from third parties which place cookies on our site (third party cookies).</p>
+<p>Cookies can be stored for varying lengths of time on your browser or device. Session cookies are deleted from your computer or device when you close your web-browser. Persistent cookies will remain stored on your computer or Device until deleted or until they reach their expiry date.</p>
+<h2 id="how-do-we-use-cookies">How do we use cookies?</h2>
+<h3 id="essential-technical-cookies">Essential (Technical) cookies</h3>
+<p>We try to provide an advanced and user-friendly website that adapts automatically to needs and wishes of our visitors and users. To achieve this, we use technical cookies to i.e. show you our Website, to make it function correctly, to create your ContentKing account, to sign you in and to manage your requests. These technical cookies are necessary for our website to function properly.</p>
+<h3 id="functional-cookies">Functional cookies</h3>
+<p>We also use functional cookies to remember your preferences and settings (as username, password, language etc.) and to help you to use the Website efficiently and effectively. These functional cookies are not strictly necessary for the functioning of our Website, but they add functionality for you and enhance your experience.</p>
+<h3 id="analytical-cookies">Analytical cookies</h3>
+<p>We use analytical cookies in order to collect statistics about the use and visits of the Website. These analytic cookies generate statistical and other information about website use by means of cookies, which are stored on users’ Devices. The information generated relating to our Website is used to create reports about the use of the Website. Analytical cookies may be placed without your consent, unless such cookies have an impact on your privacy. In such cases, prior consent will be asked for.</p>
+<h3 id="google-analytics">Google Analytics</h3>
+<p>We use Google Analytics cookies in order to collect statistics about the use and visits of the Website. With these analytical cookies a permanent cookie is saved on your device to register your use of the Website. Google Analytics analyses this data and provides us with the results. This way, we obtain insight into the traffic of the Website and the way in which the Website is used. Based on this information we are able to make specific adjustments to the Website.</p>
+<p>The information that we obtain is transferred to Google and stored by Google on servers outside the European Economic Area. We have entered into a data processing agreement with Google in which agreements have been made regarding the processing of personal data.</p>
+<p>If you would like more information about analytical cookies and their expiry date, please visit the Google Analytics <a href="https://developers.google.com/analytics/devguides/collection/gajs/cookie-usage">information page</a>. Google also offers an <a href="https://tools.google.com/dlpage/gaoptout?hl=en">opt-out option</a> for data collection within the scope of Google Analytics.</p>
+<h3 id="marketing-cookies">Marketing cookies</h3>
+<p>We use third party marketing cookies in order to follow your internet browsing behavior and collect data and information on your browsing behavior from various websites you visited. This information is used to make the content of the displayed advertisements as relevant as possible, and to limit repetition of the same advertisements.</p>
+<h3 id="social-plug-ins">Social plug-ins</h3>
+<p>By using the Website you can get access to social media websites, such as Facebook, Twitter and LinkedIn. These buttons come with a code which has been made by these networks themselves. Using these so called social plug-ins you can login to your social media profile and subsequently share information from the Website with others. With these social plug-ins third party marketing cookies are saved on your Devices. These cookies serve the purpose of optimizing your user experience.</p>
+<p>Companies such as LinkedIn, Twitter and Facebook may share your personal data outside the European Economic Area. Please read our Privacy Policy <a href="/legal/privacy-policy/">here</a> and the respective social network’s privacy statement to see how these companies treat your (personal) data.</p>
+<h3 id="pixels">Pixels</h3>
+<p>We also place pixels of third parties. A pixel keeps track of your surfing behavior and how you use the Website. These data are aggregated and give us information about the target group that visits our website. Based on this information, we can show an advertisement to a specific or similar target group on the website of the third party that produced the pixel.</p>
+<h2 id="disable-or-delete-cookies">Disable or delete cookies</h2>
+<p>When you first visit the Website, we ask you to give consent for cookies that are not necessary or functional and that have an impact on your privacy. If you do not give consent, these cookies will not be placed. In that case, you may not be able to use all the functionalities on our Website.</p>
+<p>You can configure your browser so that you do not receive any cookies the next time you use the website. You can read here how you can remove different types of cookies in different browsers. Please consult the help-function of your browser if your browser is not listed below.</p>
+<ul>
+<li><a href="https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&amp;hl=en-GB">Chrome</a></li>
+<li><a href="https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox">Firefox</a></li>
+<li><a href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09">Edge</a></li>
+<li><a href="https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac">Safari</a></li>
+</ul>
+<p>Note: Refusing or deleting cookies only affects the Device and the browser on which you perform this action. If you use different Devices and/or browsers you will need to repeat the above described actions on these Devices and/or browsers.</p>
+<h2 id="privacy">Privacy</h2>
+<p>It is possible that information collected through a cookie or obtained otherwise, contains personal data. If this is the case, our Privacy Policy is applicable on the processing of these data. The Privacy Policy can be read <a href="/legal/privacy-policy/">here</a>.</p>
+<h2 id="can-this-cookie-policy-be-changed">Can this Cookie Policy be changed?</h2>
+<p>We may amend this Cookie Policy in the future. If there are substantive or material changes that may affect one or more of the parties involved to a considerable extent, we inform those involved in advance. Our changed Cookie Policy will also be available on this web page, so it is recommended to regularly have a look at this page.</p>
+<h2 id="overview-cookies">Overview cookies</h2>
+<h3 id="essential-technical-cookies-1">Essential (Technical) cookies</h3>
+<p>Essential (Technical) cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function (properly) without these cookies.</p>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">viewedOuibounceModal</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>ContentKing</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store state of having closed the exit intent modal.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 month</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">nette-samesite</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>ContentKing</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Communication with account service.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>Session</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">session_timestamp</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>ContentKing</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Utility for tracking of session start time.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>Session</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>SessionStorage</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">what-intent</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>ContentKing</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Utility for tracking the current input method.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>Session</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>SessionStorage</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">what-input</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>ContentKing</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Utility for tracking the current input method.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>Session</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>SessionStorage</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">contentking</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>ContentKing</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store state for website functioning.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 day</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>LocalStorage</td>
+</tr>
+</tbody>
+</table>
+<h3 id="statistics-analytical-cookies">Statistics (analytical cookies)</h3>
+<p>These cookies help us to understand how visitors interact with websites by collecting and reporting information anonymously.</p>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_ga</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Google Analytics</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store and count pageviews.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>2 years</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_ga_*</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Google Analytics</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store and count pageviews.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>2 years</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_gcl_au</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Google AdSense</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store and track conversions.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>3 months</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_gid</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Google Analytics</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store and count pageviews.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 day</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_dc_gtm_*</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Google Analytics</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store number of service requests.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 minute</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">wd</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Information about browser window dimensions.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 day</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<h3 id="marketing-social-plug-ins-third-party-marketing-cookies-pixels">Marketing (Social plug-ins, third party marketing cookies, pixels)</h3>
+<p>Marketing cookies are used to follow visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers.</p>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">intercom-session-*</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Intercom</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Contact, communication, support.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 week</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">intercom-id-*</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Intercom</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Contact, communication, support.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>9 months</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">li_gc</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>LinkedIn</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>2 years</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">lidc</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>LinkedIn</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 day</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">bcookie</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>LinkedIn</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>2 years</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_uetsid</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Microsoft Advertising</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 day</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_uetvid</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Microsoft Advertising</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 year</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">tap_vid</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Tapfiliate</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Affiliate marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 year</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie &amp; LocalStorage</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_fbp</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>3 months</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_fbc</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>3 months</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">fr</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>3 months</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">xs</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>3 months</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">dpr</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>5 days</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">c_user</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>30 days</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">sb</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 year, 1 month, 14 days</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">datr</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 year, 1 month, 14 days</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">muc</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Twitter</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 year, 10 months, 3 days</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">muc-ads</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Twitter</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 year, 10 months, 3 days</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cookie-consent-dlg__footer">
+<div class="cookie-consent-dlg__buttons">
+<button class="button button--highlighted js-cookie-banner-show-general">
+<span>Back</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="cookie-banner-preferences-heading" aria-modal="true" class="dialog dialog--slide-in-effect" id="cookie-banner-preferences" inert="" role="dialog">
+<div class="cookie-consent-dlg">
+<div class="cookie-consent-dlg__scrollable-container">
+<div class="cookie-consent-dlg__content">
+<div class="cookie-consent-dlg__heading">
+<div class="cookie-consent-dlg__title" id="cookie-banner-preferences-heading">Your Cookie Preferences</div>
+</div>
+<div aria-hidden="true" class="form-msg form-msg--warning typo js-intercom-warning-message" style="display: none;">
+<p>Our chat requires cookies to function. Please enable Marketing cookies to continue, alternatively you can contact us via email at <a href="mailto:support@contentkingapp.com">support@contentkingapp.com</a></p>
+</div>
+<div class="cookie-consent-dlg__text typo">
+<p>We use different types of cookies to optimize your experience on our website. Click on the categories below to learn more about their purposes. You may choose which types of cookies to allow. Remember that disabling cookies may affect your experience on the website. You can learn more about how we use cookies by visiting our <a class="js-cookie-banner-show-policy" href="#">Cookie Policy</a>.</p>
+</div>
+<form class="cookie-consent-dlg__preferences">
+<div>
+<div class="cookie-consent-dlg__preference-option">
+<input checked="checked" disabled="disabled" id="essential_storage" name="essential_storage" type="checkbox">
+<label for="essential_storage">Essential (Technical) cookies</label>
+</input></div>
+<p>Essential (Technical) cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function (properly) without these cookies.</p>
+</div>
+<div>
+<div class="cookie-consent-dlg__preference-option">
+<input id="analytics_storage" name="analytics_storage" type="checkbox">
+<label for="analytics_storage">Statistics (analytical cookies)</label>
+</input></div>
+<p>These cookies help us to understand how visitors interact with websites by collecting and reporting information anonymously.</p>
+</div>
+<div>
+<div class="cookie-consent-dlg__preference-option">
+<input id="ad_storage" name="ad_storage" type="checkbox">
+<label for="ad_storage">Marketing (Social plug-ins, third party marketing cookies, pixels)</label>
+</input></div>
+<p>Marketing cookies are used to follow visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers.</p>
+</div>
+</form>
+</div>
+<div class="cookie-consent-dlg__footer">
+<div class="cookie-consent-dlg__buttons">
+<button class="button button--hollow-highlighted js-cookie-banner-decline-all">
+<span>Reject all</span>
+</button>
+<button class="button button--action js-cookie-banner-accept-selected">
+<span>Accept selected</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="/assets/js/libraries.js?cb=6d0f457c83ce1f9617c4686abb84c45a" type="text/javascript"></script>
+<script src="/assets/js/app.js?cb=f179e9e0a225b14d8cf7bbe24cb2a6fa}" type="text/javascript"></script>
+</body>
+</html>

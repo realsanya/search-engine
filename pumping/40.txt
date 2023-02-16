@@ -1,0 +1,2439 @@
+<!DOCTYPE html>
+
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Protecting staging environments: the ultimate guide</title>
+<link href="https://iframe.videodelivery.net" rel="preconnect dns-prefetch"/>
+<script>(function(c,u,v,n,p,e,z,A,w){function k(a){if(!x){x=!0;var l=u.getElementsByTagName(v)[0],d=u.createElement(v);d.src=A;d.crossorigin="anonymous";d.addEventListener("load",function(){try{c[n]=r;c[p]=t;var b=c[e],d=b.init;b.init=function(a){for(var b in a)Object.prototype.hasOwnProperty.call(a,b)&&(w[b]=a[b]);d(w)};B(a,b)}catch(g){console.error(g)}});l.parentNode.insertBefore(d,l)}}function B(a,l){try{for(var d=m.data,b=0;b<a.length;b++)if("function"===typeof a[b])a[b]();var e=!1,g=c.__SENTRY__;"undefined"!==
+typeof g&&g.hub&&g.hub.getClient()&&(e=!0);g=!1;for(b=0;b<d.length;b++)if(d[b].f){g=!0;var f=d[b];!1===e&&"init"!==f.f&&l.init();e=!0;l[f.f].apply(l,f.a)}!1===e&&!1===g&&l.init();var h=c[n],k=c[p];for(b=0;b<d.length;b++)d[b].e&&h?h.apply(c,d[b].e):d[b].p&&k&&k.apply(c,[d[b].p])}catch(C){console.error(C)}}for(var f=!0,y=!1,q=0;q<document.scripts.length;q++)if(-1<document.scripts[q].src.indexOf(z)){f="no"!==document.scripts[q].getAttribute("data-lazy");break}var x=!1,h=[],m=function(a){(a.e||a.p||a.f&&
+-1<a.f.indexOf("capture")||a.f&&-1<a.f.indexOf("showReportDialog"))&&f&&k(h);m.data.push(a)};m.data=[];c[e]=c[e]||{};c[e].onLoad=function(a){h.push(a);f&&!y||k(h)};c[e].forceLoad=function(){y=!0;f&&setTimeout(function(){k(h)})};"init addBreadcrumb captureMessage captureException captureEvent configureScope withScope showReportDialog".split(" ").forEach(function(a){c[e][a]=function(){m({f:a,a:arguments})}});var r=c[n];c[n]=function(a,e,d,b,f){m({e:[].slice.call(arguments)});r&&r.apply(c,arguments)};
+var t=c[p];c[p]=function(a){m({p:a.reason});t&&t.apply(c,arguments)};f||setTimeout(function(){k(h)})})(window,document,"script","onerror","onunhandledrejection","Sentry","a5184105d8fc40669d0a2d883d87688d","https://browser.sentry-cdn.com/6.13.3/bundle.min.js",{"dsn":"https://a5184105d8fc40669d0a2d883d87688d@o29016.ingest.sentry.io/65692","release":"c82be011c","environment":"production"});</script>
+<script>
+// Define dataLayer and the gtag function.
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
+var storage = window.localStorage.getItem('contentking');
+var defaultConsents = {'ad_storage': 'denied', 'analytics_storage': 'denied', 'functionality_storage': 'denied', 'personalization_storage': 'denied', 'security_storage': 'denied' };
+if (storage) { storage = JSON.parse(storage); if (storage['cookie-consent'] && storage['cookie-consent']['consents']) { defaultConsents = storage['cookie-consent']['consents']; } }
+gtag('consent', 'default', defaultConsents);
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TX8N5H');</script>
+<!-- End Google Tag Manager -->
+<link as="font" crossorigin="" href="https://www.contentkingapp.com/assets/fonts/proxima-nova-normal-700.subset.woff2" rel="preload" type="font/woff2">
+<link as="font" crossorigin="" href="https://www.contentkingapp.com/assets/fonts/proxima-nova-normal-400.subset.woff2" rel="preload" type="font/woff2"/>
+<link href="/assets/css/app.css?cb=3d7688a9dcdb78775593b482c519b511" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.contentkingapp.com/assets/images/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="https://www.contentkingapp.com/assets/images/favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="https://www.contentkingapp.com/assets/images/favicons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="https://www.contentkingapp.com/assets/images/favicons/site.webmanifest" rel="manifest"/>
+<link href="https://www.contentkingapp.com/assets/images/favicons/favicon.ico" rel="shortcut icon">
+<meta content="ContentKing" name="apple-mobile-web-app-title"/>
+<meta content="ContentKing" name="application-name"/>
+<meta content="#ffffff" name="msapplication-TileColor"/>
+<meta content="https://www.contentkingapp.com/assets/images/favicons/browserconfig.xml" name="msapplication-config"/>
+<meta content="https://www.contentkingapp.com/assets/images/favicons/mstile-144x144.png" name="msapplication-TileImage"/>
+<meta content="#ffffff" name="theme-color"/>
+<link href="https://www.contentkingapp.com/academy/protect-staging-environment/" hreflang="en" rel="alternate"/>
+<link href="https://www.contentkingapp.com/academy/protect-staging-environment/" hreflang="x-default" rel="alternate"/>
+<meta content="Prevent embarrassment by making sure you properly protect your staging environments. Don't let third parties and search engine crawlers snoop around!" name="description"/>
+<link href="https://www.contentkingapp.com/academy/protect-staging-environment/" rel="canonical"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="article" property="og:type"/>
+<meta content="Protecting staging environments: the ultimate guide" property="og:title"/>
+<meta content="Don't let third parties and search engine crawlers snoop around!" property="og:description"/>
+<meta content="https://www.contentkingapp.com/academy/protect-staging-environment/" property="og:url"/>
+<meta content="ContentKing" property="og:site_name"/>
+<meta content="https://www.contentkingapp.com/media/social-cards/academy/contentking-academy-protect-staging-environment-og@2x.png" property="og:image"/>
+<meta content="https://www.contentkingapp.com/media/social-cards/academy/contentking-academy-protect-staging-environment-og@2x.png" property="og:image:secure_url"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Protecting staging environments: the ultimate guide" name="twitter:title"/>
+<meta content="Prevent embarrassment. Don't let third parties and search engine crawlers snoop around!" name="twitter:description"/>
+<meta content="@contentking" name="twitter:site"/>
+<meta content="https://www.contentkingapp.com/media/social-cards/academy/contentking-academy-protect-staging-environment-tc@2x.png" name="twitter:image"/>
+<meta content="@contentking" name="twitter:creator"/>
+<meta content="on" name="twitter:dnt"/>
+<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Corporation",
+		"name": "ContentKing",
+		"url": "https://www.contentkingapp.com/",
+		"telephone": "+1 919-647-9205",
+		"address":
+		{
+			"@type": "PostalAddress",
+			"streetAddress": "Warmoesstraat 149-151",
+			"addressLocality": "Amsterdam",
+			"postalCode": "1012 JC",
+			"addressCountry": "NL"
+		},
+		"logo": "https://www.contentkingapp.com/assets/images/logo-schema.svg",
+		"sameAs": [
+			"https://www.facebook.com/contentkingapp/",
+			"https://twitter.com/contentking",
+			"https://www.instagram.com/contentkingapp/",
+			"https://www.linkedin.com/company/10169361/"
+		]
+	}
+</script>
+<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Article",
+		"mainEntityOfPage": {
+			"@type": "WebPage",
+			"@id": "https://www.contentkingapp.com/academy/protect-staging-environment/"
+		},
+		"headline": "Protecting staging environments: the ultimate guide",
+		"image": "https://www.contentkingapp.com/media/social-cards/academy/contentking-academy-protect-staging-environment-og@2x.png",
+		"author": {
+			"@type": "Person",
+			"name": "Steven van&nbsp;Vessum",
+			"description": "Steven is ContentKing's VP of Community. This means he's involved in everything community and content marketing related. Right where he wants to be. He gets a huge kick out of letting websites rank and loves to talk SEO, content marketing and growth.",
+			"worksFor": {
+			   "@type": "Organization",
+			   "name": "ContentKing"
+			},
+			"jobTitle": "VP of Community","image": "https://www.contentkingapp.com/media/people/steven-van-vessum@2x.jpg",
+			"sameAs": [
+				"https://www.linkedin.com/in/stevenvanvessum",
+				"https://twitter.com/stevenvvessum",
+				"https://www.instagram.com/svanvessum/",
+				"https://www.facebook.com/stevenvanvessum"
+			]
+		},
+		"contributor": {
+			"@type": "Person",
+			"name": "Jessica Rangel",
+			"description": "Jessica is a content marketer for ContentKing. Her days are spent writing marketing content, cycling around canals in Amsterdam and attempting to master the Dutch language.",
+			"worksFor": {
+			   "@type": "Organization",
+			   "name": "ContentKing"
+			},
+			"jobTitle": "Content Marketer","image": "https://www.contentkingapp.com/media/people/jessica-rangel@2x.jpg",
+			"sameAs": [
+				"https://www.linkedin.com/in/jessicamrangel/"
+			]
+		},
+		"publisher": {
+			"@type": "Organization",
+			"name": "ContentKing",
+			"logo": {
+				"@type": "ImageObject",
+				"url": "https://www.contentkingapp.com/assets/images/logo-schema.svg"
+			}
+		},
+		"datePublished": "2019-04-23",
+		"dateModified": "2021-10-12"
+	}
+</script>
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [
+		{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "Home",
+			"item": "https://www.contentkingapp.com/"
+		}, {
+			"@type": "ListItem",
+			"position": 2,
+			"name": "Academy",
+			"item": "https://www.contentkingapp.com/academy/"
+		}, {
+			"@type": "ListItem",
+			"position": 3,
+			"name": "Technical SEO",
+			"item": "https://www.contentkingapp.com/academy/technical-seo-hub/"
+		}, {
+			"@type": "ListItem",
+			"position": 4,
+			"name": "Protect Staging Environments"
+		}
+	]
+}
+</script>
+</link></link></head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-TX8N5H" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<a class="skip-link" href="/academy/protect-staging-environment/#main-content">
+	Jump to Main Content
+</a>
+<div class="js-content page"><!-- Main Sticky Menu -->
+<div aria-hidden="true" class="header__sticky-wrapper">
+<div class="header__wrapper header__wrapper--is-anchored" id="js-sticky-header">
+<div class="header header--slim">
+<div class="header__content">
+<div class="header__logo"><div class="site-logo site-logo--slim">
+<a class="site-logo__container" href="/" rel="home" tabindex="-1">
+<img alt="ContentKing logo" class="site-logo__image" height="56" src="/assets/images/contentking-conductor-logo.svg" width="200"/>
+</a>
+</div>
+</div>
+<div class="header__nav">
+<nav aria-label="Main navigation" role="navigation">
+<ul class="main-nav js-main-nav">
+<li class="main-nav__item main-nav__item--has-dropdown js-collapsible-nav"><a class="main-nav__link main-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/features/" tabindex="-1"><span>Features</span></a><span class="main-nav__subnav js-collapsible-nav-content">
+<ul aria-label="Submenu for Features" class="nav-group">
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/" tabindex="-1">Overview</a></li>
+<li aria-hidden="true" class="main-nav__divider">---</li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-auditing/" tabindex="-1">SEO Auditing</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-monitoring/" tabindex="-1">SEO Monitoring</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-alerting/" tabindex="-1">SEO Alerting</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-change-tracking/" tabindex="-1">SEO Change Tracking</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/log-file-analysis/" tabindex="-1">Log File Analysis</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-insights-reporting/" tabindex="-1">Insights &amp; Reporting</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/api-integrations/" tabindex="-1">APIs &amp; Integrations</a></li>
+</ul>
+</span></li>
+<li class="main-nav__item main-nav__item--has-dropdown js-collapsible-nav"><a class="main-nav__link main-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/solutions/for-agencies/" tabindex="-1"><span>Solutions</span></a><span aria-label="Submenu for Solutions" class="main-nav__subnav main-nav__subnav--stretched js-collapsible-nav-content">
+<span class="nav-group">
+<span aria-hidden="true" class="nav-group__caption">By Industry</span>
+<ul aria-label="Solutions by industry" class="nav-group__content">
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-agencies/" tabindex="-1">Agencies</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-ecommerce/" tabindex="-1">eCommerce</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-marketplaces/" tabindex="-1">Marketplaces</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-publishers/" tabindex="-1">Publishers</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-travel/" tabindex="-1">Travel</a></li>
+</ul>
+</span>
+<span class="nav-group">
+<span aria-hidden="true" class="nav-group__caption">By Role</span>
+<ul aria-label="Solutions by role" class="nav-group__content">
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-executives/" tabindex="-1">Executives</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-marketing-managers/" tabindex="-1">Marketing Managers</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-technical-seos/" tabindex="-1">Technical SEOs</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-content-teams/" tabindex="-1">Content Teams</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-developers/" tabindex="-1">Developers</a></li>
+</ul>
+</span>
+</span></li>
+<li class="main-nav__item"><a class="main-nav__link" href="/case-studies/" tabindex="-1"><span>Case studies</span></a></li>
+</ul>
+</nav>
+</div>
+<div class="header__buttons">
+<div class="js-header-button-onboarding" style="display: none"><a class="button button--small button--action button--is-shining button--is-responsive" href="/go/url/" id="js-btn-trial" role="button" tabindex="-1">
+<span>Start Trial</span>
+</a>
+</div>
+<div class="js-header-button-app" style="display: none">
+<a class="button button--small button--ghost button--small" href="https://app.contentkingapp.com/" role="button" tabindex="-1">
+<span>Go to app</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div id="js-sticky-header-footer"></div>
+</div>
+</div>
+<!-- End Main Sticky Menu -->
+<header class="header header--main" id="js-main-header">
+<div class="header__content">
+<div class="header__logo"><div class="site-logo">
+<a aria-label="Back to the homepage" class="site-logo__container" href="/" rel="home">
+<img alt="ContentKing logo" class="site-logo__image" height="56" src="/assets/images/contentking-conductor-logo.svg" width="200"/>
+</a>
+</div>
+</div>
+<div class="header__nav">
+<div class="header-nav-layout js-off-canvas-panel" data-aria-label="Website navigation" id="offcanvas-panel">
+<div class="header-nav-layout__content">
+<div class="header-nav-layout__close-btn">
+<button aria-label="Close navigation" class="close-button close-button--light js-off-canvas-close-btn" type="button">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+<div class="header-nav-layout__main-part">
+<nav aria-label="Main navigation" role="navigation">
+<ul class="main-nav js-main-nav">
+<li class="main-nav__item main-nav__item--has-dropdown js-collapsible-nav"><a class="main-nav__link main-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/features/"><span>Features</span></a><span class="main-nav__subnav js-collapsible-nav-content">
+<ul aria-label="Submenu for Features" class="nav-group">
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/">Overview</a></li>
+<li aria-hidden="true" class="main-nav__divider">---</li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-auditing/">SEO Auditing</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-monitoring/">SEO Monitoring</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-alerting/">SEO Alerting</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-change-tracking/">SEO Change Tracking</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/log-file-analysis/">Log File Analysis</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-insights-reporting/">Insights &amp; Reporting</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/api-integrations/">APIs &amp; Integrations</a></li>
+</ul>
+</span></li>
+<li class="main-nav__item main-nav__item--has-dropdown js-collapsible-nav"><a class="main-nav__link main-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/solutions/for-agencies/"><span>Solutions</span></a><span aria-label="Submenu for Solutions" class="main-nav__subnav main-nav__subnav--stretched js-collapsible-nav-content">
+<span class="nav-group">
+<span aria-hidden="true" class="nav-group__caption">By Industry</span>
+<ul aria-label="Solutions by industry" class="nav-group__content">
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-agencies/">Agencies</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-ecommerce/">eCommerce</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-marketplaces/">Marketplaces</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-publishers/">Publishers</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-travel/">Travel</a></li>
+</ul>
+</span>
+<span class="nav-group">
+<span aria-hidden="true" class="nav-group__caption">By Role</span>
+<ul aria-label="Solutions by role" class="nav-group__content">
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-executives/">Executives</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-marketing-managers/">Marketing Managers</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-technical-seos/">Technical SEOs</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-content-teams/">Content Teams</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-developers/">Developers</a></li>
+</ul>
+</span>
+</span></li>
+<li class="main-nav__item"><a class="main-nav__link" href="/case-studies/"><span>Case studies</span></a></li>
+</ul>
+</nav>
+</div>
+<div class="header-nav-layout__secondary-part">
+<nav aria-label="Secondary navigation" role="navigation">
+<ul class="secondary-nav js-secondary-nav">
+<li class="secondary-nav__item secondary-nav__item--has-dropdown js-collapsible-nav"><a class="secondary-nav__link secondary-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/academy/"><span>Academy</span></a><ul aria-label="Submenu for Academy" class="secondary-nav__subnav js-collapsible-nav-content"><li class="secondary-nav__subitem secondary-nav__subitem--has-divider">
+<a class="secondary-nav__sublink" href="/academy/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-all"></use>
+</svg>Overview</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/seo-fundamentals-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-seo-fundamentals"></use>
+</svg>SEO Fundamentals</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/technical-seo-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-technical-seo"></use>
+</svg>Technical SEO</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/ecommerce-seo-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-ecommerce-seo"></use>
+</svg>eCommerce SEO</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/international-seo-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-international-seo"></use>
+</svg>International SEO</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/structured-data-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-structured-data"></use>
+</svg>Structured Data</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/processes-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-processes"></use>
+</svg>Content &amp; SEO Processes</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/reporting-management-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-reporting-management"></use>
+</svg>SEO Reporting &amp; Management</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/google-search-console-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-google-search-console"></use>
+</svg>Google Search Console</a>
+</li><li class="secondary-nav__subitem secondary-nav__subitem--has-divider-before">
+<a class="secondary-nav__sublink" href="/academy/faq/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-faq"></use>
+</svg>Frequently Asked SEO Questions</a>
+</li>
+</ul></li>
+<li class="secondary-nav__item secondary-nav__item--has-dropdown js-collapsible-nav"><a class="secondary-nav__link secondary-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/blog/"><span>Blog</span></a><ul aria-label="Submenu for Blog" class="secondary-nav__subnav js-collapsible-nav-content"><li class="secondary-nav__subitem secondary-nav__subitem--has-divider">
+<a aria-label="View all articles" class="secondary-nav__sublink" href="/blog/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-all"></use>
+</svg>View all</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/blog/feature-announcements/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-feature-announcements"></use>
+</svg>Feature Announcements</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/blog/seo-in-focus/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-seo-in-focus"></use>
+</svg>SEO in Focus</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/blog/industry-news/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-industry-news"></use>
+</svg>Industry News</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/blog/other/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-other"></use>
+</svg>Other</a>
+</li>
+</ul></li>
+<li class="secondary-nav__item secondary-nav__item--has-dropdown js-collapsible-nav"><a class="secondary-nav__link secondary-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/certified-partners/"><span>Certified Partners</span></a><ul aria-label="Submenu for Certified Partners" class="secondary-nav__subnav js-collapsible-nav-content secondary-nav__subnav--auto-width"><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/certified-partners/united-states/">United States</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/certified-partners/united-kingdom/">United Kingdom</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/certified-partners/benelux/">Benelux</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/certified-partners/other/">Other</a>
+</li>
+</ul></li>
+<li class="secondary-nav__item"><a class="secondary-nav__link" href="/careers/"><span>Careers</span></a></li>
+<li class="secondary-nav__item"><a class="secondary-nav__link" href="/support/"><span>Support</span></a></li>
+<li class="secondary-nav__item"><a class="secondary-nav__link" href="/contact/"><span>Contact</span></a></li>
+</ul>
+</nav>
+</div>
+<div class="header-nav-layout__button">
+<div class="js-header-button-onboarding" style="display: none"><a class="button button--fullwidth-on-small button--action button--is-shining button--is-responsive" href="/go/url/" role="button">
+<span>Start Trial</span>
+</a>
+</div>
+<div class="js-header-button-app" style="display: none">
+<a class="button button--fullwidth-on-small button--ghost button--small" href="https://app.contentkingapp.com/">
+<span>Go to app</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="header__buttons header__buttons--hidden-on-offnav">
+<button aria-controls="offcanvas-panel" aria-label="Toggle navigation" class="offnav-control">
+<i aria-hidden="true" class="offnav-control__icon"></i>
+<span class="offnav-control__label">Menu</span>
+</button>
+</div>
+</div>
+</header><main class="page__content" id="main-content">
+<section class="section section--light" id="js-reveal-header-boundary">
+<div class="row">
+<div class="small-12 columns">
+<div class="post-detail">
+<div class="post-detail__heading post-detail__heading--with-breadcrumb">
+<div class="heading">
+<nav aria-label="Breadcrumb" class="heading__breadcrumb">
+<ol class="breadcrumb show-for-medium">
+<li class="breadcrumb__item"><a href="/">Home</a></li>
+<li class="breadcrumb__item"><a href="/academy/">Academy</a></li>
+<li class="breadcrumb__item"><a href="/academy/technical-seo-hub/">Technical SEO</a></li>
+<li class="breadcrumb__item breadcrumb__item--is-active"><span aria-current="page">Protect Staging Environments</span></li>
+</ol>
+<ul aria-hidden="true" class="hide-for-medium breadcrumb">
+<li class="breadcrumb__item"><a class="backlink" href="/academy/" tabindex="-1">Go to Academy overview</a></li>
+</ul>
+</nav>
+</div>
+</div>
+<div class="post-detail__layout">
+<article class="post-detail__content">
+<div class="post-detail__content-body">
+<div aria-label="List of assigned categories to this article" class="post-detail__badges"><a aria-label="Technical SEO category. Using this link you can show all articles in Technical SEO category." class="academy-category-badge academy-category-badge--technical-seo-category academy-category-badge--default-style" href="/academy/technical-seo-hub/" style="background-color: #3dc8ff;"><span class="academy-category-badge__label">
+		Technical SEO
+	</span></a></div>
+<div class="heading">
+<h1 class="heading__title">Protecting staging environments: the ultimate guide</h1>
+<div class="heading__params">
+<span aria-hidden="true" class="heading__label">
+										Last updated:
+									</span>
+<span aria-label="The date of last update" class="heading__caption">
+										October 12, 2021
+									</span>
+</div>
+</div>
+<div class="post-detail__text typo">
+<section aria-label="Protecting staging environments in short" class="highlighted-box highlighted-box--with-background typo-block"><div aria-hidden="true" class="highlighted-box__title">
+<span class="highlighted-box__title-icon"><i class="post-type-icon post-type-icon--reversed-style" style="background-image: url(/assets/images/icons/post-types/protect-staging--reversed.svg)"></i></span>Protecting staging environments in short
+	</div>
+<div class="highlighted-box__content">
+<p>Prevent embarrassing situations by making sure you properly protect your staging environments.</p>
+<p>The best way to go about this is using HTTP authentication.</p>
+<p>Is your staging environment already indexed by search engines? No sweat. With this guide, you'll learn how to quickly and effectively reverse that.</p>
+</div>
+</section>
+<div aria-label="Table of contents" class="highlighted-box" role="navigation">
+<div aria-hidden="true" class="highlighted-box__title">Table of contents</div>
+<div class="highlighted-box__content">
+<ul class="navigation-list">
+<li class="navigation-list__item navigation-list__item--primary"><a href="#why">Why having accessible staging environments is a bad thing</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#what-are">What are development and staging environments?</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#obscurity">Security through obscurity is not a feasible strategy</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#protect">How to protect your development and staging environments</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#find-out-indexed">How can you find out if your staging environment is being indexed?</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#get-staging-removed">Getting your already indexed staging environment removed from the index</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#other-useful-resources">Other useful resources</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#now-keep-on-learning">Now keep on learning!</a></li>
+</ul>
+</div>
+</div>
+<p>We see it happen all the time: staging or development environments containing websites that are works in progress, left available for all the world to see. And often they're getting indexed by search engines too!</p>
+<p>Don't believe me?</p>
+<p>Check out <a href="https://www.google.com/search?q=site%3Astaging.*.com+OR+site%3Adev.*.com+OR+site%3Atest.*.com+OR+site%3Atesting.*.com&amp;btnK=Google+Search&amp;oq=site%3Astaging.*.com+OR+site%3Adev.*.com+OR+site%3Atest.*.com+OR+site%3Atesting.*.com" rel="noopener" target="_blank"><span class="extlink">this query</span><span class="show-for-sr"> (opens in a new tab)</span></a> – inspired by <a href="https://twitter.com/PeterNikolow/status/923496139105755136" rel="noopener" target="_blank"><span class="extlink">Peter Nikolow's tweet</span><span class="show-for-sr"> (opens in a new tab)</span></a> (follow him on Twitter, he's both funny and smart!).</p>
+<h2 id="why">
+<a aria-hidden="true" class="anchor-link" href="#why" tabindex="-1"></a>Why having accessible staging environments is a bad thing</h2>
+<p>Or rather, a doubly-bad thing: bad from the viewpoints of both business and SEO.</p>
+<h3 id="the-business-viewpoint">
+<a aria-hidden="true" class="anchor-link" href="#the-business-viewpoint" tabindex="-1"></a>The business viewpoint</h3>
+<p>Do you want others to see your "lorem ipsum" content and laugh, or even—god forbid—read about a huge announcement such as an acquisition or rebranding that should have been kept secret until the new site was launched?</p>
+<p>It's unprofessional, and above all it's not very smart. It's even a sales tactic for certain agencies: they look for other agencies that are making these mistakes and then pitch to their clients, leveraging the embarrassing situation.</p>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/dawn-anderson@1x.avif" type="image/avif"/><source srcset="/media/people/dawn-anderson@1x.webp" type="image/webp"/><img alt="Dawn Anderson" class="image" height="100" src="/media/people/dawn-anderson@1x.png" title="Dawn Anderson" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>(Indexed) staging URLs allow competitors to see future plans for development. They only need to follow a discovered development URL to access the whole staging site meaning your future web strategy / design is revealed. A simple search in Google for <code class="language-plaintext highlighter-rouge">site:staging.*</code> or <code class="language-plaintext highlighter-rouge">site:test.*</code> or any number of other common names which dev teams use as subdomains for their staging environments spits out a whole plethora of even well known brands staging environments which have not protected their environment sufficiently.</p>
+<p>Plus, since staging environments are often - at best - a half-built product, when visitors stumble across them the user experience will be terrible and isn't likely to leave a good impression.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<span class="user-info__name">Dawn Anderson</span><span class="user-info__additional-info">, <a href="https://bertey.com/" rel="noopener" target="_blank"><span class="extlink">Bertey</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<h3 id="the-seo-viewpoint">
+<a aria-hidden="true" class="anchor-link" href="#the-seo-viewpoint" tabindex="-1"></a>The SEO viewpoint</h3>
+<p>Besides the embarrassment, having a staging environment that's indexed by search engines can lead to <a href="/academy/duplicate-content/">duplicate content issues</a> when the staging environment and the production environment are highly similar.</p>
+<p>Having accessible and indexed staging environments is totally unnecessary, because it's easy to prevent. In this article we'll show you how to do it, what methods you can use, and what to do if your staging environment is already indexed.</p>
+<p>From here forward, when we refer to <em>staging environments</em>, we may be referring to both development and staging environments.</p>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/barry-adams@1x.avif, /media/people/barry-adams@2x.avif 2x" type="image/avif"/><source srcset="/media/people/barry-adams@1x.webp, /media/people/barry-adams@2x.webp 2x" type="image/webp"/><img alt="Barry Adams" class="image" height="100" loading="lazy" src="/media/people/barry-adams@1x.jpg" srcset="/media/people/barry-adams@1x.jpg, /media/people/barry-adams@2x.jpg 2x" title="Barry Adams" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>When checking for duplicate content as part of a site audit, I regularly uncover staging sites that haven't been properly protected. Sometimes these are outdated staging sites from previous versions of a site, but once in a while I uncover unlaunched development sites that contain sensitive information that's not yet ready to be published. Unprotected staging environments aren't just SEO issues - they're business risks and should be handled with the appropriate care.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<span class="user-info__name">Barry Adams</span><span class="user-info__additional-info">, Independent SEO Consultant, <a href="https://www.polemicdigital.com/" rel="noopener" target="_blank"><span class="extlink">Polemic Digital</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/kerstin-reichert@1x.avif, /media/people/kerstin-reichert@2x.avif 2x" type="image/avif"/><source srcset="/media/people/kerstin-reichert@1x.webp, /media/people/kerstin-reichert@2x.webp 2x" type="image/webp"/><img alt="Kerstin Reichert" class="image" height="100" loading="lazy" src="/media/people/kerstin-reichert@1x.jpg" srcset="/media/people/kerstin-reichert@1x.jpg, /media/people/kerstin-reichert@2x.jpg 2x" title="Kerstin Reichert" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>I have seen plenty of staging sites indexed. I think one of the issues is that indexing and crawling are not fully understood and that the business impact is often ignored.</p>
+<p>Make sure to always password protect staging BEFORE you do anything else. Once indexed it is a real pain to remove those URLs in a timely manner. It might seem to be a good solution, but in the case of fully protecting your staging environment from bots and humans alike canonicals do not work, noindex doesn't work and neither does robots.txt as there are other ways humans, Google (and other search engines) can find your content.</p>
+<p>Apart from the technical issues think about the business impact of products and services being discovered before launch or any other sensitive information. This could have very serious consequences.</p>
+<p>If you do find your pages indexed think of an efficient way to remove them. Create lists to remove them in bulk and make sure search engines can "see" the noindex, so don't block crawlers through robots.txt.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<a class="user-info__social-icon social-icon social-icon--link social-icon--linkedin" href="https://www.linkedin.com/in/kerstinreichert/" rel="noopener" target="_blank" title="See my profile on LinkedIn"><span class="extlink">LinkedIn</span><span class="show-for-sr"> (opens in a new tab)</span></a><span class="user-info__name">Kerstin Reichert</span><span class="user-info__additional-info">, SEO and Content Lead, SeedLegals</span>
+</div></div>
+</div>
+</div>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/sam-mcroberts@1x.avif, /media/people/sam-mcroberts@2x.avif 2x" type="image/avif"/><source srcset="/media/people/sam-mcroberts@1x.webp, /media/people/sam-mcroberts@2x.webp 2x" type="image/webp"/><img alt="Sam McRoberts" class="image" height="100" loading="lazy" src="/media/people/sam-mcroberts@1x.jpg" srcset="/media/people/sam-mcroberts@1x.jpg, /media/people/sam-mcroberts@2x.jpg 2x" title="Sam McRoberts" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>I routinely run into two problems on this front: self-hosted staging sites (such as WPEngine that automatically generates staging.domain.com), and staging sites on web developer's own domains (e.g. client.developer.com and developer.com/client/).</p>
+<p>In the first scenario, you run the risk of having indexable duplicate content on your own domain, and just blocking a domain via robots.txt doesn't guarantee it won't get indexed, especially if you or others link to it (which is common, since links to dev site resources often find their way into the site code and get missed at launch).</p>
+<p>In the second scenario, with a mirror of your site on a developer's domain, you run the risk of cross-domain duplicate content, and since the content was up on the developer's domain first, there's a risk Google may see you as the duplicator and them as the original source (not a good situation).</p>
+<p>Always, always block bots from reaching your staging environments. Not just with a robots.txt file, but with something more secure (login/password, IP restricted access or both).</p>
+<p>Second, always make sure your developers check all the code on your site at launch and remove any links to the staging environment. You want your internal links pointing to the live site, not somewhere else.</p>
+<p>If you do both, you'll be in a good spot!</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<span class="user-info__name">Sam McRoberts</span><span class="user-info__additional-info">, <a href="https://www.vudumarketing.com/" rel="noopener" target="_blank"><span class="extlink">VUDU Marketing</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<div aria-label="Start new free trial on ContentKing" class="onboarding-cta typo-block highlighted-box false highlighted-box--expressive" data-testid="onboarding-box"><div class="highlighted-box__content">
+<div class="highlighted-box__title">Working on something new?</div>
+<div class="onboarding-cta__description typo">
+<p>Why not get a second pair of eyes on it! Monitor and track all your site changes with ContentKing.</p>
+</div>
+<div class="onboarding-cta__form"><form aria-label="The form used for creating free trial account on ContentKing" class="quickinput-form-layout js-submit-url-start-onboarding quickinput-form-layout--white quickinput-form-layout--is-responsive" data-validate="" novalidate="">
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-unexpected-error form-msg form-msg--error" role="none" style="display: none;">Some unexpected error happened. Please contact us.</span><span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-timeout-error form-msg form-msg--error" role="none" style="display: none;">Something went wrong. Please, try again later.</span><div class="quickinput-form-layout__container">
+<div class="quickinput-form-layout__form-field">
+<label class="show-for-sr" for="onboarding-box-1-url">Domain (required)</label><input aria-required="true" class="js-trial-url large" id="onboarding-box-1-url" name="domain" pattern="url_only" placeholder="www.example.com" required="" type="url"/><span aria-hidden="true" aria-live="off" class="form-error form-bubble" role="none">Please enter a valid domain name (www.example.com).</span><span aria-hidden="true" aria-live="off" class="js-website-already-monitored custom-error form-bubble" role="none" style="display: none;">This domain is already being monitored by ContentKing. Please contact us if you are the rightful owner of this domain.</span><span aria-hidden="true" aria-live="off" class="js-target-redirected custom-error form-bubble" role="none" style="display: none;">This website redirects to <span class="js-target-redirected-domain"></span>. Do you want to add this website instead?</span><span aria-hidden="true" aria-live="off" class="js-blacklisted-domain custom-error form-bubble" role="none" style="display: none;">This domain has been excluded from monitoring. If you own it, please contact us.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain custom-error form-bubble" role="none" style="display: none;">We can't find this domain. Are you sure it's correct?</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-connect custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (connect failure). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-empty-response custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (empty response). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-size-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (size limit). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-time-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (time-out). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-waf custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (blocked by web application firewall). Please contact us for help.</span>
+</div>
+<div class="quickinput-form-layout__form-button"><button class="button js-submit-button button--large button--action button--is-shining button--fullwidth" data-loading-label="Loading" type="submit"><div><span class="button__content"><big>Start your free trial</big><small><span class="show-for-sr">. </span>No credit card needed</small></span></div></button></div>
+</div>
+</form></div>
+</div></div>
+<h2 id="what-are">
+<a aria-hidden="true" class="anchor-link" href="#what-are" tabindex="-1"></a>What are development and staging environments?</h2>
+<p>When you're working on a completely new website or new functionality, you don't just do that on your live website (often called your "production environment"), because websites are easy to break. It's a best practice to work with different, separate environments where you develop and test new functionality.</p>
+<p>So what different environments are there besides a production environment?</p>
+<ul>
+<li>
+<strong>Development environment:</strong> this is where developers initially test their code. Often they do this on their local machines, so if that's the case, there isn't any danger at all of this environment being accessible to others and getting indexed by search engines. If it's not kept locally, but instead for instance on a <code class="language-plaintext highlighter-rouge">dev.example.com</code> subdomain, there is a risk of it being accessible to others and being indexed.</li>
+<li>
+<strong>Staging environment (often also called the "test environment"):</strong> this is where releases are staged and new functionality is tested before a release. New content is published here so it can be checked to ensure it looks as intended. Staging environments often aren't run locally: different team members need to be able to easily access it, and so it usually runs on a subdomain or a separate domain.</li>
+</ul>
+<section class="highlighted-box typo-block highlighted-box--with-background"><div class="highlighted-box__content">
+<p><strong>Pro-tip:</strong> since you're reading up on protecting staging environments, it's likely you're going to be doing a website migration soon. To migrate flawlessly, check <a href="/academy/website-migrations/">our website migration guide</a> to make sure you aren't forgetting any crucial steps in the migration process!</p>
+</div></section>
+<h2 id="obscurity">
+<a aria-hidden="true" class="anchor-link" href="#obscurity" tabindex="-1"></a>Security through obscurity is not a feasible strategy</h2>
+<p>Not telling anyone about your "secret" staging environment is a case of "<a href="https://en.wikipedia.org/wiki/Security_through_obscurity" rel="noopener" target="_blank"><span class="extlink">security through obscurity</span><span class="show-for-sr"> (opens in a new tab)</span></a>". It's not a feasible strategy to use. Especially not as the only layer of protection.</p>
+<p>What if someone accidentally publishes a link to the staging environment? Or pushes some code to production that accidentally includes canonical or hreflang references to the staging environment?</p>
+<p>Not only does this create issues in your production environment, it also leads to search engines picking up your staging environment's scent. And they will queue it up for crawling unless you make it impossible for them to access the staging environment, or give them rules of engagement to follow.</p>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/katherine-watier-ong@1x.avif, /media/people/katherine-watier-ong@2x.avif 2x" type="image/avif"/><source srcset="/media/people/katherine-watier-ong@1x.webp, /media/people/katherine-watier-ong@2x.webp 2x" type="image/webp"/><img alt="Katherine Watier Ong" class="image" height="100" loading="lazy" src="/media/people/katherine-watier-ong@1x.jpg" srcset="/media/people/katherine-watier-ong@1x.jpg, /media/people/katherine-watier-ong@2x.jpg 2x" title="Katherine Watier Ong" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>I was hired by a large enterprise site that had lost lots of traffic and rankings. It turns out that they decided to launch their beta site without HTTP authentication so that their stakeholders could look at the site for six months prior to completing their redesign.</p>
+<p>Unfortunately, the beta site started to accumulate backlinks - over 5,000 of them from major papers. The use of the beta site also caused the main domain to lose 50,000 visitors per month in traffic when it was "relaunched", partially due to the staging server (and other issues). The organization winded up migrating any unique content to the main domain and 301 redirecting everything. After about a year, the site is almost up to its previous traffic levels.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<span class="user-info__name">Katherine Watier Ong</span><span class="user-info__additional-info">, <a href="https://wostrategies.com/" rel="noopener" target="_blank"><span class="extlink">WO Strategies</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<h2 id="protect">
+<a aria-hidden="true" class="anchor-link" href="#protect" tabindex="-1"></a>How to protect your development and staging environments</h2>
+<p>Now it's clear why you need to protect your development and staging environments. But how do you do it? There are multiple ways to go about this, but which one is best?</p>
+<p>We'll discuss the pros and cons of every method, taking into account:</p>
+<ul>
+<li>
+<strong>User-friendliness:</strong> the degree to which the method doesn't add extra inconvenience.</li>
+<li>
+<strong>Third-party access:</strong> the degree to which the method prevents third parties from accessing an environment.</li>
+<li>
+<strong>SEO-friendliness:</strong> the degree to which the method keeps search engines from indexing an environment.</li>
+<li>
+<strong>Monitoring-friendliness:</strong> the degree to which the method lets you monitor the protected environments for SEO purposes.</li>
+<li>
+<strong>Risk of human error:</strong> the degree to which the method may lead to human errors, impacting SEO.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th><strong>Method</strong></th>
+<th><strong>User-friendliness</strong></th>
+<th><strong>Third-party access</strong></th>
+<th><strong>SEO-friendliness</strong></th>
+<th><strong>Monitoring-friendliness</strong></th>
+<th><strong>Risk of human error</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>HTTP auth</strong></td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+</tr>
+<tr>
+<td><strong>VPN</strong></td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+<td><img alt="no icon" class="image image--no-border" height="24" src="/assets/images/icons/no.svg" title="not available" width="24"/></td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+</tr>
+<tr>
+<td><strong>Robots directives</strong></td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+<td><img alt="no icon" class="image image--no-border" height="24" src="/assets/images/icons/no.svg" title="not available" width="24"/></td>
+<td><img alt="no icon" class="image image--no-border" height="24" src="/assets/images/icons/no.svg" title="not available" width="24"/></td>
+<td><img alt="no icon" class="image image--no-border" height="24" src="/assets/images/icons/no.svg" title="not available" width="24"/></td>
+<td><img alt="no icon" class="image image--no-border" height="24" src="/assets/images/icons/no.svg" title="not available" width="24"/></td>
+</tr>
+<tr>
+<td><strong>Robots.txt</strong></td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+<td><img alt="no icon" class="image image--no-border" height="24" src="/assets/images/icons/no.svg" title="not available" width="24"/></td>
+<td><img alt="no icon" class="image image--no-border" height="24" src="/assets/images/icons/no.svg" title="not available" width="24"/></td>
+<td><img alt="no icon" class="image image--no-border" height="24" src="/assets/images/icons/no.svg" title="not available" width="24"/></td>
+<td><img alt="no icon" class="image image--no-border" height="24" src="/assets/images/icons/no.svg" title="not available" width="24"/></td>
+</tr>
+<tr>
+<td><strong>Canonical links</strong></td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+<td><img alt="no icon" class="image image--no-border" height="24" src="/assets/images/icons/no.svg" title="not available" width="24"/></td>
+<td><img alt="no icon" class="image image--no-border" height="24" src="/assets/images/icons/no.svg" title="not available" width="24"/></td>
+<td><img alt="no icon" class="image image--no-border" height="24" src="/assets/images/icons/no.svg" title="not available" width="24"/></td>
+<td><img alt="no icon" class="image image--no-border" height="24" src="/assets/images/icons/no.svg" title="not available" width="24"/></td>
+</tr>
+<tr>
+<td><strong>Whitelisting specific user-agents</strong></td>
+<td><img alt="no icon" class="image image--no-border" height="24" src="/assets/images/icons/no.svg" title="not available" width="24"/></td>
+<td><img alt="warning icon" class="image image--no-border" height="24" src="/assets/images/icons/warning.svg" title="warning" width="24"/></td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+</tr>
+</tbody>
+</table>
+<h3 id="method-1-http-auth">
+<a aria-hidden="true" class="anchor-link" href="#method-1-http-auth" tabindex="-1"></a>Method 1: HTTP authentication - your best choice 🏆</h3>
+<p>The best way to prevent both users and search engines from gaining access to your development and staging environments is to use HTTP Authentication. Be sure, meanwhile, to implement it using HTTPS, because you don't want usernames and passwords to travel in plaintext over the wire.</p>
+<p>We recommend whitelisting the IP addresses at your office, and providing external parties and remote team members access via a username/password combination.</p>
+<p>This way search engines can't access anything, and you have total control over who can see what. You can prepare your staging environment with the same robots.txt that you'll be using on the production environment, as well as the correct robots directives and canonicals. This lets you gain a representative picture of your staging environment when you're monitoring it for issues and changes prior to launching.</p>
+<p>Another benefit of this is that it's not prone to developers forgetting to publish the right robots.txt, robots directives, and canonicals on the production environment.</p>
+<p>This is a much better approach than using robots.txt and/or robots noindex directives and canonical links, because those don't prevent other people from accessing them, and search engines will not always honor such directives.</p>
+<p>What's more, when using HTTP authentication it's still possible to use Google's testing tools such as AMP, Mobile-friendliness, and Structured Data Testing Tool. Just <a href="https://developers.google.com/search/docs/guides/debug#testing-firewalled-pages" rel="noopener" target="_blank"><span class="extlink">set up a tunnel</span><span class="show-for-sr"> (opens in a new tab)</span></a>.</p>
+<p><strong>How do I set up HTTP authentication?</strong></p>
+<p>Below you'll find some resources on how to set up HTTP Authentication on Apache, nginx, and IIS:</p>
+<ul>
+<li>
+<a href="https://httpd.apache.org/docs/2.4/howto/auth.html" rel="noopener" target="_blank"><span class="extlink">Setting up HTTP Authentication with Apache</span><span class="show-for-sr"> (opens in a new tab)</span></a> and a handy <a href="https://www.web2generators.com/apache-tools/htpasswd-generator" rel="noopener" target="_blank"><span class="extlink">HTPasswd Generator</span><span class="show-for-sr"> (opens in a new tab)</span></a>.</li>
+<li><a href="https://docs.nginx.com/nginx/admin-guide/security-controls/configuring-http-basic-authentication/" rel="noopener" target="_blank"><span class="extlink">Setting up HTTP Authentication with nginx</span><span class="show-for-sr"> (opens in a new tab)</span></a></li>
+<li>Setting up HTTP Authentication with IIS: <a href="https://docs.microsoft.com/en-us/iis/configuration/system.webserver/security/authentication/basicauthentication" rel="noopener" target="_blank"><span class="extlink">basic authentication</span><span class="show-for-sr"> (opens in a new tab)</span></a> and <a href="https://docs.microsoft.com/en-us/iis/configuration/system.webserver/security/ipsecurity/" rel="noopener" target="_blank"><span class="extlink">IP restrictions</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+</li>
+</ul>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/dean-cruddace@1x.avif, /media/people/dean-cruddace@2x.avif 2x" type="image/avif"/><source srcset="/media/people/dean-cruddace@1x.webp, /media/people/dean-cruddace@2x.webp 2x" type="image/webp"/><img alt="Dean Cruddace" class="image" height="100" loading="lazy" src="/media/people/dean-cruddace@1x.jpg" srcset="/media/people/dean-cruddace@1x.jpg, /media/people/dean-cruddace@2x.jpg 2x" title="Dean Cruddace" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>Password protect your staging environment, that's it. Nothing fancy, just password protect it. Google can't see the other side of the password protection (unless you set up a tunnel for testing purposes). Even when using a robots.txt <code class="language-plaintext highlighter-rouge">Disallow: /</code> and meta robots noindex, you may still end up with pages getting indexed if there are enough links and/or other signals pointing to it.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<span class="user-info__name">Dean Cruddace</span><span class="user-info__additional-info">, Cultured Digital</span>
+</div></div>
+</div>
+</div>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/patrick-stox@1x.avif" type="image/avif"/><source srcset="/media/people/patrick-stox@1x.webp" type="image/webp"/><img alt="Patrick Stox" class="image" height="100" loading="lazy" src="/media/people/patrick-stox@1x.jpg" title="Patrick Stox" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>Many SEO tools including ContentKing are already setup to handle HTTP authentication for crawling and testing this kind of setup. You may want to crawl a bit slower than you normally do as staging setups don't usually have as many resources allocated or have caching setup so you need to be more careful than normal about the load you put on the system.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<a class="user-info__social-icon social-icon social-icon--link social-icon--linkedin" href="https://www.linkedin.com/in/patrickstox/" rel="noopener" target="_blank" title="See my profile on LinkedIn"><span class="extlink">LinkedIn</span><span class="show-for-sr"> (opens in a new tab)</span></a><span class="user-info__name">Patrick Stox</span><span class="user-info__additional-info">, <a href="https://www.stoxseo.com/" rel="noopener" target="_blank"><span class="extlink">Raleigh based Technical SEO</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/tomek-rudzki@1x.avif, /media/people/tomek-rudzki@2x.avif 2x" type="image/avif"/><source srcset="/media/people/tomek-rudzki@1x.webp, /media/people/tomek-rudzki@2x.webp 2x" type="image/webp"/><img alt="Tomek Rudzki" class="image" height="100" loading="lazy" src="/media/people/tomek-rudzki@1x.jpg" srcset="/media/people/tomek-rudzki@1x.jpg, /media/people/tomek-rudzki@2x.jpg 2x" title="Tomek Rudzki" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>Staging environments should always be well protected. Users shouldn't be able to view it; your shiny new staging version can have a lot of bugs, which may diminish the users' trust. Also, it may be vulnerable to hacker attacks. Additionally, you don't want Google to index it (in order to avoid duplicate content issues).</p>
+<p>But how do you test a staging website using Google's tools? What if you want to use the URL Inspection tool to ensure that Google can properly render your website? And what if you want to test your Schema.org implementation using the Structured Data Testing tool?</p>
+<p>You have two options:</p>
+<ul>
+<li>You can set up a tunnel (as mentioned above).</li>
+<li>You can whitelist Google's IP addresses (66.x) and thus, allow them to access it. Because this can be tricky, you need to limit the period for which you've whitelisted Google's IP addresses and for the entire duration of the whitelisting period you need to make sure your <strong>staging</strong> version is non-indexable!</li>
+</ul>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<span class="user-info__name">Tomek Rudzki</span><span class="user-info__additional-info">, <a href="https://www.onely.com/" rel="noopener" target="_blank"><span class="extlink">Onely</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<h3 id="method-1-vpn">
+<a aria-hidden="true" class="anchor-link" href="#method-1-vpn" tabindex="-1"></a>Method 2: VPN access</h3>
+<p>VPN stands for "virtual private network." You basically connect your local machine so as to become part of the company network. And now that you're part of the company network, you can access the staging environment. Anyone who's not part of the network cannot access it. This means that neither third parties nor search engines can access the staging environment.</p>
+<p>Having access through a VPN offers most of the benefits of HTTP authentication. However, there's one big drawback: SEO monitoring solutions that aren't running locally may not work out of the box, or at all. Not being able to track your development team's progress is troublesome, and it becomes truly problematic when you're dealing with truly big websites.</p>
+<h3 id="method-3-robots-directives">
+<a aria-hidden="true" class="anchor-link" href="#method-3-robots-directives" tabindex="-1"></a>Method 3: Robots directives</h3>
+<p><a href="/academy/meta-robots-tag/">Robots directives</a> are used to communicate preferences surrounding crawling and indexing. You can for instance ask search engines not to index certain pages, and not to follow (certain) links.</p>
+<p>You can define robots directives in a page's HTTP header (<code class="language-plaintext highlighter-rouge">X-Robots-Tag header</code>), or via the meta robots directive in its <code class="language-plaintext highlighter-rouge">&lt;head&gt;</code> section. Because you'll have other content types besides just pages on your staging environment, it's recommended that you use the <code class="language-plaintext highlighter-rouge">X-Robots-Tag header</code> to make sure that PDF files, for instance, don't get indexed.</p>
+<p>Robots directives, like the name implies, are meant for robots ("crawlers"). They don't prevent 3rd party access. They do send a moderately strong signal to search engines not to index pages. I say "moderately" because search engines can still decide to ignore the robots directives and index your pages. It's also not a monitoring-friendly solution, as—similar to robots.txt—it may lead to false positives being reported by SEO tools.</p>
+<p>On top of that, there's a huge risk of human error, as staging robots directives are often accidentally carried over into the production environment.</p>
+<h3 id="method-4-robotstxt">
+<a aria-hidden="true" class="anchor-link" href="#method-4-robotstxt" tabindex="-1"></a>Method 4: Robots.txt</h3>
+<p>The <a href="/academy/robotstxt/">robots.txt file</a> states the rules of engagement for crawlers, so by using robots.txt, you can ask search engines to keep out of your staging environment. The most common way to do this is by including the following contents in robots.txt:</p>
+<section aria-label="A fragment of code" class="code-box"><div class="code-box__code">
+<figure class="highlight"><pre><code class="language-text" data-lang="text">User-agent: *
+Disallow: /</code></pre></figure>
+</div></section>
+<p>This prevents search engine crawlers from crawling the site, but they may <a href="/academy/robotstxt/#will-using-a-robots-txt-file-prevent-search-engines-from-showing-disallowed-pages-in-the-search-engine-result-pages">still index it if they find links to it</a>, leading to listings like these:</p>
+<div class="media-container" style="max-width: 593px;"><img alt="Google description not available robots.txt" class="image" height="82" loading="lazy" src="/wp-content/uploads/2016/06/snippet-in-google-excluded.png" title="Google description not available robots.txt" width="593"/></div>
+<p>Some people include the unofficial <code class="language-plaintext highlighter-rouge">Noindex</code> directive in their robots.txt. We don't recommend doing this, as it's a worse way to prevent your staging environment from being accessible than using a <code class="language-plaintext highlighter-rouge">Disallow</code> directive, since it's really an unofficial directive.</p>
+<p>Your robots.txt doesn't offer any actual protection against third-party access to the site, and it throws off SEO monitoring tools as well, potentially leading to false positives. Plus, you're creating a huge risk of human error: here once again, the robots.txt from the staging environment is often accidentally carried over into the production environment.</p>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/dawn-anderson@1x.avif" type="image/avif"/><source srcset="/media/people/dawn-anderson@1x.webp" type="image/webp"/><img alt="Dawn Anderson" class="image" height="100" loading="lazy" src="/media/people/dawn-anderson@1x.png" title="Dawn Anderson" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>Simply adding a robots.txt to staging environments, or adding the staging environment folder to a live site, isn't a recommended strategy since you're effectively giving competitors (or anyone else) a direct path to the environment.</p>
+<p>Furthermore, search engines might still index URLs added to a robots.txt file, particularly if a URL is linked to (e.g. when that developer uploads a file to live with a link to the staging environment in it, boosting its popularity). We often see pages indexed which shouldn't be and the meta-description simply says something along the lines of we have no further information on this since the search engine can't actually access the page (they only discovered and indexed the URL, based on other signals) to see what's there.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<span class="user-info__name">Dawn Anderson</span><span class="user-info__additional-info">, <a href="https://bertey.com/" rel="noopener" target="_blank"><span class="extlink">Bertey</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/bartlomiej-kudyba@1x.avif, /media/people/bartlomiej-kudyba@2x.avif 2x" type="image/avif"/><source srcset="/media/people/bartlomiej-kudyba@1x.webp, /media/people/bartlomiej-kudyba@2x.webp 2x" type="image/webp"/><img alt="Bartłomiej Kudyba" class="image" height="100" loading="lazy" src="/media/people/bartlomiej-kudyba@1x.jpg" srcset="/media/people/bartlomiej-kudyba@1x.jpg, /media/people/bartlomiej-kudyba@2x.jpg 2x" title="Bartłomiej Kudyba" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>You should always prevent your staging environments from getting indexed. If they do get indexed, it could lead to duplicate content issues, or they could be perceived as thin content. Your "lorem ipsum" could get indexed and you would then have to take measures to undo it.</p>
+<p>If you want to hide your staging from search engine crawlers and users, a password protected environment is a must-have.</p>
+<p>When you need to show a temporary page to your users, you can secure it from search engine crawlers as well, but remember to think through how you will want to reveal it to users and crawlers when it's ready.</p>
+<p>When we released Onely, it was all about timing it with our keynote event and we ran into some <a href="https://twitter.com/BartekKudyba/status/1113332592948989953" rel="noopener" target="_blank"><span class="extlink">issues regarding the robots.txt rule</span><span class="show-for-sr"> (opens in a new tab)</span></a> we used to secure our temporary page. The day after the keynote event, Googlebot still couldn't crawl our website because the robots.txt file wasn't refreshed yet. As John Mueller stated in response to this scenario: "<a href="https://twitter.com/JohnMu/status/1113350080243879936" rel="noopener" target="_blank"><span class="extlink">We cache the robots.txt for about a day…</span><span class="show-for-sr"> (opens in a new tab)</span></a>"</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<span class="user-info__name">Bartłomiej Kudyba</span><span class="user-info__additional-info">, <a href="https://www.onely.com/" rel="noopener" target="_blank"><span class="extlink">Onely</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<h3 id="method-5-canonical">
+<a aria-hidden="true" class="anchor-link" href="#method-5-canonical" tabindex="-1"></a>Method 5: Canonical links</h3>
+<p>The <a href="/academy/canonical/">canonical link</a> informs search engines of the canonical version of a page. If the staging environment is referencing the production environment, all signals should be consolidated with the production environment.</p>
+<p>Otherwise, canonical links resemble <a href="/academy/protect-staging-environment/#method-3-robots-directives">robots directives</a>, especially in their downsides:</p>
+<ul>
+<li>They still let third parties access the staging environment.</li>
+<li>They're not a monitoring-friendly solution, as they may lead to false positives being reported by SEO tools.</li>
+<li>There's a risk of human error, as canonical directives from staging are sometimes accidentally carried over into the production environment.</li>
+</ul>
+<h3 id="method-6-whitelisting">
+<a aria-hidden="true" class="anchor-link" href="#method-6-whitelisting" tabindex="-1"></a>Method 6: Whitelisting specific user agents</h3>
+<p>The whitelisting of specific user agents for access to a staging environment can be used to allow SEO specialists to monitor a staging environment, as long as their SEO tooling <a href="/support/user-agent-string/#changing-ua">supports setting custom user agents</a>. They could create a made-up user agent and use that, while blocking all other user agents (including browsers).</p>
+<p>But this isn't a very user-friendly approach, because manual verification through your browser is made harder. It's not a very secure approach either: When third parties know you're working for or at company X, and they're aware of your user agent (perhaps because they're a disgruntled customer)—they may be able to gain access to the staging environment.</p>
+<div aria-label="Start new free trial on ContentKing" class="onboarding-cta typo-block highlighted-box false highlighted-box--expressive" data-testid="onboarding-box"><div class="highlighted-box__content">
+<div class="highlighted-box__title">Catch SEO issues before a site migration</div>
+<div class="onboarding-cta__description typo">
+<p>Check your staging and testing environments before they go live. Easily monitor changes and updates with ContentKing.</p>
+</div>
+<div class="onboarding-cta__form"><form aria-label="The form used for creating free trial account on ContentKing" class="quickinput-form-layout js-submit-url-start-onboarding quickinput-form-layout--white quickinput-form-layout--is-responsive" data-validate="" novalidate="">
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-unexpected-error form-msg form-msg--error" role="none" style="display: none;">Some unexpected error happened. Please contact us.</span><span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-timeout-error form-msg form-msg--error" role="none" style="display: none;">Something went wrong. Please, try again later.</span><div class="quickinput-form-layout__container">
+<div class="quickinput-form-layout__form-field">
+<label class="show-for-sr" for="onboarding-box-2-url">Domain (required)</label><input aria-required="true" class="js-trial-url large" id="onboarding-box-2-url" name="domain" pattern="url_only" placeholder="www.example.com" required="" type="url"/><span aria-hidden="true" aria-live="off" class="form-error form-bubble" role="none">Please enter a valid domain name (www.example.com).</span><span aria-hidden="true" aria-live="off" class="js-website-already-monitored custom-error form-bubble" role="none" style="display: none;">This domain is already being monitored by ContentKing. Please contact us if you are the rightful owner of this domain.</span><span aria-hidden="true" aria-live="off" class="js-target-redirected custom-error form-bubble" role="none" style="display: none;">This website redirects to <span class="js-target-redirected-domain"></span>. Do you want to add this website instead?</span><span aria-hidden="true" aria-live="off" class="js-blacklisted-domain custom-error form-bubble" role="none" style="display: none;">This domain has been excluded from monitoring. If you own it, please contact us.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain custom-error form-bubble" role="none" style="display: none;">We can't find this domain. Are you sure it's correct?</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-connect custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (connect failure). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-empty-response custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (empty response). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-size-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (size limit). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-time-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (time-out). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-waf custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (blocked by web application firewall). Please contact us for help.</span>
+</div>
+<div class="quickinput-form-layout__form-button"><button class="button js-submit-button button--large button--action button--is-shining button--fullwidth" data-loading-label="Loading" type="submit"><div><span class="button__content"><big>Start your free trial</big><small><span class="show-for-sr">. </span>No credit card needed</small></span></div></button></div>
+</div>
+</form></div>
+</div></div>
+<h2 id="find-out-indexed">
+<a aria-hidden="true" class="anchor-link" href="#find-out-indexed" tabindex="-1"></a>How can you find out if your staging environment is being indexed?</h2>
+<p>Here are a few ways to find out if your staging environment is being indexed. Here are the two most common ones:</p>
+<h3 id="option-1-site-query">
+<a aria-hidden="true" class="anchor-link" href="#option-1-site-query" tabindex="-1"></a>Option 1: site query</h3>
+<p>If you know that your staging environment is running on a subdomain, you can try a site query such as: <code class="language-plaintext highlighter-rouge">site:example.com -inurl:www</code></p>
+<p>This query returns all the Google-indexed pages for the domain example.com except the ones containing "<code class="language-plaintext highlighter-rouge">www</code>".</p>
+<p>Here's a link to an <a href="https://www.google.com/search?q=site%3Aexample.com+-inurl%3Awww" rel="noopener" target="_blank"><span class="extlink">example query</span><span class="show-for-sr"> (opens in a new tab)</span></a></p>
+<h3 id="option-2-google-analytics">
+<a aria-hidden="true" class="anchor-link" href="#option-2-google-analytics" tabindex="-1"></a>Option 2: Google Analytics</h3>
+<p>If you don't know the URL of your staging environment, you can try checking in Google Analytics:</p>
+<ul>
+<li>Navigate to <code class="language-plaintext highlighter-rouge">Audience</code> &gt; <code class="language-plaintext highlighter-rouge">Technology</code> and choose <code class="language-plaintext highlighter-rouge">Network</code>.</li>
+<li>Select <code class="language-plaintext highlighter-rouge">Hostname</code> as the Primary Dimension.</li>
+<li>Look for hostnames that have a different domain, or contain subdomains such as <code class="language-plaintext highlighter-rouge">staging</code>, <code class="language-plaintext highlighter-rouge">test</code> or <code class="language-plaintext highlighter-rouge">dev</code>.</li>
+</ul>
+<h3 id="option-3-google-search-console">
+<a aria-hidden="true" class="anchor-link" href="#option-3-google-search-console" tabindex="-1"></a>Option 3: Google Search Console</h3>
+<p>With the consolidation of properties in Google Search Console, it's now much easier to spot pages that shouldn't be indexed.</p>
+<p>Whether your staging environment is set up a separate domain, a subdomain or subfolder: if you've verified the domain you'll be able to see all pages that are indexed, and all queries that your domain is ranking for. Right in the overviews you're used to look at;</p>
+<ul>
+<li>
+<code class="language-plaintext highlighter-rouge">Performance</code> &gt; <code class="language-plaintext highlighter-rouge">Queries</code>
+</li>
+<li>
+<code class="language-plaintext highlighter-rouge">Performance</code> &gt; <code class="language-plaintext highlighter-rouge">Pages</code>
+</li>
+<li>
+<code class="language-plaintext highlighter-rouge">Index</code> &gt; <code class="language-plaintext highlighter-rouge">Coverage</code>
+</li>
+</ul>
+<p>Our special thanks goes out to <a href="https://twitter.com/rhea" rel="noopener" target="_blank"><span class="extlink">Rhea Drysdale</span><span class="show-for-sr"> (opens in a new tab)</span></a> and <a href="https://martijnoud.com" rel="noopener" target="_blank"><span class="extlink">Martijn Oud</span><span class="show-for-sr"> (opens in a new tab)</span></a> for mentioning this to us!</p>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/rhea-drysdale@1x.avif" type="image/avif"/><source srcset="/media/people/rhea-drysdale@1x.webp" type="image/webp"/><img alt="Rhea Drysdale" class="image" height="100" loading="lazy" src="/media/people/rhea-drysdale@1x.jpg" title="Rhea Drysdale" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>Setting up Google Search Console for a dev environment will give you insights as to whether or not anything has been indexed and will give you the ability to quickly remove any URLs that accidentally sneak into the index. We then deploy a combination of robots.txt and HTTP Authentication to help keep everything out of the SERPs. URLs with credentials (https://user:pass@dev.domain.com) could potentially be crawled and indexed when accidentally shared via email and collaborative docs that have loose sharing restrictions.</p>
+<p>We need to make sure there are instructions for a crawler to not index anything from the dev server. If HTTP Authentication with a username and password is not a viable option for a client we have found white listing client- and company IP addresses to be very effective. Setting up ContentKing to keep track of the robots.txt file has been a life saver when a robots.txt is accidentally edited or deleted by a developer.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<span class="user-info__name">Rhea Drysdale</span><span class="user-info__additional-info">, <a href="https://outspokenmedia.com/" rel="noopener" target="_blank"><span class="extlink">Outspoken Media</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<section aria-label="Useful resources" class="highlighted-box typo-block highlighted-box--with-background highlighted-box--with-icon highlighted-box--resources-style"><div aria-hidden="true" class="highlighted-box__title">Useful resources</div>
+<div class="highlighted-box__content">
+<ul>
+<li><a href="/academy/index-coverage/">How to Find and Fix Index Coverage Errors in Google Search Console</a></li>
+</ul>
+</div></section>
+<h2 id="get-staging-removed">
+<a aria-hidden="true" class="anchor-link" href="#get-staging-removed" tabindex="-1"></a>Getting your already indexed staging environment removed from the index</h2>
+<p>Uh-oh. Your staging environment has already been indexed by search engines, and you're the one who has to fix it. Well, the good news is: if you follow the steps below, you're good. And they're easy.</p>
+<h3 id="step-1-hide-search-results">
+<a aria-hidden="true" class="anchor-link" href="#step-1-hide-search-results" tabindex="-1"></a>Step 1: hide search results</h3>
+<p>Verify the staging environment in webmaster tools such as Google Search Console and Bing Webmaster Tools and URL Removal (see <a href="https://support.google.com/webmasters/answer/1663419?hl=en" rel="noopener" target="_blank"><span class="extlink">Google's documentation</span><span class="show-for-sr"> (opens in a new tab)</span></a> and <a href="https://www.bing.com/webmaster/help/bing-content-removal-tool-cb6c294d" rel="noopener" target="_blank"><span class="extlink">Bing's documentation</span><span class="show-for-sr"> (opens in a new tab)</span></a> on this). For Google, this request is often granted within hours (Bing takes a little longer), and then your staging environment won't show up in any search results. But here's the catch: it's still in Google's and Bing's indexes; it's just not shown. In Google's case, the staging environment is only hidden for 90 days. So within this timeframe, you need to make sure to request removal of your pages from search engines' indexes in the right way: via the <a href="/academy/meta-robots-tag/#noindex">robots noindex directive</a>.</p>
+<h3 id="step-2-applying-the-noindex-directive-and-getting-pages-recrawled">
+<a aria-hidden="true" class="anchor-link" href="#step-2-applying-the-noindex-directive-and-getting-pages-recrawled" tabindex="-1"></a>Step 2: applying the noindex directive and getting pages recrawled</h3>
+<p>Make sure you apply the robots noindex directive on every page in your staging environment. To speed up the process of search engines recrawling these pages, submit an XML sitemap. Now watch your server logs for search engine crawlers' requests for your previously indexed (and now "noindexed") pages, to make sure they've "gotten the message."</p>
+<p>In most cases, these 90 days are enough time to signal to search engines that they should remove the staging-environment pages from their index. But if they aren't, just rinse and repeat.</p>
+<p>Once it's all done, <a href="/academy/protect-staging-environment/#method-1-http-auth">protect the staging environment using HTTP authentication </a>to make sure this doesn't happen again and remove the XML sitemap from Google Search Console and Bing Webmaster Tools.</p>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/suganthan-mohanadasan@1x.avif, /media/people/suganthan-mohanadasan@2x.avif 2x" type="image/avif"/><source srcset="/media/people/suganthan-mohanadasan@1x.webp, /media/people/suganthan-mohanadasan@2x.webp 2x" type="image/webp"/><img alt="Suganthan Mohanadasan" class="image" height="200" loading="lazy" src="/media/people/suganthan-mohanadasan@1x.jpg" srcset="/media/people/suganthan-mohanadasan@1x.jpg, /media/people/suganthan-mohanadasan@2x.jpg 2x" title="Suganthan Mohanadasan" width="200"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>You can add a "noindex" tag to the indexed pages on the staging environment and submit a new sitemap via Google Search Console and Bing Webmaster Tools. The reason I recommend submitting the sitemap is to ensure search engines can see the "noindex tag". Once the search engines re-crawl the indexed pages on the staging environment, they should start removing these pages from its index. Once that's done you can get rid of the sitemap. You can go ahead and secure the staging by blocking search engines from re-crawling (and indexing). The best way to do this is to add HTTP authentication.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<span class="user-info__name">Suganthan Mohanadasan</span><span class="user-info__additional-info">, Co-founder &amp; Technical SEO, <a href="https://snippet.digital/" rel="noopener" target="_blank"><span class="extlink">Snippet Digital</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<h2 id="other-useful-resources">
+<a aria-hidden="true" class="anchor-link" href="#other-useful-resources" tabindex="-1"></a>Other useful resources</h2>
+<p>Here are some other useful resources on protecting staging environments:</p>
+<ul>
+<li>
+<a href="https://searchengineland.com/how-to-keep-staging-development-site-index-286987" rel="noopener" target="_blank"><span class="extlink">How to keep your staging or development site out of the index</span><span class="show-for-sr"> (opens in a new tab)</span></a> by Patrick Stox</li>
+<li>
+<a href="https://www.polemicdigital.com/protect-your-staging-environments/" rel="noopener" target="_blank"><span class="extlink">Protect your Staging Environments</span><span class="show-for-sr"> (opens in a new tab)</span></a> by Barry Adams</li>
+<li>
+<a href="https://www.linkedin.com/pulse/devs-dean-cruddace/" rel="noopener" target="_blank"><span class="extlink">Devs.</span><span class="show-for-sr"> (opens in a new tab)</span></a> by Dean Cruddace</li>
+</ul>
+<h2 id="now-keep-on-learning">
+<a aria-hidden="true" class="anchor-link" href="#now-keep-on-learning" tabindex="-1"></a>Now keep on learning!</h2>
+<p>Now that you've learned about the best way to protect your staging environment, keep on learning with these articles:</p>
+<ul>
+<li><a href="/academy/seo-requirements-new-website/">SEO Requirements for New Websites</a></li>
+<li><a href="/academy/website-migrations/">Website Migrations: The Ultimate Guide</a></li>
+</ul>
+</div>
+<div class="post-detail__text">
+<div class="highlighted-box">
+<div class="highlighted-box__content share">
+<div class="share__label">Share this article</div>
+<div class="share__buttons">
+<a class="social-icon social-icon--large social-icon--facebook social-icon--link" href="https://www.facebook.com/sharer/sharer.php?display=popup&amp;u=https://www.contentkingapp.com/academy/protect-staging-environment/" onclick="window.open('https://www.facebook.com/sharer/sharer.php?display=popup&amp;u=https://www.contentkingapp.com/academy/protect-staging-environment/','ck_popup','toolbar=0,status=0,resizable=1,width=626,height=600')" rel="noopener" target="_blank" title="Share on Facebook"><span class="extlink">Share on Facebook</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+<a class="social-icon social-icon--large social-icon--twitter social-icon--link" href="https://twitter.com/intent/tweet?title=Protecting%20staging%20environments%3A%20the%20ultimate%20guide%C2%A0%E2%80%93%C2%A0url=https://www.contentkingapp.com/academy/protect-staging-environment/" onclick="window.open('https://twitter.com/intent/tweet?title=Protecting%20staging%20environments%3A%20the%20ultimate%20guide –&amp;url=https://www.contentkingapp.com/academy/protect-staging-environment/','ck_popup','toolbar=0,status=0,resizable=1,width=600,height=340')" rel="noopener" target="_blank" title="Share on Twitter"><span class="extlink">Share on Twitter</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+<a class="social-icon social-icon--large social-icon--linkedin social-icon--link" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.contentkingapp.com/academy/protect-staging-environment/" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url=https://www.contentkingapp.com/academy/protect-staging-environment/','ck_popup','toolbar=0,status=0,resizable=1,width=600,height=560')" rel="noopener" target="_blank" title="Share on LinkedIn"><span class="extlink">Share on LinkedIn</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+</div>
+</div>
+</div>
+<section aria-label="Overview of article authors" class="author-box">
+<div class="author-box__title">ContentKing Academy Content Team</div>
+<div class="author-box__author">
+<div class="user-overview">
+<div class="user-overview__sidebar">
+<div aria-hidden="true" class="user-overview__avatar">
+<div class="avatar avatar--3-size">
+<div class="avatar__img">
+<picture><source srcset="/media/people/steven-van-vessum@1x.avif, /media/people/steven-van-vessum@2x.avif 2x" type="image/avif"/><source srcset="/media/people/steven-van-vessum@1x.webp, /media/people/steven-van-vessum@2x.webp 2x" type="image/webp"/><img alt="Steven van Vessum" class="" height="100" loading="lazy" src="/media/people/steven-van-vessum@1x.jpg" srcset="/media/people/steven-van-vessum@1x.jpg, /media/people/steven-van-vessum@2x.jpg 2x" title="Steven van Vessum" width="100"/></picture>
+</div>
+</div>
+</div>
+</div>
+<div class="user-overview__content">
+<div class="user-overview__name">
+<span>Steven van Vessum</span><div class="user-overview__data">
+<a class="social-icon social-icon--link social-icon--linkedin" href="https://www.linkedin.com/in/stevenvanvessum" rel="noopener" target="_blank" title="See my profile on LinkedIn"><span class="extlink">LinkedIn</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+<a class="social-icon social-icon--link social-icon--twitter" href="https://twitter.com/stevenvvessum" rel="noopener" target="_blank" title="See my profile on Twitter"><span class="extlink">Twitter</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+</div>
+</div>
+<div class="user-overview__about typo">
+<p>Steven is ContentKing's VP of Community. This means he's involved in everything community and content marketing related. Right where he wants to be. He gets a huge kick out of letting websites rank and loves to talk SEO, content marketing and growth.</p>
+</div>
+<div class="user-overview__see-more-link typo">
+<a href="/team/steven-van-vessum/">View Steven van Vessum's profile</a>
+</div>
+</div>
+</div>
+</div>
+<div class="author-box__author">
+<div class="user-overview">
+<div class="user-overview__sidebar">
+<div aria-hidden="true" class="user-overview__avatar">
+<div class="avatar avatar--3-size">
+<div class="avatar__img">
+<picture><source srcset="/media/people/jessica-rangel@1x.avif, /media/people/jessica-rangel@2x.avif 2x" type="image/avif"/><source srcset="/media/people/jessica-rangel@1x.webp, /media/people/jessica-rangel@2x.webp 2x" type="image/webp"/><img alt="Jessica Rangel" class="" height="100" loading="lazy" src="/media/people/jessica-rangel@1x.jpg" srcset="/media/people/jessica-rangel@1x.jpg, /media/people/jessica-rangel@2x.jpg 2x" title="Jessica Rangel" width="100"/></picture>
+</div>
+</div>
+</div>
+</div>
+<div class="user-overview__content">
+<div class="user-overview__name">
+<span>Jessica Rangel</span><div class="user-overview__data">
+<a class="social-icon social-icon--link social-icon--linkedin" href="https://www.linkedin.com/in/jessicamrangel/" rel="noopener" target="_blank" title="See my profile on LinkedIn"><span class="extlink">LinkedIn</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+</div>
+</div>
+<div class="user-overview__about typo">
+<p>Jessica is a content marketer for ContentKing. Her days are spent writing marketing content, cycling around canals in Amsterdam and attempting to master the Dutch language.</p>
+</div>
+<div class="user-overview__see-more-link typo">
+<a href="/team/jessica-rangel/">View Jessica Rangel's profile</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="follow-up-list">
+<h3 class="follow-up-list__title">Also worth checking out:</h3>
+<div class="follow-up-list__links list" role="list">
+<div role="listitem">
+<a aria-describedby="post-thumbnail-description-b3b9db7e4280d27c808c2ec7e1cc110333fbe4ce" aria-labelledby="post-thumbnail-title-b3b9db7e4280d27c808c2ec7e1cc110333fbe4ce" class="post-thumb-box" href="/academy/robotstxt/"><div class="post-thumb-box__icon">
+<i aria-hidden="true" class="post-type-badge post-type-badge--small" style="background-color: #3dc8ff; background-image: url(/assets/images/icons/post-types/robots-txt.svg)"></i>
+</div>
+<div class="post-thumb-box__content">
+<h3 class="post-thumb-box__title" id="post-thumbnail-title-b3b9db7e4280d27c808c2ec7e1cc110333fbe4ce" role="presentation"><span>Robots.txt</span></h3>
+</div></a>
+</div>
+<div role="listitem">
+<a aria-describedby="post-thumbnail-description-4c0286617b9615e711a6c79e22c69717b33fccba" aria-labelledby="post-thumbnail-title-4c0286617b9615e711a6c79e22c69717b33fccba" class="post-thumb-box" href="/academy/meta-robots-tag/"><div class="post-thumb-box__icon">
+<i aria-hidden="true" class="post-type-badge post-type-badge--small" style="background-color: #3dc8ff; background-image: url(/assets/images/icons/post-types/meta-robots.svg)"></i>
+</div>
+<div class="post-thumb-box__content">
+<h3 class="post-thumb-box__title" id="post-thumbnail-title-4c0286617b9615e711a6c79e22c69717b33fccba" role="presentation"><span>Meta Robots Tag</span></h3>
+</div></a>
+</div>
+<div role="listitem">
+<a aria-describedby="post-thumbnail-description-9d01c5f953a98ff28af1df4a757f5de01b4860ec" aria-labelledby="post-thumbnail-title-9d01c5f953a98ff28af1df4a757f5de01b4860ec" class="post-thumb-box" href="/academy/control-crawl-indexing/"><div class="post-thumb-box__icon">
+<i aria-hidden="true" class="post-type-badge post-type-badge--small" style="background-color: #3dc8ff; background-image: url(/assets/images/icons/post-types/crawling-indexing.svg)"></i>
+</div>
+<div class="post-thumb-box__content">
+<h3 class="post-thumb-box__title" id="post-thumbnail-title-9d01c5f953a98ff28af1df4a757f5de01b4860ec" role="presentation"><span>Controlling Crawling &amp; Indexing</span></h3>
+</div></a>
+</div>
+<div role="listitem">
+<a aria-describedby="post-thumbnail-description-a163e49c29d41341161140bfd2aaa7d7c0bd077c" aria-labelledby="post-thumbnail-title-a163e49c29d41341161140bfd2aaa7d7c0bd077c" class="post-thumb-box" href="/academy/index-coverage/"><div class="post-thumb-box__icon">
+<i aria-hidden="true" class="post-type-badge post-type-badge--small" style="background-color: #b37373; background-image: url(/assets/images/icons/post-types/gsc-coverage-report.svg)"></i>
+</div>
+<div class="post-thumb-box__content">
+<h3 class="post-thumb-box__title" id="post-thumbnail-title-a163e49c29d41341161140bfd2aaa7d7c0bd077c" role="presentation"><span>Google Search Console Index Coverage report</span></h3>
+</div></a>
+</div>
+<div role="listitem">
+<a aria-describedby="post-thumbnail-description-58aff7afa89da25f4438d41973788736f1853f49" aria-labelledby="post-thumbnail-title-58aff7afa89da25f4438d41973788736f1853f49" class="post-thumb-box" href="/academy/google-remove-urls/"><div class="post-thumb-box__icon">
+<i aria-hidden="true" class="post-type-badge post-type-badge--small" style="background-color: #3dc8ff; background-image: url(/assets/images/icons/post-types/google-remove.svg)"></i>
+</div>
+<div class="post-thumb-box__content">
+<h3 class="post-thumb-box__title" id="post-thumbnail-title-58aff7afa89da25f4438d41973788736f1853f49" role="presentation"><span>Remove URLs from Google</span></h3>
+</div></a>
+</div>
+</div>
+</div>
+</div>
+</article>
+<aside class="post-detail__sidebar show-for-large">
+<div aria-hidden="false" class="action-box action-box--is-hidden action-box--with-kevin dark-bg-context js-contextual-action-box sticky-element sticky-element--on-large sticky-element--indented" data-testid="action-sidebar-box" style="--bg: #6b2770">
+<div class="action-box__content">
+<div class="js-contextual-action-box-general" style="display: none;">
+<div class="action-box__text typo">
+<h3 id="building-a-new-website-behind-the-scenes">Building a new website behind the scenes?</h3>
+<p>Monitor the staging environment for issues and changes using ContentKing.
+Managing this process has never been easier.</p>
+</div>
+<div class="action-box__form">
+<form aria-label="The form used for creating free trial account on ContentKing" class="quickinput-form-layout quickinput-form-layout--center-aligned js-submit-url-start-onboarding" data-validate="" novalidate="">
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-unexpected-error form-msg form-msg--error" role="none" style="display: none;">Some unexpected error happened. Please contact us.</span>
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-timeout-error form-msg form-msg--error" role="none" style="display: none;">Something went wrong. Please, try again later.</span>
+<div class="quickinput-form-layout__container">
+<div class="quickinput-form-layout__form-field">
+<label class="show-for-sr" for="action-sidebar-box-url-field">Domain (required)</label>
+<input aria-required="true" class="js-trial-url large" id="action-sidebar-box-url-field" name="domain" pattern="url_only" placeholder="www.example.com" required="" type="url"/>
+<span aria-hidden="true" aria-live="off" class="form-error form-bubble" role="none">Please enter a valid domain name (www.example.com).</span>
+<span aria-hidden="true" aria-live="off" class="js-website-already-monitored custom-error form-bubble" role="none" style="display: none;">This domain is already being monitored by ContentKing. Please contact us if you are the rightful owner of this domain.</span>
+<span aria-hidden="true" aria-live="off" class="js-target-redirected custom-error form-bubble" role="none" style="display: none;">This website redirects to <span class="js-target-redirected-domain"></span>. Do you want to add this website instead?</span>
+<span aria-hidden="true" aria-live="off" class="js-blacklisted-domain custom-error form-bubble" role="none" style="display: none;">This domain has been excluded from monitoring. If you own it, please contact us.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain custom-error form-bubble" role="none" style="display: none;">We can't find this domain. Are you sure it's correct?</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-connect custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (connect failure). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-empty-response custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (empty response). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-size-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (size limit). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-time-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (time-out). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-waf custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (blocked by web application firewall). Please contact us for help.</span>
+</div>
+<div class="quickinput-form-layout__form-button">
+<button class="button button--is-shining js-submit-button button--large button--action button--fullwidth" data-loading-label="Loading" type="submit">
+<div>
+<span class="button__content">
+<big>Start your free trial</big>
+<small><span class="show-for-sr">. </span>No credit card needed</small>
+</span>
+</div>
+</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+<div class="js-contextual-action-box-case-study" style="display: none;">
+<div class="discover-case-study">
+<div class="discover-case-study__title">Build vs. Buy: How Danone saved hundreds of thousands of Euros by switching to ContentKing</div>
+<div class="discover-case-study__logo">
+<img alt="Danone logo" height="300" loading="lazy" src="/media/logos/danone-reversed.svg" width="600"/>
+</div>
+<div class="discover-case-study__link typo"><a href="/case-studies/danone/">Discover this case study</a></div>
+</div>
+</div>
+<div class="js-contextual-action-box-ending-trial" style="display: none;">
+<div class="action-box__text typo">
+<h3>Your trial ends soon</h3>
+<p>Sign up now to stay on top of your SEO performance.</p>
+</div>
+<div class="action-box__form">
+<a class="button button--action button--large button--fullwidth button--is-shining" href="https://app.contentkingapp.com/account/billing" rel="noopener" target="_blank"><span class="extlink"><span><span class="button__content"><big>Sign up now</big><small><span class="show-for-sr">. </span>30-day money back guarantee</small></span></span></span><span class="show-for-sr"> (opens in a new tab)</span></a>
+</div>
+</div>
+<div class="js-contextual-action-box-trial-ended" style="display: none;">
+<div class="action-box__text typo">
+<h3>Your trial has ended</h3>
+<p>Sign up now to stay on top of your SEO performance.</p>
+</div>
+<div class="action-box__form">
+<a class="button button--action button--large button--fullwidth button--is-shining" href="https://app.contentkingapp.com/account/billing" rel="noopener" target="_blank"><span class="extlink"><span><span class="button__content"><big>Sign up now</big><small><span class="show-for-sr">. </span>30-day money back guarantee</small></span></span></span><span class="show-for-sr"> (opens in a new tab)</span></a>
+</div>
+</div>
+<div class="action-box__features">
+<div class="labeled-element labeled-element--stretched labeled-element--default-layout typo-block typo-block--bigger-indentation">
+<div class="labeled-element__labels">
+<div class="labeled-element__label">Trusted by the best
+</div>
+<div class="labeled-element__sublabel">
+</div>
+</div>
+<div class="labeled-element__content" role="list"><div class="crossfade-animation crossfade-animation--6-groups" role="presentation">
+<div class="logos-list logos-list--default-gaps" role="presentation">
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Netflix logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/netflix-reversed.svg" title="Netflix" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="H &amp; M logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/hm-reversed.svg" title="H &amp; M" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Adidas logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/adidas-reversed.svg" title="Adidas" width="600"/>
+</div>
+</div>
+</div>
+<div class="logos-list logos-list--default-gaps hidden" role="presentation">
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Unicef logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/unicef-reversed.svg" title="Unicef" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Condé Nast logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/conde-nast-reversed.svg" title="Condé Nast" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Shopify logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/shopify-reversed.svg" title="Shopify" width="600"/>
+</div>
+</div>
+</div>
+<div class="logos-list logos-list--default-gaps hidden" role="presentation">
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Danone logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/danone-reversed.svg" title="Danone" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Fedex logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/fedex-reversed.svg" title="Fedex" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="VOGUE logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/vogue-reversed.svg" title="VOGUE" width="600"/>
+</div>
+</div>
+</div>
+<div class="logos-list logos-list--default-gaps hidden" role="presentation">
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Axa logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/axa-reversed.svg" title="Axa" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Groupon logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/groupon-reversed.svg" title="Groupon" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="The New Yorker logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/the-new-yorker-reversed.svg" title="The New Yorker" width="600"/>
+</div>
+</div>
+</div>
+<div class="logos-list logos-list--default-gaps hidden" role="presentation">
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Norton logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/norton-reversed.svg" title="Norton" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Vodafone logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/vodafone-reversed.svg" title="Vodafone" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Accenture logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/accenture-reversed.svg" title="Accenture" width="600"/>
+</div>
+</div>
+</div>
+<div class="logos-list logos-list--default-gaps hidden" role="presentation">
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Red Hat logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/red-hat-reversed.svg" title="Red Hat" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Reebok logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/reebok-reversed.svg" title="Reebok" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="TELUS logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/telus-reversed.svg" title="TELUS" width="600"/>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<div class="action-box__features">
+<div class="labeled-element">
+<div class="labeled-element__labels">
+<div class="labeled-element__label">
+			Fantastic reviews
+		</div>
+</div>
+<div class="labeled-element__content">
+<a aria-label="Show the overview of ContentKing reviews" class="review-services review-services--small-gaps review-services--indented review-services--centered" href="/reviews/">
+<div class="review-services__service">
+<div aria-label="The summary of ContentKing rating on G2" class="review-badge review-badge--small-size review-badge--g2-service review-badge--light-style">
+<div class="review-badge__header">
+<div aria-label="Rating is 4.8 out of 5 points" class="review-badge__rating-score">
+			4.8 / 5
+		</div>
+</div>
+<div aria-hidden="true" class="review-badge__rating-stars">
+<div aria-label="Rating is 5.0 out of 5 points" class="rating-stars rating-stars--small-size">
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+</div>
+</div>
+</div>
+</div>
+<div class="review-services__service">
+<div aria-label="The summary of ContentKing rating on Capterra" class="review-badge review-badge--small-size review-badge--capterra-service review-badge--light-style">
+<div class="review-badge__header">
+<div aria-label="Rating is 4.9 out of 5 points" class="review-badge__rating-score">
+			4.9 / 5
+		</div>
+</div>
+<div aria-hidden="true" class="review-badge__rating-stars">
+<div aria-label="Rating is 5.0 out of 5 points" class="rating-stars rating-stars--small-size">
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section section--informative" data-testid="start-free-trial">
+<div class="row expanded">
+<div class="small-12 large-12 column">
+<div class="description-row description-row--inline-for-large-up">
+<div>
+<div class="heading heading--white heading--center-aligned">
+<h2 class="heading__title">Start your free trial</h2>
+<h3 class="heading__subtitle">Get up and running in 20 seconds</h3>
+</div>
+<form aria-label="The form used for creating free trial account on ContentKing" class="quickinput-form-layout quickinput-form-layout--center-aligned quickinput-form-layout--is-responsive js-submit-url-start-onboarding" data-validate="" novalidate="">
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-unexpected-error form-msg form-msg--error" role="none" style="display: none;">Some unexpected error happened. Please contact us.</span>
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-timeout-error form-msg form-msg--error" role="none" style="display: none;">Something went wrong. Please, try again later.</span>
+<div class="quickinput-form-layout__container">
+<div class="quickinput-form-layout__form-field">
+<label class="show-for-sr" for="start-free-trial-url-field">Domain (required)</label>
+<input aria-required="true" class="js-trial-url large" id="start-free-trial-url-field" name="domain" pattern="url_only" placeholder="www.example.com" required="" type="url"/>
+<span aria-hidden="true" aria-live="off" class="form-error form-bubble" role="none">Please enter a valid domain name (www.example.com).</span>
+<span aria-hidden="true" aria-live="off" class="js-website-already-monitored custom-error form-bubble" role="none" style="display: none;">This domain is already being monitored by ContentKing. Please contact us if you are the rightful owner of this domain.</span>
+<span aria-hidden="true" aria-live="off" class="js-target-redirected custom-error form-bubble" role="none" style="display: none;">This website redirects to <span class="js-target-redirected-domain"></span>. Do you want to add this website instead?</span>
+<span aria-hidden="true" aria-live="off" class="js-blacklisted-domain custom-error form-bubble" role="none" style="display: none;">This domain has been excluded from monitoring. If you own it, please contact us.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain custom-error form-bubble" role="none" style="display: none;">We can't find this domain. Are you sure it's correct?</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-connect custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (connect failure). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-empty-response custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (empty response). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-size-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (size limit). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-time-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (time-out). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-waf custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (blocked by web application firewall). Please contact us for help.</span>
+</div>
+<div class="quickinput-form-layout__form-button">
+<button class="button button--is-shining js-submit-button button--large button--action button--fullwidth" data-loading-label="Loading" type="submit">
+<div>
+<span class="button__content">
+<big>Start your free trial</big>
+<small><span class="show-for-sr">. </span>No credit card needed</small>
+</span>
+</div>
+</button>
+</div>
+</div>
+<div class="quickinput-form-layout__footer">
+<div aria-label="Show the overview of ContentKing reviews" class="review-services review-services--centered review-services--adaptive-items">
+<div class="review-services__service">
+<div aria-label="The summary of ContentKing rating on G2" class="review-badge review-badge--1-size review-badge--g2-service review-badge--light-style">
+<div class="review-badge__header">
+<div aria-label="Rating is 4.8 out of 5 points" class="review-badge__rating-score">
+			4.8 / 5
+		</div>
+</div>
+<div aria-hidden="true" class="review-badge__rating-stars">
+<div aria-label="Rating is 5.0 out of 5 points" class="rating-stars rating-stars--1-size">
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+</div>
+</div>
+</div>
+</div>
+<div class="review-services__service review-services__service--hidden-on-small">
+<div aria-label="The summary of ContentKing rating on Capterra" class="review-badge review-badge--1-size review-badge--capterra-service review-badge--light-style">
+<div class="review-badge__header">
+<div aria-label="Rating is 4.9 out of 5 points" class="review-badge__rating-score">
+			4.9 / 5
+		</div>
+</div>
+<div aria-hidden="true" class="review-badge__rating-stars">
+<div aria-label="Rating is 5.0 out of 5 points" class="rating-stars rating-stars--1-size">
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+</div>
+</div>
+</div>
+</div>
+<div class="review-services__service review-services__service--hidden-on-small">
+<div aria-label="The summary of ContentKing rating on TrustRadius" class="review-badge review-badge--1-size review-badge--trust-radius-service review-badge--light-style">
+<div class="review-badge__header">
+<div aria-label="Rating is 9.7 out of 10 points" class="review-badge__rating-score">
+			9.7 / 10
+		</div>
+</div>
+<div aria-hidden="true" class="review-badge__rating-stars">
+<div aria-label="Rating is 5.0 out of 5 points" class="rating-stars rating-stars--1-size">
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+<div class="description-row__description">
+<ul class="checklist checklist--white-style">
+<li class="checklist__item"><strong>No credit card required</strong></li>
+<li class="checklist__item"><strong>No installation needed</strong></li>
+<li class="checklist__item"><strong>No strings attached</strong></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<div id="js-campaign-widget-container"></div><footer class="footer" role="contentinfo">
+<div class="footer__row">
+<div class="footer__column">
+<div class="footer__column-body">
+<nav aria-label="The latest articles on our blog" class="footer__column-block footer-block" role="navigation"><h3 class="footer-block__title"><a aria-label="View all articles" href="/blog/"><span>Blog</span> <span aria-hidden="true" class="footer-block__title-cta">View all</span></a></h3>
+<div class="footer-block__nav"><ul class="footer-posts-nav">
+<li class="footer-posts-nav__item">
+<a href="/blog/log-file-analysis-extended-cloudflare-logpush/"><svg aria-hidden="true" class="footer-posts-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-feature-announcements"></use>
+</svg>Log File Analysis for Cloudflare sites via Logpush
+							</a>
+</li>
+<li class="footer-posts-nav__item">
+<a href="/blog/log-file-analysis-extended-fastly/"><svg aria-hidden="true" class="footer-posts-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-feature-announcements"></use>
+</svg>ContentKing Log File Analysis for Fastly
+							</a>
+</li>
+<li class="footer-posts-nav__item">
+<a href="/blog/log-file-analysis-extended/"><svg aria-hidden="true" class="footer-posts-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-feature-announcements"></use>
+</svg>Extended ContentKing Log File Analysis
+							</a>
+</li>
+<li class="footer-posts-nav__item">
+<a href="/blog/brightonseo-spring-recap-2022/"><svg aria-hidden="true" class="footer-posts-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-other"></use>
+</svg>ContentKing &amp; Conductor at brightonSEO
+							</a>
+</li>
+<li class="footer-posts-nav__item">
+<a href="/blog/brightonseo-spring-2022/"><svg aria-hidden="true" class="footer-posts-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-other"></use>
+</svg>brightonSEO Spring 2022
+							</a>
+</li>
+</ul></div>
+</nav>
+</div>
+</div>
+<div class="footer__column">
+<div class="footer__column-body">
+<nav aria-label="Important article in our Academy" class="footer__column-block footer-block" role="navigation"><h3 class="footer-block__title"><a aria-label="View all articles" href="/academy/"><span>Academy</span> <span aria-hidden="true" class="footer-block__title-cta">View all</span></a></h3>
+<div class="footer-block__nav"><ul class="footer-posts-nav">
+<li class="footer-posts-nav__item"><a href="/academy/robotstxt/">Robots.txt</a></li>
+<li class="footer-posts-nav__item"><a href="/academy/redirects/">Redirects</a></li>
+<li class="footer-posts-nav__item"><a href="/academy/shopify-seo/">Shopify SEO Guide</a></li>
+<li class="footer-posts-nav__item"><a href="/academy/magento-seo/">Magento 2 SEO Guide</a></li>
+<li class="footer-posts-nav__item footer-posts-nav__item--tagged"><a data-tag="FAQ" href="/academy/faq/">Frequently Asked SEO Questions</a></li></ul></div>
+</nav>
+</div>
+</div>
+<div class="footer__column footer__column--smaller-width">
+<div class="footer__column-body">
+<nav aria-label="Find more about us and about our story" class="footer__column-block footer-block" role="navigation"><h3 class="footer-block__title"><a href="/about-us/"><span>About us</span></a></h3>
+<div class="footer-block__nav">
+<ul class="footer-posts-nav">
+<li class="footer-posts-nav__item"><a href="/about-us/">Our story</a></li><li class="footer-posts-nav__item"><a href="/team/">Meet our team</a></li><li class="footer-posts-nav__item"><a href="/careers/">Careers</a></li><li class="footer-posts-nav__item"><a href="/contact/">Contact us</a></li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+<div class="footer__column footer__column--box">
+<div class="footer__column-body">
+<div class="footer__column-block footer__column-block--box">
+<section class="footer-box"><a aria-label="Show all reviews" class="footer-box__reviews" href="/reviews/">
+<span aria-hidden="true" class="footer-box__rating-stars">
+<div aria-label="Rating is 5.0 out of 5 points" class="rating-stars rating-stars--small-size"><div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div><div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div><div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div><div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div><div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div></div>
+</span><span class="footer-box__rating-label">130+ user reviews</span>
+</a>
+<div aria-label="Contact details" class="footer-box__content">
+<ul aria-label="Contact details" class="contact-list contact-list--footer"><li aria-label="Support section" class="contact-list__item">
+<i aria-hidden="true" class="contact-list__icon contact-list__icon--support"></i>
+<a aria-label="Show support section" class="contact-list__link" href="/support/">Support</a>
+</li><li aria-label="Phone numbers" class="contact-list__item">
+<i aria-hidden="true" class="contact-list__icon contact-list__icon--phone"></i>
+<div class="contact-list__link">
+<a href="tel:00442032908992">UK: +44 20 3290 8992</a><br/>
+<a href="tel:0019196479205">US: +1 919-647-9205</a><br/></div>
+</li><li aria-label="Email address" class="contact-list__item">
+<i aria-hidden="true" class="contact-list__icon contact-list__icon--support-email"></i>
+<div class="contact-list__link">
+<a href="mailto:support@contentkingapp.com">support@contentkingapp.com</a><br/></div>
+</li></ul>
+</div>
+<div class="footer-box__content">
+<ul class="contact-list contact-list--footer"><li class="contact-list__item">
+<i aria-hidden="true" class="contact-list__icon contact-list__icon--newsletter"></i>
+<a class="contact-list__link" href="/newsletter/">Sign up for our newsletter</a>
+</li></ul>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+<div class="footer__row">
+<div class="footer__bottom-column show-for-large">
+<div class="footer__column-body">
+				Copyright © 2023 ContentKing
+			</div>
+</div>
+<nav aria-label="Additional navigation" class="footer__bottom-column" role="navigation">
+<div class="footer__column-body"><ul class="footer-nav">
+<li class="footer-nav__item">
+<a href="/accessibility/">Accessibility</a></li>
+<li class="footer-nav__item">
+<a href="/legal/privacy-policy/">Privacy Policy</a></li>
+<li class="footer-nav__item">
+<a href="/legal/cookie-policy/">Cookie Policy</a></li>
+<li class="footer-nav__item"><a class="js-open-cookie-preferences" href="#">Cookie Preferences</a></li>
+<li class="footer-nav__item">
+<a href="/legal/terms-of-use/">Terms of Use</a></li>
+</ul>
+</div>
+</nav>
+</div>
+</footer></div><div aria-hidden="true" class="dialog-bg" tabindex="-1"></div>
+<div aria-hidden="true" aria-labelledby="exit-intent-heading" aria-modal="true" class="dialog dialog--slide-in-effect js-exit-intent-dialog" data-ga-label="Generic" id="exit-intent" inert="" role="dialog">
+<div class="dialog-box dialog-box--highlighted-bg js-dialog-box">
+<div class="dialog-box__heading heading heading--center-aligned heading--white">
+<div class="heading__title heading__title--small js-title" data-alt-title="Leave, but don't miss out." id="exit-intent-heading">So soon? Well, before you go...</div>
+<div class="heading__subtitle heading__subtitle--large"><strong>Sign up for our newsletter.</strong></div>
+</div>
+<div class="dialog-box__content">
+<div class="exit-intent">
+<div class="exit-intent__content">
+<img alt="" class="exit-intent__illustration" height="231" loading="lazy" src="/assets/images/materials/newsletter@1x.png" srcset="/assets/images/materials/newsletter@1x.png 1x, /assets/images/materials/newsletter@2x.png 2x" width="214">
+<ul class="checklist checklist--white-style">
+<li class="checklist__item"><strong>Join over 35,000 smart people</strong></li>
+<li class="checklist__item"><strong>Loaded with carefully curated content on SEO and digital marketing</strong></li>
+<li class="checklist__item"><strong>Insightful articles, data-driven research, podcasts and videos</strong></li>
+</ul>
+</img></div>
+<div class="exit-intent__form">
+<form action="https://becontentking.us11.list-manage.com/subscribe/post?u=14598b22fff6346e4f141215b&amp;id=1506b77091" class="js-newsletter-signup" data-validate="" method="post" name="mc-embedded-subscribe-form" novalidate="">
+<div class="overlay-response js-newsletter-signup-response">
+<div class="overlay-response__source">
+<div class="quickinput-form-layout quickinput-form-layout--is-responsive quickinput-form-layout--white quickinput-form-layout--center-aligned">
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-newsletter-signup-response-error form-msg form-msg--error" role="none" style="display: none;">Something went wrong. Please, try again later.</span>
+<div class="quickinput-form-layout__container">
+<div class="quickinput-form-layout__form-field">
+<label class="show-for-sr" for="newsletter-exit-intent-email-field">Email (required)</label>
+<input aria-required="true" autocomplete="off" class="large" id="newsletter-exit-intent-email-field" name="EMAIL" placeholder="email@example.com" required="" type="email" value=""/>
+<span aria-hidden="true" aria-live="off" class="form-error form-bubble" role="none">Please enter a valid email address.</span>
+</div>
+<input name="SOURCE" type="hidden" value="English website">
+<input class="js-newsletter-signup-source-url-field" name="SOURCE_URL" type="hidden" value="https://www.contentkingapp.com/blog/12-content-engagement-kpis-need-tracking/">
+<input name="LANGUAGE" type="hidden" value="en">
+<input class="js-newsletter-signup-creative-field" name="CREATIVE" type="hidden" value="[Exit intent] Newsletter sign-up">
+<div aria-hidden="true" style="position: absolute; left: -5000px;"><label for="newsletter-exit-intent-email-field-question">Question</label><input id="newsletter-exit-intent-email-field-question" name="b_14598b22fff6346e4f141215b_1506b77091" tabindex="-1" type="text" value=""/></div>
+<div class="quickinput-form-layout__form-button quickinput-form-layout__form-button--default">
+<button class="button button--is-shining js-submit-button button--large button--action button--fullwidth" data-loading-label="Loading" name="subscribe" type="submit">
+<div>
+<span class="button__content">
+<big>Subscribe</big>
+</span>
+</div>
+</button>
+</div>
+</input></input></input></input></div>
+<div class="quickinput-form-layout__note">You can opt-out at any time with a single click.</div>
+<div class="exit-intent-close-link">
+<a data-close="" href="#" onclick="return false;">No thanks, I don't want to stay updated on digital marketing.</a>
+</div>
+</div>
+</div>
+<div class="overlay-response__response js-newsletter-signup-response-messages" tabindex="-1">
+<div aria-hidden="true" aria-live="off" class="js-newsletter-signup-response-success overlay-response__message overlay-response__message--large overlay-response__message--success" role="none" style="display: none;">
+<div>Thank you for your subscription, welcome aboard!</div>
+<div class="exit-intent-close-link">
+<a data-close="" href="#" onclick="return false;">Continue to our website</a>
+</div>
+</div>
+<div aria-hidden="true" aria-live="off" class="js-newsletter-signup-response-already-in-list overlay-response__message overlay-response__message--large" role="none" style="display: none;">You're already a subscriber to our newsletter. <br/>Thanks for being a loyal reader!</div>
+<div aria-hidden="true" aria-live="off" class="js-newsletter-signup-response-pending overlay-response__message overlay-response__message--large" role="none" style="display: none;">Please confirm your sign-up to our newsletter using the confirmation email that we just sent you.</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<!-- Close button -->
+<button aria-label="Close this modal window" class="close-button close-button--light" data-close="" type="button">
+<span aria-hidden="true">×</span>
+</button>
+<div class="dialog-box__footer">
+<div class="dialog-box__footer-container">
+<div class="js-modal-lazy-logos lazy-logos" data-id="exit-intent"></div>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="cookie-banner-heading" aria-modal="true" class="dialog dialog--slide-in-effect" id="cookie-banner-general" inert="" role="dialog">
+<div class="cookie-consent-dlg">
+<div class="cookie-consent-dlg__scrollable-container">
+<div class="cookie-consent-dlg__content">
+<div class="cookie-consent-dlg__heading">
+<div class="cookie-consent-dlg__title" id="cookie-banner-general-heading">This website uses cookies</div>
+</div>
+<div class="cookie-consent-dlg__text typo">
+<p>We use cookies to improve user experience and analyze website traffic. By clicking “Accept all“, you agree to our website's cookie use as described in our <a class="js-cookie-banner-show-policy" href="#">Cookie Policy</a>. You can change your cookie settings by clicking “<a class="js-cookie-banner-show-preferences" href="#">Preferences</a>”.</p>
+</div>
+</div>
+<div class="cookie-consent-dlg__footer">
+<div class="cookie-consent-dlg__buttons">
+<button class="button button--hollow-highlighted js-cookie-banner-show-preferences">
+<span>Preferences</span>
+</button>
+<button class="button button--hollow-highlighted js-cookie-banner-decline-all">
+<span>Reject all</span>
+</button>
+<button class="button button--action js-cookie-banner-accept-all">
+<span>Accept all</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="cookie-banner-policy-heading" aria-modal="true" class="dialog dialog--slide-in-effect" data-cookie-policy-version="f0cbb742597d5cb7e9db2f680777051bbd82001f" id="cookie-banner-policy" inert="" role="dialog">
+<div class="cookie-consent-dlg">
+<div class="cookie-consent-dlg__scrollable-container">
+<div class="cookie-consent-dlg__content">
+<div class="cookie-consent-dlg__heading">
+<div class="cookie-consent-dlg__title" id="cookie-banner-policy-heading">Cookie Policy</div>
+</div>
+<div class="cookie-consent-dlg__text typo">
+<p><em>Last updated January 24, 2022</em></p>
+<p>When you use our website <a href="https://www.contentkingapp.com/">www.contentkingapp.com</a> (“Website”), we may place cookies. This Cookie Policy explains what cookies are and in which way cookies are stored on, and information is read from, your computer, mobile device and/or tablet (“Devices”). Please read this Cookie Policy carefully in order to understand what type of cookies ContentKing uses, the information we collect using cookies and how that information is used.</p>
+<h2 id="what-are-cookies">What are cookies?</h2>
+<p>Cookies are small text files which are stored on the browser or hard drive of your Device when you visit a webpage or use an application. Cookies may be needed to show the webpage or application on your Device and are also used to enhance the user experience. Cookies cannot damage your Devices or the files saved on it. There are different types of cookies. Some cookies come directly from our website (first party cookies) and others come from third parties which place cookies on our site (third party cookies).</p>
+<p>Cookies can be stored for varying lengths of time on your browser or device. Session cookies are deleted from your computer or device when you close your web-browser. Persistent cookies will remain stored on your computer or Device until deleted or until they reach their expiry date.</p>
+<h2 id="how-do-we-use-cookies">How do we use cookies?</h2>
+<h3 id="essential-technical-cookies">Essential (Technical) cookies</h3>
+<p>We try to provide an advanced and user-friendly website that adapts automatically to needs and wishes of our visitors and users. To achieve this, we use technical cookies to i.e. show you our Website, to make it function correctly, to create your ContentKing account, to sign you in and to manage your requests. These technical cookies are necessary for our website to function properly.</p>
+<h3 id="functional-cookies">Functional cookies</h3>
+<p>We also use functional cookies to remember your preferences and settings (as username, password, language etc.) and to help you to use the Website efficiently and effectively. These functional cookies are not strictly necessary for the functioning of our Website, but they add functionality for you and enhance your experience.</p>
+<h3 id="analytical-cookies">Analytical cookies</h3>
+<p>We use analytical cookies in order to collect statistics about the use and visits of the Website. These analytic cookies generate statistical and other information about website use by means of cookies, which are stored on users’ Devices. The information generated relating to our Website is used to create reports about the use of the Website. Analytical cookies may be placed without your consent, unless such cookies have an impact on your privacy. In such cases, prior consent will be asked for.</p>
+<h3 id="google-analytics">Google Analytics</h3>
+<p>We use Google Analytics cookies in order to collect statistics about the use and visits of the Website. With these analytical cookies a permanent cookie is saved on your device to register your use of the Website. Google Analytics analyses this data and provides us with the results. This way, we obtain insight into the traffic of the Website and the way in which the Website is used. Based on this information we are able to make specific adjustments to the Website.</p>
+<p>The information that we obtain is transferred to Google and stored by Google on servers outside the European Economic Area. We have entered into a data processing agreement with Google in which agreements have been made regarding the processing of personal data.</p>
+<p>If you would like more information about analytical cookies and their expiry date, please visit the Google Analytics <a href="https://developers.google.com/analytics/devguides/collection/gajs/cookie-usage">information page</a>. Google also offers an <a href="https://tools.google.com/dlpage/gaoptout?hl=en">opt-out option</a> for data collection within the scope of Google Analytics.</p>
+<h3 id="marketing-cookies">Marketing cookies</h3>
+<p>We use third party marketing cookies in order to follow your internet browsing behavior and collect data and information on your browsing behavior from various websites you visited. This information is used to make the content of the displayed advertisements as relevant as possible, and to limit repetition of the same advertisements.</p>
+<h3 id="social-plug-ins">Social plug-ins</h3>
+<p>By using the Website you can get access to social media websites, such as Facebook, Twitter and LinkedIn. These buttons come with a code which has been made by these networks themselves. Using these so called social plug-ins you can login to your social media profile and subsequently share information from the Website with others. With these social plug-ins third party marketing cookies are saved on your Devices. These cookies serve the purpose of optimizing your user experience.</p>
+<p>Companies such as LinkedIn, Twitter and Facebook may share your personal data outside the European Economic Area. Please read our Privacy Policy <a href="/legal/privacy-policy/">here</a> and the respective social network’s privacy statement to see how these companies treat your (personal) data.</p>
+<h3 id="pixels">Pixels</h3>
+<p>We also place pixels of third parties. A pixel keeps track of your surfing behavior and how you use the Website. These data are aggregated and give us information about the target group that visits our website. Based on this information, we can show an advertisement to a specific or similar target group on the website of the third party that produced the pixel.</p>
+<h2 id="disable-or-delete-cookies">Disable or delete cookies</h2>
+<p>When you first visit the Website, we ask you to give consent for cookies that are not necessary or functional and that have an impact on your privacy. If you do not give consent, these cookies will not be placed. In that case, you may not be able to use all the functionalities on our Website.</p>
+<p>You can configure your browser so that you do not receive any cookies the next time you use the website. You can read here how you can remove different types of cookies in different browsers. Please consult the help-function of your browser if your browser is not listed below.</p>
+<ul>
+<li><a href="https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&amp;hl=en-GB">Chrome</a></li>
+<li><a href="https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox">Firefox</a></li>
+<li><a href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09">Edge</a></li>
+<li><a href="https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac">Safari</a></li>
+</ul>
+<p>Note: Refusing or deleting cookies only affects the Device and the browser on which you perform this action. If you use different Devices and/or browsers you will need to repeat the above described actions on these Devices and/or browsers.</p>
+<h2 id="privacy">Privacy</h2>
+<p>It is possible that information collected through a cookie or obtained otherwise, contains personal data. If this is the case, our Privacy Policy is applicable on the processing of these data. The Privacy Policy can be read <a href="/legal/privacy-policy/">here</a>.</p>
+<h2 id="can-this-cookie-policy-be-changed">Can this Cookie Policy be changed?</h2>
+<p>We may amend this Cookie Policy in the future. If there are substantive or material changes that may affect one or more of the parties involved to a considerable extent, we inform those involved in advance. Our changed Cookie Policy will also be available on this web page, so it is recommended to regularly have a look at this page.</p>
+<h2 id="overview-cookies">Overview cookies</h2>
+<h3 id="essential-technical-cookies-1">Essential (Technical) cookies</h3>
+<p>Essential (Technical) cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function (properly) without these cookies.</p>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">viewedOuibounceModal</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>ContentKing</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store state of having closed the exit intent modal.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 month</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">nette-samesite</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>ContentKing</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Communication with account service.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>Session</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">session_timestamp</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>ContentKing</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Utility for tracking of session start time.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>Session</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>SessionStorage</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">what-intent</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>ContentKing</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Utility for tracking the current input method.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>Session</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>SessionStorage</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">what-input</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>ContentKing</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Utility for tracking the current input method.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>Session</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>SessionStorage</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">contentking</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>ContentKing</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store state for website functioning.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 day</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>LocalStorage</td>
+</tr>
+</tbody>
+</table>
+<h3 id="statistics-analytical-cookies">Statistics (analytical cookies)</h3>
+<p>These cookies help us to understand how visitors interact with websites by collecting and reporting information anonymously.</p>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_ga</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Google Analytics</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store and count pageviews.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>2 years</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_ga_*</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Google Analytics</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store and count pageviews.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>2 years</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_gcl_au</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Google AdSense</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store and track conversions.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>3 months</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_gid</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Google Analytics</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store and count pageviews.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 day</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_dc_gtm_*</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Google Analytics</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store number of service requests.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 minute</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">wd</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Information about browser window dimensions.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 day</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<h3 id="marketing-social-plug-ins-third-party-marketing-cookies-pixels">Marketing (Social plug-ins, third party marketing cookies, pixels)</h3>
+<p>Marketing cookies are used to follow visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers.</p>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">intercom-session-*</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Intercom</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Contact, communication, support.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 week</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">intercom-id-*</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Intercom</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Contact, communication, support.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>9 months</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">li_gc</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>LinkedIn</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>2 years</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">lidc</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>LinkedIn</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 day</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">bcookie</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>LinkedIn</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>2 years</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_uetsid</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Microsoft Advertising</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 day</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_uetvid</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Microsoft Advertising</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 year</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">tap_vid</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Tapfiliate</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Affiliate marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 year</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie &amp; LocalStorage</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_fbp</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>3 months</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_fbc</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>3 months</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">fr</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>3 months</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">xs</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>3 months</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">dpr</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>5 days</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">c_user</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>30 days</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">sb</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 year, 1 month, 14 days</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">datr</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 year, 1 month, 14 days</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">muc</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Twitter</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 year, 10 months, 3 days</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">muc-ads</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Twitter</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 year, 10 months, 3 days</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cookie-consent-dlg__footer">
+<div class="cookie-consent-dlg__buttons">
+<button class="button button--highlighted js-cookie-banner-show-general">
+<span>Back</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="cookie-banner-preferences-heading" aria-modal="true" class="dialog dialog--slide-in-effect" id="cookie-banner-preferences" inert="" role="dialog">
+<div class="cookie-consent-dlg">
+<div class="cookie-consent-dlg__scrollable-container">
+<div class="cookie-consent-dlg__content">
+<div class="cookie-consent-dlg__heading">
+<div class="cookie-consent-dlg__title" id="cookie-banner-preferences-heading">Your Cookie Preferences</div>
+</div>
+<div aria-hidden="true" class="form-msg form-msg--warning typo js-intercom-warning-message" style="display: none;">
+<p>Our chat requires cookies to function. Please enable Marketing cookies to continue, alternatively you can contact us via email at <a href="mailto:support@contentkingapp.com">support@contentkingapp.com</a></p>
+</div>
+<div class="cookie-consent-dlg__text typo">
+<p>We use different types of cookies to optimize your experience on our website. Click on the categories below to learn more about their purposes. You may choose which types of cookies to allow. Remember that disabling cookies may affect your experience on the website. You can learn more about how we use cookies by visiting our <a class="js-cookie-banner-show-policy" href="#">Cookie Policy</a>.</p>
+</div>
+<form class="cookie-consent-dlg__preferences">
+<div>
+<div class="cookie-consent-dlg__preference-option">
+<input checked="checked" disabled="disabled" id="essential_storage" name="essential_storage" type="checkbox">
+<label for="essential_storage">Essential (Technical) cookies</label>
+</input></div>
+<p>Essential (Technical) cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function (properly) without these cookies.</p>
+</div>
+<div>
+<div class="cookie-consent-dlg__preference-option">
+<input id="analytics_storage" name="analytics_storage" type="checkbox">
+<label for="analytics_storage">Statistics (analytical cookies)</label>
+</input></div>
+<p>These cookies help us to understand how visitors interact with websites by collecting and reporting information anonymously.</p>
+</div>
+<div>
+<div class="cookie-consent-dlg__preference-option">
+<input id="ad_storage" name="ad_storage" type="checkbox"/>
+<label for="ad_storage">Marketing (Social plug-ins, third party marketing cookies, pixels)</label>
+</div>
+<p>Marketing cookies are used to follow visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers.</p>
+</div>
+</form>
+</div>
+<div class="cookie-consent-dlg__footer">
+<div class="cookie-consent-dlg__buttons">
+<button class="button button--hollow-highlighted js-cookie-banner-decline-all">
+<span>Reject all</span>
+</button>
+<button class="button button--action js-cookie-banner-accept-selected">
+<span>Accept selected</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="/assets/js/libraries.js?cb=6d0f457c83ce1f9617c4686abb84c45a" type="text/javascript"></script>
+<script src="/assets/js/app.js?cb=f179e9e0a225b14d8cf7bbe24cb2a6fa}" type="text/javascript"></script>
+</body>
+</html>

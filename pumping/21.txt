@@ -1,0 +1,2617 @@
+<!DOCTYPE html>
+
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Control Search Engine Crawlers for better Indexing and Rankings</title>
+<link href="https://iframe.videodelivery.net" rel="preconnect dns-prefetch"/>
+<script>(function(c,u,v,n,p,e,z,A,w){function k(a){if(!x){x=!0;var l=u.getElementsByTagName(v)[0],d=u.createElement(v);d.src=A;d.crossorigin="anonymous";d.addEventListener("load",function(){try{c[n]=r;c[p]=t;var b=c[e],d=b.init;b.init=function(a){for(var b in a)Object.prototype.hasOwnProperty.call(a,b)&&(w[b]=a[b]);d(w)};B(a,b)}catch(g){console.error(g)}});l.parentNode.insertBefore(d,l)}}function B(a,l){try{for(var d=m.data,b=0;b<a.length;b++)if("function"===typeof a[b])a[b]();var e=!1,g=c.__SENTRY__;"undefined"!==
+typeof g&&g.hub&&g.hub.getClient()&&(e=!0);g=!1;for(b=0;b<d.length;b++)if(d[b].f){g=!0;var f=d[b];!1===e&&"init"!==f.f&&l.init();e=!0;l[f.f].apply(l,f.a)}!1===e&&!1===g&&l.init();var h=c[n],k=c[p];for(b=0;b<d.length;b++)d[b].e&&h?h.apply(c,d[b].e):d[b].p&&k&&k.apply(c,[d[b].p])}catch(C){console.error(C)}}for(var f=!0,y=!1,q=0;q<document.scripts.length;q++)if(-1<document.scripts[q].src.indexOf(z)){f="no"!==document.scripts[q].getAttribute("data-lazy");break}var x=!1,h=[],m=function(a){(a.e||a.p||a.f&&
+-1<a.f.indexOf("capture")||a.f&&-1<a.f.indexOf("showReportDialog"))&&f&&k(h);m.data.push(a)};m.data=[];c[e]=c[e]||{};c[e].onLoad=function(a){h.push(a);f&&!y||k(h)};c[e].forceLoad=function(){y=!0;f&&setTimeout(function(){k(h)})};"init addBreadcrumb captureMessage captureException captureEvent configureScope withScope showReportDialog".split(" ").forEach(function(a){c[e][a]=function(){m({f:a,a:arguments})}});var r=c[n];c[n]=function(a,e,d,b,f){m({e:[].slice.call(arguments)});r&&r.apply(c,arguments)};
+var t=c[p];c[p]=function(a){m({p:a.reason});t&&t.apply(c,arguments)};f||setTimeout(function(){k(h)})})(window,document,"script","onerror","onunhandledrejection","Sentry","a5184105d8fc40669d0a2d883d87688d","https://browser.sentry-cdn.com/6.13.3/bundle.min.js",{"dsn":"https://a5184105d8fc40669d0a2d883d87688d@o29016.ingest.sentry.io/65692","release":"c82be011c","environment":"production"});</script>
+<script>
+// Define dataLayer and the gtag function.
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+
+var storage = window.localStorage.getItem('contentking');
+var defaultConsents = {'ad_storage': 'denied', 'analytics_storage': 'denied', 'functionality_storage': 'denied', 'personalization_storage': 'denied', 'security_storage': 'denied' };
+if (storage) { storage = JSON.parse(storage); if (storage['cookie-consent'] && storage['cookie-consent']['consents']) { defaultConsents = storage['cookie-consent']['consents']; } }
+gtag('consent', 'default', defaultConsents);
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TX8N5H');</script>
+<!-- End Google Tag Manager -->
+<link as="font" crossorigin="" href="https://www.contentkingapp.com/assets/fonts/proxima-nova-normal-700.subset.woff2" rel="preload" type="font/woff2">
+<link as="font" crossorigin="" href="https://www.contentkingapp.com/assets/fonts/proxima-nova-normal-400.subset.woff2" rel="preload" type="font/woff2"/>
+<link href="/assets/css/app.css?cb=3d7688a9dcdb78775593b482c519b511" media="all" rel="stylesheet" type="text/css"/>
+<link href="https://www.contentkingapp.com/assets/images/favicons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="https://www.contentkingapp.com/assets/images/favicons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="https://www.contentkingapp.com/assets/images/favicons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="https://www.contentkingapp.com/assets/images/favicons/site.webmanifest" rel="manifest"/>
+<link href="https://www.contentkingapp.com/assets/images/favicons/favicon.ico" rel="shortcut icon">
+<meta content="ContentKing" name="apple-mobile-web-app-title"/>
+<meta content="ContentKing" name="application-name"/>
+<meta content="#ffffff" name="msapplication-TileColor"/>
+<meta content="https://www.contentkingapp.com/assets/images/favicons/browserconfig.xml" name="msapplication-config"/>
+<meta content="https://www.contentkingapp.com/assets/images/favicons/mstile-144x144.png" name="msapplication-TileImage"/>
+<meta content="#ffffff" name="theme-color"/>
+<link href="https://www.contentkingapp.com/academy/control-crawl-indexing/" hreflang="en" rel="alternate"/>
+<link href="https://www.contentkingapp.com/academy/control-crawl-indexing/" hreflang="x-default" rel="alternate"/>
+<meta content="Improve your rankings by taking control of the crawling and indexing process so search engines know what to focus on!" name="description"/>
+<link href="https://www.contentkingapp.com/academy/control-crawl-indexing/" rel="canonical"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="article" property="og:type"/>
+<meta content="Control Search Engine Crawlers for better Rankings" property="og:title"/>
+<meta content="Improve your rankings by taking control of the crawling and indexing process so search engines know what to focus on." property="og:description"/>
+<meta content="https://www.contentkingapp.com/academy/control-crawl-indexing/" property="og:url"/>
+<meta content="ContentKing" property="og:site_name"/>
+<meta content="https://www.contentkingapp.com/media/social-cards/academy/contentking-academy-control-crawling-indexing-og@2x.png" property="og:image"/>
+<meta content="https://www.contentkingapp.com/media/social-cards/academy/contentking-academy-control-crawling-indexing-og@2x.png" property="og:image:secure_url"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Control Search Engine Crawlers for better Rankings" name="twitter:title"/>
+<meta content="Improve your rankings by taking control of the crawling and indexing process so search engines know what to focus on." name="twitter:description"/>
+<meta content="@contentking" name="twitter:site"/>
+<meta content="https://www.contentkingapp.com/media/social-cards/academy/contentking-academy-control-crawling-indexing-tc@2x.png" name="twitter:image"/>
+<meta content="@contentking" name="twitter:creator"/>
+<meta content="on" name="twitter:dnt"/>
+<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Corporation",
+		"name": "ContentKing",
+		"url": "https://www.contentkingapp.com/",
+		"telephone": "+1 919-647-9205",
+		"address":
+		{
+			"@type": "PostalAddress",
+			"streetAddress": "Warmoesstraat 149-151",
+			"addressLocality": "Amsterdam",
+			"postalCode": "1012 JC",
+			"addressCountry": "NL"
+		},
+		"logo": "https://www.contentkingapp.com/assets/images/logo-schema.svg",
+		"sameAs": [
+			"https://www.facebook.com/contentkingapp/",
+			"https://twitter.com/contentking",
+			"https://www.instagram.com/contentkingapp/",
+			"https://www.linkedin.com/company/10169361/"
+		]
+	}
+</script>
+<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "Article",
+		"mainEntityOfPage": {
+			"@type": "WebPage",
+			"@id": "https://www.contentkingapp.com/academy/control-crawl-indexing/"
+		},
+		"headline": "Controlling Crawling and Indexing: the Ultimate Guide",
+		"image": "https://www.contentkingapp.com/media/social-cards/academy/contentking-academy-control-crawling-indexing-og@2x.png",
+		"author": {
+			"@type": "Person",
+			"name": "Steven van&nbsp;Vessum",
+			"description": "Steven is ContentKing's VP of Community. This means he's involved in everything community and content marketing related. Right where he wants to be. He gets a huge kick out of letting websites rank and loves to talk SEO, content marketing and growth.",
+			"worksFor": {
+			   "@type": "Organization",
+			   "name": "ContentKing"
+			},
+			"jobTitle": "VP of Community","image": "https://www.contentkingapp.com/media/people/steven-van-vessum@2x.jpg",
+			"sameAs": [
+				"https://www.linkedin.com/in/stevenvanvessum",
+				"https://twitter.com/stevenvvessum",
+				"https://www.instagram.com/svanvessum/",
+				"https://www.facebook.com/stevenvanvessum"
+			]
+		},
+		"contributor": {
+			"@type": "Person",
+			"name": "Jessica Rangel",
+			"description": "Jessica is a content marketer for ContentKing. Her days are spent writing marketing content, cycling around canals in Amsterdam and attempting to master the Dutch language.",
+			"worksFor": {
+			   "@type": "Organization",
+			   "name": "ContentKing"
+			},
+			"jobTitle": "Content Marketer","image": "https://www.contentkingapp.com/media/people/jessica-rangel@2x.jpg",
+			"sameAs": [
+				"https://www.linkedin.com/in/jessicamrangel/"
+			]
+		},
+		"publisher": {
+			"@type": "Organization",
+			"name": "ContentKing",
+			"logo": {
+				"@type": "ImageObject",
+				"url": "https://www.contentkingapp.com/assets/images/logo-schema.svg"
+			}
+		},
+		"datePublished": "2017-10-06",
+		"dateModified": "2022-04-14"
+	}
+</script>
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "BreadcrumbList",
+	"itemListElement": [
+		{
+			"@type": "ListItem",
+			"position": 1,
+			"name": "Home",
+			"item": "https://www.contentkingapp.com/"
+		}, {
+			"@type": "ListItem",
+			"position": 2,
+			"name": "Academy",
+			"item": "https://www.contentkingapp.com/academy/"
+		}, {
+			"@type": "ListItem",
+			"position": 3,
+			"name": "Technical SEO",
+			"item": "https://www.contentkingapp.com/academy/technical-seo-hub/"
+		}, {
+			"@type": "ListItem",
+			"position": 4,
+			"name": "Controlling Crawling & Indexing"
+		}
+	]
+}
+</script>
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "🗓️ How often does Google crawl my website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Google Search Console shares their crawl behavior with you. To check it out, log on to Google Search Console and select a website. Head to Crawl > Crawl Stats and there you'll find out how often Google crawls your website. If you're fairly tech savvy, you can find out how often Google's crawls your website by analyzing your website's log files. It's worth noting that Google determines how often they should crawl your website using the <a href='https://www.contentkingapp.com/academy/crawl-budget/'>crawl budget</a> for your website."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "🐌 Can I slow down crawlers when they're crawling my website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, you can do this using the crawl-delay robots.txt directive. Google won't listen to it though. If you want Googlebot to crawl slower than you have to configure this in Google Search Console. Regardless of the method, it's not recommended to throttle Google and Bing's crawlers. Their crawlers are smart enough to know when your website is having a hard time, and they'll check back later in that case."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "🛑 How do I prevent search engines from crawling a website or page?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There's a few ways to go about preventing search engines from crawling parts of your website, or just specific pages. Robots.txt can be used to prevent the crawling of an entire website, sections, and individual pages. Parameter handling can be used to prevent the crawling of URLs that contain a certain parameter, and the HTTP authentication can be used to prevent the crawling of an entire website, sections, and individual pages."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "📇 What does indexing a website mean?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It means actions are performed by a search engine to try to make sense of a website, in order to make it findable through their search engine."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "🔎 Is my website indexable for search engines?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The best way to answer this is to create an account with ContentKing to evaluate how indexable your website is for search engines. As you've been able to read above, there are many ways to influence how search engines index your website."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "📅 How often does Google index my website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As often as Google crawls your website. Its crawlers will pass on whatever they have found to the indexer, which takes care of indexing websites."
+          }
+        },
+        {
+
+          "@type": "Question",
+          "name": "⌚ How long will it take Google to index my new website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There's no single answer to this question, as it depends on the promotion of the new website. Promoting it speeds up the crawling and indexing process. If you do this well, a small website can be indexed with an hour. Alternatively, it can also take months to index an entirely new website. Please note that having your website indexed by search engines doesn't mean your pages will start ranking high right off the bat. Achieving high rankings takes a lot more time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "✋ How do I prevent search engines from indexing a website or page?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Search engines can be prevented from indexing a website or page via multiple methods. The first option is the Meta Robots noindex tag which gives a very strong signal to search engines not to index a page. Moreover, it doesn't pass on relevance or authority signals to other pages. Another way is to use the Canonical URL which is a moderately strong signal to search engines about what page to index, and to attribute relevance and authority signals too. The third option is the HTTP authentication which will only prevent crawling and indexing of new pages from an SEO point of view. But it's a still general best practice to use HTTP authentication on test environments to keep unwanted search engines and users out of it. Alternatively, robots.txt can only be used to prevent the crawling and indexing of new pages, and parameter handling can be used to prevent the crawling and indexing of URLs containing a certain parameter."
+          }
+        }
+      ]
+    }
+</script>
+</link></link></head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-TX8N5H" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<a class="skip-link" href="/academy/control-crawl-indexing/#main-content">
+	Jump to Main Content
+</a>
+<div class="js-content page"><!-- Main Sticky Menu -->
+<div aria-hidden="true" class="header__sticky-wrapper">
+<div class="header__wrapper header__wrapper--is-anchored" id="js-sticky-header">
+<div class="header header--slim">
+<div class="header__content">
+<div class="header__logo"><div class="site-logo site-logo--slim">
+<a class="site-logo__container" href="/" rel="home" tabindex="-1">
+<img alt="ContentKing logo" class="site-logo__image" height="56" src="/assets/images/contentking-conductor-logo.svg" width="200"/>
+</a>
+</div>
+</div>
+<div class="header__nav">
+<nav aria-label="Main navigation" role="navigation">
+<ul class="main-nav js-main-nav">
+<li class="main-nav__item main-nav__item--has-dropdown js-collapsible-nav"><a class="main-nav__link main-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/features/" tabindex="-1"><span>Features</span></a><span class="main-nav__subnav js-collapsible-nav-content">
+<ul aria-label="Submenu for Features" class="nav-group">
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/" tabindex="-1">Overview</a></li>
+<li aria-hidden="true" class="main-nav__divider">---</li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-auditing/" tabindex="-1">SEO Auditing</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-monitoring/" tabindex="-1">SEO Monitoring</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-alerting/" tabindex="-1">SEO Alerting</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-change-tracking/" tabindex="-1">SEO Change Tracking</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/log-file-analysis/" tabindex="-1">Log File Analysis</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-insights-reporting/" tabindex="-1">Insights &amp; Reporting</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/api-integrations/" tabindex="-1">APIs &amp; Integrations</a></li>
+</ul>
+</span></li>
+<li class="main-nav__item main-nav__item--has-dropdown js-collapsible-nav"><a class="main-nav__link main-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/solutions/for-agencies/" tabindex="-1"><span>Solutions</span></a><span aria-label="Submenu for Solutions" class="main-nav__subnav main-nav__subnav--stretched js-collapsible-nav-content">
+<span class="nav-group">
+<span aria-hidden="true" class="nav-group__caption">By Industry</span>
+<ul aria-label="Solutions by industry" class="nav-group__content">
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-agencies/" tabindex="-1">Agencies</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-ecommerce/" tabindex="-1">eCommerce</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-marketplaces/" tabindex="-1">Marketplaces</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-publishers/" tabindex="-1">Publishers</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-travel/" tabindex="-1">Travel</a></li>
+</ul>
+</span>
+<span class="nav-group">
+<span aria-hidden="true" class="nav-group__caption">By Role</span>
+<ul aria-label="Solutions by role" class="nav-group__content">
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-executives/" tabindex="-1">Executives</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-marketing-managers/" tabindex="-1">Marketing Managers</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-technical-seos/" tabindex="-1">Technical SEOs</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-content-teams/" tabindex="-1">Content Teams</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-developers/" tabindex="-1">Developers</a></li>
+</ul>
+</span>
+</span></li>
+<li class="main-nav__item"><a class="main-nav__link" href="/case-studies/" tabindex="-1"><span>Case studies</span></a></li>
+</ul>
+</nav>
+</div>
+<div class="header__buttons">
+<div class="js-header-button-onboarding" style="display: none"><a class="button button--small button--action button--is-shining button--is-responsive" href="/go/url/" id="js-btn-trial" role="button" tabindex="-1">
+<span>Start Trial</span>
+</a>
+</div>
+<div class="js-header-button-app" style="display: none">
+<a class="button button--small button--ghost button--small" href="https://app.contentkingapp.com/" role="button" tabindex="-1">
+<span>Go to app</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div id="js-sticky-header-footer"></div>
+</div>
+</div>
+<!-- End Main Sticky Menu -->
+<header class="header header--main" id="js-main-header">
+<div class="header__content">
+<div class="header__logo"><div class="site-logo">
+<a aria-label="Back to the homepage" class="site-logo__container" href="/" rel="home">
+<img alt="ContentKing logo" class="site-logo__image" height="56" src="/assets/images/contentking-conductor-logo.svg" width="200"/>
+</a>
+</div>
+</div>
+<div class="header__nav">
+<div class="header-nav-layout js-off-canvas-panel" data-aria-label="Website navigation" id="offcanvas-panel">
+<div class="header-nav-layout__content">
+<div class="header-nav-layout__close-btn">
+<button aria-label="Close navigation" class="close-button close-button--light js-off-canvas-close-btn" type="button">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+<div class="header-nav-layout__main-part">
+<nav aria-label="Main navigation" role="navigation">
+<ul class="main-nav js-main-nav">
+<li class="main-nav__item main-nav__item--has-dropdown js-collapsible-nav"><a class="main-nav__link main-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/features/"><span>Features</span></a><span class="main-nav__subnav js-collapsible-nav-content">
+<ul aria-label="Submenu for Features" class="nav-group">
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/">Overview</a></li>
+<li aria-hidden="true" class="main-nav__divider">---</li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-auditing/">SEO Auditing</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-monitoring/">SEO Monitoring</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-alerting/">SEO Alerting</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-change-tracking/">SEO Change Tracking</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/log-file-analysis/">Log File Analysis</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/seo-insights-reporting/">Insights &amp; Reporting</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/features/api-integrations/">APIs &amp; Integrations</a></li>
+</ul>
+</span></li>
+<li class="main-nav__item main-nav__item--has-dropdown js-collapsible-nav"><a class="main-nav__link main-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/solutions/for-agencies/"><span>Solutions</span></a><span aria-label="Submenu for Solutions" class="main-nav__subnav main-nav__subnav--stretched js-collapsible-nav-content">
+<span class="nav-group">
+<span aria-hidden="true" class="nav-group__caption">By Industry</span>
+<ul aria-label="Solutions by industry" class="nav-group__content">
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-agencies/">Agencies</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-ecommerce/">eCommerce</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-marketplaces/">Marketplaces</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-publishers/">Publishers</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-travel/">Travel</a></li>
+</ul>
+</span>
+<span class="nav-group">
+<span aria-hidden="true" class="nav-group__caption">By Role</span>
+<ul aria-label="Solutions by role" class="nav-group__content">
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-executives/">Executives</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-marketing-managers/">Marketing Managers</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-technical-seos/">Technical SEOs</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-content-teams/">Content Teams</a></li>
+<li class="main-nav__subitem">
+<a class="main-nav__sublink" href="/solutions/for-developers/">Developers</a></li>
+</ul>
+</span>
+</span></li>
+<li class="main-nav__item"><a class="main-nav__link" href="/case-studies/"><span>Case studies</span></a></li>
+</ul>
+</nav>
+</div>
+<div class="header-nav-layout__secondary-part">
+<nav aria-label="Secondary navigation" role="navigation">
+<ul class="secondary-nav js-secondary-nav">
+<li class="secondary-nav__item secondary-nav__item--has-dropdown js-collapsible-nav"><a class="secondary-nav__link secondary-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/academy/"><span>Academy</span></a><ul aria-label="Submenu for Academy" class="secondary-nav__subnav js-collapsible-nav-content"><li class="secondary-nav__subitem secondary-nav__subitem--has-divider">
+<a class="secondary-nav__sublink" href="/academy/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-all"></use>
+</svg>Overview</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/seo-fundamentals-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-seo-fundamentals"></use>
+</svg>SEO Fundamentals</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/technical-seo-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-technical-seo"></use>
+</svg>Technical SEO</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/ecommerce-seo-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-ecommerce-seo"></use>
+</svg>eCommerce SEO</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/international-seo-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-international-seo"></use>
+</svg>International SEO</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/structured-data-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-structured-data"></use>
+</svg>Structured Data</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/processes-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-processes"></use>
+</svg>Content &amp; SEO Processes</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/reporting-management-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-reporting-management"></use>
+</svg>SEO Reporting &amp; Management</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/academy/google-search-console-hub/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-google-search-console"></use>
+</svg>Google Search Console</a>
+</li><li class="secondary-nav__subitem secondary-nav__subitem--has-divider-before">
+<a class="secondary-nav__sublink" href="/academy/faq/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-faq"></use>
+</svg>Frequently Asked SEO Questions</a>
+</li>
+</ul></li>
+<li class="secondary-nav__item secondary-nav__item--has-dropdown js-collapsible-nav"><a class="secondary-nav__link secondary-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/blog/"><span>Blog</span></a><ul aria-label="Submenu for Blog" class="secondary-nav__subnav js-collapsible-nav-content"><li class="secondary-nav__subitem secondary-nav__subitem--has-divider">
+<a aria-label="View all articles" class="secondary-nav__sublink" href="/blog/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-all"></use>
+</svg>View all</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/blog/feature-announcements/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-feature-announcements"></use>
+</svg>Feature Announcements</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/blog/seo-in-focus/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-seo-in-focus"></use>
+</svg>SEO in Focus</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/blog/industry-news/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-industry-news"></use>
+</svg>Industry News</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/blog/other/"><svg aria-hidden="true" class="secondary-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-other"></use>
+</svg>Other</a>
+</li>
+</ul></li>
+<li class="secondary-nav__item secondary-nav__item--has-dropdown js-collapsible-nav"><a class="secondary-nav__link secondary-nav__link--dropdown js-toggle-menu-dropdown-link js-collapsible-nav-button" href="/certified-partners/"><span>Certified Partners</span></a><ul aria-label="Submenu for Certified Partners" class="secondary-nav__subnav js-collapsible-nav-content secondary-nav__subnav--auto-width"><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/certified-partners/united-states/">United States</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/certified-partners/united-kingdom/">United Kingdom</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/certified-partners/benelux/">Benelux</a>
+</li><li class="secondary-nav__subitem">
+<a class="secondary-nav__sublink" href="/certified-partners/other/">Other</a>
+</li>
+</ul></li>
+<li class="secondary-nav__item"><a class="secondary-nav__link" href="/careers/"><span>Careers</span></a></li>
+<li class="secondary-nav__item"><a class="secondary-nav__link" href="/support/"><span>Support</span></a></li>
+<li class="secondary-nav__item"><a class="secondary-nav__link" href="/contact/"><span>Contact</span></a></li>
+</ul>
+</nav>
+</div>
+<div class="header-nav-layout__button">
+<div class="js-header-button-onboarding" style="display: none"><a class="button button--fullwidth-on-small button--action button--is-shining button--is-responsive" href="/go/url/" role="button">
+<span>Start Trial</span>
+</a>
+</div>
+<div class="js-header-button-app" style="display: none">
+<a class="button button--fullwidth-on-small button--ghost button--small" href="https://app.contentkingapp.com/">
+<span>Go to app</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="header__buttons header__buttons--hidden-on-offnav">
+<button aria-controls="offcanvas-panel" aria-label="Toggle navigation" class="offnav-control">
+<i aria-hidden="true" class="offnav-control__icon"></i>
+<span class="offnav-control__label">Menu</span>
+</button>
+</div>
+</div>
+</header><main class="page__content" id="main-content">
+<section class="section section--light" id="js-reveal-header-boundary">
+<div class="row">
+<div class="small-12 columns">
+<div class="post-detail">
+<div class="post-detail__heading post-detail__heading--with-breadcrumb">
+<div class="heading">
+<nav aria-label="Breadcrumb" class="heading__breadcrumb">
+<ol class="breadcrumb show-for-medium">
+<li class="breadcrumb__item"><a href="/">Home</a></li>
+<li class="breadcrumb__item"><a href="/academy/">Academy</a></li>
+<li class="breadcrumb__item"><a href="/academy/technical-seo-hub/">Technical SEO</a></li>
+<li class="breadcrumb__item breadcrumb__item--is-active"><span aria-current="page">Controlling Crawling &amp; Indexing</span></li>
+</ol>
+<ul aria-hidden="true" class="hide-for-medium breadcrumb">
+<li class="breadcrumb__item"><a class="backlink" href="/academy/" tabindex="-1">Go to Academy overview</a></li>
+</ul>
+</nav>
+</div>
+</div>
+<div class="post-detail__layout">
+<article class="post-detail__content">
+<div class="post-detail__content-body">
+<div aria-label="List of assigned categories to this article" class="post-detail__badges"><a aria-label="Technical SEO category. Using this link you can show all articles in Technical SEO category." class="academy-category-badge academy-category-badge--technical-seo-category academy-category-badge--default-style" href="/academy/technical-seo-hub/" style="background-color: #3dc8ff;"><span class="academy-category-badge__label">
+		Technical SEO
+	</span></a></div>
+<div class="heading">
+<h1 class="heading__title">Controlling Crawling and Indexing: the Ultimate Guide</h1>
+<div class="heading__params">
+<span aria-hidden="true" class="heading__label">
+										Last updated:
+									</span>
+<span aria-label="The date of last update" class="heading__caption">
+										April 14, 2022
+									</span>
+</div>
+</div>
+<div class="post-detail__text typo">
+<section aria-label="Crawling and Indexing in short" class="highlighted-box highlighted-box--with-background typo-block"><div aria-hidden="true" class="highlighted-box__title">
+<span class="highlighted-box__title-icon"><i class="post-type-icon post-type-icon--reversed-style" style="background-image: url(/assets/images/icons/post-types/crawling-indexing--reversed.svg)"></i></span>Crawling and Indexing in short
+	</div>
+<div class="highlighted-box__content">
+<p>Take control of the crawling and indexing process of your website by communicating your preferences to search engines.</p>
+<p>This helps them to understand what parts of your website to focus on, and what parts to ignore. There's a lot of methods to do this, so when to use which method?</p>
+<p>In this article we'll discuss when to use each methods, and we'll highlight the pros and cons.</p>
+</div>
+</section>
+<div aria-label="Table of contents" class="highlighted-box" role="navigation">
+<div aria-hidden="true" class="highlighted-box__title">Table of contents</div>
+<div class="highlighted-box__content">
+<ul class="navigation-list">
+<li class="navigation-list__item navigation-list__item--primary"><a href="#how-does-crawling-work">How does crawling work?</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#how-does-indexing-work">How does indexing work?</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#how-to-control-crawling-and-indexing">How to take control over crawling and indexing</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#methods">Methods to control crawling and indexing</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#robotstxt">Robots.txt</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#robots-tag">Robots directives</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#canonical-url">Canonical URLs</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#hreflang-attribute">Hreflang attribute</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#pagination-attributes">Pagination attributes</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#mobile-attribute">Mobile attribute</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#webmaster-tools">Parameter handling in Webmaster Tools</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#http-authentication">HTTP authentication</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#fetch-as-search-engines-putting-yourself-in-their-shoes">Fetch as search engines: putting yourself in their shoes</a></li>
+<li class="navigation-list__item navigation-list__item--primary"><a href="#faq">Frequently asked questions about crawling and indexing</a></li>
+</ul>
+</div>
+</div>
+<p>Search engines crawl billions of pages every day. But they index fewer pages than this, and they show even fewer pages in their results. You want your pages to be among them. So, how do you take control of this whole process and improve your rankings?</p>
+<p>To answer that question, first we need look at how the crawling and indexing process works. Then we'll discuss all the methods you can put to work to control this process.</p>
+<h2 id="how-does-crawling-work">
+<a aria-hidden="true" class="anchor-link" href="#how-does-crawling-work" tabindex="-1"></a>How does crawling work?</h2>
+<p>Search engines' crawlers are tasked with finding and crawling as many URLs as possible. They do this to see if there's any new content out there. These URLs can be both new ones and URLs they already knew about. New URLs are found by crawling pages they already knew. After crawling, they pass on their results to the indexer. Pages that search engines are allowed to crawl are often called <em>crawlable</em>.</p>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/patrick-stox@1x.avif" type="image/avif"/><source srcset="/media/people/patrick-stox@1x.webp" type="image/webp"/><img alt="Patrick Stox" class="image" height="100" src="/media/people/patrick-stox@1x.jpg" title="Patrick Stox" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>Search engines can't rank what they can't crawl or haven't seen. That's why crawling and indexing are important topics.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<a class="user-info__social-icon social-icon social-icon--link social-icon--linkedin" href="https://www.linkedin.com/in/patrickstox/" rel="noopener" target="_blank" title="See my profile on LinkedIn"><span class="extlink">LinkedIn</span><span class="show-for-sr"> (opens in a new tab)</span></a><span class="user-info__name">Patrick Stox</span><span class="user-info__additional-info">, <a href="https://www.stoxseo.com/" rel="noopener" target="_blank"><span class="extlink">Raleigh based Technical SEO</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<h2 id="how-does-indexing-work">
+<a aria-hidden="true" class="anchor-link" href="#how-does-indexing-work" tabindex="-1"></a>How does indexing work?</h2>
+<p>The indexers receive the contents of URLs from the crawlers. Indexers then try to make sense of this content by analyzing it (including the links, if any). The indexer processes canonicalized URLs and determines the authority of each URL. The indexer also determines whether they should index a page. Pages that search engines are allowed to index are often called <em>indexable</em>.</p>
+<figure aria-labelledby="image-caption-1" class="captioned-image"><div class="media-container" style="max-width: 1200px;"><img alt="After being crawled a page is forwarded to the indexers." class="image" height="338" loading="lazy" src="/wp-content/uploads/2017/10/contentking-en-academy-crawlingindexing@2x.png" title="After being crawled a page is forwarded to the indexers." width="1200"/></div>
+<figcaption class="captioned-image__caption" id="image-caption-1">After being crawled a page is forwarded to the indexers.</figcaption></figure>
+<p>Indexers also render web pages and <a href="/academy/javascript-seo/">execute JavaScript</a>. If this results in any links being found, these are passed back to the crawler.</p>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/gerry-white@1x.avif, /media/people/gerry-white@2x.avif 2x" type="image/avif"/><source srcset="/media/people/gerry-white@1x.webp, /media/people/gerry-white@2x.webp 2x" type="image/webp"/><img alt="Gerry White" class="image" height="100" loading="lazy" src="/media/people/gerry-white@1x.jpg" srcset="/media/people/gerry-white@1x.jpg, /media/people/gerry-white@2x.jpg 2x" title="Gerry White" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>Make sure your site is easily crawlable and crawl budget is not wasted. We know that Google has incredible crawling capacity, but especially on large eCommerce websites it really pays off to make sure Google's crawling and indexing the right pages. This improves relevance, conversion and ultimately revenue.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<a class="user-info__social-icon social-icon social-icon--link social-icon--linkedin" href="https://www.linkedin.com/in/dergal/" rel="noopener" target="_blank" title="See my profile on LinkedIn"><span class="extlink">LinkedIn</span><span class="show-for-sr"> (opens in a new tab)</span></a><span class="user-info__name">Gerry White</span><span class="user-info__additional-info">, SEO Director, <a href="https://riseatseven.com/" rel="noopener" target="_blank"><span class="extlink">Rise at Seven</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/kevin-indig@1x.avif" type="image/avif"/><source srcset="/media/people/kevin-indig@1x.webp" type="image/webp"/><img alt="Kevin Indig" class="image" height="100" loading="lazy" src="/media/people/kevin-indig@1x.jpg" title="Kevin Indig" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>Controlling indexation is about making sure your crawl budget is used for your 'money maker pages'. But there's more to it: it's about showing your users only your best content and products.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<a class="user-info__social-icon social-icon social-icon--link social-icon--linkedin" href="https://www.linkedin.com/in/kevinindig/" rel="noopener" target="_blank" title="See my profile on LinkedIn"><span class="extlink">LinkedIn</span><span class="show-for-sr"> (opens in a new tab)</span></a><span class="user-info__name"><a href="https://www.kevin-indig.com/" rel="noopener" target="_blank"><span class="extlink">Kevin Indig</span><span class="show-for-sr"> (opens in a new tab)</span></a></span><span class="user-info__additional-info">, Director of SEO, <a href="https://www.shopify.com/" rel="noopener" target="_blank"><span class="extlink">Shopify</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<section aria-label="Useful resources" class="highlighted-box typo-block highlighted-box--with-background highlighted-box--with-icon highlighted-box--resources-style"><div aria-hidden="true" class="highlighted-box__title">Useful resources</div>
+<div class="highlighted-box__content">
+<ul>
+<li><a href="/academy/google-index/">How to Get Google to Index Your Site</a></li>
+</ul>
+</div></section>
+<div aria-label="Start new free trial on ContentKing" class="onboarding-cta typo-block highlighted-box false highlighted-box--expressive" data-testid="onboarding-box"><div class="highlighted-box__content">
+<div class="highlighted-box__title">Don’t miss out on organic traffic</div>
+<div class="onboarding-cta__description typo">
+<p>Know if your most important pages become non-indexable and be alerted in real-time with ContentKing.</p>
+</div>
+<div class="onboarding-cta__form"><form aria-label="The form used for creating free trial account on ContentKing" class="quickinput-form-layout js-submit-url-start-onboarding quickinput-form-layout--white quickinput-form-layout--is-responsive" data-validate="" novalidate="">
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-unexpected-error form-msg form-msg--error" role="none" style="display: none;">Some unexpected error happened. Please contact us.</span><span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-timeout-error form-msg form-msg--error" role="none" style="display: none;">Something went wrong. Please, try again later.</span><div class="quickinput-form-layout__container">
+<div class="quickinput-form-layout__form-field">
+<label class="show-for-sr" for="onboarding-box-1-url">Domain (required)</label><input aria-required="true" class="js-trial-url large" id="onboarding-box-1-url" name="domain" pattern="url_only" placeholder="www.example.com" required="" type="url"/><span aria-hidden="true" aria-live="off" class="form-error form-bubble" role="none">Please enter a valid domain name (www.example.com).</span><span aria-hidden="true" aria-live="off" class="js-website-already-monitored custom-error form-bubble" role="none" style="display: none;">This domain is already being monitored by ContentKing. Please contact us if you are the rightful owner of this domain.</span><span aria-hidden="true" aria-live="off" class="js-target-redirected custom-error form-bubble" role="none" style="display: none;">This website redirects to <span class="js-target-redirected-domain"></span>. Do you want to add this website instead?</span><span aria-hidden="true" aria-live="off" class="js-blacklisted-domain custom-error form-bubble" role="none" style="display: none;">This domain has been excluded from monitoring. If you own it, please contact us.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain custom-error form-bubble" role="none" style="display: none;">We can't find this domain. Are you sure it's correct?</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-connect custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (connect failure). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-empty-response custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (empty response). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-size-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (size limit). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-time-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (time-out). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-waf custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (blocked by web application firewall). Please contact us for help.</span>
+</div>
+<div class="quickinput-form-layout__form-button"><button class="button js-submit-button button--large button--action button--is-shining button--fullwidth" data-loading-label="Loading" type="submit"><div><span class="button__content"><big>Start your free trial</big><small><span class="show-for-sr">. </span>No credit card needed</small></span></div></button></div>
+</div>
+</form></div>
+</div></div>
+<h2 id="how-to-control-crawling-and-indexing">
+<a aria-hidden="true" class="anchor-link" href="#how-to-control-crawling-and-indexing" tabindex="-1"></a>How to take control over crawling and indexing</h2>
+<p>Take control of the crawling and indexing process by making your preferences clear to search engines. By doing so, you help them understand what sections of your website are most important to you.</p>
+<p>In this chapter we'll cover all the methods and which to use when. We've also put together a table to illustrate what they can and cannot do.</p>
+<p>First let's explain some concepts:</p>
+<ul>
+<li>Crawlable: are search engines able to crawl the URL?</li>
+<li>Indexable: are search engines encouraged to index the URL?</li>
+<li>Prevents duplicate content: does this method prevent <a href="/academy/duplicate-content/">duplicate content issues</a>?</li>
+<li>Consolidates signals: are search engines encouraged to consolidate topical relevancy and <a href="/academy/authority/#page-authority">URL authority signals</a>, as defined by the URL's content and links?</li>
+</ul>
+<p>Furthermore, it's important to understand what <a href="/academy/crawl-budget/">crawl budget</a> is. Crawl budget is the amount of time search engines' crawlers spend on your website. You want them to spend it wisely, and you can give them instructions for that.</p>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/barry-adams@1x.avif, /media/people/barry-adams@2x.avif 2x" type="image/avif"/><source srcset="/media/people/barry-adams@1x.webp, /media/people/barry-adams@2x.webp 2x" type="image/webp"/><img alt="Barry Adams" class="image" height="100" loading="lazy" src="/media/people/barry-adams@1x.jpg" srcset="/media/people/barry-adams@1x.jpg, /media/people/barry-adams@2x.jpg 2x" title="Barry Adams" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>For large websites it can be a delicate balance to manage a search engine's crawl effort to ensure all the right pages are crawled and indexed, while not blocking too many pages at the same time. Ideally a well thought-out site structure prevents a lot of long term crawl issues, but sometimes the sledgehammer approach of robots.txt blocking can do the trick. I also like using <a href="/academy/nofollow/">rel=nofollow</a> on specific links I don't want search engines to crawl, such as faceted navigation.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<span class="user-info__name">Barry Adams</span><span class="user-info__additional-info">, Independent SEO Consultant, <a href="https://www.polemicdigital.com/" rel="noopener" target="_blank"><span class="extlink">Polemic Digital</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/paul-shapiro@1x.avif" type="image/avif"/><source srcset="/media/people/paul-shapiro@1x.webp" type="image/webp"/><img alt="Paul Shapiro" class="image" height="100" loading="lazy" src="/media/people/paul-shapiro@1x.jpg" title="Paul Shapiro" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>Crawling and indexing is the crux of technical SEO. It's not something you need to worry about as much for smaller, basic websites. Google is fairly decent with that. But for larger, more complex websites, working to take control of crawling and indexing patterns becomes an essential part of SEO tasks, and can make all the difference.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<span class="user-info__name">Paul Shapiro</span><span class="user-info__additional-info">, Global Director, Technical SEO, <a href="https://www.condenast.com/" rel="noopener" target="_blank"><span class="extlink">Condé Nast</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<h2 id="methods">
+<a aria-hidden="true" class="anchor-link" href="#methods" tabindex="-1"></a>Methods to control crawling and indexing</h2>
+<table>
+<thead>
+<tr>
+<th> </th>
+<th><strong>Crawlable</strong></th>
+<th><strong>Indexable</strong></th>
+<th><strong>Prevents duplicate content</strong></th>
+<th><strong>Consolidates signals</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/academy/control-crawl-indexing/#robotstxt">Robots.txt</a></td>
+<td><img alt="no icon" class="image image--no-border" height="24" src="/assets/images/icons/no.svg" title="not available" width="24"/></td>
+<td><img alt="no icon" class="image image--no-border" height="24" src="/assets/images/icons/no.svg" title="not available" width="24"/></td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+<td><img alt="no icon" class="image image--no-border" height="24" src="/assets/images/icons/no.svg" title="not available" width="24"/></td>
+</tr>
+<tr>
+<td>
+<a href="/academy/control-crawl-indexing/#robots-tag">Robots directives</a><br/>(Meta and HTTP header)</td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+<td><img alt="no icon" class="image image--no-border" height="24" src="/assets/images/icons/no.svg" title="not available" width="24"/></td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+<td><img alt="no icon" class="image image--no-border" height="24" src="/assets/images/icons/no.svg" title="not available" width="24"/></td>
+</tr>
+<tr>
+<td>
+<a href="/academy/control-crawl-indexing/#canonical-url">Canonical</a><br/>(Link and HTTP header)</td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+<td><img alt="no icon" class="image image--no-border" height="24" src="/assets/images/icons/no.svg" title="not available" width="24"/></td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+</tr>
+<tr>
+<td><a href="/academy/control-crawl-indexing/#hreflang-attribute">Hreflang attribute</a></td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+<td><img alt="no icon" class="image image--no-border" height="24" src="/assets/images/icons/no.svg" title="not available" width="24"/></td>
+</tr>
+<tr>
+<td><a href="/academy/control-crawl-indexing/#pagination-attributes">Pagination attributes</a></td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+</tr>
+<tr>
+<td><a href="/academy/control-crawl-indexing/#mobile-attribute">Mobile attribute</a></td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+<td><img alt="no icon" class="image image--no-border" height="24" src="/assets/images/icons/no.svg" title="not available" width="24"/></td>
+</tr>
+<tr>
+<td><a href="/academy/control-crawl-indexing/#webmaster-tools">Webmaster tools</a></td>
+<td><img alt="no icon" class="image image--no-border" height="24" src="/assets/images/icons/no.svg" title="not available" width="24"/></td>
+<td><img alt="no icon" class="image image--no-border" height="24" src="/assets/images/icons/no.svg" title="not available" width="24"/></td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+</tr>
+<tr>
+<td><a href="/academy/control-crawl-indexing/#http-authentication">HTTP authentication</a></td>
+<td><img alt="no icon" class="image image--no-border" height="24" src="/assets/images/icons/no.svg" title="not available" width="24"/></td>
+<td><img alt="no icon" class="image image--no-border" height="24" src="/assets/images/icons/no.svg" title="not available" width="24"/></td>
+<td><img alt="yes icon" class="image image--no-border" height="24" src="/assets/images/icons/yes.svg" title="available" width="24"/></td>
+<td><img alt="no icon" class="image image--no-border" height="24" src="/assets/images/icons/no.svg" title="not available" width="24"/></td>
+</tr>
+</tbody>
+</table>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/david-iwanow@1x.avif, /media/people/david-iwanow@2x.avif 2x" type="image/avif"/><source srcset="/media/people/david-iwanow@1x.webp, /media/people/david-iwanow@2x.webp 2x" type="image/webp"/><img alt="David Iwanow" class="image" height="100" loading="lazy" src="/media/people/david-iwanow@1x.jpg" srcset="/media/people/david-iwanow@1x.jpg, /media/people/david-iwanow@2x.jpg 2x" title="David Iwanow" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>Search engines are OK-ish at figuring out what pages to crawl and index, but often it's recommended to communicate your preferences regarding the crawling and indexing process to them. Then they know what pages to focus on and which pages to ignore during crawling, which subsequently leads to more focus during indexing and less junk pages getting indexed.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<span class="user-info__name">David Iwanow</span><span class="user-info__additional-info">, <a href="https://travel-network.co/" rel="noopener" target="_blank"><span class="extlink">Travel Network</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<h2 id="robotstxt">
+<a aria-hidden="true" class="anchor-link" href="#robotstxt" tabindex="-1"></a>Robots.txt</h2>
+<div class="media-container" style="max-width: 600px;"><img alt="Controlling crawling and indexing with robots.txt." class="image" height="115" loading="lazy" src="/wp-content/uploads/2017/10/contentking-en-academy-robottxt@2x.png" title="Controlling crawling and indexing with robots.txt." width="600"/></div>
+<p>The <a href="/academy/robotstxt/">robots.txt file</a> is a central location that provides basic ground rules for crawlers. We call these ground rules <em>directives</em>. If you want to keep crawlers from crawling certain URLs, your robots.txt is the best way to do that.</p>
+<p>If crawlers aren't allowed to crawl a URL and request its content, the indexer will never be able to analyse its content and links. This can prevent duplicate content, and it also means that the URL in question will never be able to rank. Also, search engines will not be able to consolidate topical relevance and authority signals when they don't know what's on the page. Those signals will therefore be lost.</p>
+<div aria-label="The ultimate Cheat Sheet on Crawling &amp; Indexing" class="highlighted-box highlighted-box--expressive"><div class="highlighted-box__content"><div class="download-materials"><div class="download-materials__content">
+<img alt="" class="download-materials__illustration" height="170" loading="lazy" src="/media/freebies/cheatsheet-crawling@1x.png" srcset="/media/freebies/cheatsheet-crawling@1x.png 1x, /media/freebies/cheatsheet-crawling@2x.png 2x" width="130"/><div aria-hidden="true" class="download-materials__title">The ultimate Cheat Sheet on Crawling &amp; Indexing</div>
+<p>Often racking your brain what method to use when controlling search engines? Save time and pick the right methods!</p>
+<div class="download-materials__button">
+<a class="button button--large button--action js-nofollow-link js-freebie-download-link" data-ga-label="Academy: crawling and indexing cheat sheet" data-href="/resources/ContentKing%20-%20Crawling%20and%20Indexing%20Cheatsheet.pdf" href="#" target="_blank">
+<div>
+<span class="button__content">
+<big>Download your cheatsheet</big>
+</span>
+</div>
+</a>
+</div>
+</div></div></div></div>
+<p><strong>An example for using robots.txt</strong><br/>
+A site's admin section is a good example of where you want to apply the robots.txt file to keep crawlers from accessing it. Let's say the admin section resides on: <code class="language-plaintext highlighter-rouge">https://www.example.com/admin/</code>.</p>
+<p>Block crawlers from accessing this section using the following directive in your robots.txt:</p>
+<p><code class="language-plaintext highlighter-rouge">Disallow: /admin</code></p>
+<p>Can't change your robots.txt file? Then apply the <a href="/academy/control-crawl-indexing/#robots-tag">robots noindex directive</a> to the <code class="language-plaintext highlighter-rouge">/admin</code> section.</p>
+<p><strong>Important notes</strong><br/>
+Please note that URLs that are disallowed from being crawled by search engines can still appear in search results. This happens when the URLs are linked to from other pages, or were already known to search engines before they were made inaccessible through robots.txt. Search engines will then display a snippet like this:</p>
+<div class="media-container" style="max-width: 447px;"><img alt="Page is inaccessible through robots.txt" class="image" height="90" loading="lazy" src="/wp-content/uploads/2017/10/inaccessible-through-robots.png" title="Page is inaccessible through robots.txt" width="447"/></div>
+<p>Robots.txt cannot resolve existing duplicate content issues. Search engines will not forget about a URL simply because they can't access it.</p>
+<p>Adding a canonical URL or a meta robots noindex attribute to a URL that's been blocked through robots.txt will not get it deindexed. Search engines will never know about your request for deindexing, because your robots.txt file is keeping them from finding out.</p>
+<p>The robots.txt file is an essential tool in optimizing crawl budget on your website. Using the robots.txt file, you can tell search engines not to crawl the parts of your website that are irrelevant for them.</p>
+<p><strong>What the robots.txt file will do:</strong></p>
+<ul>
+<li>Keep search engines from crawling certain parts of your website, thereby preserving crawl budget.</li>
+<li>Keep search engines from indexing certain parts of your website – if there are no links to them.</li>
+<li>Prevent new duplicate content issues.</li>
+</ul>
+<p><strong>What the robots.txt file will not do:</strong></p>
+<ul>
+<li>Consolidate relevancy and authority signals.</li>
+<li>Remove content that's already indexed*.</li>
+</ul>
+<p>* While Google supports the <a href="/academy/robotstxt/#dont-use-noindex-in-your-robots-txt">noindex directive</a> and will <a href="/academy/google-remove-urls/">remove URLs from its index</a>, it's not recommended to use this method as it's an unofficial standard. It's only supported by Google and not 100% fool proof. Only use it when you can't use <a href="/academy/control-crawl-indexing/#robots-tag">robots directives</a> and <a href="/academy/control-crawl-indexing/#canonical-url">canonical URLs</a>.</p>
+<p><strong>Want to read more about robots.txt?</strong><br/>
+Check out the ultimate <a href="/academy/robotstxt/">robots.txt reference guide</a>.</p>
+<div aria-label="Embedded quote from our customer" class="quote-box typo-block">
+<div aria-hidden="true" class="quote-box__avatar"><span class="avatar avatar--small-size"><span class="avatar__img"><picture><source srcset="/media/people/paddy-moogan@1x.avif" type="image/avif"/><source srcset="/media/people/paddy-moogan@1x.webp" type="image/webp"/><img alt="Paddy Moogan" class="image" height="100" loading="lazy" src="/media/people/paddy-moogan@1x.jpg" title="Paddy Moogan" width="100"/></picture></span></span></div>
+<div class="quote-box__content typo">
+<blockquote class="quote-box__blockquote">
+<p>From experience, Googlebot can be very aggressive when crawling URLs if you leave it to figure things out on it's own. Anything that remotely looks like a URL in your source code can be crawled and I've seen them "try" URLs that don't appear to exist. For most sites, this probably isn't a big issue, but if your site is anything more than a few thousand URLs, you do need to think about controlling Googlebot and ensuring that they spend as much time as possible crawling the URLs that you care about.</p>
+</blockquote>
+<div aria-label="The author of this quote" class="quote-box__info"><div class="user-info">
+<span class="user-info__name">Paddy Moogan</span><span class="user-info__additional-info">, <a href="https://www.aira.net/" rel="noopener" target="_blank"><span class="extlink">Aira Digital</span><span class="show-for-sr"> (opens in a new tab)</span></a></span>
+</div></div>
+</div>
+</div>
+<h2 id="robots-tag">
+<a aria-hidden="true" class="anchor-link" href="#robots-tag" tabindex="-1"></a>Robots directives</h2>
+<div class="media-container" style="max-width: 600px;"><img alt="Controlling crawling and indexing with Meta Robots noindex." class="image" height="115" loading="lazy" src="/wp-content/uploads/2017/10/contentking-en-academy-metarobots@2x.png" title="Controlling crawling and indexing with Meta Robots noindex." width="600"/></div>
+<p>The robots directives instruct search engines on how to index pages, while keeping the page accessible for visitors. Often it's used to instruct search engines not to index certain pages. When it comes to indexing, it's a stronger signal than the canonical URL.</p>
+<p>Implementing robots directives is generally done by including it in the source using the meta robots tag. For other documents such as PDFs or images, it's done through the <code class="language-plaintext highlighter-rouge">X-Robots-Tag HTTP header</code>.</p>
+<p><strong>An example for the use of the robots directives</strong><br/>
+Say you have ten landing pages for Google AdWords traffic. You copied the content from other pages and then slightly adjusted it. You don't want these landing pages to be indexed, because that would cause duplicate content issues, so you include the robots directive with the noindex attribute.</p>
+<p><strong>Important notes</strong><br/>
+The robots directives helps you prevent duplicate content, but it doesn't attribute topical relevance and authority to another URL. That's just lost.</p>
+<p>Besides instructing search engines not to index a page, the robots directives also discourages search engines from crawling the page. Some crawl budget is preserved because of this.</p>
+<p>Contrary to its name, the robots directives nofollow attribute will not influence crawling of a page that has the nofollow attribute. However, when the robots directives nofollow attribute is set search engine crawlers won't use links on this page to crawl other pages and subsequently won't pass on authority to these other pages.</p>
+<p><strong>What the robots directives will do:</strong></p>
+<ul>
+<li>Keep search engines from indexing certain parts of your website.</li>
+<li>Prevent duplicate content issues.</li>
+</ul>
+<p><strong>What the robots directives will not do:</strong></p>
+<ul>
+<li>Keep search engines from crawling certain parts of your website, preserving crawl budget.</li>
+<li>Consolidate most of the relevancy and authority signals.</li>
+</ul>
+<p><strong>Want to read more about the robots directives?</strong><br/>
+Check out the ultimate guide to <a href="/academy/meta-robots-tag/">meta robots tag</a>.</p>
+<div aria-label="Start new free trial on ContentKing" class="onboarding-cta typo-block highlighted-box false highlighted-box--expressive" data-testid="onboarding-box"><div class="highlighted-box__content">
+<div class="highlighted-box__title">Check your website before crawlers do</div>
+<div class="onboarding-cta__description typo">
+<p>Discover and fix issues before your website gets crawled and indexed. See what ContentKing can do for your SEO.</p>
+</div>
+<div class="onboarding-cta__form"><form aria-label="The form used for creating free trial account on ContentKing" class="quickinput-form-layout js-submit-url-start-onboarding quickinput-form-layout--white quickinput-form-layout--is-responsive" data-validate="" novalidate="">
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-unexpected-error form-msg form-msg--error" role="none" style="display: none;">Some unexpected error happened. Please contact us.</span><span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-timeout-error form-msg form-msg--error" role="none" style="display: none;">Something went wrong. Please, try again later.</span><div class="quickinput-form-layout__container">
+<div class="quickinput-form-layout__form-field">
+<label class="show-for-sr" for="onboarding-box-2-url">Domain (required)</label><input aria-required="true" class="js-trial-url large" id="onboarding-box-2-url" name="domain" pattern="url_only" placeholder="www.example.com" required="" type="url"/><span aria-hidden="true" aria-live="off" class="form-error form-bubble" role="none">Please enter a valid domain name (www.example.com).</span><span aria-hidden="true" aria-live="off" class="js-website-already-monitored custom-error form-bubble" role="none" style="display: none;">This domain is already being monitored by ContentKing. Please contact us if you are the rightful owner of this domain.</span><span aria-hidden="true" aria-live="off" class="js-target-redirected custom-error form-bubble" role="none" style="display: none;">This website redirects to <span class="js-target-redirected-domain"></span>. Do you want to add this website instead?</span><span aria-hidden="true" aria-live="off" class="js-blacklisted-domain custom-error form-bubble" role="none" style="display: none;">This domain has been excluded from monitoring. If you own it, please contact us.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain custom-error form-bubble" role="none" style="display: none;">We can't find this domain. Are you sure it's correct?</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-connect custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (connect failure). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-empty-response custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (empty response). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-size-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (size limit). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-time-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (time-out). Please contact us for help.</span><span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-waf custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (blocked by web application firewall). Please contact us for help.</span>
+</div>
+<div class="quickinput-form-layout__form-button"><button class="button js-submit-button button--large button--action button--is-shining button--fullwidth" data-loading-label="Loading" type="submit"><div><span class="button__content"><big>Start your free trial</big><small><span class="show-for-sr">. </span>No credit card needed</small></span></div></button></div>
+</div>
+</form></div>
+</div></div>
+<h2 id="canonical-url">
+<a aria-hidden="true" class="anchor-link" href="#canonical-url" tabindex="-1"></a>Canonical URLs</h2>
+<div class="media-container" style="max-width: 600px;"><img alt="Controlling crawling and indexing with Canonical URLs." class="image" height="115" loading="lazy" src="/wp-content/uploads/2017/10/contentking-en-academy-canonicalurl@2x.png" title="Controlling crawling and indexing with Canonical URLs." width="600"/></div>
+<p>A canonical URL communicates the canonical version of a page to search engines, encouraging search engines to index the canonical version. The canonical URL can reference itself or other pages. If it's useful for visitors to be able to access multiple versions of a page and you want search engines to treat them as one version, the canonical URL is the way to go. When one page references another page using the canonical URL, most of its topical relevance and authority is attributed to the target URL.</p>
+<p><strong>An example for the use of a canonical URL</strong><br/>
+Say you have an eCommerce website with a product in three categories. The product is accessible via three different URLs. This is fine for visitors, but search engines should only focus on crawling and indexing one URL. Choose one of categories as the primary one, and canonicalize the other two categories to it.</p>
+<p><strong>Important notes</strong><br/>
+Make sure to 301 redirect URLs that don't serve a purpose for visitors anymore to the canonical version. This enables you to attribute all their topical relevance and authority to the canonical version. This also helps to get other websites to link to the canonical version.</p>
+<p>A canonical URL is a guideline, rather than a directive. Search engines can choose to ignore it.</p>
+<p>Applying a canonical URL will not preserve any crawl budget, as it doesn't prevent search engines from crawling pages. It prevents them from being returned for search queries as they are consolidated to the canonical version of the URL.</p>
+<p><strong>What a canonical URL will do:</strong></p>
+<ul>
+<li>Keep search engines from indexing certain parts of your website.</li>
+<li>Prevent duplicate content issues.</li>
+<li>Consolidate most of the relevancy and authority signals.</li>
+</ul>
+<p><strong>What a canonical URL will not do:</strong></p>
+<ul>
+<li>Keep search engines from crawling certain parts of your website, thereby preserving crawl budget.</li>
+</ul>
+<p><strong>Want to read more about canonical URLs?</strong><br/>
+Check out the ultimate <a href="/academy/canonical/">canonical URL reference guide</a>.</p>
+<h2 id="hreflang-attribute">
+<a aria-hidden="true" class="anchor-link" href="#hreflang-attribute" tabindex="-1"></a>Hreflang attribute</h2>
+<div class="media-container" style="max-width: 600px;"><img alt="Controlling crawling and indexing with hreflang." class="image" height="115" loading="lazy" src="/wp-content/uploads/2017/10/contentking-en-academy-hreflang@2x-2.png" title="Controlling crawling and indexing with hreflang." width="600"/></div>
+<p>The <code class="language-plaintext highlighter-rouge">rel="alternate" hreflang="x"</code> link attribute, or <a href="/academy/hreflang/"><strong><code class="language-plaintext highlighter-rouge">hreflang</code> attribute</strong></a> for short, is used to communicate to search engines what language your content is in and what geographical region your content is meant for. If you're using the same content or similar content to target multiple regions,<code class="language-plaintext highlighter-rouge">hreflang</code> is the way to go. It enables you to rank your pages in your intended markets.</p>
+<p>It helps prevent duplicate content, so having two pages with the exact same content for the United Kingdom and United States is fine when you've implemented<code class="language-plaintext highlighter-rouge">hreflang</code>. Duplicate content aside, the most important thing is to make sure your content rhymes with the audience. Make sure your audience feels at home, so having (somewhat) different text and visuals for the United Kingdom and United States is recommended.</p>
+<p><strong>An example of using hreflang</strong><br/>
+You're targeting several English speaking markets using subdomains for each market. Each subdomain contains English content, localized for its market:</p>
+<ul>
+<li>
+<code class="language-plaintext highlighter-rouge">www.example.com</code> for the US market</li>
+<li>
+<code class="language-plaintext highlighter-rouge">ca.example.com</code> for the Canadian market</li>
+<li>
+<code class="language-plaintext highlighter-rouge">uk.example.com</code> for the UK market</li>
+<li>
+<code class="language-plaintext highlighter-rouge">au.example.com</code> for the Australian market</li>
+</ul>
+<p>Within each market you want to rank with the right page. Here's where hreflang comes in.</p>
+<p><strong>What the hreflang attribute will do:</strong></p>
+<ul>
+<li>Help search engines rank the right content in the right market.</li>
+<li>Prevent duplicate content issues.</li>
+</ul>
+<p><strong>What the hreflang attribute will not do:</strong></p>
+<ul>
+<li>Keep search engines from crawling certain parts of your website, thereby preserving crawl budget.</li>
+<li>Keep search engines from indexing certain parts of your website.</li>
+<li>Consolidate relevancy and authority signals.</li>
+</ul>
+<p><strong>Want to read more about hreflang?</strong><br/>
+Check out the ultimate <a href="/academy/hreflang/">hreflang reference guide</a>.</p>
+<h2 id="pagination-attributes">
+<a aria-hidden="true" class="anchor-link" href="#pagination-attributes" tabindex="-1"></a>Pagination attributes</h2>
+<div class="media-container" style="max-width: 600px;"><img alt="Controlling crawling and indexing with rel=prev and rel=next." class="image" height="115" loading="lazy" src="/wp-content/uploads/2017/10/contentking-en-academy-prevnext@2x.png" title="Controlling crawling and indexing with rel=prev and rel=next." width="600"/></div>
+<p>The <code class="language-plaintext highlighter-rouge">rel="prev"</code> and <code class="language-plaintext highlighter-rouge">rel="next"</code> link attributes, <strong>pagination attributes</strong> for short, are used to communicate the relationships among a series of pages to search engines. For series of similar pages, such as paginated blog archive pages or paginated product category pages, it's highly advisable to use the pagination attributes. Search engines will understand that the pages are very similar, which will eliminate duplicate content issues.</p>
+<p>In most cases, search engines will not rank other pages than the first one in the paginated series.</p>
+<p><strong>What the pagination attributes will do:</strong></p>
+<ul>
+<li>Prevent duplicate content issues.</li>
+<li>Consolidate relevancy and authority signals.</li>
+</ul>
+<p><strong>What the pagination attributes will not do:</strong></p>
+<ul>
+<li>Keep search engines from crawling certain parts of your website, thereby preserving crawl budget.</li>
+<li>Keep search engines from indexing certain parts of your website.</li>
+</ul>
+<p><strong>Want to read more about pagination attributes?</strong><br/>
+Check out the ultimate <a href="/academy/pagination/">pagination reference guide</a>.</p>
+<h2 id="mobile-attribute">
+<a aria-hidden="true" class="anchor-link" href="#mobile-attribute" tabindex="-1"></a>Mobile attribute</h2>
+<div class="media-container" style="max-width: 600px;"><img alt="Controlling crawling and indexing with rel=alternate mobile attribute." class="image" height="115" loading="lazy" src="/wp-content/uploads/2017/10/contentking-en-academy-relalternatemedia@2x.png" title="Controlling crawling and indexing with rel=alternate mobile attribute." width="600"/></div>
+<p>The <code class="language-plaintext highlighter-rouge">rel="alternate"</code> mobile attribute, or <strong>mobile attribute</strong> for short, communicates the relationship between a website's desktop and mobile versions to search engines. It helps search engines show the right website for the right device and prevents duplicate content issues in the process.</p>
+<p><strong>What the mobile attribute will do:</strong></p>
+<ul>
+<li>Prevent duplicate content issues.</li>
+<li>Consolidate relevancy and authority signals.</li>
+</ul>
+<p><strong>What the mobile attribute will not do:</strong></p>
+<ul>
+<li>Keep search engines from crawling certain parts of your website, thereby preserving crawl budget.</li>
+<li>Keep search engines from indexing certain parts of your website.</li>
+</ul>
+<p><strong>Want to read more about the mobile attribute?</strong><br/>
+Check out the ultimate <a href="/academy/mobile-attribute/">mobile attribute reference guide</a>.</p>
+<h2 id="webmaster-tools">
+<a aria-hidden="true" class="anchor-link" href="#webmaster-tools" tabindex="-1"></a>Parameter handling in Webmaster Tools</h2>
+<div class="media-container" style="max-width: 600px;"><img alt="Controlling crawling and indexing with Webmaster Tools." class="image" height="115" loading="lazy" src="/wp-content/uploads/2017/10/contentking-en-academy-webmaster@2x.png" title="Controlling crawling and indexing with Webmaster Tools." width="600"/></div>
+<p>If you're unable to make changes (quickly) to your website, you can set up parameter handling in Google Search Console and Bing Webmaster Tools. Parameter handling defines how search engines should deal with URLs that contain a parameter. Using this, you can tell Google and Bing not to crawl and/or index certain URLs.</p>
+<p>In order to set up parameter handling, you need URLs that are identifiable by a pattern. Parameter handling should only be used in certain situations, for example sorting, filtering, translating, and saving session data.</p>
+<p><strong>Important note</strong><br/>
+Keep in mind that configuring this for Google and Bing will not affect how other search engines crawl your website.</p>
+<p><strong>What parameter handling will do:</strong></p>
+<ul>
+<li>Keep search engines from crawling certain parts of your website, thereby preserving crawl budget.</li>
+<li>Keep search engines from indexing certain parts of your website.</li>
+<li>Prevent duplicate content issues.</li>
+<li>Consolidate relevancy and authority signals.</li>
+</ul>
+<p><strong>What parameter handling will not do:</strong></p>
+<ul>
+<li>Let you configure crawling and indexing for individual URLs.</li>
+</ul>
+<h2 id="http-authentication">
+<a aria-hidden="true" class="anchor-link" href="#http-authentication" tabindex="-1"></a>HTTP authentication</h2>
+<div class="media-container" style="max-width: 600px;"><img alt="Controlling crawling and indexing with HTTP authentication." class="image" height="115" loading="lazy" src="/wp-content/uploads/2017/10/contentking-en-academy-httpauth@2x.png" title="Controlling crawling and indexing with HTTP authentication." width="600"/></div>
+<p>HTTP authentication requires users or machines to log in to gain access to a (section of a ) website. Here's an example of how it looks:</p>
+<div class="media-container" style="max-width: 396px;"><img alt="Authentication required" class="image" height="232" loading="lazy" src="/wp-content/uploads/2017/10/authentication-required.png" title="Authentication required" width="396"/></div>
+<p>Without a username and password, you (or a robot) won't get past the login screen, and you won't be able to access anything. HTTP authentication is great way to keep unwanted visitors – both humans and search engine crawlers – out of for instance a test environment. <a href="https://support.google.com/webmasters/answer/93708" rel="noopener" target="_blank"><span class="extlink">Google recommends</span><span class="show-for-sr"> (opens in a new tab)</span></a> using HTTP authentication to prevent search engine crawlers from accessing test environments:</p>
+<p><em>If you have confidential or private content that you don't want to appear in Google Search results, the simplest and most effective way to block private URLs from appearing is to store them in a password-protected directory on your site server. Googlebot and all other web crawlers are unable to access content in password-protected directories.</em></p>
+<p><strong>What HTTP authentication will do:</strong></p>
+<ul>
+<li>Keep search engines from crawling certain parts of your website, thereby preserving crawl budget.</li>
+<li>Keep search engines from indexing certain parts of your website.</li>
+<li>Prevent duplicate content issues.</li>
+</ul>
+<p><strong>What HTTP authentication will not do:</strong></p>
+<ul>
+<li>Consolidate relevancy and authority signals.</li>
+</ul>
+<div aria-label="The ultimate Cheat Sheet on Crawling &amp; Indexing" class="highlighted-box highlighted-box--expressive"><div class="highlighted-box__content"><div class="download-materials"><div class="download-materials__content">
+<img alt="" class="download-materials__illustration" height="170" loading="lazy" src="/media/freebies/cheatsheet-crawling@1x.png" srcset="/media/freebies/cheatsheet-crawling@1x.png 1x, /media/freebies/cheatsheet-crawling@2x.png 2x" width="130"/><div aria-hidden="true" class="download-materials__title">The ultimate Cheat Sheet on Crawling &amp; Indexing</div>
+<p>Quickly choose the right method to address crawling and indexing issues!</p>
+<div class="download-materials__button">
+<a class="button button--large button--action js-nofollow-link js-freebie-download-link" data-ga-label="Academy: crawling and indexing cheat sheet" data-href="/resources/ContentKing%20-%20Crawling%20and%20Indexing%20Cheatsheet.pdf" href="#" target="_blank">
+<div>
+<span class="button__content">
+<big>Download your cheatsheet</big>
+</span>
+</div>
+</a>
+</div>
+</div></div></div></div>
+<h2 id="fetch-as-search-engines-putting-yourself-in-their-shoes">
+<a aria-hidden="true" class="anchor-link" href="#fetch-as-search-engines-putting-yourself-in-their-shoes" tabindex="-1"></a>Fetch as search engines: putting yourself in their shoes</h2>
+<p>So how do search engine crawlers see your pages, and how do your pages render? Put yourself in their shoes by using their "Fetch and Render" tools.</p>
+<p>Google's "Fetch as Googlebot" feature is most well known. It's located <a href="https://www.google.com/webmasters/tools/googlebot-fetch?hl=en" rel="noopener" target="_blank"><span class="extlink">in Google Search Console</span><span class="show-for-sr"> (opens in a new tab)</span></a> and allows you to fill in a URL on your site and then Google will show you what their crawlers see on this URL, and how they render the URL. You can do this for both desktop and mobile. See below what this looks like:</p>
+<figure aria-labelledby="image-caption-12" class="captioned-image"><div class="media-container" style="max-width: 1247px;"><img alt="Fetching a URL" class="image" height="802" loading="lazy" src="/wp-content/uploads/2018/01/fetch-as-googlebot-fetch-result.png" title="Fetching a URL" width="1247"/></div>
+<figcaption class="captioned-image__caption" id="image-caption-12">Fetching a URL</figcaption></figure>
+<figure aria-labelledby="image-caption-13" class="captioned-image"><div class="media-container" style="max-width: 1245px;"><img alt="Rendering a URL" class="image" height="788" loading="lazy" src="/wp-content/uploads/2018/01/fetch-as-googlebot-render-result.png" title="Rendering a URL" width="1245"/></div>
+<figcaption class="captioned-image__caption" id="image-caption-13">Rendering a URL</figcaption></figure>
+<p>Rendering a URL</p>
+<p>It's great for double checking whether URLs are responding as expected, but also to force push indexing the URL ("Request indexing"). Within seconds you can get a URL crawled and indexed. This doesn't mean its content is immediately processed and rankings are adjusted, but it does enable you to speed up the crawling and indexing process.</p>
+<h3 id="other-situations-in-which-fetch-as-googlebot-comes-in-handy">
+<a aria-hidden="true" class="anchor-link" href="#other-situations-in-which-fetch-as-googlebot-comes-in-handy" tabindex="-1"></a>Other situations in which Fetch as Googlebot comes in handy</h3>
+<p>Fetch as Googlebot is not just useful for speeding up the crawling and indexing process of an individual URL, it also allows you to:</p>
+<ol>
+<li>
+<strong>Speed up discovery of entire new sections on your website</strong><br/>
+Fetch the URL from which the new sections are linked, and choose to "Request index" with the option to "Crawl this URL and its direct links"</li>
+<li>
+<strong>Audit the mobile experience users have on your site:</strong><br/>
+Fetch a URL as "Mobile: smartphone".</li>
+<li>
+<strong>Check whether 301-redirects are working correctly.</strong><br/>
+Fill in a URL and check the header response.</li>
+</ol>
+<p><strong>Notes:</strong></p>
+<ul>
+<li>Situation 3 can more easily be done, in bulk within ContentKing.</li>
+<li>Google allows you to submit 500 URLs per month for Indexing.</li>
+<li>Google allows you to only submit 10 URLs per month for Indexing with all URLs linked from that URL getting crawled too.</li>
+<li>Bing has a similar tool, called "<a href="https://www.bing.com/webmaster/help/fetch-as-bingbot-fe18fa0d" rel="noopener" target="_blank"><span class="extlink">Fetch as Bingbot</span><span class="show-for-sr"> (opens in a new tab)</span></a>".</li>
+</ul>
+<h2 id="faq">
+<a aria-hidden="true" class="anchor-link" href="#faq" tabindex="-1"></a>Frequently asked questions about crawling and indexing</h2>
+<ol>
+<li><a href="/academy/control-crawl-indexing/#how-often-does-google-crawl-my-website">How often does Google crawl my website?</a></li>
+<li><a href="/academy/control-crawl-indexing/#can-i-slow-down-crawlers-when-they-re-crawling-my-website">Can I slow down crawlers when they're crawling my website?</a></li>
+<li><a href="/academy/control-crawl-indexing/#how-to-prevent-search-engines-from-crawling-a-website-or-page">How do I prevent search engines from crawling a website or page?</a></li>
+<li><a href="/academy/control-crawl-indexing/#what-does-indexing-a-website-mean">What does indexing a website mean?</a></li>
+<li><a href="/academy/control-crawl-indexing/#is-my-website-indexable-for-search-engines">Is my website indexable for search engines?</a></li>
+<li><a href="/academy/control-crawl-indexing/#how-often-does-google-index-my-website">How often does Google index my website?</a></li>
+<li><a href="/academy/control-crawl-indexing/#how-long-before-google-has-indexed-my-new-website">How long will it take Google to index my new website?</a></li>
+<li><a href="/academy/control-crawl-indexing/#how-to-prevent-search-engines-from-indexing-a-website-or-page">How do I prevent search engines from indexing a website or page?</a></li>
+</ol>
+<h3 id="how-often-does-google-crawl-my-website">
+<a aria-hidden="true" class="anchor-link" href="#how-often-does-google-crawl-my-website" tabindex="-1"></a>1. 🗓️ How often does Google crawl my website?</h3>
+<p>Google Search Console shares their crawl behavior with you. To check it out:</p>
+<ol>
+<li>Log on to Google Search Console and select a website.</li>
+<li>Head to "Crawl" &gt; "Crawl Stats" and there you'll find out how often Google crawls your website.</li>
+</ol>
+<p>If you're fairly tech savvy, you can find out how often Google's crawls your website by analyzing your <a href="/academy/log-file-analysis/#what-is-log-file">website's log files</a>).</p>
+<p>It's worth noting that Google determines how often they should crawl your website using the <a href="/academy/crawl-budget/">crawl budget</a> for your website.</p>
+<h3 id="can-i-slow-down-crawlers-when-they-re-crawling-my-website">
+<a aria-hidden="true" class="anchor-link" href="#can-i-slow-down-crawlers-when-they-re-crawling-my-website" tabindex="-1"></a>2. 🐌 Can I slow down crawlers when they're crawling my website?</h3>
+<p>Yes, you can do this using the <a href="/academy/robotstxt/#crawl-delay">crawl-delay</a> robots.txt directive. Google won't listen to it though. If you want Googlebot to crawl slower than you have to configure this in Google Search Console. Regardless of the method, it's not recommended to throttle Google and Bing's crawlers. Their crawlers are smart enough to know when your website is having a hard time, and they'll check back later in that case.</p>
+<h3 id="how-to-prevent-search-engines-from-crawling-a-website-or-page">
+<a aria-hidden="true" class="anchor-link" href="#how-to-prevent-search-engines-from-crawling-a-website-or-page" tabindex="-1"></a>3. 🛑 How do I prevent search engines from crawling a website or page?</h3>
+<p>There's a few ways to go about preventing search engines from crawling parts of your website, or just specific pages:</p>
+<ul>
+<li>
+<strong>Robots.txt:</strong> can be used to prevent the crawling of an entire website, sections, and individual pages.</li>
+<li>
+<strong>Parameter handling:</strong> can be used to prevent the crawling of  URLs that contain a certain parameter.</li>
+<li>
+<strong>HTTP authentication:</strong> can be used to prevent the crawling of an entire website, sections, and individual pages.</li>
+</ul>
+<h3 id="what-does-indexing-a-website-mean">
+<a aria-hidden="true" class="anchor-link" href="#what-does-indexing-a-website-mean" tabindex="-1"></a>4. 📇 What does indexing a website mean?</h3>
+<p>It means actions are performed by a search engine to try to make sense of a website, in order to make it findable through their search engine.</p>
+<h3 id="is-my-website-indexable-for-search-engines">
+<a aria-hidden="true" class="anchor-link" href="#is-my-website-indexable-for-search-engines" tabindex="-1"></a>5. 🔎 Is my website indexable for search engines?</h3>
+<p>The best way to answer this is to <a href="/">create an account with ContentKing</a> to evaluate how indexable your website is for search engines. As you've been able to read above, there are many ways to influence how search engines index your website.</p>
+<h3 id="how-often-does-google-index-my-website">
+<a aria-hidden="true" class="anchor-link" href="#how-often-does-google-index-my-website" tabindex="-1"></a>6. 📅 How often does Google index my website?</h3>
+<p>As often as Google crawls your website. Its crawlers will pass on whatever they have found to the indexer, which takes care of indexing websites.</p>
+<h3 id="how-long-before-google-has-indexed-my-new-website">
+<a aria-hidden="true" class="anchor-link" href="#how-long-before-google-has-indexed-my-new-website" tabindex="-1"></a>7. ⌚ How long will it take Google to index my new website?</h3>
+<p>There's no single answer to this question, as it depends on the promotion of the new website. Promoting it speeds up the crawling and indexing process. If you do this well, a small website can be indexed with an hour. Alternatively, it can also take months to index an entirely new website.</p>
+<p>Please note that having your website indexed by search engines doesn't mean your pages will start <em>ranking</em> high right off the bat. Achieving high rankings takes a lot more time.</p>
+<h3 id="how-to-prevent-search-engines-from-indexing-a-website-or-page">
+<a aria-hidden="true" class="anchor-link" href="#how-to-prevent-search-engines-from-indexing-a-website-or-page" tabindex="-1"></a>8. ✋ How do I prevent search engines from indexing a website or page?</h3>
+<p>Search engines can be prevented from indexing a website or page via these methods:</p>
+<ul>
+<li>
+<strong>Meta Robots noindex tag:</strong> is a very strong signal to search engines not to index a page. It doesn't pass on relevance or authority signals to other pages.</li>
+<li>
+<strong>Canonical URL:</strong> is a moderately strong signal to search engines about what page to index, and to attribute relevance and authority signals too.</li>
+<li>
+<strong>HTTP authentication:</strong> will only prevent crawling and indexing of new pages from an SEO point of view. But it's a still general best practice to use HTTP authentication on test environments to keep unwanted search engines and users out of it.</li>
+<li>
+<strong>Robots.txt:</strong> can only be used to prevent the crawling and indexing of new pages.</li>
+<li>
+<strong>Parameter handling:</strong> can be used to prevent the crawling and indexing of URLs containing a certain parameter.</li>
+</ul>
+</div>
+<div class="post-detail__text">
+<div class="highlighted-box">
+<div class="highlighted-box__content share">
+<div class="share__label">Share this article</div>
+<div class="share__buttons">
+<a class="social-icon social-icon--large social-icon--facebook social-icon--link" href="https://www.facebook.com/sharer/sharer.php?display=popup&amp;u=https://www.contentkingapp.com/academy/control-crawl-indexing/" onclick="window.open('https://www.facebook.com/sharer/sharer.php?display=popup&amp;u=https://www.contentkingapp.com/academy/control-crawl-indexing/','ck_popup','toolbar=0,status=0,resizable=1,width=626,height=600')" rel="noopener" target="_blank" title="Share on Facebook"><span class="extlink">Share on Facebook</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+<a class="social-icon social-icon--large social-icon--twitter social-icon--link" href="https://twitter.com/intent/tweet?title=Controlling%20Crawling%20and%20Indexing%3A%20the%20Ultimate%20Guide%C2%A0%E2%80%93%C2%A0url=https://www.contentkingapp.com/academy/control-crawl-indexing/" onclick="window.open('https://twitter.com/intent/tweet?title=Controlling%20Crawling%20and%20Indexing%3A%20the%20Ultimate%20Guide –&amp;url=https://www.contentkingapp.com/academy/control-crawl-indexing/','ck_popup','toolbar=0,status=0,resizable=1,width=600,height=340')" rel="noopener" target="_blank" title="Share on Twitter"><span class="extlink">Share on Twitter</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+<a class="social-icon social-icon--large social-icon--linkedin social-icon--link" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.contentkingapp.com/academy/control-crawl-indexing/" onclick="window.open('https://www.linkedin.com/sharing/share-offsite/?url=https://www.contentkingapp.com/academy/control-crawl-indexing/','ck_popup','toolbar=0,status=0,resizable=1,width=600,height=560')" rel="noopener" target="_blank" title="Share on LinkedIn"><span class="extlink">Share on LinkedIn</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+</div>
+</div>
+</div>
+<section aria-label="Overview of article authors" class="author-box">
+<div class="author-box__title">ContentKing Academy Content Team</div>
+<div class="author-box__author">
+<div class="user-overview">
+<div class="user-overview__sidebar">
+<div aria-hidden="true" class="user-overview__avatar">
+<div class="avatar avatar--3-size">
+<div class="avatar__img">
+<picture><source srcset="/media/people/steven-van-vessum@1x.avif, /media/people/steven-van-vessum@2x.avif 2x" type="image/avif"/><source srcset="/media/people/steven-van-vessum@1x.webp, /media/people/steven-van-vessum@2x.webp 2x" type="image/webp"/><img alt="Steven van Vessum" class="" height="100" loading="lazy" src="/media/people/steven-van-vessum@1x.jpg" srcset="/media/people/steven-van-vessum@1x.jpg, /media/people/steven-van-vessum@2x.jpg 2x" title="Steven van Vessum" width="100"/></picture>
+</div>
+</div>
+</div>
+</div>
+<div class="user-overview__content">
+<div class="user-overview__name">
+<span>Steven van Vessum</span><div class="user-overview__data">
+<a class="social-icon social-icon--link social-icon--linkedin" href="https://www.linkedin.com/in/stevenvanvessum" rel="noopener" target="_blank" title="See my profile on LinkedIn"><span class="extlink">LinkedIn</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+<a class="social-icon social-icon--link social-icon--twitter" href="https://twitter.com/stevenvvessum" rel="noopener" target="_blank" title="See my profile on Twitter"><span class="extlink">Twitter</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+</div>
+</div>
+<div class="user-overview__about typo">
+<p>Steven is ContentKing's VP of Community. This means he's involved in everything community and content marketing related. Right where he wants to be. He gets a huge kick out of letting websites rank and loves to talk SEO, content marketing and growth.</p>
+</div>
+<div class="user-overview__see-more-link typo">
+<a href="/team/steven-van-vessum/">View Steven van Vessum's profile</a>
+</div>
+</div>
+</div>
+</div>
+<div class="author-box__author">
+<div class="user-overview">
+<div class="user-overview__sidebar">
+<div aria-hidden="true" class="user-overview__avatar">
+<div class="avatar avatar--3-size">
+<div class="avatar__img">
+<picture><source srcset="/media/people/jessica-rangel@1x.avif, /media/people/jessica-rangel@2x.avif 2x" type="image/avif"/><source srcset="/media/people/jessica-rangel@1x.webp, /media/people/jessica-rangel@2x.webp 2x" type="image/webp"/><img alt="Jessica Rangel" class="" height="100" loading="lazy" src="/media/people/jessica-rangel@1x.jpg" srcset="/media/people/jessica-rangel@1x.jpg, /media/people/jessica-rangel@2x.jpg 2x" title="Jessica Rangel" width="100"/></picture>
+</div>
+</div>
+</div>
+</div>
+<div class="user-overview__content">
+<div class="user-overview__name">
+<span>Jessica Rangel</span><div class="user-overview__data">
+<a class="social-icon social-icon--link social-icon--linkedin" href="https://www.linkedin.com/in/jessicamrangel/" rel="noopener" target="_blank" title="See my profile on LinkedIn"><span class="extlink">LinkedIn</span><span class="show-for-sr"> (opens in a new tab)</span></a>
+</div>
+</div>
+<div class="user-overview__about typo">
+<p>Jessica is a content marketer for ContentKing. Her days are spent writing marketing content, cycling around canals in Amsterdam and attempting to master the Dutch language.</p>
+</div>
+<div class="user-overview__see-more-link typo">
+<a href="/team/jessica-rangel/">View Jessica Rangel's profile</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<div class="follow-up-list">
+<h3 class="follow-up-list__title">Also worth checking out:</h3>
+<div class="follow-up-list__links list" role="list">
+<div role="listitem">
+<a aria-describedby="post-thumbnail-description-1f0f6f9d5b5c74011b6438d761beeacdbbde7436" aria-labelledby="post-thumbnail-title-1f0f6f9d5b5c74011b6438d761beeacdbbde7436" class="post-thumb-box" href="/academy/google-index/"><div class="post-thumb-box__icon">
+<i aria-hidden="true" class="post-type-badge post-type-badge--small" style="background-color: #3dc8ff; background-image: url(/assets/images/icons/post-types/google-indexing.svg)"></i>
+</div>
+<div class="post-thumb-box__content">
+<h3 class="post-thumb-box__title" id="post-thumbnail-title-1f0f6f9d5b5c74011b6438d761beeacdbbde7436" role="presentation"><span>Get Google to Index Your Site</span></h3>
+</div></a>
+</div>
+<div role="listitem">
+<a aria-describedby="post-thumbnail-description-a163e49c29d41341161140bfd2aaa7d7c0bd077c" aria-labelledby="post-thumbnail-title-a163e49c29d41341161140bfd2aaa7d7c0bd077c" class="post-thumb-box" href="/academy/index-coverage/"><div class="post-thumb-box__icon">
+<i aria-hidden="true" class="post-type-badge post-type-badge--small" style="background-color: #b37373; background-image: url(/assets/images/icons/post-types/gsc-coverage-report.svg)"></i>
+</div>
+<div class="post-thumb-box__content">
+<h3 class="post-thumb-box__title" id="post-thumbnail-title-a163e49c29d41341161140bfd2aaa7d7c0bd077c" role="presentation"><span>Google Search Console Index Coverage report</span></h3>
+</div></a>
+</div>
+<div role="listitem">
+<a aria-describedby="post-thumbnail-description-4c0286617b9615e711a6c79e22c69717b33fccba" aria-labelledby="post-thumbnail-title-4c0286617b9615e711a6c79e22c69717b33fccba" class="post-thumb-box" href="/academy/meta-robots-tag/"><div class="post-thumb-box__icon">
+<i aria-hidden="true" class="post-type-badge post-type-badge--small" style="background-color: #3dc8ff; background-image: url(/assets/images/icons/post-types/meta-robots.svg)"></i>
+</div>
+<div class="post-thumb-box__content">
+<h3 class="post-thumb-box__title" id="post-thumbnail-title-4c0286617b9615e711a6c79e22c69717b33fccba" role="presentation"><span>Meta Robots Tag</span></h3>
+</div></a>
+</div>
+<div role="listitem">
+<a aria-describedby="post-thumbnail-description-66c0601ca2cf104b1b6dad0ecb45ab2902919c80" aria-labelledby="post-thumbnail-title-66c0601ca2cf104b1b6dad0ecb45ab2902919c80" class="post-thumb-box" href="/academy/canonical/"><div class="post-thumb-box__icon">
+<i aria-hidden="true" class="post-type-badge post-type-badge--small" style="background-color: #3dc8ff; background-image: url(/assets/images/icons/post-types/canonical-url.svg)"></i>
+</div>
+<div class="post-thumb-box__content">
+<h3 class="post-thumb-box__title" id="post-thumbnail-title-66c0601ca2cf104b1b6dad0ecb45ab2902919c80" role="presentation"><span>Canonical URL</span></h3>
+</div></a>
+</div>
+<div role="listitem">
+<a aria-describedby="post-thumbnail-description-b3b9db7e4280d27c808c2ec7e1cc110333fbe4ce" aria-labelledby="post-thumbnail-title-b3b9db7e4280d27c808c2ec7e1cc110333fbe4ce" class="post-thumb-box" href="/academy/robotstxt/"><div class="post-thumb-box__icon">
+<i aria-hidden="true" class="post-type-badge post-type-badge--small" style="background-color: #3dc8ff; background-image: url(/assets/images/icons/post-types/robots-txt.svg)"></i>
+</div>
+<div class="post-thumb-box__content">
+<h3 class="post-thumb-box__title" id="post-thumbnail-title-b3b9db7e4280d27c808c2ec7e1cc110333fbe4ce" role="presentation"><span>Robots.txt</span></h3>
+</div></a>
+</div>
+<div role="listitem">
+<a aria-describedby="post-thumbnail-description-6a8536c951ade4b515853411749d37fffdbc40b6" aria-labelledby="post-thumbnail-title-6a8536c951ade4b515853411749d37fffdbc40b6" class="post-thumb-box" href="/academy/javascript-seo/"><div class="post-thumb-box__icon">
+<i aria-hidden="true" class="post-type-badge post-type-badge--small" style="background-color: #3dc8ff; background-image: url(/assets/images/icons/post-types/javascript-seo.svg)"></i>
+</div>
+<div class="post-thumb-box__content">
+<h3 class="post-thumb-box__title" id="post-thumbnail-title-6a8536c951ade4b515853411749d37fffdbc40b6" role="presentation"><span>JavaScript SEO Beginner's Guide</span></h3>
+</div></a>
+</div>
+</div>
+</div>
+</div>
+</article>
+<aside class="post-detail__sidebar show-for-large">
+<div aria-hidden="false" class="action-box action-box--is-hidden action-box--with-kevin dark-bg-context js-contextual-action-box sticky-element sticky-element--on-large sticky-element--indented" data-testid="action-sidebar-box" style="--bg: #6b2770">
+<div class="action-box__content">
+<div class="js-contextual-action-box-general" style="display: none;">
+<div class="action-box__text typo">
+<h3 id="control-search-engines">Control search engines</h3>
+<p>Take control of your crawling and indexing process with ContentKing!
+Discover what it can do for your website.</p>
+</div>
+<div class="action-box__form">
+<form aria-label="The form used for creating free trial account on ContentKing" class="quickinput-form-layout quickinput-form-layout--center-aligned js-submit-url-start-onboarding" data-validate="" novalidate="">
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-unexpected-error form-msg form-msg--error" role="none" style="display: none;">Some unexpected error happened. Please contact us.</span>
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-timeout-error form-msg form-msg--error" role="none" style="display: none;">Something went wrong. Please, try again later.</span>
+<div class="quickinput-form-layout__container">
+<div class="quickinput-form-layout__form-field">
+<label class="show-for-sr" for="action-sidebar-box-url-field">Domain (required)</label>
+<input aria-required="true" class="js-trial-url large" id="action-sidebar-box-url-field" name="domain" pattern="url_only" placeholder="www.example.com" required="" type="url"/>
+<span aria-hidden="true" aria-live="off" class="form-error form-bubble" role="none">Please enter a valid domain name (www.example.com).</span>
+<span aria-hidden="true" aria-live="off" class="js-website-already-monitored custom-error form-bubble" role="none" style="display: none;">This domain is already being monitored by ContentKing. Please contact us if you are the rightful owner of this domain.</span>
+<span aria-hidden="true" aria-live="off" class="js-target-redirected custom-error form-bubble" role="none" style="display: none;">This website redirects to <span class="js-target-redirected-domain"></span>. Do you want to add this website instead?</span>
+<span aria-hidden="true" aria-live="off" class="js-blacklisted-domain custom-error form-bubble" role="none" style="display: none;">This domain has been excluded from monitoring. If you own it, please contact us.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain custom-error form-bubble" role="none" style="display: none;">We can't find this domain. Are you sure it's correct?</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-connect custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (connect failure). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-empty-response custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (empty response). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-size-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (size limit). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-time-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (time-out). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-waf custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (blocked by web application firewall). Please contact us for help.</span>
+</div>
+<div class="quickinput-form-layout__form-button">
+<button class="button button--is-shining js-submit-button button--large button--action button--fullwidth" data-loading-label="Loading" type="submit">
+<div>
+<span class="button__content">
+<big>Start your free trial</big>
+<small><span class="show-for-sr">. </span>No credit card needed</small>
+</span>
+</div>
+</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+<div class="js-contextual-action-box-case-study" style="display: none;">
+<div class="discover-case-study">
+<div class="discover-case-study__title">Build vs. Buy: How Danone saved hundreds of thousands of Euros by switching to ContentKing</div>
+<div class="discover-case-study__logo">
+<img alt="Danone logo" height="300" loading="lazy" src="/media/logos/danone-reversed.svg" width="600"/>
+</div>
+<div class="discover-case-study__link typo"><a href="/case-studies/danone/">Discover this case study</a></div>
+</div>
+</div>
+<div class="js-contextual-action-box-ending-trial" style="display: none;">
+<div class="action-box__text typo">
+<h3>Your trial ends soon</h3>
+<p>Sign up now to stay on top of your SEO performance.</p>
+</div>
+<div class="action-box__form">
+<a class="button button--action button--large button--fullwidth button--is-shining" href="https://app.contentkingapp.com/account/billing" rel="noopener" target="_blank"><span class="extlink"><span><span class="button__content"><big>Sign up now</big><small><span class="show-for-sr">. </span>30-day money back guarantee</small></span></span></span><span class="show-for-sr"> (opens in a new tab)</span></a>
+</div>
+</div>
+<div class="js-contextual-action-box-trial-ended" style="display: none;">
+<div class="action-box__text typo">
+<h3>Your trial has ended</h3>
+<p>Sign up now to stay on top of your SEO performance.</p>
+</div>
+<div class="action-box__form">
+<a class="button button--action button--large button--fullwidth button--is-shining" href="https://app.contentkingapp.com/account/billing" rel="noopener" target="_blank"><span class="extlink"><span><span class="button__content"><big>Sign up now</big><small><span class="show-for-sr">. </span>30-day money back guarantee</small></span></span></span><span class="show-for-sr"> (opens in a new tab)</span></a>
+</div>
+</div>
+<div class="action-box__features">
+<div class="labeled-element labeled-element--stretched labeled-element--default-layout typo-block typo-block--bigger-indentation">
+<div class="labeled-element__labels">
+<div class="labeled-element__label">Trusted by the best
+</div>
+<div class="labeled-element__sublabel">
+</div>
+</div>
+<div class="labeled-element__content" role="list"><div class="crossfade-animation crossfade-animation--6-groups" role="presentation">
+<div class="logos-list logos-list--default-gaps" role="presentation">
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Netflix logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/netflix-reversed.svg" title="Netflix" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="H &amp; M logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/hm-reversed.svg" title="H &amp; M" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Adidas logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/adidas-reversed.svg" title="Adidas" width="600"/>
+</div>
+</div>
+</div>
+<div class="logos-list logos-list--default-gaps hidden" role="presentation">
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Unicef logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/unicef-reversed.svg" title="Unicef" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Condé Nast logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/conde-nast-reversed.svg" title="Condé Nast" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Shopify logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/shopify-reversed.svg" title="Shopify" width="600"/>
+</div>
+</div>
+</div>
+<div class="logos-list logos-list--default-gaps hidden" role="presentation">
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Danone logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/danone-reversed.svg" title="Danone" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Fedex logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/fedex-reversed.svg" title="Fedex" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="VOGUE logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/vogue-reversed.svg" title="VOGUE" width="600"/>
+</div>
+</div>
+</div>
+<div class="logos-list logos-list--default-gaps hidden" role="presentation">
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Axa logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/axa-reversed.svg" title="Axa" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Groupon logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/groupon-reversed.svg" title="Groupon" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="The New Yorker logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/the-new-yorker-reversed.svg" title="The New Yorker" width="600"/>
+</div>
+</div>
+</div>
+<div class="logos-list logos-list--default-gaps hidden" role="presentation">
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Norton logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/norton-reversed.svg" title="Norton" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Vodafone logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/vodafone-reversed.svg" title="Vodafone" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Accenture logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/accenture-reversed.svg" title="Accenture" width="600"/>
+</div>
+</div>
+</div>
+<div class="logos-list logos-list--default-gaps hidden" role="presentation">
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Red Hat logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/red-hat-reversed.svg" title="Red Hat" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="Reebok logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/reebok-reversed.svg" title="Reebok" width="600"/>
+</div>
+</div>
+<div class="logos-list__logo" role="listitem">
+<div class="partner-logo partner-logo--small-size">
+<img alt="TELUS logo" class="partner-logo__image" height="300" loading="lazy" src="/media/logos/telus-reversed.svg" title="TELUS" width="600"/>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<div class="action-box__features">
+<div class="labeled-element">
+<div class="labeled-element__labels">
+<div class="labeled-element__label">
+			Fantastic reviews
+		</div>
+</div>
+<div class="labeled-element__content">
+<a aria-label="Show the overview of ContentKing reviews" class="review-services review-services--small-gaps review-services--indented review-services--centered" href="/reviews/">
+<div class="review-services__service">
+<div aria-label="The summary of ContentKing rating on G2" class="review-badge review-badge--small-size review-badge--g2-service review-badge--light-style">
+<div class="review-badge__header">
+<div aria-label="Rating is 4.8 out of 5 points" class="review-badge__rating-score">
+			4.8 / 5
+		</div>
+</div>
+<div aria-hidden="true" class="review-badge__rating-stars">
+<div aria-label="Rating is 5.0 out of 5 points" class="rating-stars rating-stars--small-size">
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+</div>
+</div>
+</div>
+</div>
+<div class="review-services__service">
+<div aria-label="The summary of ContentKing rating on Capterra" class="review-badge review-badge--small-size review-badge--capterra-service review-badge--light-style">
+<div class="review-badge__header">
+<div aria-label="Rating is 4.9 out of 5 points" class="review-badge__rating-score">
+			4.9 / 5
+		</div>
+</div>
+<div aria-hidden="true" class="review-badge__rating-stars">
+<div aria-label="Rating is 5.0 out of 5 points" class="rating-stars rating-stars--small-size">
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="section section--informative" data-testid="start-free-trial">
+<div class="row expanded">
+<div class="small-12 large-12 column">
+<div class="description-row description-row--inline-for-large-up">
+<div>
+<div class="heading heading--white heading--center-aligned">
+<h2 class="heading__title">Start your free trial</h2>
+<h3 class="heading__subtitle">Get up and running in 20 seconds</h3>
+</div>
+<form aria-label="The form used for creating free trial account on ContentKing" class="quickinput-form-layout quickinput-form-layout--center-aligned quickinput-form-layout--is-responsive js-submit-url-start-onboarding" data-validate="" novalidate="">
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-unexpected-error form-msg form-msg--error" role="none" style="display: none;">Some unexpected error happened. Please contact us.</span>
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-timeout-error form-msg form-msg--error" role="none" style="display: none;">Something went wrong. Please, try again later.</span>
+<div class="quickinput-form-layout__container">
+<div class="quickinput-form-layout__form-field">
+<label class="show-for-sr" for="start-free-trial-url-field">Domain (required)</label>
+<input aria-required="true" class="js-trial-url large" id="start-free-trial-url-field" name="domain" pattern="url_only" placeholder="www.example.com" required="" type="url"/>
+<span aria-hidden="true" aria-live="off" class="form-error form-bubble" role="none">Please enter a valid domain name (www.example.com).</span>
+<span aria-hidden="true" aria-live="off" class="js-website-already-monitored custom-error form-bubble" role="none" style="display: none;">This domain is already being monitored by ContentKing. Please contact us if you are the rightful owner of this domain.</span>
+<span aria-hidden="true" aria-live="off" class="js-target-redirected custom-error form-bubble" role="none" style="display: none;">This website redirects to <span class="js-target-redirected-domain"></span>. Do you want to add this website instead?</span>
+<span aria-hidden="true" aria-live="off" class="js-blacklisted-domain custom-error form-bubble" role="none" style="display: none;">This domain has been excluded from monitoring. If you own it, please contact us.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain custom-error form-bubble" role="none" style="display: none;">We can't find this domain. Are you sure it's correct?</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-connect custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (connect failure). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-empty-response custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (empty response). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-size-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (size limit). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-time-limit custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (time-out). Please contact us for help.</span>
+<span aria-hidden="true" aria-live="off" class="js-unresolvable-domain-waf custom-error form-bubble" role="none" style="display: none;">Unfortunately, we can't reach this website (blocked by web application firewall). Please contact us for help.</span>
+</div>
+<div class="quickinput-form-layout__form-button">
+<button class="button button--is-shining js-submit-button button--large button--action button--fullwidth" data-loading-label="Loading" type="submit">
+<div>
+<span class="button__content">
+<big>Start your free trial</big>
+<small><span class="show-for-sr">. </span>No credit card needed</small>
+</span>
+</div>
+</button>
+</div>
+</div>
+<div class="quickinput-form-layout__footer">
+<div aria-label="Show the overview of ContentKing reviews" class="review-services review-services--centered review-services--adaptive-items">
+<div class="review-services__service">
+<div aria-label="The summary of ContentKing rating on G2" class="review-badge review-badge--1-size review-badge--g2-service review-badge--light-style">
+<div class="review-badge__header">
+<div aria-label="Rating is 4.8 out of 5 points" class="review-badge__rating-score">
+			4.8 / 5
+		</div>
+</div>
+<div aria-hidden="true" class="review-badge__rating-stars">
+<div aria-label="Rating is 5.0 out of 5 points" class="rating-stars rating-stars--1-size">
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+</div>
+</div>
+</div>
+</div>
+<div class="review-services__service review-services__service--hidden-on-small">
+<div aria-label="The summary of ContentKing rating on Capterra" class="review-badge review-badge--1-size review-badge--capterra-service review-badge--light-style">
+<div class="review-badge__header">
+<div aria-label="Rating is 4.9 out of 5 points" class="review-badge__rating-score">
+			4.9 / 5
+		</div>
+</div>
+<div aria-hidden="true" class="review-badge__rating-stars">
+<div aria-label="Rating is 5.0 out of 5 points" class="rating-stars rating-stars--1-size">
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+</div>
+</div>
+</div>
+</div>
+<div class="review-services__service review-services__service--hidden-on-small">
+<div aria-label="The summary of ContentKing rating on TrustRadius" class="review-badge review-badge--1-size review-badge--trust-radius-service review-badge--light-style">
+<div class="review-badge__header">
+<div aria-label="Rating is 9.7 out of 10 points" class="review-badge__rating-score">
+			9.7 / 10
+		</div>
+</div>
+<div aria-hidden="true" class="review-badge__rating-stars">
+<div aria-label="Rating is 5.0 out of 5 points" class="rating-stars rating-stars--1-size">
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+<div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+<div class="description-row__description">
+<ul class="checklist checklist--white-style">
+<li class="checklist__item"><strong>No credit card required</strong></li>
+<li class="checklist__item"><strong>No installation needed</strong></li>
+<li class="checklist__item"><strong>No strings attached</strong></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<div id="js-campaign-widget-container"></div><footer class="footer" role="contentinfo">
+<div class="footer__row">
+<div class="footer__column">
+<div class="footer__column-body">
+<nav aria-label="The latest articles on our blog" class="footer__column-block footer-block" role="navigation"><h3 class="footer-block__title"><a aria-label="View all articles" href="/blog/"><span>Blog</span> <span aria-hidden="true" class="footer-block__title-cta">View all</span></a></h3>
+<div class="footer-block__nav"><ul class="footer-posts-nav">
+<li class="footer-posts-nav__item">
+<a href="/blog/log-file-analysis-extended-cloudflare-logpush/"><svg aria-hidden="true" class="footer-posts-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-feature-announcements"></use>
+</svg>Log File Analysis for Cloudflare sites via Logpush
+							</a>
+</li>
+<li class="footer-posts-nav__item">
+<a href="/blog/log-file-analysis-extended-fastly/"><svg aria-hidden="true" class="footer-posts-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-feature-announcements"></use>
+</svg>ContentKing Log File Analysis for Fastly
+							</a>
+</li>
+<li class="footer-posts-nav__item">
+<a href="/blog/log-file-analysis-extended/"><svg aria-hidden="true" class="footer-posts-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-feature-announcements"></use>
+</svg>Extended ContentKing Log File Analysis
+							</a>
+</li>
+<li class="footer-posts-nav__item">
+<a href="/blog/brightonseo-spring-recap-2022/"><svg aria-hidden="true" class="footer-posts-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-other"></use>
+</svg>ContentKing &amp; Conductor at brightonSEO
+							</a>
+</li>
+<li class="footer-posts-nav__item">
+<a href="/blog/brightonseo-spring-2022/"><svg aria-hidden="true" class="footer-posts-nav__icon svg-sprite-icon" height="16" width="16">
+<use xlink:href="https://www.contentkingapp.com/assets/sprites/category-icons-sprite.svg#category-other"></use>
+</svg>brightonSEO Spring 2022
+							</a>
+</li>
+</ul></div>
+</nav>
+</div>
+</div>
+<div class="footer__column">
+<div class="footer__column-body">
+<nav aria-label="Important article in our Academy" class="footer__column-block footer-block" role="navigation"><h3 class="footer-block__title"><a aria-label="View all articles" href="/academy/"><span>Academy</span> <span aria-hidden="true" class="footer-block__title-cta">View all</span></a></h3>
+<div class="footer-block__nav"><ul class="footer-posts-nav">
+<li class="footer-posts-nav__item"><a href="/academy/robotstxt/">Robots.txt</a></li>
+<li class="footer-posts-nav__item"><a href="/academy/redirects/">Redirects</a></li>
+<li class="footer-posts-nav__item"><a href="/academy/shopify-seo/">Shopify SEO Guide</a></li>
+<li class="footer-posts-nav__item"><a href="/academy/magento-seo/">Magento 2 SEO Guide</a></li>
+<li class="footer-posts-nav__item footer-posts-nav__item--tagged"><a data-tag="FAQ" href="/academy/faq/">Frequently Asked SEO Questions</a></li></ul></div>
+</nav>
+</div>
+</div>
+<div class="footer__column footer__column--smaller-width">
+<div class="footer__column-body">
+<nav aria-label="Find more about us and about our story" class="footer__column-block footer-block" role="navigation"><h3 class="footer-block__title"><a href="/about-us/"><span>About us</span></a></h3>
+<div class="footer-block__nav">
+<ul class="footer-posts-nav">
+<li class="footer-posts-nav__item"><a href="/about-us/">Our story</a></li><li class="footer-posts-nav__item"><a href="/team/">Meet our team</a></li><li class="footer-posts-nav__item"><a href="/careers/">Careers</a></li><li class="footer-posts-nav__item"><a href="/contact/">Contact us</a></li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+<div class="footer__column footer__column--box">
+<div class="footer__column-body">
+<div class="footer__column-block footer__column-block--box">
+<section class="footer-box"><a aria-label="Show all reviews" class="footer-box__reviews" href="/reviews/">
+<span aria-hidden="true" class="footer-box__rating-stars">
+<div aria-label="Rating is 5.0 out of 5 points" class="rating-stars rating-stars--small-size"><div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div><div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div><div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div><div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div><div aria-hidden="true" class="rating-stars__star rating-stars__star--full">★</div></div>
+</span><span class="footer-box__rating-label">130+ user reviews</span>
+</a>
+<div aria-label="Contact details" class="footer-box__content">
+<ul aria-label="Contact details" class="contact-list contact-list--footer"><li aria-label="Support section" class="contact-list__item">
+<i aria-hidden="true" class="contact-list__icon contact-list__icon--support"></i>
+<a aria-label="Show support section" class="contact-list__link" href="/support/">Support</a>
+</li><li aria-label="Phone numbers" class="contact-list__item">
+<i aria-hidden="true" class="contact-list__icon contact-list__icon--phone"></i>
+<div class="contact-list__link">
+<a href="tel:00442032908992">UK: +44 20 3290 8992</a><br>
+<a href="tel:0019196479205">US: +1 919-647-9205</a><br/></br></div>
+</li><li aria-label="Email address" class="contact-list__item">
+<i aria-hidden="true" class="contact-list__icon contact-list__icon--support-email"></i>
+<div class="contact-list__link">
+<a href="mailto:support@contentkingapp.com">support@contentkingapp.com</a><br/></div>
+</li></ul>
+</div>
+<div class="footer-box__content">
+<ul class="contact-list contact-list--footer"><li class="contact-list__item">
+<i aria-hidden="true" class="contact-list__icon contact-list__icon--newsletter"></i>
+<a class="contact-list__link" href="/newsletter/">Sign up for our newsletter</a>
+</li></ul>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+<div class="footer__row">
+<div class="footer__bottom-column show-for-large">
+<div class="footer__column-body">
+				Copyright © 2023 ContentKing
+			</div>
+</div>
+<nav aria-label="Additional navigation" class="footer__bottom-column" role="navigation">
+<div class="footer__column-body"><ul class="footer-nav">
+<li class="footer-nav__item">
+<a href="/accessibility/">Accessibility</a></li>
+<li class="footer-nav__item">
+<a href="/legal/privacy-policy/">Privacy Policy</a></li>
+<li class="footer-nav__item">
+<a href="/legal/cookie-policy/">Cookie Policy</a></li>
+<li class="footer-nav__item"><a class="js-open-cookie-preferences" href="#">Cookie Preferences</a></li>
+<li class="footer-nav__item">
+<a href="/legal/terms-of-use/">Terms of Use</a></li>
+</ul>
+</div>
+</nav>
+</div>
+</footer></div><div aria-hidden="true" class="dialog-bg" tabindex="-1"></div>
+<div aria-hidden="true" aria-labelledby="exit-intent-heading" aria-modal="true" class="dialog dialog--slide-in-effect js-exit-intent-dialog" data-ga-label="Generic" id="exit-intent" inert="" role="dialog">
+<div class="dialog-box dialog-box--highlighted-bg js-dialog-box">
+<div class="dialog-box__heading heading heading--center-aligned heading--white">
+<div class="heading__title heading__title--small js-title" data-alt-title="Leave, but don't miss out." id="exit-intent-heading">So soon? Well, before you go...</div>
+<div class="heading__subtitle heading__subtitle--large"><strong>Sign up for our newsletter.</strong></div>
+</div>
+<div class="dialog-box__content">
+<div class="exit-intent">
+<div class="exit-intent__content">
+<img alt="" class="exit-intent__illustration" height="231" loading="lazy" src="/assets/images/materials/newsletter@1x.png" srcset="/assets/images/materials/newsletter@1x.png 1x, /assets/images/materials/newsletter@2x.png 2x" width="214">
+<ul class="checklist checklist--white-style">
+<li class="checklist__item"><strong>Join over 35,000 smart people</strong></li>
+<li class="checklist__item"><strong>Loaded with carefully curated content on SEO and digital marketing</strong></li>
+<li class="checklist__item"><strong>Insightful articles, data-driven research, podcasts and videos</strong></li>
+</ul>
+</img></div>
+<div class="exit-intent__form">
+<form action="https://becontentking.us11.list-manage.com/subscribe/post?u=14598b22fff6346e4f141215b&amp;id=1506b77091" class="js-newsletter-signup" data-validate="" method="post" name="mc-embedded-subscribe-form" novalidate="">
+<div class="overlay-response js-newsletter-signup-response">
+<div class="overlay-response__source">
+<div class="quickinput-form-layout quickinput-form-layout--is-responsive quickinput-form-layout--white quickinput-form-layout--center-aligned">
+<span aria-hidden="true" aria-live="off" class="quickinput-form-layout__msg js-newsletter-signup-response-error form-msg form-msg--error" role="none" style="display: none;">Something went wrong. Please, try again later.</span>
+<div class="quickinput-form-layout__container">
+<div class="quickinput-form-layout__form-field">
+<label class="show-for-sr" for="newsletter-exit-intent-email-field">Email (required)</label>
+<input aria-required="true" autocomplete="off" class="large" id="newsletter-exit-intent-email-field" name="EMAIL" placeholder="email@example.com" required="" type="email" value=""/>
+<span aria-hidden="true" aria-live="off" class="form-error form-bubble" role="none">Please enter a valid email address.</span>
+</div>
+<input name="SOURCE" type="hidden" value="English website">
+<input class="js-newsletter-signup-source-url-field" name="SOURCE_URL" type="hidden" value="https://www.contentkingapp.com/blog/12-content-engagement-kpis-need-tracking/">
+<input name="LANGUAGE" type="hidden" value="en">
+<input class="js-newsletter-signup-creative-field" name="CREATIVE" type="hidden" value="[Exit intent] Newsletter sign-up">
+<div aria-hidden="true" style="position: absolute; left: -5000px;"><label for="newsletter-exit-intent-email-field-question">Question</label><input id="newsletter-exit-intent-email-field-question" name="b_14598b22fff6346e4f141215b_1506b77091" tabindex="-1" type="text" value=""/></div>
+<div class="quickinput-form-layout__form-button quickinput-form-layout__form-button--default">
+<button class="button button--is-shining js-submit-button button--large button--action button--fullwidth" data-loading-label="Loading" name="subscribe" type="submit">
+<div>
+<span class="button__content">
+<big>Subscribe</big>
+</span>
+</div>
+</button>
+</div>
+</input></input></input></input></div>
+<div class="quickinput-form-layout__note">You can opt-out at any time with a single click.</div>
+<div class="exit-intent-close-link">
+<a data-close="" href="#" onclick="return false;">No thanks, I don't want to stay updated on digital marketing.</a>
+</div>
+</div>
+</div>
+<div class="overlay-response__response js-newsletter-signup-response-messages" tabindex="-1">
+<div aria-hidden="true" aria-live="off" class="js-newsletter-signup-response-success overlay-response__message overlay-response__message--large overlay-response__message--success" role="none" style="display: none;">
+<div>Thank you for your subscription, welcome aboard!</div>
+<div class="exit-intent-close-link">
+<a data-close="" href="#" onclick="return false;">Continue to our website</a>
+</div>
+</div>
+<div aria-hidden="true" aria-live="off" class="js-newsletter-signup-response-already-in-list overlay-response__message overlay-response__message--large" role="none" style="display: none;">You're already a subscriber to our newsletter. <br>Thanks for being a loyal reader!</br></div>
+<div aria-hidden="true" aria-live="off" class="js-newsletter-signup-response-pending overlay-response__message overlay-response__message--large" role="none" style="display: none;">Please confirm your sign-up to our newsletter using the confirmation email that we just sent you.</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<!-- Close button -->
+<button aria-label="Close this modal window" class="close-button close-button--light" data-close="" type="button">
+<span aria-hidden="true">×</span>
+</button>
+<div class="dialog-box__footer">
+<div class="dialog-box__footer-container">
+<div class="js-modal-lazy-logos lazy-logos" data-id="exit-intent"></div>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="cookie-banner-heading" aria-modal="true" class="dialog dialog--slide-in-effect" id="cookie-banner-general" inert="" role="dialog">
+<div class="cookie-consent-dlg">
+<div class="cookie-consent-dlg__scrollable-container">
+<div class="cookie-consent-dlg__content">
+<div class="cookie-consent-dlg__heading">
+<div class="cookie-consent-dlg__title" id="cookie-banner-general-heading">This website uses cookies</div>
+</div>
+<div class="cookie-consent-dlg__text typo">
+<p>We use cookies to improve user experience and analyze website traffic. By clicking “Accept all“, you agree to our website's cookie use as described in our <a class="js-cookie-banner-show-policy" href="#">Cookie Policy</a>. You can change your cookie settings by clicking “<a class="js-cookie-banner-show-preferences" href="#">Preferences</a>”.</p>
+</div>
+</div>
+<div class="cookie-consent-dlg__footer">
+<div class="cookie-consent-dlg__buttons">
+<button class="button button--hollow-highlighted js-cookie-banner-show-preferences">
+<span>Preferences</span>
+</button>
+<button class="button button--hollow-highlighted js-cookie-banner-decline-all">
+<span>Reject all</span>
+</button>
+<button class="button button--action js-cookie-banner-accept-all">
+<span>Accept all</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="cookie-banner-policy-heading" aria-modal="true" class="dialog dialog--slide-in-effect" data-cookie-policy-version="f0cbb742597d5cb7e9db2f680777051bbd82001f" id="cookie-banner-policy" inert="" role="dialog">
+<div class="cookie-consent-dlg">
+<div class="cookie-consent-dlg__scrollable-container">
+<div class="cookie-consent-dlg__content">
+<div class="cookie-consent-dlg__heading">
+<div class="cookie-consent-dlg__title" id="cookie-banner-policy-heading">Cookie Policy</div>
+</div>
+<div class="cookie-consent-dlg__text typo">
+<p><em>Last updated January 24, 2022</em></p>
+<p>When you use our website <a href="https://www.contentkingapp.com/">www.contentkingapp.com</a> (“Website”), we may place cookies. This Cookie Policy explains what cookies are and in which way cookies are stored on, and information is read from, your computer, mobile device and/or tablet (“Devices”). Please read this Cookie Policy carefully in order to understand what type of cookies ContentKing uses, the information we collect using cookies and how that information is used.</p>
+<h2 id="what-are-cookies">What are cookies?</h2>
+<p>Cookies are small text files which are stored on the browser or hard drive of your Device when you visit a webpage or use an application. Cookies may be needed to show the webpage or application on your Device and are also used to enhance the user experience. Cookies cannot damage your Devices or the files saved on it. There are different types of cookies. Some cookies come directly from our website (first party cookies) and others come from third parties which place cookies on our site (third party cookies).</p>
+<p>Cookies can be stored for varying lengths of time on your browser or device. Session cookies are deleted from your computer or device when you close your web-browser. Persistent cookies will remain stored on your computer or Device until deleted or until they reach their expiry date.</p>
+<h2 id="how-do-we-use-cookies">How do we use cookies?</h2>
+<h3 id="essential-technical-cookies">Essential (Technical) cookies</h3>
+<p>We try to provide an advanced and user-friendly website that adapts automatically to needs and wishes of our visitors and users. To achieve this, we use technical cookies to i.e. show you our Website, to make it function correctly, to create your ContentKing account, to sign you in and to manage your requests. These technical cookies are necessary for our website to function properly.</p>
+<h3 id="functional-cookies">Functional cookies</h3>
+<p>We also use functional cookies to remember your preferences and settings (as username, password, language etc.) and to help you to use the Website efficiently and effectively. These functional cookies are not strictly necessary for the functioning of our Website, but they add functionality for you and enhance your experience.</p>
+<h3 id="analytical-cookies">Analytical cookies</h3>
+<p>We use analytical cookies in order to collect statistics about the use and visits of the Website. These analytic cookies generate statistical and other information about website use by means of cookies, which are stored on users’ Devices. The information generated relating to our Website is used to create reports about the use of the Website. Analytical cookies may be placed without your consent, unless such cookies have an impact on your privacy. In such cases, prior consent will be asked for.</p>
+<h3 id="google-analytics">Google Analytics</h3>
+<p>We use Google Analytics cookies in order to collect statistics about the use and visits of the Website. With these analytical cookies a permanent cookie is saved on your device to register your use of the Website. Google Analytics analyses this data and provides us with the results. This way, we obtain insight into the traffic of the Website and the way in which the Website is used. Based on this information we are able to make specific adjustments to the Website.</p>
+<p>The information that we obtain is transferred to Google and stored by Google on servers outside the European Economic Area. We have entered into a data processing agreement with Google in which agreements have been made regarding the processing of personal data.</p>
+<p>If you would like more information about analytical cookies and their expiry date, please visit the Google Analytics <a href="https://developers.google.com/analytics/devguides/collection/gajs/cookie-usage">information page</a>. Google also offers an <a href="https://tools.google.com/dlpage/gaoptout?hl=en">opt-out option</a> for data collection within the scope of Google Analytics.</p>
+<h3 id="marketing-cookies">Marketing cookies</h3>
+<p>We use third party marketing cookies in order to follow your internet browsing behavior and collect data and information on your browsing behavior from various websites you visited. This information is used to make the content of the displayed advertisements as relevant as possible, and to limit repetition of the same advertisements.</p>
+<h3 id="social-plug-ins">Social plug-ins</h3>
+<p>By using the Website you can get access to social media websites, such as Facebook, Twitter and LinkedIn. These buttons come with a code which has been made by these networks themselves. Using these so called social plug-ins you can login to your social media profile and subsequently share information from the Website with others. With these social plug-ins third party marketing cookies are saved on your Devices. These cookies serve the purpose of optimizing your user experience.</p>
+<p>Companies such as LinkedIn, Twitter and Facebook may share your personal data outside the European Economic Area. Please read our Privacy Policy <a href="/legal/privacy-policy/">here</a> and the respective social network’s privacy statement to see how these companies treat your (personal) data.</p>
+<h3 id="pixels">Pixels</h3>
+<p>We also place pixels of third parties. A pixel keeps track of your surfing behavior and how you use the Website. These data are aggregated and give us information about the target group that visits our website. Based on this information, we can show an advertisement to a specific or similar target group on the website of the third party that produced the pixel.</p>
+<h2 id="disable-or-delete-cookies">Disable or delete cookies</h2>
+<p>When you first visit the Website, we ask you to give consent for cookies that are not necessary or functional and that have an impact on your privacy. If you do not give consent, these cookies will not be placed. In that case, you may not be able to use all the functionalities on our Website.</p>
+<p>You can configure your browser so that you do not receive any cookies the next time you use the website. You can read here how you can remove different types of cookies in different browsers. Please consult the help-function of your browser if your browser is not listed below.</p>
+<ul>
+<li><a href="https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&amp;hl=en-GB">Chrome</a></li>
+<li><a href="https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox">Firefox</a></li>
+<li><a href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09">Edge</a></li>
+<li><a href="https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac">Safari</a></li>
+</ul>
+<p>Note: Refusing or deleting cookies only affects the Device and the browser on which you perform this action. If you use different Devices and/or browsers you will need to repeat the above described actions on these Devices and/or browsers.</p>
+<h2 id="privacy">Privacy</h2>
+<p>It is possible that information collected through a cookie or obtained otherwise, contains personal data. If this is the case, our Privacy Policy is applicable on the processing of these data. The Privacy Policy can be read <a href="/legal/privacy-policy/">here</a>.</p>
+<h2 id="can-this-cookie-policy-be-changed">Can this Cookie Policy be changed?</h2>
+<p>We may amend this Cookie Policy in the future. If there are substantive or material changes that may affect one or more of the parties involved to a considerable extent, we inform those involved in advance. Our changed Cookie Policy will also be available on this web page, so it is recommended to regularly have a look at this page.</p>
+<h2 id="overview-cookies">Overview cookies</h2>
+<h3 id="essential-technical-cookies-1">Essential (Technical) cookies</h3>
+<p>Essential (Technical) cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function (properly) without these cookies.</p>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">viewedOuibounceModal</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>ContentKing</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store state of having closed the exit intent modal.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 month</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">nette-samesite</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>ContentKing</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Communication with account service.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>Session</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">session_timestamp</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>ContentKing</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Utility for tracking of session start time.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>Session</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>SessionStorage</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">what-intent</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>ContentKing</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Utility for tracking the current input method.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>Session</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>SessionStorage</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">what-input</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>ContentKing</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Utility for tracking the current input method.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>Session</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>SessionStorage</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">contentking</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>ContentKing</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store state for website functioning.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 day</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>LocalStorage</td>
+</tr>
+</tbody>
+</table>
+<h3 id="statistics-analytical-cookies">Statistics (analytical cookies)</h3>
+<p>These cookies help us to understand how visitors interact with websites by collecting and reporting information anonymously.</p>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_ga</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Google Analytics</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store and count pageviews.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>2 years</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_ga_*</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Google Analytics</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store and count pageviews.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>2 years</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_gcl_au</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Google AdSense</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store and track conversions.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>3 months</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_gid</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Google Analytics</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store and count pageviews.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 day</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_dc_gtm_*</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Google Analytics</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Store number of service requests.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 minute</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">wd</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Information about browser window dimensions.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 day</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<h3 id="marketing-social-plug-ins-third-party-marketing-cookies-pixels">Marketing (Social plug-ins, third party marketing cookies, pixels)</h3>
+<p>Marketing cookies are used to follow visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers.</p>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">intercom-session-*</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Intercom</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Contact, communication, support.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 week</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">intercom-id-*</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Intercom</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Contact, communication, support.</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>9 months</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">li_gc</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>LinkedIn</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>2 years</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">lidc</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>LinkedIn</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 day</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">bcookie</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>LinkedIn</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>2 years</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_uetsid</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Microsoft Advertising</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 day</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_uetvid</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Microsoft Advertising</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 year</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">tap_vid</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Tapfiliate</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Affiliate marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 year</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie &amp; LocalStorage</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_fbp</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>3 months</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">_fbc</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>3 months</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">fr</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>3 months</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">xs</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>3 months</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">dpr</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>5 days</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">c_user</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>30 days</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">sb</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 year, 1 month, 14 days</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">datr</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Facebook</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 year, 1 month, 14 days</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">muc</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Twitter</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 year, 10 months, 3 days</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr>
+<td><strong>Name:</strong></td>
+<td><code class="language-plaintext highlighter-rouge">muc-ads</code></td>
+</tr>
+<tr>
+<td><strong>Provider:</strong></td>
+<td>Twitter</td>
+</tr>
+<tr>
+<td><strong>Purpose:</strong></td>
+<td>Marketing</td>
+</tr>
+<tr>
+<td><strong>Expiry:</strong></td>
+<td>1 year, 10 months, 3 days</td>
+</tr>
+<tr>
+<td><strong>Type:</strong></td>
+<td>http_cookie</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cookie-consent-dlg__footer">
+<div class="cookie-consent-dlg__buttons">
+<button class="button button--highlighted js-cookie-banner-show-general">
+<span>Back</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div aria-hidden="true" aria-labelledby="cookie-banner-preferences-heading" aria-modal="true" class="dialog dialog--slide-in-effect" id="cookie-banner-preferences" inert="" role="dialog">
+<div class="cookie-consent-dlg">
+<div class="cookie-consent-dlg__scrollable-container">
+<div class="cookie-consent-dlg__content">
+<div class="cookie-consent-dlg__heading">
+<div class="cookie-consent-dlg__title" id="cookie-banner-preferences-heading">Your Cookie Preferences</div>
+</div>
+<div aria-hidden="true" class="form-msg form-msg--warning typo js-intercom-warning-message" style="display: none;">
+<p>Our chat requires cookies to function. Please enable Marketing cookies to continue, alternatively you can contact us via email at <a href="mailto:support@contentkingapp.com">support@contentkingapp.com</a></p>
+</div>
+<div class="cookie-consent-dlg__text typo">
+<p>We use different types of cookies to optimize your experience on our website. Click on the categories below to learn more about their purposes. You may choose which types of cookies to allow. Remember that disabling cookies may affect your experience on the website. You can learn more about how we use cookies by visiting our <a class="js-cookie-banner-show-policy" href="#">Cookie Policy</a>.</p>
+</div>
+<form class="cookie-consent-dlg__preferences">
+<div>
+<div class="cookie-consent-dlg__preference-option">
+<input checked="checked" disabled="disabled" id="essential_storage" name="essential_storage" type="checkbox">
+<label for="essential_storage">Essential (Technical) cookies</label>
+</input></div>
+<p>Essential (Technical) cookies help make a website usable by enabling basic functions like page navigation and access to secure areas of the website. The website cannot function (properly) without these cookies.</p>
+</div>
+<div>
+<div class="cookie-consent-dlg__preference-option">
+<input id="analytics_storage" name="analytics_storage" type="checkbox">
+<label for="analytics_storage">Statistics (analytical cookies)</label>
+</input></div>
+<p>These cookies help us to understand how visitors interact with websites by collecting and reporting information anonymously.</p>
+</div>
+<div>
+<div class="cookie-consent-dlg__preference-option">
+<input id="ad_storage" name="ad_storage" type="checkbox"/>
+<label for="ad_storage">Marketing (Social plug-ins, third party marketing cookies, pixels)</label>
+</div>
+<p>Marketing cookies are used to follow visitors across websites. The intention is to display ads that are relevant and engaging for the individual user and thereby more valuable for publishers and third party advertisers.</p>
+</div>
+</form>
+</div>
+<div class="cookie-consent-dlg__footer">
+<div class="cookie-consent-dlg__buttons">
+<button class="button button--hollow-highlighted js-cookie-banner-decline-all">
+<span>Reject all</span>
+</button>
+<button class="button button--action js-cookie-banner-accept-selected">
+<span>Accept selected</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="/assets/js/libraries.js?cb=6d0f457c83ce1f9617c4686abb84c45a" type="text/javascript"></script>
+<script src="/assets/js/app.js?cb=f179e9e0a225b14d8cf7bbe24cb2a6fa}" type="text/javascript"></script>
+</body>
+</html>
