@@ -12,8 +12,7 @@
 
 # Задание №3
     create_index.py
-    sentences.txt - файл с предложениями
-    index_sentences.txt - инвертированный список терминов 
+    index_lemmas.txt - инвертированный список терминов 
     search_by_index.py - булевый поиск по пстроенному индексу
     answers.txt - результаты булевого поиска
 

@@ -1,37 +1,61 @@
-import string
-from collections import defaultdict
-
-with open('sentences.txt', 'r', encoding='utf-8') as f:
-    sentences = f.read().strip().split('\n')
-
-index = defaultdict(list)
+import spacy
+import re
+import glob
+from bs4 import BeautifulSoup
+from nltk.corpus import stopwords
 
 
-def clear_sentence(line: str):
-    new_line = []
-    for i in line.lower().strip().split(' '):
-        if len(i) <= 2:
+nlp = spacy.load("en_core_web_sm")
+english_stopwords = stopwords.words("english")
+
+
+def extract_tokens(text: str):
+    tokens = set()
+    doc = nlp(text.strip())
+
+    for i in doc:
+        if i.text in ('\n', '', ' '):
             continue
-        new_line.append(i)
-    line = ' '.join(new_line)
-
-    to_clear_signs = tuple(string.digits + string.punctuation)
-    new_line = []
-    for i in line:
-        if i not in to_clear_signs:
-            new_line.append(i)
-    new_line = ''.join(new_line)
-    return new_line
+        if i.is_alpha and not i.like_num and not i.is_punct and i.text.lower() not in english_stopwords:
+            tokens.add(i.text)
+    return tokens
 
 
-for idx, sentence in enumerate(sentences):
-    words = clear_sentence(sentence).split(' ')
-    for word in words:
-        if len(word) <= 2:
-            continue
-        index[word].append(idx)
+def get_words():
+    lemmas = []
+    with open('lemmas.txt', 'r', encoding='utf-8') as f:
+        lines = f.read().strip().split('\n')
 
-text = [f'{k} ' + ' '.join(map(str, list(v))) for k, v in index.items()]
+    for line in lines:
+        line_lemmas = line.split(' ')
+        for lemma in line_lemmas:
+            lemmas.append(lemma)
+    return lemmas
 
-with open('index_sentences.txt', 'w', encoding='utf-8') as f:
-    f.write('\n'.join(text))
+
+if __name__ == '__main__':
+
+    words = get_words()
+    index = {}
+    directory = 'pumping'
+    for file in glob.iglob(f'{directory}/*.txt'):
+        with open(file, 'rb') as f:
+            file_idx = re.search('pumping/(.+?).txt', file).group(1)
+            soup = BeautifulSoup(f.read(), "html.parser")
+            doc_tokens = extract_tokens(soup.text.lower())
+            for word in words:
+                if word in doc_tokens:
+                    if word in index.keys():
+                        if file_idx in index[word]:
+                            continue
+                        else:
+                            index[word].append(file_idx)
+                    else:
+                        index[word] = [file_idx]
+
+    text = [f'{k} ' + ' '.join(map(str, list(v))) for k, v in index.items()]
+
+    with open('index_lemmas.txt', 'w', encoding='utf-8') as f:
+        f.write('\n'.join(text))
+
+
