@@ -16,4 +16,10 @@
     search_by_index.py - булевый поиск по пстроенному индексу
     answers.txt - результаты булевого поиска
 
+# Задание №4
+    tokens_tf_idf.py 
+    tokens_tf_idf/ - папка со списком терминов и подсчитанными tf-idf
+    lemmas_tf_idf.py
+    lemmas_tf_idf/ - папка со списком лемм и подсчитанными tf-idf
+
 
