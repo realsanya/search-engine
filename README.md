@@ -22,4 +22,7 @@
     lemmas_tf_idf.py
     lemmas_tf_idf/ - папка со списком лемм и подсчитанными tf-idf
 
+# Задание №5
+    vector_search.py
+
 
