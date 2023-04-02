@@ -25,4 +25,9 @@
 # Задание №5
     vector_search.py
 
+# Демо
+    templates/results.html
+    demo.py
+    demo_search.py
+
 
